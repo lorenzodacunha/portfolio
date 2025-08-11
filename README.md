@@ -72,7 +72,7 @@ Cada detalhe foi pensado para unir **design impactante** e **funcionalidade**, u
 │   ├── modal.css
 │   ├── sidebarmenu.css
 │   ├── style.css
-│   └── window\.css
+│   └── window.css
 │
 ├── data/                   # Dados e traduções em JSON
 │   ├── skills.json
@@ -97,7 +97,7 @@ Cada detalhe foi pensado para unir **design impactante** e **funcionalidade**, u
     ├── skills.js
     ├── switchMode.js
     ├── translation.js
-    └── window\.js
+    └── window.js
 ```
 
 ---
