@@ -82,22 +82,22 @@ Cada detalhe foi pensado para unir **design impactante** e **funcionalidade**, u
 │   └── reviews/            # Avaliações de clientes
 │
 └── js/                     # Scripts e funcionalidades
-├── benderEyes.js
-├── certificates.js
-├── functions.js
-├── guide.js
-├── icons.js
-├── main.js
-├── modal.js
-├── navbar.js
-├── progressBar.js
-├── projects.js
-├── reviews.js
-├── security.js
-├── skills.js
-├── switchMode.js
-├── translation.js
-└── window\.js
+    ├── benderEyes.js
+    ├── certificates.js
+    ├── functions.js
+    ├── guide.js
+    ├── icons.js
+    ├── main.js
+    ├── modal.js
+    ├── navbar.js
+    ├── progressBar.js
+    ├── projects.js
+    ├── reviews.js
+    ├── security.js
+    ├── skills.js
+    ├── switchMode.js
+    ├── translation.js
+    └── window\.js
 ```
 
 ---
