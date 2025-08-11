@@ -10,7 +10,7 @@ export function getTranslations() { return currentTranslations; }
 
 export async function loadTranslations(lang) {
   try {
-    const path = `locales/${lang}.json`;
+    const path = `data/locales/${lang}.json`;
     const response = await fetch(path);
     if (!response.ok) throw new Error('Erro ao carregar o arquivo de tradução.');
     const translations = await response.json();

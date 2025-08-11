@@ -205,7 +205,7 @@ export async function initializeSkills(translations) {
     `);
     loading.hidden = false
     try {
-        const response = await fetch('Data/skills.json');
+        const response = await fetch('data/skills.json');
         const habilidades = await response.json();
 
         setTimeout(() => {
