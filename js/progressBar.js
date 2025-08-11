@@ -31,8 +31,10 @@ export function setupProgressBar(containerElement, initialPercentage, type = 'sk
   let dragOffset = 0;
   const originalWidth = Math.max(minWidth, Math.min(maxWidth, parseFloat(initialPercentage)));
 
+  // Cache marker width to avoid repeated layout reads
+  const markerOffset = marker.offsetWidth / 2;
+
   function updateMarkerPosition(widthPercentage) {
-    const markerOffset = marker.offsetWidth / 2;
     marker.style.left = `calc(${widthPercentage}% - ${markerOffset}px)`;
   }
 
@@ -61,10 +63,14 @@ export function setupProgressBar(containerElement, initialPercentage, type = 'sk
 
   observer.observe(progressBar);
 
+  // Cache bounding rect to avoid forced reflow during drag
+  let progressBarRect = progressBar.getBoundingClientRect();
+
   function startDrag(e) {
     isDragging = true;
     progressFill.style.transition = 'none';
     marker.style.transition = 'none';
+    progressBarRect = progressBar.getBoundingClientRect();
     const clientX = e.clientX || e.touches?.[0]?.clientX;
     const markerRect = marker.getBoundingClientRect();
     dragOffset = clientX - (markerRect.left + markerRect.width / 2);
@@ -72,7 +78,7 @@ export function setupProgressBar(containerElement, initialPercentage, type = 'sk
 
   function drag(e) {
     if (!isDragging) return;
-    const rect = progressBar.getBoundingClientRect();
+    const rect = progressBarRect;
     const clientX = e.clientX || e.touches?.[0]?.clientX;
     let newWidth = ((clientX - dragOffset - rect.left) / rect.width) * 100;
     newWidth = Math.max(minWidth, Math.min(maxWidth, newWidth));
@@ -89,10 +95,15 @@ export function setupProgressBar(containerElement, initialPercentage, type = 'sk
     updateMarkerPosition(originalWidth);
   }
 
+  // Update cached rect on resize to keep values accurate
+  window.addEventListener('resize', () => {
+    progressBarRect = progressBar.getBoundingClientRect();
+  });
+
   marker.addEventListener('mousedown', startDrag);
   document.addEventListener('mousemove', drag);
   document.addEventListener('mouseup', endDrag);
   marker.addEventListener('touchstart', startDrag);
-  document.addEventListener('touchmove', drag);
+  document.addEventListener('touchmove', drag, { passive: false });
   document.addEventListener('touchend', endDrag);
 }

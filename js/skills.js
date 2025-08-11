@@ -40,8 +40,10 @@ function setupDisplayMode() {
     });
 }
 
+const scrollModeQuery = window.matchMedia('(max-width: 549px)');
+
 function handleResponsiveDisplay() {
-    if (window.innerWidth < 550) {
+    if (scrollModeQuery.matches) {
         changeDisplayMode('scroll');
     }
 }
@@ -273,5 +275,5 @@ export async function initializeSkills(translations) {
 export function setupSkillsUI() {
     setupDisplayMode();
     handleResponsiveDisplay();
-    window.addEventListener('resize', handleResponsiveDisplay);
+    scrollModeQuery.addEventListener('change', handleResponsiveDisplay);
 }

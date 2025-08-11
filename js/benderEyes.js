@@ -5,6 +5,7 @@ const observerOptions = {
 };
 
 let isEyeGroupVisibleMap = new Map();
+const eyeGroupMatrixMap = new Map();
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     const eyeGroup = entry.target;
@@ -15,6 +16,21 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.eyeGroup').forEach(eyeGroup => {
   observer.observe(eyeGroup);
   isEyeGroupVisibleMap.set(eyeGroup, true);
+  eyeGroupMatrixMap.set(eyeGroup, eyeGroup.getScreenCTM().inverse());
+});
+
+// Recalculate matrices on resize to keep positions accurate
+window.addEventListener('resize', () => {
+  document.querySelectorAll('.eyeGroup').forEach(eyeGroup => {
+    eyeGroupMatrixMap.set(eyeGroup, eyeGroup.getScreenCTM().inverse());
+  });
+});
+
+// Track viewport size without triggering layout
+const mobileQuery = window.matchMedia('(max-width: 750px)');
+let isMobile = mobileQuery.matches;
+mobileQuery.addEventListener('change', e => {
+  isMobile = e.matches;
 });
 
 export function benderEyes(event) {
@@ -32,7 +48,8 @@ export function benderEyes(event) {
     const svgPoint = svgRoot.createSVGPoint();
     svgPoint.x = event.clientX;
     svgPoint.y = event.clientY;
-    const pointTransformed = svgPoint.matrixTransform(eyeGroup.getScreenCTM().inverse());
+    const ctm = eyeGroupMatrixMap.get(eyeGroup);
+    const pointTransformed = svgPoint.matrixTransform(ctm);
     const eyeCenterX = parseFloat(eye.getAttribute('cx'));
     const eyeCenterY = parseFloat(eye.getAttribute('cy'));
     const dx = pointTransformed.x - eyeCenterX;
@@ -44,7 +61,6 @@ export function benderEyes(event) {
     const targetY = eyeCenterY + distance * Math.sin(angle);
     const currentX = parseFloat(pupil.getAttribute('x')) + pupilSize || eyeCenterX;
     const currentY = parseFloat(pupil.getAttribute('y')) + pupilSize || eyeCenterY;
-    const isMobile = window.innerWidth <= 750;
     const lerpFactor = isMobile ? 0.5 : 0.1;
     const smoothX = currentX + (targetX - currentX) * lerpFactor;
     const smoothY = currentY + (targetY - currentY) * lerpFactor;

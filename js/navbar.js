@@ -1,7 +1,9 @@
+const desktopQuery = window.matchMedia('(min-width: 1326px)');
+
 export function navbarEffects() {
   const navbar = document.getElementById('navb');
   let lastScrollPosition = 0;
-  let isDesktop = window.innerWidth >= 1326;
+  let isDesktop = desktopQuery.matches;
 
   function handleScroll() {
     const currentScrollPosition = window.scrollY;
@@ -16,7 +18,7 @@ export function navbarEffects() {
   }
 
   function checkViewportWidth() {
-    isDesktop = window.innerWidth >= 1326;
+    isDesktop = desktopQuery.matches;
 
     if (isDesktop) {
       window.addEventListener('scroll', handleScroll);
@@ -26,8 +28,9 @@ export function navbarEffects() {
     }
   }
   checkViewportWidth();
-  window.addEventListener('resize', checkViewportWidth);
+  desktopQuery.addEventListener('change', checkViewportWidth);
 }
+
 
 export function hamburguerMenu() {
   document.getElementById('hamburguer').addEventListener('click', function () {
@@ -76,7 +79,7 @@ export function smoothScrollWithOffset() {
           behavior: 'smooth'
         });
 
-        if (window.innerWidth < 1326) {
+        if (!desktopQuery.matches) {
           navbar.classList.remove('active');
         }
       }
@@ -88,7 +91,7 @@ export function hamburnavbarEffectsMobile() {
   const navbar = document.getElementById('navb');
   const hamburguerBtn = document.getElementById('hamburguer');
   let lastScrollPosition = 0;
-  let isDesktop = window.innerWidth >= 1326;
+  let isDesktop = desktopQuery.matches;
 
   function handleScroll() {
     const currentScrollPosition = window.scrollY;
@@ -107,7 +110,7 @@ export function hamburnavbarEffectsMobile() {
   }
 
   function checkViewportWidth() {
-    isDesktop = window.innerWidth >= 1326;
+    isDesktop = desktopQuery.matches;
 
     if (isDesktop) {
       window.addEventListener('scroll', handleScroll);
@@ -120,5 +123,5 @@ export function hamburnavbarEffectsMobile() {
   }
 
   checkViewportWidth();
-  window.addEventListener('resize', checkViewportWidth);
+  desktopQuery.addEventListener('change', checkViewportWidth);
 }

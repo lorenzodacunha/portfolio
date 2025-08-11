@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   navbarEffects();
   switchMode();
   hamburguerMenu();
-  benderEyes({ clientX: window.innerWidth / 2, clientY: window.innerHeight / 2 });
+  requestAnimationFrame(() => {
+    benderEyes({ clientX: window.innerWidth / 2, clientY: window.innerHeight / 2 });
+  });
   initializeProjects();
   allWindowReload();
   initializeCertificates();
