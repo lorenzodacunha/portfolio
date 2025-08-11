@@ -110,7 +110,7 @@ export async function initializeReviews() {
             data.reviews.forEach(review => {
                 const el = document.createElement('div');
                 el.classList.add('review-item', 'card-template');
-                const stars = '<i class="fa-solid fa-star"></i>'.repeat(review.rating) + '<i class="fa-regular fa-star"></i>'.repeat(5 - review.rating);
+                const stars = '<i class="fa-solid fa-star" aria-hidden="true"></i>'.repeat(review.rating) + '<i class="fa-regular fa-star"></i>'.repeat(5 - review.rating);
                 el.innerHTML = DOMPurify.sanitize(`
                     <div class="review-header">
                       <div class="review-project">${review.projectName}</div>
@@ -118,7 +118,7 @@ export async function initializeReviews() {
                           <img class="review-photo" src="${review.clientPhoto}" alt="${review.clientName}">
                           <div class="review-client">
                             <a class="client-name" href="${review.clientProfileLink}" target="_blank">${review.clientName}</a>
-                            <div class="review-stars" aria-label="${translations['review-item'].rating}: ${review.rating}">${stars}</div>
+                            <div class="review-stars" role="img" aria-label="${translations['review-item'].rating} ${review.rating}/5">${stars}</div>
                           </div>
                       </div>
                     </div>

@@ -890,7 +890,7 @@
   }
 
   .scroll-view {
-    max-width: calc(100vw - 14.5em);
+    max-width: calc(100vw - 13em);
   }
 
   .window-modal {
