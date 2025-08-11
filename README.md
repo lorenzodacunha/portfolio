@@ -1,7 +1,7 @@
 # 🌐 Portfólio Lorenzo da Cunha
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=whitee)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
@@ -93,8 +93,6 @@ Cada detalhe foi pensado para unir **design impactante** e **funcionalidade**, u
 ---
 
 ## 📜 Licença
-![Sem Licença](https://img.shields.io/badge/Licença-Não%20Autorizado-red?style=for-the-badge)
-
 Este repositório **não possui licença pública**.  
 Todos os direitos autorais estão reservados ao autor.  
 Você pode visualizar o código, mas **não é permitido copiar, modificar ou distribuir** este projeto sem autorização prévia.
@@ -102,9 +100,11 @@ Você pode visualizar o código, mas **não é permitido copiar, modificar ou di
 ---
 
 ## 📬 Contato
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/lorenzodacunha/)
-[![Workana](https://img.shields.io/badge/Workana-Perfil-00A4E0?style=for-the-badge&logo=freelancer)](https://www.workana.com/freelancer/16c0158b6a790fe3cc607933882390bf)
-[![GitHub](https://img.shields.io/badge/GitHub-Repositórios-181717?style=for-the-badge&logo=github)](https://github.com/lorenzodacunha)
-[![E-mail](https://img.shields.io/badge/Email-Contato-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@lorenzodacunha.com.br)
+- **LinkedIn:** [linkedin.com](https://www.linkedin.com/in/lorenzodacunha/)
+- **Workana:** [workana.com](https://www.workana.com/freelancer/16c0158b6a790fe3cc607933882390bf)
+- **GitHub:** [github.com](https://github.com/lorenzodacunha)
+- **Portfólio:** [www.lorenzodacunha.com.br](www.lorenzodacunha.com.br)
+- **E-mail:** contato@lorenzodacunha.com.br
+---
 
 
