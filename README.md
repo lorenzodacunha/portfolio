@@ -12,32 +12,35 @@ Meu portfólio pessoal é um projeto 100% customizado para refletir minha identi
 Cada detalhe foi pensado para unir **design impactante** e **funcionalidade**, usando uma combinação estratégica de tons **laranja e cinza** que se alternam entre as seções, proporcionando uma experiência visual dinâmica e envolvente.
 
 ### Acesse o projeto por esse link 👇
-[![Portfólio Online](https://img.shields.io/badge/Visitar%20Portfólio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.lorenzodacunha.com.br)
+[![Portfólio](https://img.shields.io/badge/Visitar%20Portfólio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.lorenzodacunha.com.br)
 
 > 💡 Este portfólio foi construído ao longo de 11 meses, conciliando estudos acadêmicos, trabalhos freelance e aperfeiçoamento constante.
 
 ---
 
 ## ✨ Funcionalidades
-- **Interface responsiva** — adaptada para diferentes dispositivos e tamanhos de tela.
-- **Carregamento dinâmico** — projetos, animações e interações gerenciados via JavaScript.
-- **Sistema de traduções** — suporte para português, inglês e espanhol.
-- **Interações avançadas** — botões funcionais, animações, modais e tooltips.
-- **Animações no título e favicon** — personalização visual mesmo na aba do navegador.
-- **Back-end assistido por IA** — Codex ajudou a criar partes complexas de integração e lógica.
+- **Interface responsiva:** Adaptada para diferentes dispositivos e tamanhos de tela.
+- **Carregamento dinâmico:** Projetos, animações e interações gerenciados via JavaScript.
+- **Sistema de traduções:** Suporte para português, inglês e espanhol.
+- **Modais de projetos**: Modais dinamicos que reservam um espaço isolado para cada projeto.
+- **Interações avançadas:** Botões funcionais, animações com css/js e tooltips.
+- **Animações no título e favicon:** personalização visual mesmo na aba do navegador.
+- **Back-end assistido por IA** Codex ajudou a criar partes complexas de integração e lógica.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 - HTML5  
-- CSS3 (Custom Properties, Flexbox, Grid)  
-- JavaScript  
-- JSON (para traduções e dados dinâmicos)  
-- Codex/OpenAI (apoio no desenvolvimento de lógica e automações)  
-- Figma (planejamento visual)  
-- Git/GitHub (controle de versão)  
+- CSS3 
+- JavaScript 
+- Swiper.js (Utilizado no Slideshow de projetos)
+- Purify.js (Purifica o HTML e impede injesões maliciosas)
+- JSON (Traduções e dados dinâmicos)  
+- Codex (Apoio no desenvolvimento de funcionalidades)  
+- Figma (Planejamento Visual)  
+- Git/GitHub (Controle de versão)  
 
----
+--- 
 
 ## 📂 Estrutura do Projeto
 ```
@@ -105,6 +108,5 @@ Você pode visualizar o código, mas **não é permitido copiar, modificar ou di
 - **GitHub:** [github.com](https://github.com/lorenzodacunha)
 - **Portfólio:** [www.lorenzodacunha.com.br](www.lorenzodacunha.com.br)
 - **E-mail:** contato@lorenzodacunha.com.br
----
 
 
