@@ -1,0 +1,108 @@
+{
+  "navbar": {
+    "home": "INICIO",
+    "about": "SOBRE MÍ",
+    "skills": "HABILIDADES",
+    "projects": "PROYECTOS",
+    "certificates": "CERTIFICACIONES",
+    "reviews": "RESEÑAS",
+    "contact": "CONTACTO"
+  },
+  "guide": {
+    "welcome": "bienvenido.html",
+    "aboutme": "sobremi.txt",
+    "projects": "proyectos.html",
+    "skills": "habilidades.html",
+    "certificates": "certificaciones.html",
+    "reviews": "resenas.html"
+  },
+  "window": {
+    "comment": "Hola 👋",
+    "welcome": "¡Bienvenido(a)!",
+    "description": {
+      "prefix": "Soy un ",
+      "roles": [
+        "Dev Front-end ",
+        "UI Designer ",
+        "Dev Shopify "
+      ]
+    }
+  },
+  "about_me": "Soy <b>Lorenzo da Cunha</b>, desarrollador front-end apasionado por crear interfaces modernas y experiencias digitales únicas. Con 18 años, he trabajado en proyectos de comercio electrónico, sistemas web y landing pages, siempre buscando transformar ideas en soluciones sorprendentes.",
+  "button": {
+    "resume": "Ver Currículum"
+  },
+  "projects": {
+    "categories": "Categorías",
+    "frontend": "Front-End",
+    "ui": "UI Designer",
+    "see_more": "<i class=\"fa-solid fa-eye\"></i>Ver más",
+    "in_progress": "En desarrollo"
+  },
+  "titles": {
+    "about": "SOBRE MÍ",
+    "projects": "PROYECTOS",
+    "certificates": "CERTIFICADOS",
+    "reviews": "RESEÑAS",
+    "skills": "HABILIDADES",
+    "contact": "CONTACTO"
+  },
+  "end": {
+    "comment": "Llegaste al final",
+    "title": "¿Te gustó mi trabajo?",
+    "text1": "Puedes contactarme haciendo clic en los",
+    "text2": "tarjetones"
+  },
+  "levels": {
+    "initial": "Inicial",
+    "intermediate": "Intermedio",
+    "advanced": "Avanzado"
+  },
+  "icons-items": {
+    "mobile": "Compatible con Mobile",
+    "tablet": "Compatible con Tablet",
+    "desktop": "Compatible con Desktop"
+  },
+  "display": {
+    "grid": "Mostrar en modo Cuadrícula",
+    "scroll": "Mostrar en modo Desplazamiento"
+  },
+  "certification-item": {
+    "issued": "Emitido por",
+    "validity": "Validez",
+    "type": "Tipo",
+    "completed": "Completado",
+    "in-progress": "En curso"
+  },
+  "modal-social": {
+    "linkedin": "Ver en LinkedIn",
+    "github": "Ver en GitHub",
+    "project": "Ir al proyecto",
+    "share": "Compartir proyecto",
+    "peek": "Espiar",
+    "no-link": "Enlace no disponible"
+  },
+  "review-item": {
+    "source": "Fuente",
+    "rating": "Calificación"
+  },
+  "social": {
+    "github": "Ver perfil en GitHub",
+    "linkedin": "Ver perfil en LinkedIn",
+    "workana": "Ver perfil en Workana"
+  },
+  "search": {
+    "paths": {
+      "projectsRoot": "Portfolio/proyectos/",
+      "projectsCategory": "Portfolio/proyectos/categorias/",
+      "certificates": "Portfolio/certificados",
+      "reviews": "Portfolio/resenas",
+      "contact": "Portfolio/contacto",
+      "skills": "Portfolio/habilidades",
+      "image": "Portfolio/contacto/formulario.html"
+    }
+  },
+  "footer": {
+    "rights": "© 2025 Lorenzo da Cunha. Todos los derechos reservados."
+  }
+}
