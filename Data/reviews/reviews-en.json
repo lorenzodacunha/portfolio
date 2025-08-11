@@ -1,0 +1,48 @@
+{
+  "reviews": [
+    {
+      "projectName": "Adjustments and fixes in Shopify store",
+      "clientName": "Gustavo Ferreira",
+      "clientPhoto": "assets/images/avatars/userdefault.webp",
+      "clientProfileLink": "https://www.workana.com/freelancer/16c0158b6a790fe3cc607933882390bf#:~:text=Ajustes%20e%20corre%C3%A7%C3%B5es%20me%20loja%20shopify",
+      "rating": 5,
+      "description": "Best e-commerce developer I've ever seen, very friendly, creative and efficient.",
+      "source": "Workana",
+      "sourceLink": "https://www.workana.com/freelancer/16c0158b6a790fe3cc607933882390bf#:~:text=Ajustes%20e%20corre%C3%A7%C3%B5es%20me%20loja%20shopify",
+      "sourceLogo": "assets/icons/workana-logo.svg"
+    },
+    {
+      "projectName": "Custom Landing Page for Book Sales on Shopify",
+      "clientName": "Hendyo Gabriel",
+      "clientPhoto": "assets/images/avatars/userdefault.webp",
+      "clientProfileLink": "https://www.workana.com/freelancer/16c0158b6a790fe3cc607933882390bf#:~:text=Cria%C3%A7%C3%A3o%20de%20Landing%20Page%20Personalizada%20para%20Vendas%20de%20Livros%20sobre%20Mentalidade%20e%20Educa%C3%A7%C3%A3o%20Financeira%20na%20Shopify",
+      "rating": 5,
+      "description": "He is very helpful and attentive. I really liked the project we did together! Highly recommend him.",
+      "source": "Workana",
+      "sourceLink": "https://www.workana.com/freelancer/16c0158b6a790fe3cc607933882390bf#:~:text=Cria%C3%A7%C3%A3o%20de%20Landing%20Page%20Personalizada%20para%20Vendas%20de%20Livros%20sobre%20Mentalidade%20e%20Educa%C3%A7%C3%A3o%20Financeira%20na%20Shopify",
+      "sourceLogo": "assets/icons/workana-logo.svg"
+    },
+    {
+      "projectName": "Landing Page creation for Trademark Registration service",
+      "clientName": "Sérgio Leite",
+      "clientPhoto": "assets/images/avatars/userdefault.webp",
+      "clientProfileLink": "https://www.workana.com/freelancer/16c0158b6a790fe3cc607933882390bf#:~:text=Cria%C3%A7%C3%A3o%20de%20Landing%20Page%20para%20Servi%C3%A7o%20de%20Registro%20de%20Marcas",
+      "rating": 5,
+      "description": "Lorenzo showed great professionalism, creativity and attention to detail while creating the new page for my website. The final result was amazing and exceeded my expectations. Communication was always clear and efficient. Highly recommend Lorenzo for any project.",
+      "source": "Workana",
+      "sourceLink": "https://www.workana.com/freelancer/16c0158b6a790fe3cc607933882390bf#:~:text=Cria%C3%A7%C3%A3o%20de%20Landing%20Page%20para%20Servi%C3%A7o%20de%20Registro%20de%20Marcas",
+      "sourceLogo": "assets/icons/workana-logo.svg"
+    },
+    {
+      "projectName": "Creation, setup and customization of Shopify stores",
+      "clientName": "Fernando Canuto",
+      "clientPhoto": "assets/images/avatars/userdefault.webp",
+      "clientProfileLink": "https://www.workana.com/freelancer/16c0158b6a790fe3cc607933882390bf#:~:text=Cria%C3%A7%C3%A3o%2C%20Setup%20e%20personaliza%C3%A7%C3%A3o%20de%20lojas%20Shopify.",
+      "rating": 5,
+      "description": "Lorenzo is an excellent professional, patient and has good communication. Always willing and attentive to ensure project success. Flexible and highly skilled to deliver high-quality work.",
+      "source": "Workana",
+      "sourceLink": "https://www.workana.com/freelancer/16c0158b6a790fe3cc607933882390bf#:~:text=Cria%C3%A7%C3%A3o%2C%20Setup%20e%20personaliza%C3%A7%C3%A3o%20de%20lojas%20Shopify.",
+      "sourceLogo": "assets/icons/workana-logo.svg"
+    }
+  ]
+}

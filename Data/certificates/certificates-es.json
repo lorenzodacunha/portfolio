@@ -1,0 +1,103 @@
+{
+  "certificados": [
+    {
+      "thumb": "assets/images/certificates/fatec.webp",
+      "title": "Análisis y Desarrollo de Sistemas",
+      "type": "Tecnólogo",
+      "workload": "2800 horas",
+      "institution": "Fatec Americana",
+      "status": false,
+      "certificationUrl": ""
+    },
+    {
+      "thumb": "assets/images/certificates/aldeia.webp",
+      "title": "Diseño UI",
+      "type": "Especialización",
+      "workload": "40 horas",
+      "institution": "Aldeia CC",
+      "status": false,
+      "certificationUrl": ""
+    },
+    {
+      "thumb": "assets/images/certificates/aldeia.webp",
+      "title": "Diseño UX",
+      "type": "Especialización",
+      "workload": "40 horas",
+      "institution": "Aldeia CC",
+      "status": false,
+      "certificationUrl": ""
+    },
+    {
+      "thumb": "assets/images/certificates/ibm.webp",
+      "title": "Introducción al Diseño UX",
+      "type": "Introducción",
+      "workload": "2 horas",
+      "institution": "IBM",
+      "status": true,
+      "certificationUrl": "https://drive.google.com/file/d/1Wiu-IGDyvFRU--7D89z4tfI_IgUrryHM/view"
+    },
+    {
+      "thumb": "assets/images/certificates/senai.webp",
+      "title": "Privacidad y Protección de Datos (LGPD)",
+      "type": "Especialización",
+      "workload": "4 horas",
+      "institution": "Senai",
+      "status": true,
+      "certificationUrl": "https://drive.google.com/file/d/19j0t3PHuiV4eRcb3mEUS5u_mMWSW_Jsn/view"
+    },
+    {
+      "thumb": "assets/images/certificates/senai.webp",
+      "title": "Electricista de Mantenimiento",
+      "type": "Formación Profesional",
+      "workload": "1600 horas",
+      "institution": "Senai",
+      "status": true,
+      "certificationUrl": "https://drive.google.com/file/d/1c7825-NwcG-zyXgzg_lH3mJ_DC07r-8q/view"
+    },
+    {
+      "thumb": "assets/images/certificates/senai.webp",
+      "title": "Soluciones Integradas con IoT",
+      "type": "Especialización",
+      "workload": "40 horas",
+      "institution": "Senai",
+      "status": true,
+      "certificationUrl": "https://drive.google.com/file/d/17iVVMpo4CJXOHjP2E6b_1HyKP-hxyfeE/view"
+    },
+    {
+      "thumb": "assets/images/certificates/senai.webp",
+      "title": "Arduino",
+      "type": "Especialización",
+      "workload": "40 horas",
+      "institution": "Senai",
+      "status": true,
+      "certificationUrl": "https://drive.google.com/file/d/1MaU1d_-4eSvUbAEMb60SDoeZGogu7RcF/view"
+    },
+    {
+      "thumb": "assets/images/certificates/senai.webp",
+      "title": "WEB 3.0",
+      "type": "Especialización",
+      "workload": "20 horas",
+      "institution": "Senai",
+      "status": true,
+      "certificationUrl": "https://drive.google.com/file/d/1qMKkNDraHwHyG_iTWOedviYMdKWLgj_L/view"
+    },
+    {
+      "thumb": "assets/images/certificates/senai.webp",
+      "title": "Seguridad en el Trabajo",
+      "type": "General",
+      "workload": "14 horas",
+      "institution": "Senai",
+      "status": true,
+      "certificationUrl": "https://drive.google.com/file/d/1nYcWdApkz0wxbuDTOV9vDFpbdSDM1bK5/view"
+    },
+    {
+      "thumb": "assets/images/certificates/senai.webp",
+      "title": "Microsoft Power BI",
+      "type": "Especialización",
+      "workload": "32 horas",
+      "institution": "Senai",
+      "status": true,
+      "certificationUrl": "https://drive.google.com/file/d/1Hq4VEDBexbcq05UfhApy5Z6YBDS3_jto/view"
+    }
+  ]
+}
