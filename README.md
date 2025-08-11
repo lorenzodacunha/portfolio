@@ -26,19 +26,26 @@ Cada detalhe foi pensado para unir **design impactante** e **funcionalidade**, u
 - **Interações avançadas:** Botões funcionais, animações com css/js e tooltips.
 - **Animações no título e favicon:** personalização visual mesmo na aba do navegador.
 - **Back-end assistido por IA** Codex ajudou a criar partes complexas de integração e lógica.
+- **Tema claro/escuro:** Alterna automaticamente pelo `prefers-color-scheme` ou manualmente via `localStorage`.
+- **Olhos animados:** Ícones SVG acompanham o cursor usando `IntersectionObserver`.
+- **Barras de progresso interativas:** Marcadores arrastáveis com animação suave.
+- **Compartilhamento de projetos:** Integração com Web Share API e fallback para copiar o link.
+- **Proteção de imagens:** Bloqueio de arrastar e desabilitação do menu de contexto.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
-- HTML5  
-- CSS3 
-- JavaScript 
+- HTML5
+- CSS3
+- JavaScript
 - Swiper.js (Utilizado no Slideshow de projetos)
-- Purify.js (Purifica o HTML e impede injesões maliciosas)
-- JSON (Traduções e dados dinâmicos)  
-- Codex (Apoio no desenvolvimento de funcionalidades)  
-- Figma (Planejamento Visual)  
-- Git/GitHub (Controle de versão)  
+- DOMPurify (Sanitização de HTML)
+- Font Awesome (Biblioteca de ícones)
+- JSON (Traduções e dados dinâmicos)
+- APIs do navegador: LocalStorage, IntersectionObserver, MutationObserver, Web Share API e Clipboard API
+- Codex (Apoio no desenvolvimento de funcionalidades)
+- Figma (Planejamento Visual)
+- Git/GitHub (Controle de versão)
 
 --- 
 
