@@ -37,6 +37,8 @@
 
 .window-modal {
   width: calc(100vw - 3em) !important;
+  max-height: calc(100vh - 5em) !important;
+
 }
 
 .window-contact {
@@ -895,6 +897,5 @@
 
   .window-modal {
     width: calc(100vw - 5em) !important;
-    max-height: 796px;
   }
 }
