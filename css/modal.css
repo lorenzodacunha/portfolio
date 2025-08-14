@@ -37,7 +37,7 @@
 
 .window-modal {
   width: calc(100vw - 3em) !important;
-  max-height: calc(100vh - 5em) !important;
+  max-height: calc(100vh - 3em) !important;
 
 }
 
@@ -47,6 +47,25 @@
 
 #modal-content-inner {
   background: var(--window-color-2) !important;
+}
+
+@media screen and (max-height: 628px) and (min-width: 951px) {
+  .window-modal { 
+    max-height: calc(100vh - 5em) !important;
+  }
+  .modal-text-content {
+    overflow: hidden !important;
+    overflow-x: hidden !important;
+    max-height: max-content !important;
+  }
+  #modal-content-inner {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .modal-content-scroll-after {
+    overflow: hidden;
+    border-radius: 6px
+  }
 }
 
 .close-btn {
@@ -117,18 +136,18 @@
   overflow-x: hidden;
 }
 
-.modal-text-content::-webkit-scrollbar {
+.modal-text-content::-webkit-scrollbar, #modal-content-inner::-webkit-scrollbar {
   width: 10px;
 }
 
 .modal-text-content::-webkit-scrollbar-thumb,
-.modal-content::-webkit-scrollbar {
+.modal-content::-webkit-scrollbar, #modal-content-inner::-webkit-scrollbar {
   background-color: var(--secondary-color);
   border-radius: 40px;
 }
 
 .modal-text-content::-webkit-scrollbar-track,
-.modal-content::-webkit-scrollbar {
+.modal-content::-webkit-scrollbar, #modal-content-inner::-webkit-scrollbar {
   background: transparent;
 }
 
@@ -439,6 +458,10 @@
 
   .single-image {
     min-width: 100%;
+  }
+
+  .window-main {
+    overflow: hidden !important;
   }
 
   .developing-title {
