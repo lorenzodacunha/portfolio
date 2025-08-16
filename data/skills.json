@@ -13,17 +13,41 @@
          "icon": "css3"
       },
       {
-         "name": "Flutter",
-         "level": "Básico",
-         "porcentage": "35",
-         "icon": "flutter"
+         "name": "JavaScript",
+         "level": "MÉDIO",
+         "porcentage": "50",
+         "icon": "javascript"
       },
       {
-         "name": "tailwind",
+         "name": "Liquid",
+         "level": "AVANÇADO",
+         "porcentage": "100",
+         "icon": "shopify"
+      },
+      {
+         "name": "Node.js",
+         "level": "MÉDIO",
+         "porcentage": "50",
+         "icon": "node"
+      },
+      {
+         "name": "React",
+         "level": "Básico",
+         "porcentage": "30",
+         "icon": "react"
+      },
+      {
+         "name": "Python",
+         "level": "MÉDIO",
+         "porcentage": "50",
+         "icon": "python"
+      },
+      {
+         "name": "Tailwind",
          "level": "AVANÇADO",
          "porcentage": "100",
          "icon": "tailwind"
-      },
+      },     
       {
          "name": "Figma",
          "level": "AVANÇADO",
@@ -31,10 +55,10 @@
          "icon": "figma"
       },
       {
-         "name": "Liquid",
-         "level": "AVANÇADO",
-         "porcentage": "100",
-         "icon": "shopify"
+         "name": "Flutter",
+         "level": "Básico",
+         "porcentage": "35",
+         "icon": "flutter"
       },
       {
          "name": "Wordpress",
@@ -55,18 +79,6 @@
          "icon": "illustrator"
       },
       {
-         "name": "JavaScript",
-         "level": "MÉDIO",
-         "porcentage": "45",
-         "icon": "javascript"
-      },
-      {
-         "name": "Node.js",
-         "level": "MÉDIO",
-         "porcentage": "58",
-         "icon": "node"
-      },
-      {
          "name": "Vue",
          "level": "MÉDIO",
          "porcentage": "40",
@@ -79,17 +91,18 @@
          "icon": "angular"
       },
       {
-         "name": "React",
-         "level": "Básico",
-         "porcentage": "30",
-         "icon": "react"
-      },
-      {
          "name": "C",
          "level": "MÉDIO",
          "porcentage": "60",
          "icon": "c"
       },
+      {
+         "name": "Git",
+         "level": "AVANÇADO",
+         "porcentage": "70",
+         "icon": "git"
+      },
+
       {
          "name": "Json",
          "level": "AVANÇADO",

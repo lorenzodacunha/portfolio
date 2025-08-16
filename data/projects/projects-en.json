@@ -27,6 +27,10 @@
                 {
                     "class": "json",
                     "tooltip": "Json"
+                },
+                {
+                    "class": "git",
+                    "tooltip": "Git"
                 }
             ],
             "compatibility": 3,

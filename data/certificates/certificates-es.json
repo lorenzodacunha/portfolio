@@ -37,6 +37,15 @@
       "certificationUrl": "https://drive.google.com/file/d/1Wiu-IGDyvFRU--7D89z4tfI_IgUrryHM/view"
     },
     {
+        "thumb": "assets/images/certificates/senai.webp",
+        "title": "Fundamentos de Python I",
+        "type": "Especialización",
+        "workload": "30 horas",
+        "institution": "Senai",
+        "status": true,
+        "certificationUrl": ""
+    },
+    {
       "thumb": "assets/images/certificates/senai.webp",
       "title": "Privacidad y Protección de Datos (LGPD)",
       "type": "Especialización",

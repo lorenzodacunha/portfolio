@@ -17,6 +17,8 @@ export const iconMap = {
   wordpress: 'assets/icons/skills/wordpress.svg',
   json: 'assets/icons/skills/json.svg',
   c: 'assets/icons/skills/C.svg',
+  git: 'assets/icons/skills/git.svg',
+  python: 'assets/icons/skills/python.svg',
 };
 
 export function getIconMarkup(name, useWhiteIcon = false) {

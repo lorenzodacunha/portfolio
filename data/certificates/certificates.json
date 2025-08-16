@@ -38,6 +38,15 @@
       },
       {
          "thumb": "assets/images/certificates/senai.webp",
+         "title": "Fundamentos em python I",
+         "type": "Profissionalizante",
+         "workload": "30 horas",
+         "institution": "Senai",
+         "status": true,
+         "certificationUrl": ""
+      },
+      {
+         "thumb": "assets/images/certificates/senai.webp",
          "title": "Privacidade e Proteção de dados (LGPD)",
          "type": "Aperfeiçoamento",
          "workload": "4 horas",
