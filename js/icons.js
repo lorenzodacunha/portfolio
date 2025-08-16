@@ -4,7 +4,7 @@ export const iconMap = {
   figma: 'assets/icons/skills/figma.svg',
   flutter: 'assets/icons/skills/flutter.svg',
   html5: 'assets/icons/skills/html5.svg',
-  illustrator: 'assets/icons/skills/Illustrator.svg',
+  illustrator: 'assets/icons/skills/illustrator.svg',
   javascript: 'assets/icons/skills/javascript.svg',
   mongodb: 'assets/icons/skills/mongodb.svg',
   node: 'assets/icons/skills/node.svg',
