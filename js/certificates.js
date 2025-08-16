@@ -156,7 +156,7 @@ export async function initializeCertificates() {
                     </div>
                 </div>
                 <div class="card-buttons">
-                    ${certificado.status
+                    ${certificado.status && certificado.certificationUrl && certificado.certificationUrl.trim() !== ''
                         ? `<a target="_blank" href="${certificado.certificationUrl}" aria-label="Abrir o certificado">
                             <button class="fa-solid fa-download download-button tooltip" aria-label="Abrir o certificado">
                                 <span class="tooltip-text">Ver certificado</span>
