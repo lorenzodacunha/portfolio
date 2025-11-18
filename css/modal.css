@@ -793,6 +793,12 @@
   height: 20px !important;
 }
 
+.carrossel-button svg{
+  opacity: 0;
+  display: none;
+  overflow: hi
+  dden;
+}
 .swiper-button-prev {
   transform: rotate(180deg);
 }
