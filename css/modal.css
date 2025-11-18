@@ -796,9 +796,9 @@
 .carrossel-button svg{
   opacity: 0;
   display: none;
-  overflow: hi
-  dden;
+  overflow: hidden;
 }
+
 .swiper-button-prev {
   transform: rotate(180deg);
 }
