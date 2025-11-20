@@ -22,6 +22,11 @@
     animation: component-show 2s ease-in-out forwards;
 }
 
+#home .window {
+    animation: none;
+    opacity: 1;
+}
+
 .window-header {
     display: flex;
 }
