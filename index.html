@@ -14,26 +14,24 @@
         <meta itemprop="image" content="assets/images/avatar-bg.webp">
         <link id="favicon" rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg"/>
         <title>Lorenzo da Cunha</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.3/purify.min.js"></script>
+        <script src="js/vendor/purify.min.js" defer></script>
+        <script src="js/vendor/swiper-bundle.min.js" defer></script>
         <script type="module" src="js/main.js" defer></script>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'">
+        <link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2">
+        <link rel="preload" href="assets/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2">
+        <link rel="preload" href="css/vendor/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'">
         <link rel="preload" href="css/sidebarmenu.css" as="style" onload="this.rel='stylesheet'">
         <link rel="preload" href="css/window.css" as="style" onload="this.rel='stylesheet'">
         <link rel="preload" href="css/modal.css" as="style" onload="this.rel='stylesheet'">
         <link rel="preload" href="css/card.css" as="style" onload="this.rel='stylesheet'">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Encode+Sans:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"></noscript>
+        <link rel="preload" href="css/vendor/fontawesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="css/vendor/swiper-bundle.min.css"></noscript>
         <noscript><link rel="stylesheet" href="css/sidebarmenu.css"></noscript>
         <noscript><link rel="stylesheet" href="css/window.css"></noscript>
         <noscript><link rel="stylesheet" href="css/modal.css"></noscript>
         <noscript><link rel="stylesheet" href="css/card.css"></noscript>
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Encode+Sans:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"></noscript>
-        <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+        <noscript><link rel="stylesheet" href="css/vendor/fontawesome.min.css"></noscript>
     </head>
     <body>
         <header>
@@ -1259,7 +1257,6 @@
                                 </div>
                                 <div class="modal-main">
                                     <div class="modal-slider">
-                                        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
                                         <div class="swiper-container">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">Slide 1</div>
