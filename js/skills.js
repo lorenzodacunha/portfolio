@@ -224,6 +224,7 @@ export async function initializeSkills(translations) {
             loading.hidden = true;
             conteudo.innerHTML = '';
             let pairContainer = null;
+            const progressBarInitQueue = [];
 
             habilidades['habilidades'].forEach((habilidade, index) => {
                 const skillId = `skill-${index}`;
@@ -263,9 +264,24 @@ export async function initializeSkills(translations) {
                         </div>
                     </div>`);
                 pairContainer.appendChild(projectElement);
-                const skillElement = document.getElementById(skillId);
-                setupProgressBar(skillElement, habilidade.porcentage, 'skill', index);
+                progressBarInitQueue.push({
+                    element: projectElement,
+                    percentage: habilidade.porcentage,
+                    index
+                });
             });
+
+            const runProgressSetup = () => {
+                progressBarInitQueue.forEach(({ element, percentage, index }) => {
+                    setupProgressBar(element, percentage, 'skill', index);
+                });
+            };
+
+            if (typeof requestAnimationFrame === 'function') {
+                requestAnimationFrame(runProgressSetup);
+            } else {
+                setTimeout(runProgressSetup, 0);
+            }
 
             setTimeout(() => {
                 document.querySelectorAll('.skill-item').forEach(item => item.classList.add('loaded'));
