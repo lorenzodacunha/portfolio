@@ -72,19 +72,28 @@ export function hamburguerMenu() {
 export function smoothScrollWithOffset() {
   const navbar = document.getElementById('navb');
   const desktopQuery = window.matchMedia(DESKTOP_MEDIA_QUERY);
-  let navHeight = navbar ? navbar.getBoundingClientRect().height : 0;
+  let navHeight = 0;
 
-  const updateNavHeight = () => {
-    navHeight = navbar ? navbar.getBoundingClientRect().height : 0;
+  const measureNavHeight = () => {
+    if (!navbar) return;
+    navHeight = navbar.offsetHeight;
   };
 
   if (navbar) {
+    requestAnimationFrame(measureNavHeight);
     if (typeof ResizeObserver !== 'undefined') {
-      const navObserver = new ResizeObserver(() => updateNavHeight());
+      const navObserver = new ResizeObserver(entries => {
+        if (!entries.length) return;
+        navHeight = entries[0].contentRect.height;
+      });
       navObserver.observe(navbar);
     } else {
-      window.addEventListener('resize', () => requestAnimationFrame(updateNavHeight));
+      const scheduleMeasure = () => requestAnimationFrame(measureNavHeight);
+      scheduleMeasure();
+      window.addEventListener('resize', scheduleMeasure);
     }
+  } else {
+    requestAnimationFrame(measureNavHeight);
   }
 
   document.querySelectorAll('.navbar-nav a').forEach(link => {
