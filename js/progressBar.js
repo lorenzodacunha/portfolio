@@ -30,27 +30,55 @@ export function setupProgressBar(containerElement, initialPercentage, type = 'sk
   let isDragging = false;
   let dragOffset = 0;
   let markerOffset = 0;
-  let progressBarRect = progressBar.getBoundingClientRect();
+  let progressBarRect = { left: 0, width: progressBar.offsetWidth || 1 };
+  let measureScheduled = false;
+  const pendingCallbacks = [];
   const originalWidth = Math.max(minWidth, Math.min(maxWidth, parseFloat(initialPercentage)));
 
-  const recalcGeometry = () => {
-    markerOffset = marker.getBoundingClientRect().width / 2;
+  const measureGeometry = () => {
+    const markerWidth = marker.offsetWidth || marker.getBoundingClientRect().width;
+    markerOffset = markerWidth / 2;
     progressBarRect = progressBar.getBoundingClientRect();
+    if (!progressBarRect.width) {
+      progressBarRect = { left: progressBarRect.left, width: progressBar.offsetWidth || 1 };
+    }
   };
-  recalcGeometry();
+
+  const runCallbacks = () => {
+    if (!pendingCallbacks.length) return;
+    const callbacks = pendingCallbacks.splice(0);
+    callbacks.forEach(cb => cb());
+  };
+
+  const scheduleMeasure = (callback) => {
+    if (callback) pendingCallbacks.push(callback);
+    if (typeof requestAnimationFrame !== 'function') {
+      measureGeometry();
+      runCallbacks();
+      return;
+    }
+    if (measureScheduled) return;
+    measureScheduled = true;
+    requestAnimationFrame(() => {
+      measureScheduled = false;
+      measureGeometry();
+      runCallbacks();
+    });
+  };
+  scheduleMeasure(() => updateMarkerPosition(minWidth));
 
   let resizeObserver = null;
   if (typeof ResizeObserver !== 'undefined') {
-    resizeObserver = new ResizeObserver(() => recalcGeometry());
+    resizeObserver = new ResizeObserver(() => scheduleMeasure());
     resizeObserver.observe(progressBar);
     resizeObserver.observe(marker);
   } else {
-    window.addEventListener('resize', recalcGeometry);
+    window.addEventListener('resize', () => scheduleMeasure());
   }
 
   const handleScrollWhileDragging = () => {
     if (isDragging) {
-      recalcGeometry();
+      measureGeometry();
     }
   };
 
@@ -62,14 +90,14 @@ export function setupProgressBar(containerElement, initialPercentage, type = 'sk
   marker.style.transition = 'none';
   const startWidth = minWidth;
   progressFill.style.width = `${startWidth}%`;
-  updateMarkerPosition(startWidth);
+  scheduleMeasure(() => updateMarkerPosition(startWidth));
   const delay = index % 2 === 0 ? 200 : 400;
 
   function animateToOriginal() {
     progressFill.style.transition = 'width 1s ease';
     marker.style.transition = 'left 1s ease';
     progressFill.style.width = `${originalWidth}%`;
-    updateMarkerPosition(originalWidth);
+    scheduleMeasure(() => updateMarkerPosition(originalWidth));
   }
 
   const observer = new IntersectionObserver((entries, obs) => {
@@ -87,7 +115,7 @@ export function setupProgressBar(containerElement, initialPercentage, type = 'sk
     isDragging = true;
     progressFill.style.transition = 'none';
     marker.style.transition = 'none';
-    recalcGeometry();
+    measureGeometry();
     window.addEventListener('scroll', handleScrollWhileDragging, { passive: true });
     const clientX = e.clientX || e.touches?.[0]?.clientX;
     const markerRect = marker.getBoundingClientRect();
