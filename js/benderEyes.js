@@ -4,7 +4,21 @@ const observerOptions = {
   threshold: 0.1
 };
 
-let isEyeGroupVisibleMap = new Map();
+let svgRoot = null;
+let eyeGroups = [];
+const isEyeGroupVisibleMap = new Map();
+const pointerPosition = { x: null, y: null };
+let pendingFrame = null;
+
+function cacheEyes() {
+  if (!svgRoot) {
+    svgRoot = document.querySelector('svg');
+  }
+  if (!eyeGroups.length) {
+    eyeGroups = Array.from(document.querySelectorAll('.eyeGroup'));
+  }
+}
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     const eyeGroup = entry.target;
@@ -12,26 +26,37 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-document.querySelectorAll('.eyeGroup').forEach(eyeGroup => {
-  observer.observe(eyeGroup);
-  isEyeGroupVisibleMap.set(eyeGroup, true);
-});
+function observeEyes() {
+  cacheEyes();
+  eyeGroups.forEach(eyeGroup => {
+    if (!isEyeGroupVisibleMap.has(eyeGroup)) {
+      observer.observe(eyeGroup);
+      isEyeGroupVisibleMap.set(eyeGroup, true);
+    }
+  });
+}
 
-export function benderEyes(event) {
-  if (!event || !event.clientX || !event.clientY) {
+observeEyes();
+
+function renderEyes() {
+  pendingFrame = null;
+  observeEyes();
+  if (!svgRoot || !eyeGroups.length || pointerPosition.x === null || pointerPosition.y === null) {
     return;
   }
-  const svgRoot = document.querySelector('svg');
-  const eyes = document.querySelectorAll('.eyeGroup');
-  eyes.forEach(eyeGroup => {
+  const isMobile = window.innerWidth <= 750;
+  const lerpFactor = isMobile ? 0.5 : 0.1;
+
+  eyeGroups.forEach(eyeGroup => {
     if (!isEyeGroupVisibleMap.get(eyeGroup)) return;
     const eye = eyeGroup.querySelector('.eye');
     const pupil = eyeGroup.querySelector('.pupil');
+    if (!eye || !pupil) return;
     const eyeRadius = parseFloat(eye.getAttribute('r'));
     const pupilSize = parseFloat(pupil.getAttribute('width')) / 2;
     const svgPoint = svgRoot.createSVGPoint();
-    svgPoint.x = event.clientX;
-    svgPoint.y = event.clientY;
+    svgPoint.x = pointerPosition.x;
+    svgPoint.y = pointerPosition.y;
     const pointTransformed = svgPoint.matrixTransform(eyeGroup.getScreenCTM().inverse());
     const eyeCenterX = parseFloat(eye.getAttribute('cx'));
     const eyeCenterY = parseFloat(eye.getAttribute('cy'));
@@ -44,13 +69,24 @@ export function benderEyes(event) {
     const targetY = eyeCenterY + distance * Math.sin(angle);
     const currentX = parseFloat(pupil.getAttribute('x')) + pupilSize || eyeCenterX;
     const currentY = parseFloat(pupil.getAttribute('y')) + pupilSize || eyeCenterY;
-    const isMobile = window.innerWidth <= 750;
-    const lerpFactor = isMobile ? 0.5 : 0.1;
     const smoothX = currentX + (targetX - currentX) * lerpFactor;
     const smoothY = currentY + (targetY - currentY) * lerpFactor;
     pupil.setAttribute('x', smoothX - pupilSize);
     pupil.setAttribute('y', smoothY - pupilSize);
   });
+}
+
+export function benderEyes(event) {
+  const pointer = event?.touches?.[0] || event;
+  if (!pointer || typeof pointer.clientX !== 'number' || typeof pointer.clientY !== 'number') {
+    return;
+  }
+  pointerPosition.x = pointer.clientX;
+  pointerPosition.y = pointer.clientY;
+
+  if (!pendingFrame) {
+    pendingFrame = requestAnimationFrame(renderEyes);
+  }
 }
 
 document.addEventListener('mousemove', benderEyes);

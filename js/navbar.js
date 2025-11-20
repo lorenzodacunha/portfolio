@@ -1,7 +1,11 @@
+const DESKTOP_MEDIA_QUERY = '(min-width: 1326px)';
+
 export function navbarEffects() {
   const navbar = document.getElementById('navb');
+  if (!navbar) return;
   let lastScrollPosition = 0;
-  let isDesktop = window.innerWidth >= 1326;
+  let scrollScheduled = false;
+  let isListening = false;
 
   function handleScroll() {
     const currentScrollPosition = window.scrollY;
@@ -15,18 +19,29 @@ export function navbarEffects() {
     lastScrollPosition = currentScrollPosition;
   }
 
-  function checkViewportWidth() {
-    isDesktop = window.innerWidth >= 1326;
+  function onScroll() {
+    if (scrollScheduled) return;
+    scrollScheduled = true;
+    requestAnimationFrame(() => {
+      scrollScheduled = false;
+      handleScroll();
+    });
+  }
 
-    if (isDesktop) {
-      window.addEventListener('scroll', handleScroll);
-    } else {
-      window.removeEventListener('scroll', handleScroll);
+  function toggleScrollListener(mediaQuery) {
+    if (mediaQuery.matches && !isListening) {
+      window.addEventListener('scroll', onScroll, { passive: true });
+      isListening = true;
+    } else if (!mediaQuery.matches && isListening) {
+      window.removeEventListener('scroll', onScroll);
       navbar.classList.remove('active');
+      isListening = false;
     }
   }
-  checkViewportWidth();
-  window.addEventListener('resize', checkViewportWidth);
+
+  const desktopQuery = window.matchMedia(DESKTOP_MEDIA_QUERY);
+  toggleScrollListener(desktopQuery);
+  desktopQuery.addEventListener('change', toggleScrollListener);
 }
 
 export function hamburguerMenu() {
@@ -56,6 +71,21 @@ export function hamburguerMenu() {
 
 export function smoothScrollWithOffset() {
   const navbar = document.getElementById('navb');
+  const desktopQuery = window.matchMedia(DESKTOP_MEDIA_QUERY);
+  let navHeight = navbar ? navbar.getBoundingClientRect().height : 0;
+
+  const updateNavHeight = () => {
+    navHeight = navbar ? navbar.getBoundingClientRect().height : 0;
+  };
+
+  if (navbar) {
+    if (typeof ResizeObserver !== 'undefined') {
+      const navObserver = new ResizeObserver(() => updateNavHeight());
+      navObserver.observe(navbar);
+    } else {
+      window.addEventListener('resize', () => requestAnimationFrame(updateNavHeight));
+    }
+  }
 
   document.querySelectorAll('.navbar-nav a').forEach(link => {
     link.addEventListener('click', function (e) {
@@ -64,7 +94,6 @@ export function smoothScrollWithOffset() {
 
       if (targetElement) {
         e.preventDefault();
-        const navHeight = navbar.offsetHeight;
         const elementRect = targetElement.getBoundingClientRect();
         const elementTop = elementRect.top + window.scrollY;
         const elementHeight = elementRect.height;
@@ -76,8 +105,8 @@ export function smoothScrollWithOffset() {
           behavior: 'smooth'
         });
 
-        if (window.innerWidth < 1326) {
-          navbar.classList.remove('active');
+        if (!desktopQuery.matches) {
+          navbar?.classList.remove('active');
         }
       }
     });
@@ -87,8 +116,11 @@ export function smoothScrollWithOffset() {
 export function hamburnavbarEffectsMobile() {
   const navbar = document.getElementById('navb');
   const hamburguerBtn = document.getElementById('hamburguer');
+  if (!navbar || !hamburguerBtn) return;
+
   let lastScrollPosition = 0;
-  let isDesktop = window.innerWidth >= 1326;
+  let scrollScheduled = false;
+  let isListening = false;
 
   function handleScroll() {
     const currentScrollPosition = window.scrollY;
@@ -106,19 +138,29 @@ export function hamburnavbarEffectsMobile() {
     lastScrollPosition = currentScrollPosition;
   }
 
-  function checkViewportWidth() {
-    isDesktop = window.innerWidth >= 1326;
+  function onScroll() {
+    if (scrollScheduled) return;
+    scrollScheduled = true;
+    requestAnimationFrame(() => {
+      scrollScheduled = false;
+      handleScroll();
+    });
+  }
 
-    if (isDesktop) {
-      window.addEventListener('scroll', handleScroll);
-    } else {
-      window.removeEventListener('scroll', handleScroll);
+  function toggleScroll(mediaQuery) {
+    if (mediaQuery.matches && !isListening) {
+      window.addEventListener('scroll', onScroll, { passive: true });
+      isListening = true;
+    } else if (!mediaQuery.matches && isListening) {
+      window.removeEventListener('scroll', onScroll);
       navbar.classList.remove('active');
       hamburguerBtn.classList.remove('hide');
       hamburguerBtn.classList.add('show');
+      isListening = false;
     }
   }
 
-  checkViewportWidth();
-  window.addEventListener('resize', checkViewportWidth);
+  const desktopQuery = window.matchMedia(DESKTOP_MEDIA_QUERY);
+  toggleScroll(desktopQuery);
+  desktopQuery.addEventListener('change', toggleScroll);
 }

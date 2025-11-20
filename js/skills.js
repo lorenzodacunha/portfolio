@@ -6,13 +6,20 @@ function changeDisplayMode(mode) {
     const skillItems = document.querySelector('.skill-items');
     const gridButton = document.getElementById('grid-view');
     const scrollButton = document.getElementById('scroll-view');
+    if (!skillItems || !gridButton || !scrollButton) return;
 
-    if (mode === 'grid') {
-        skillItems.classList.remove('scroll-view');
-        skillItems.classList.add('grid-view');
-    } else if (mode === 'scroll') {
-        skillItems.classList.remove('grid-view');
-        skillItems.classList.add('scroll-view');
+    const defaultMode = skillItems.classList.contains('scroll-view') ? 'scroll' : 'grid';
+    const currentMode = skillItems.dataset.displayMode || defaultMode;
+
+    if (currentMode !== mode) {
+        if (mode === 'grid') {
+            skillItems.classList.remove('scroll-view');
+            skillItems.classList.add('grid-view');
+        } else if (mode === 'scroll') {
+            skillItems.classList.remove('grid-view');
+            skillItems.classList.add('scroll-view');
+        }
+        skillItems.dataset.displayMode = mode;
     }
 
     document.querySelectorAll('.display-icon').forEach(icon => {
@@ -40,8 +47,11 @@ function setupDisplayMode() {
     });
 }
 
-function handleResponsiveDisplay() {
-    if (window.innerWidth < 550) {
+function handleResponsiveDisplay(event) {
+    const isMobile = typeof event?.matches === 'boolean'
+        ? event.matches
+        : window.innerWidth < 550;
+    if (isMobile) {
         changeDisplayMode('scroll');
     }
 }
@@ -272,6 +282,7 @@ export async function initializeSkills(translations) {
 
 export function setupSkillsUI() {
     setupDisplayMode();
-    handleResponsiveDisplay();
-    window.addEventListener('resize', handleResponsiveDisplay);
+    const mobileQuery = window.matchMedia('(max-width: 549px)');
+    handleResponsiveDisplay(mobileQuery);
+    mobileQuery.addEventListener('change', handleResponsiveDisplay);
 }

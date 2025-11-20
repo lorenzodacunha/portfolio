@@ -29,10 +29,32 @@ export function setupProgressBar(containerElement, initialPercentage, type = 'sk
 
   let isDragging = false;
   let dragOffset = 0;
+  let markerOffset = 0;
+  let progressBarRect = progressBar.getBoundingClientRect();
   const originalWidth = Math.max(minWidth, Math.min(maxWidth, parseFloat(initialPercentage)));
 
+  const recalcGeometry = () => {
+    markerOffset = marker.getBoundingClientRect().width / 2;
+    progressBarRect = progressBar.getBoundingClientRect();
+  };
+  recalcGeometry();
+
+  let resizeObserver = null;
+  if (typeof ResizeObserver !== 'undefined') {
+    resizeObserver = new ResizeObserver(() => recalcGeometry());
+    resizeObserver.observe(progressBar);
+    resizeObserver.observe(marker);
+  } else {
+    window.addEventListener('resize', recalcGeometry);
+  }
+
+  const handleScrollWhileDragging = () => {
+    if (isDragging) {
+      recalcGeometry();
+    }
+  };
+
   function updateMarkerPosition(widthPercentage) {
-    const markerOffset = marker.offsetWidth / 2;
     marker.style.left = `calc(${widthPercentage}% - ${markerOffset}px)`;
   }
 
@@ -65,6 +87,8 @@ export function setupProgressBar(containerElement, initialPercentage, type = 'sk
     isDragging = true;
     progressFill.style.transition = 'none';
     marker.style.transition = 'none';
+    recalcGeometry();
+    window.addEventListener('scroll', handleScrollWhileDragging, { passive: true });
     const clientX = e.clientX || e.touches?.[0]?.clientX;
     const markerRect = marker.getBoundingClientRect();
     dragOffset = clientX - (markerRect.left + markerRect.width / 2);
@@ -72,9 +96,8 @@ export function setupProgressBar(containerElement, initialPercentage, type = 'sk
 
   function drag(e) {
     if (!isDragging) return;
-    const rect = progressBar.getBoundingClientRect();
     const clientX = e.clientX || e.touches?.[0]?.clientX;
-    let newWidth = ((clientX - dragOffset - rect.left) / rect.width) * 100;
+    let newWidth = ((clientX - dragOffset - progressBarRect.left) / progressBarRect.width) * 100;
     newWidth = Math.max(minWidth, Math.min(maxWidth, newWidth));
     progressFill.style.width = `${newWidth}%`;
     updateMarkerPosition(newWidth);
@@ -83,6 +106,7 @@ export function setupProgressBar(containerElement, initialPercentage, type = 'sk
   function endDrag() {
     if (!isDragging) return;
     isDragging = false;
+    window.removeEventListener('scroll', handleScrollWhileDragging);
     progressFill.style.transition = 'width 0.3s ease';
     marker.style.transition = 'left 0.3s ease';
     progressFill.style.width = `${originalWidth}%`;
