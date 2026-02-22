@@ -494,9 +494,100 @@
     ],
     "web-designer": [
         {
+            "id": "prj_19c83a77d1ea4e49711",
+            "title": "Mundo Catnip",
+            "description": "<p>Comercio electrónico Shopify | Diseño personalizado y banners | Tienda de mascotas especializada en gatos<br /><br /><strong>Contexto y objetivo:</strong> La tienda utilizaba un tema antiguo con una apariencia poco profesional y necesitaba una renovación para transmitir más profesionalismo y cariño por los productos felinos. El objetivo era elevar la estética a algo más moderno y alineado con el manual de marca, sin perder la alegría y la identidad lúdica del segmento de mascotas.</p><p><strong>Desafío:</strong> Las fotos disponibles de gatitos tenían fondos caseros y poco neutros, lo que dificultaba las composiciones. Fue necesario encontrar una solución visual que acomodara estas imágenes sin romper la armonía del diseño. Trabajar con colores fuertes y patrones felinos requirió creatividad para no contaminar la estética ni descaracterizar la marca.</p><p><strong>Solución y ejecución:</strong> La base de la tienda se mantuvo en un tema preexistente, y a partir de esta estructura realicé una serie de mejoras en HTML y CSS para adaptar cada detalle a la identidad de Mundo Catnip. Creé banners modernos aprovechando los patrones, logotipos y vectores del manual de marca, y utilicé tonos vibrantes inspirados en el amor por los gatos para jugar con secciones de barras y boletín informativo. Las personalizaciones garantizaron que cada elemento reflejara la esencia de la marca, incluso dentro de un tema estándar.</p><p><strong>Resultado:</strong> El resultado fue una tienda en línea moderna, con una estética impactante y fiel a la esencia cariñosa de la marca. Las intervenciones en el código y el uso creativo de patrones transformaron el sitio, acercando la experiencia a lo que Mundo Catnip representa: un universo de productos para gatos con personalidad, color y amor.</p>",
+            "image": "assets/images/thumbs/prj_19c83a77d1ea4e49711.webp",
+            "initialDate": "13/02/2026",
+            "endDate": "14/02/2026",
+            "projectUrlLink": "https://mundocatnip.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c83a77d1ea4e49711/prj_19c83a77d1ea4e49711__001.webp",
+                "assets/images/projects/prj_19c83a77d1ea4e49711/prj_19c83a77d1ea4e49711__002.webp",
+                "assets/images/projects/prj_19c83a77d1ea4e49711/prj_19c83a77d1ea4e49711__003.webp",
+                "assets/images/projects/prj_19c83a77d1ea4e49711/prj_19c83a77d1ea4e49711__004.webp",
+                "assets/images/projects/prj_19c83a77d1ea4e49711/prj_19c83a77d1ea4e49711__005.webp",
+                "assets/images/projects/prj_19c83a77d1ea4e49711/prj_19c83a77d1ea4e49711__006.webp",
+                "assets/images/projects/prj_19c83a77d1ea4e49711/prj_19c83a77d1ea4e49711__007.webp",
+                "assets/images/projects/prj_19c83a77d1ea4e49711/prj_19c83a77d1ea4e49711__008.webp",
+                "assets/images/projects/prj_19c83a77d1ea4e49711/prj_19c83a77d1ea4e49711__009.webp",
+                "assets/images/projects/prj_19c83a77d1ea4e49711/prj_19c83a77d1ea4e49711__010.webp",
+                "assets/images/projects/prj_19c83a77d1ea4e49711/prj_19c83a77d1ea4e49711__011.webp"
+            ]
+        },
+        {
+            "id": "prj_19c862dda2d3ee06e74",
+            "title": "Apolodog",
+            "description": "<p>E-commerce Shopify | Diseño personalizado + páginas de destino especiales | Productos para perros<br /></p><p><strong>Contexto y objetivo:</strong> El cliente deseaba crear una tienda en línea para vender los productos que fabrica especialmente para perros. La meta era llevar el amor por las mascotas al mundo digital con una vitrina que transmitiera calidad y mostrara su uso en el día a día de los dueños.</p><p><strong>Desafío:</strong> La página de inicio necesitaba ser muy visual, llena de imágenes que evoquen la convivencia con las mascotas, y los productos debían tener páginas ricas en detalles, incluyendo videos, fotos e información técnica. Además, era necesario incorporar páginas de destino exclusivas para kits y ofertas especiales, sin perder la uniformidad del resto de la tienda.</p><p><strong>Solución y ejecución:</strong> Desarrollé toda la implementación del diseño en Shopify, creando un diseño moderno y adaptable. Trabajé en páginas de productos personalizadas para kits, con una estructura diferenciada, y mantuve un estándar para los demás artículos. Ajusté el tema con secciones extra para soportar videos, fotos y textos más largos. Utilicé el tono naranja y negro de la marca en varios elementos, reforzando la identidad visual y la presencia de los colores en todo el sitio.</p><p><strong>Resultado:</strong> El resultado fue un diseño moderno y bien construido, que presenta fotos realistas del día a día con los productos y transmite una sensación de confianza y calidad. Los videos, GIFs e imágenes de uso refuerzan cómo los artículos se integran en la rutina de quienes tienen perros, mientras que las páginas de destino especiales destacan los kits de forma estratégica.</p>",
+            "image": "assets/images/thumbs/prj_19c862dda2d3ee06e74.webp",
+            "initialDate": "19/10/2025",
+            "endDate": "20/10/2025",
+            "projectUrlLink": "https://apolodog.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__001.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__002.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__003.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__004.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__005.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__006.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__007.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__008.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__009.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__010.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__011.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__012.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__013.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__014.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__015.webp",
+                "assets/images/projects/prj_19c862dda2d3ee06e74/prj_19c862dda2d3ee06e74__016.webp"
+            ]
+        },
+        {
             "id": "prj_19c838e94c03e4d3e92",
             "title": "Torelly Joias",
-            "description": "<p><strong>Contexto y objetivo:</strong> Torelly Joias surgió de una necesidad directa de la cliente: actualizar la tienda virtual para un visual más premium y fino, alineado con la propuesta real del producto. La meta era aumentar el valor percibido y hacer la experiencia de compra más elegante, sin perder claridad y confianza durante la navegación.</p><p><strong>Desafío:</strong> La cliente buscaba una estética inspirada en referencias fuertes del mercado, con el toque sofisticado de marcas como Tiffany y Pandora. El desafío fue crear esta sensación de lujo sin parecer una copia, encontrando un equilibrio entre delicadeza, presencia e identidad propia. Para ello, la dirección visual necesitó una paleta bien pensada, trayendo tonos inspirados en las aguas verdes del mar como firma de la marca.</p><p><strong>Solución y ejecución:</strong> Desarrollé el logo y todo el kit de marca, definí el color primario y conduje el montaje completo del layout en Shopify utilizando un tema de terceros ya adoptado por la empresa. La mayor parte de la estructura fue construida sin código, priorizando consistencia y rapidez, pero con ajustes específicos hechos en HTML y CSS para refinar detalles importantes. Estos refinamientos ayudaron a reforzar sofisticación en el acabado visual y a mantener la tienda organizada para vitrinas, colecciones y destacados de producto.</p><p><strong>Resultado:</strong> El resultado fue una tienda con presencia más sofisticada, combinando la intensidad de los tonos verdosos del mar con un tema elegante y alineado al posicionamiento premium. La identidad final trajo personalidad para la marca y elevó el estándar visual de la vitrina, preparando la operación para campañas, expansión de colecciones y una comunicación más fuerte de valor percibido.</p>",
+            "description": "<p>Comercio electrónico Shopify | Identidad visual y configuración de tema | Joyería con posicionamiento premium</p><p><strong>Contexto y objetivo:</strong> Torelly Joias surgió de una necesidad directa de la cliente: actualizar la tienda virtual para un visual más premium y fino, alineado con la propuesta real del producto. La meta era aumentar el valor percibido y hacer la experiencia de compra más elegante, sin perder claridad y confianza durante la navegación.</p><p><strong>Desafío:</strong> La cliente buscaba una estética inspirada en referencias fuertes del mercado, con el toque sofisticado de marcas como Tiffany y Pandora. El desafío fue crear esta sensación de lujo sin parecer una copia, encontrando un equilibrio entre delicadeza, presencia e identidad propia. Para ello, la dirección visual necesitó una paleta bien pensada, trayendo tonos inspirados en las aguas verdes del mar como firma de la marca.</p><p><strong>Solución y ejecución:</strong> Desarrollé el logo y todo el kit de marca, definí el color primario y conduje el montaje completo del layout en Shopify utilizando un tema de terceros ya adoptado por la empresa. La mayor parte de la estructura fue construida sin código, priorizando consistencia y rapidez, pero con ajustes específicos hechos en HTML y CSS para refinar detalles importantes. Estos refinamientos ayudaron a reforzar sofisticación en el acabado visual y a mantener la tienda organizada para vitrinas, colecciones y destacados de producto.</p><p><strong>Resultado:</strong> El resultado fue una tienda con presencia más sofisticada, combinando la intensidad de los tonos verdosos del mar con un tema elegante y alineado al posicionamiento premium. La identidad final trajo personalidad para la marca y elevó el estándar visual de la vitrina, preparando la operación para campañas, expansión de colecciones y una comunicación más fuerte de valor percibido.</p>",
             "image": "assets/images/thumbs/prj_19c838e94c03e4d3e92.webp",
             "initialDate": "08/01/2026",
             "endDate": "09/01/2026",
@@ -507,16 +598,16 @@
             "developingPorcentage": 100,
             "icons": [
                 {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
                     "class": "html5",
                     "tooltip": "HTML5"
                 },
                 {
                     "class": "css3",
                     "tooltip": "CSS3"
-                },
-                {
-                    "class": "shopify",
-                    "tooltip": "SHOPIFY"
                 },
                 {
                     "class": "photoshop",
@@ -535,6 +626,487 @@
                 "assets/images/projects/prj_19c838e94c03e4d3e92/prj_19c838e94c03e4d3e92__008.webp",
                 "assets/images/projects/prj_19c838e94c03e4d3e92/prj_19c838e94c03e4d3e92__009.webp",
                 "assets/images/projects/prj_19c838e94c03e4d3e92/prj_19c838e94c03e4d3e92__010.webp"
+            ]
+        },
+        {
+            "id": "prj_19c83d58d15577082c5",
+            "title": "Agomide",
+            "description": "<p>E-commerce Shopify | Diseño personalizado | Tienda de moda con una identidad fuerte<br /></p><p><strong>Contexto y objetivo:</strong> El diseño antiguo de la tienda era amateur y presentaba problemas de rendimiento, perjudicando la experiencia de compra y la percepción de la marca. La cliente quería un aspecto moderno e impactante que transmitiera la fuerza y la presencia de su posicionamiento personal.</p><p><strong>Desafío:</strong> La cliente ya tenía algunos banners listos y el mayor desafío fue crear una estructura que los acomodara bien sin perder armonía. Para ello, desarrollé una grilla en la sección de “productos preferidos” con cinco banners, equilibrando las dimensiones y manteniendo una estética atractiva. Otro punto crítico fue garantizar que el nuevo diseño no solo renovara la apariencia, sino que también mejorara la carga y la fluidez del sitio web.</p><p><strong>Solución y ejecución:</strong> Implementé un diseño moderno e impactante en la plataforma, reforzando la presencia de la marca en cada elemento de la página de inicio y el área de ventas. Ajusté la estructura para destacar la grilla de banners y creé una página principal que enfatizara el catálogo y la identidad visual de la marca. El trabajo incluyó ajustes de rendimiento y optimización de las imágenes existentes para evitar pérdida de velocidad.</p><p><strong>Resultado:</strong> El diseño final quedó impactante y bien organizado, reforzando la idea de una marca presente y fuerte. La disposición en grilla de los cinco banners en la sección de destaque aportó un visual único y atractivo, mientras que las mejoras de diseño y rendimiento proporcionaron una experiencia de navegación más fluida y profesional. El resultado traduce el posicionamiento audaz de la marca en un entorno digital consistente.</p>",
+            "image": "assets/images/thumbs/prj_19c83d58d15577082c5.webp",
+            "initialDate": "12/10/2025",
+            "endDate": "13/10/2025",
+            "projectUrlLink": "https://www.agomide.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c83d58d15577082c5/prj_19c83d58d15577082c5__001.webp",
+                "assets/images/projects/prj_19c83d58d15577082c5/prj_19c83d58d15577082c5__002.webp",
+                "assets/images/projects/prj_19c83d58d15577082c5/prj_19c83d58d15577082c5__003.webp",
+                "assets/images/projects/prj_19c83d58d15577082c5/prj_19c83d58d15577082c5__004.webp",
+                "assets/images/projects/prj_19c83d58d15577082c5/prj_19c83d58d15577082c5__005.webp",
+                "assets/images/projects/prj_19c83d58d15577082c5/prj_19c83d58d15577082c5__006.webp",
+                "assets/images/projects/prj_19c83d58d15577082c5/prj_19c83d58d15577082c5__007.webp",
+                "assets/images/projects/prj_19c83d58d15577082c5/prj_19c83d58d15577082c5__008.webp",
+                "assets/images/projects/prj_19c83d58d15577082c5/prj_19c83d58d15577082c5__009.webp",
+                "assets/images/projects/prj_19c83d58d15577082c5/prj_19c83d58d15577082c5__010.webp",
+                "assets/images/projects/prj_19c83d58d15577082c5/prj_19c83d58d15577082c5__011.webp",
+                "assets/images/projects/prj_19c83d58d15577082c5/prj_19c83d58d15577082c5__012.webp",
+                "assets/images/projects/prj_19c83d58d15577082c5/prj_19c83d58d15577082c5__013.webp"
+            ]
+        },
+        {
+            "id": "prj_19c83c3dd09f0b6cdc2",
+            "title": "Pratesia",
+            "description": "<p>E-commerce Shopify | Diseño personalizado | Tienda de accesorios de plata<br /></p><p><strong>Contexto y objetivo:</strong> La cliente ya comercializaba accesorios de plata en las redes sociales y quería ampliar las ventas con una presencia digital más robusta. El objetivo era traducir la elegancia y el brillo de la plata en un diseño de tienda online que fuera a la vez sofisticado, delicado y atractivo para nuevos clientes.</p><p><strong>Desafío:</strong> El logo de la marca tiene un formato un poco fuera de lo convencional, lo que dificultó su aplicación sobre un encabezado blanco. También fue necesario equilibrar varios colores claros de la paleta original para mantener la legibilidad y la modernidad, sin renunciar al aspecto refinado que exige una marca de joyería.</p><p><strong>Solución y ejecución:</strong> Desarrollé el diseño en Shopify buscando modernidad y sofisticación, utilizando bordes redondeados y una composición de colores pensada para realzar el logo. Ajusté el encabezado para usar el color principal de la marca, creando contraste y destacando la identidad visual. La paleta elegida, con plata, azul marino y blanco, se aplicó de forma consistente en toda la tienda, armonizando con los productos y reforzando la propuesta de accesorio refinado.</p><p><strong>Resultado:</strong> El diseño resultante quedó bien organizado y transmitió una sensación de lujo ligero, con armonía entre el brillo de la plata y los tonos de azul y blanco. El cambio en el encabezado valoró el logo y le dio un aire sofisticado al conjunto, contribuyendo a una experiencia de compra más coherente con la calidad de los productos ofrecidos.</p>",
+            "image": "assets/images/thumbs/prj_19c83c3dd09f0b6cdc2.webp",
+            "initialDate": "28/10/2025",
+            "endDate": "29/10/2025",
+            "projectUrlLink": "https://pratesia.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c83c3dd09f0b6cdc2/prj_19c83c3dd09f0b6cdc2__001.webp",
+                "assets/images/projects/prj_19c83c3dd09f0b6cdc2/prj_19c83c3dd09f0b6cdc2__002.webp",
+                "assets/images/projects/prj_19c83c3dd09f0b6cdc2/prj_19c83c3dd09f0b6cdc2__003.webp",
+                "assets/images/projects/prj_19c83c3dd09f0b6cdc2/prj_19c83c3dd09f0b6cdc2__004.webp",
+                "assets/images/projects/prj_19c83c3dd09f0b6cdc2/prj_19c83c3dd09f0b6cdc2__005.webp",
+                "assets/images/projects/prj_19c83c3dd09f0b6cdc2/prj_19c83c3dd09f0b6cdc2__006.webp",
+                "assets/images/projects/prj_19c83c3dd09f0b6cdc2/prj_19c83c3dd09f0b6cdc2__007.webp",
+                "assets/images/projects/prj_19c83c3dd09f0b6cdc2/prj_19c83c3dd09f0b6cdc2__008.webp"
+            ]
+        },
+        {
+            "id": "prj_19c85ddaa432bb49d79",
+            "title": "Zayah Acessórios Finos",
+            "description": "<p>E-commerce Shopify | Diseño personalizado | Pendientes artesanales con piedras<br /></p><p><strong>Contexto y objetivo:</strong> El proyecto surgió en un momento delicado, cuando la cliente ya estaba completamente insatisfecha con la tienda actual y sin expectativas de mejora. La marca vende pendientes artesanales con piedras, llenos de color y personalidad, y necesitaba un escaparate digital que valorizara esta belleza y recuperara la confianza en la venta online.</p><p><strong>Desafío:</strong> La cliente se dio cuenta, en la práctica, de que la mayoría de las compras ocurrían desde la página principal, porque muchos clientes accedían al sitio web y compraban directamente lo que estaba visible allí. Esto transformó la página de inicio en el escaparate principal del negocio y aumentó la responsabilidad del diseño, ya que la organización de los productos necesitaba ser clara, atractiva y pensada para la conversión inmediata.</p><p><strong>Solución y ejecución:</strong> Implementé un nuevo diseño en Shopify y reorganicé los colores para que fueran más fieles al logo y al posicionamiento de la marca. Estructuré la página de inicio para que funcionara como un catálogo abierto, con una cuadrícula amplia y bien distribuida, priorizando variedad e impacto visual. La idea fue reducir las distracciones y dar protagonismo a los pendientes, dejando la navegación simple y objetiva para facilitar la decisión de compra.</p><p><strong>Resultado:</strong> El resultado fue un escaparate fuerte, construido para destacar la diversidad, la belleza y los colores únicos de los pendientes artesanales. En lugar de depender de carruseles, la página de inicio ahora presenta una cuadrícula grande y directa, con muchos productos expuestos de inmediato. Esto reforzó el principal objetivo de la tienda, que es vender mostrando el producto de forma clara, abundante y visualmente irresistible.</p>",
+            "image": "assets/images/thumbs/prj_19c85ddaa432bb49d79.webp",
+            "initialDate": "08/01/2026",
+            "endDate": "08/01/2026",
+            "projectUrlLink": "https://www.zayahacessoriosfinos.com.br/products/brinco-martina-1",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__001.webp",
+                "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__002.webp",
+                "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__003.webp",
+                "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__004.webp",
+                "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__005.webp",
+                "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__006.webp",
+                "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__007.webp",
+                "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__008.webp",
+                "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__009.webp",
+                "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__010.webp",
+                "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__011.webp",
+                "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__012.webp"
+            ]
+        },
+        {
+            "id": "prj_19c8638e6611a4a3a2f",
+            "title": "Seu Cantinho Cristão",
+            "description": "<p>Comercio electrónico Shopify | Diseño personalizado | Artículos cristianos</p><p></p><p><strong>Contexto y objetivo:</strong> El proyecto surgió del deseo del cliente de migrar su sitio web de artículos cristianos, que funcionaba en otra plataforma, a Shopify. La intención era modernizar la página de inicio y el resto de la tienda, manteniendo el aspecto acogedor y la identidad original que ya agradaban a los clientes.</p><p><strong>Desafío:</strong> La principal dificultad fue recrear el diseño antiguo, alojado en wbuy, de manera fiel en la nueva plataforma. El cliente quería que la experiencia visual permaneciera prácticamente igual, lo que exigió cuidados para adaptar el diseño original utilizando la estructura y los recursos de Shopify.</p><p><strong>Solución y ejecución:</strong> Implementé todo el diseño en Shopify, realizando ajustes específicos en CSS y HTML para acercar al máximo el nuevo sitio al antiguo. Trabajé los colores del logo de forma limpia y armoniosa, para transmitir tranquilidad y facilitar la navegación. Al mismo tiempo, preservé elementos que el cliente consideraba esenciales para la identidad de la marca.</p><p><strong>Resultado:</strong> El resultado fue una tienda de artículos cristianos bien diseñada, con un aspecto visual organizado y una presencia de marca reforzada. Conseguí un nivel de fidelidad de aproximadamente 95% en relación con el diseño anterior, ofreciendo una experiencia familiar a los clientes y al mismo tiempo más moderna y funcional.</p>",
+            "image": "assets/images/thumbs/prj_19c8638e6611a4a3a2f.webp",
+            "initialDate": "05/10/2025",
+            "endDate": "06/10/2025",
+            "projectUrlLink": "https://seucantinhocristao.com/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c8638e6611a4a3a2f/prj_19c8638e6611a4a3a2f__001.webp",
+                "assets/images/projects/prj_19c8638e6611a4a3a2f/prj_19c8638e6611a4a3a2f__002.webp",
+                "assets/images/projects/prj_19c8638e6611a4a3a2f/prj_19c8638e6611a4a3a2f__003.webp",
+                "assets/images/projects/prj_19c8638e6611a4a3a2f/prj_19c8638e6611a4a3a2f__004.webp",
+                "assets/images/projects/prj_19c8638e6611a4a3a2f/prj_19c8638e6611a4a3a2f__005.webp",
+                "assets/images/projects/prj_19c8638e6611a4a3a2f/prj_19c8638e6611a4a3a2f__006.webp",
+                "assets/images/projects/prj_19c8638e6611a4a3a2f/prj_19c8638e6611a4a3a2f__007.webp",
+                "assets/images/projects/prj_19c8638e6611a4a3a2f/prj_19c8638e6611a4a3a2f__008.webp"
+            ]
+        },
+        {
+            "id": "prj_19c86a16fa1f5861ed6",
+            "title": "2terços",
+            "description": "<p>E-commerce Shopify | Diseño personalizado | Camisetas cristianas<br /></p><p><strong>Contexto y objetivo:</strong> El proyecto surgió del deseo del cliente de transformar el éxito en las redes sociales en una presencia virtual más estructurada. La marca, especializada en camisetas cristianas y artículos de fe, quería crear una tienda online para ampliar las ventas más allá del marketing a través de Instagram y WhatsApp.</p><p><strong>Desafío:</strong> El desarrollo de la tienda fue fluido, sin desafíos técnicos significativos. La atención principal estuvo en traducir la identidad de la marca a un entorno digital con simplicidad y claridad.</p><p><strong>Solución y ejecución:</strong> Implementé el diseño en Shopify, priorizando una experiencia de navegación limpia e intuitiva. Trabajé con una paleta en azul y blanco, dejando el azul como color predominante para evocar serenidad y fe, mientras que el blanco transmite pureza y equilibrio. Estructuré las secciones de productos como camisetas, tercios y novedades, manteniendo consistencia en todas las páginas.</p><p><strong>Resultado:</strong> El resultado es una tienda de camisetas cristianas moderna y limpia, donde el azul y el blanco proporcionan una estética agradable que destaca las prendas. La navegación es sencilla y la identidad de fe de la marca permanece fuerte, ayudando a convertir al público de las redes sociales en clientes leales.</p>",
+            "image": "assets/images/thumbs/prj_19c86a16fa1f5861ed6.webp",
+            "initialDate": "27/11/2025",
+            "endDate": "28/11/2025",
+            "projectUrlLink": "https://use2tercos.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c86a16fa1f5861ed6/prj_19c86a16fa1f5861ed6__001.webp",
+                "assets/images/projects/prj_19c86a16fa1f5861ed6/prj_19c86a16fa1f5861ed6__002.webp",
+                "assets/images/projects/prj_19c86a16fa1f5861ed6/prj_19c86a16fa1f5861ed6__003.webp",
+                "assets/images/projects/prj_19c86a16fa1f5861ed6/prj_19c86a16fa1f5861ed6__004.webp",
+                "assets/images/projects/prj_19c86a16fa1f5861ed6/prj_19c86a16fa1f5861ed6__005.webp",
+                "assets/images/projects/prj_19c86a16fa1f5861ed6/prj_19c86a16fa1f5861ed6__006.webp",
+                "assets/images/projects/prj_19c86a16fa1f5861ed6/prj_19c86a16fa1f5861ed6__007.webp",
+                "assets/images/projects/prj_19c86a16fa1f5861ed6/prj_19c86a16fa1f5861ed6__008.webp",
+                "assets/images/projects/prj_19c86a16fa1f5861ed6/prj_19c86a16fa1f5861ed6__009.webp"
+            ]
+        },
+        {
+            "id": "prj_19c8688dc1bbb78e3bc",
+            "title": "La vienne",
+            "description": "<p>E-commerce Shopify | Diseño personalizado + banners | Perfumes importados</p><p></p><p><strong>Contexto y objetivo:</strong> La Vienne nació del deseo del cliente de llevar sus perfumes importados más allá de las redes sociales, creando una vitrina en línea que reflejara el estatus y el cuidado de cada fragancia. El objetivo era construir una tienda virtual sofisticada y alineada con el estándar de lujo del producto.</p><p><strong>Desafío:</strong> El proyecto no presentó desafíos técnicos eminentes, lo que permitió concentrar los esfuerzos en la estética y la experiencia del usuario. La prioridad fue garantizar que la identidad visual de la marca se tradujera de forma impecable en el diseño y los elementos gráficos.</p><p><strong>Solución y ejecución:</strong> Implementé todo el diseño en Shopify, creando banners de colección que refuerzan el concepto de exclusividad. Trabajé con una paleta de tonos dorados y negros para transmitir refinamiento y lujo, combinando perfectamente con la propuesta de la marca. Los elementos fueron distribuidos de forma limpia, para que los perfumes importados ocuparan el protagonismo de la experiencia.</p><p><strong>Resultado:</strong> El sitio ganó una apariencia lujosa y a la vez limpia, realzando los perfumes importados de la marca. Los colores oscuros y dorados refuerzan el posicionamiento premium, y los banners personalizados crean una sensación de exclusividad y elegancia en cada sección.</p>",
+            "image": "assets/images/thumbs/prj_19c8688dc1bbb78e3bc.webp",
+            "initialDate": "21/10/2025",
+            "endDate": "22/10/2025",
+            "projectUrlLink": "https://lavienne.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c8688dc1bbb78e3bc/prj_19c8688dc1bbb78e3bc__001.webp",
+                "assets/images/projects/prj_19c8688dc1bbb78e3bc/prj_19c8688dc1bbb78e3bc__002.webp",
+                "assets/images/projects/prj_19c8688dc1bbb78e3bc/prj_19c8688dc1bbb78e3bc__003.webp",
+                "assets/images/projects/prj_19c8688dc1bbb78e3bc/prj_19c8688dc1bbb78e3bc__004.webp",
+                "assets/images/projects/prj_19c8688dc1bbb78e3bc/prj_19c8688dc1bbb78e3bc__005.webp",
+                "assets/images/projects/prj_19c8688dc1bbb78e3bc/prj_19c8688dc1bbb78e3bc__006.webp",
+                "assets/images/projects/prj_19c8688dc1bbb78e3bc/prj_19c8688dc1bbb78e3bc__007.webp",
+                "assets/images/projects/prj_19c8688dc1bbb78e3bc/prj_19c8688dc1bbb78e3bc__008.webp"
+            ]
+        },
+        {
+            "id": "prj_19c83ccb8d59b222b67",
+            "title": "Solore Beachwear",
+            "description": "<p>E-commerce Shopify | Diseño personalizado | Moda de playa femenina<br /></p><p><strong>Contexto y objetivo:</strong> La cliente ya tenía presencia vendiendo moda de playa de forma más informal y deseaba expandir las ventas al ámbito digital a través de Shopify. El objetivo era crear una tienda en línea que reflejara el estilo relajado y elegante de la marca, con una estética que evocara el clima costero.</p><p><strong>Desafío:</strong> La cliente solicitó un encabezado centrado, lo que requirió adaptaciones en el código CSS del tema para garantizar que el centrado no se rompiera en diferentes tamaños de pantalla. Además, fue necesario equilibrar colores claros y fuertes para transmitir la sensación de mar y playa sin perder la legibilidad ni sobrecargar la página.</p><p><strong>Solución y ejecución:</strong> Implementé el diseño en Shopify siguiendo las referencias y el gusto personal de la cliente, ajustando el CSS para centrar el encabezado de forma armoniosa. Trabajé en una paleta dinámica con tonos de arena y azul marino, variando estos colores en diferentes secciones para dar movimiento y evitar la monotonía visual. Estas elecciones ayudaron a alinear la identidad de la marca con el espíritu playero que se pretendía transmitir.</p><p><strong>Resultado:</strong> El resultado fue un sitio web moderno y bien organizado, con un encabezado centrado que aporta equilibrio a la navegación. Los colores elegidos evocan el mar y la playa, creando una atmósfera agradable que combina con los productos. La variación entre tonos de arena y azul marino aportó armonía y dinamismo, reflejando la esencia de un estilo de vida a la orilla del mar.</p>",
+            "image": "assets/images/thumbs/prj_19c83ccb8d59b222b67.webp",
+            "initialDate": "30/11/2025",
+            "endDate": "01/12/2025",
+            "projectUrlLink": "https://solorebeachweare.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c83ccb8d59b222b67/prj_19c83ccb8d59b222b67__001.webp",
+                "assets/images/projects/prj_19c83ccb8d59b222b67/prj_19c83ccb8d59b222b67__002.webp",
+                "assets/images/projects/prj_19c83ccb8d59b222b67/prj_19c83ccb8d59b222b67__003.webp",
+                "assets/images/projects/prj_19c83ccb8d59b222b67/prj_19c83ccb8d59b222b67__004.webp",
+                "assets/images/projects/prj_19c83ccb8d59b222b67/prj_19c83ccb8d59b222b67__005.webp",
+                "assets/images/projects/prj_19c83ccb8d59b222b67/prj_19c83ccb8d59b222b67__006.webp",
+                "assets/images/projects/prj_19c83ccb8d59b222b67/prj_19c83ccb8d59b222b67__007.webp",
+                "assets/images/projects/prj_19c83ccb8d59b222b67/prj_19c83ccb8d59b222b67__008.webp",
+                "assets/images/projects/prj_19c83ccb8d59b222b67/prj_19c83ccb8d59b222b67__009.webp"
+            ]
+        },
+        {
+            "id": "prj_19c860ddca0e2973b93",
+            "title": "ESSENC",
+            "description": "<p>E-commerce Shopify | Diseño personalizado + imágenes hiperrealistas | Moda casual con enfoque en camisetas básicas<br /></p><p><strong>Contexto y objetivo:</strong> El cliente quería modernizar la página de inicio y alinear la visual con una inspiración específica, manteniendo algunos elementos que ya funcionaban. Además, existía el deseo de ampliar el alcance de la marca creando una división femenina que hasta entonces no existía, agregando nuevos productos al portafolio de camisetas básicas.</p><p><strong>Desafío:</strong> Uno de los mayores desafíos fue lidiar con las imágenes de productos generadas por inteligencia artificial, que parecían artificiales y desalinhadas con la propuesta de la marca. Para resolver esto, fue necesario recrear fotos hiperrealistas usando técnicas de IA (como Gemini y ajustes con Nano Banana) para lograr iluminación y texturas condignas con piezas reales. También fue preciso reorganizar la estructura del sitio web para recibir la nueva categoría femenina sin comprometer la identidad visual.</p><p><strong>Solución y ejecución:</strong> Introduje un nuevo diseño tanto en la página de inicio como en el resto del sitio, adaptando la estructura para mantener las funcionalidades que el cliente apreciaba. Recreé las imágenes para hacerlas más naturales y trabajadas, ajustando luz, sombra y contexto, lo que elevó la calidad visual de los productos. La nueva interfaz fue diseñada para ser limpia y moderna, con una paleta neutra y espacios bien distribuidos, valorando cada camiseta. La creación de la división femenina incluyó nuevas páginas, categorías y ajustes de navegación para acomodar los productos extras de forma armoniosa.</p><p><strong>Resultado:</strong> El visual final quedó limpio y moderno, en armonía con las camisetas básicas de la marca. Las imágenes hiperrealistas transmitieron más credibilidad y mejoraron la percepción de los productos, mientras que el nuevo diseño aportó frescura y usabilidad. La creación de la división femenina amplió el catálogo y abrió nuevas oportunidades de venta, consolidando a Essenc como una marca versátil y actualizada.</p>",
+            "image": "assets/images/thumbs/prj_19c860ddca0e2973b93.webp",
+            "initialDate": "22/12/2025",
+            "endDate": "22/12/2025",
+            "projectUrlLink": "https://essencoficial.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c860ddca0e2973b93/prj_19c860ddca0e2973b93__001.webp",
+                "assets/images/projects/prj_19c860ddca0e2973b93/prj_19c860ddca0e2973b93__002.webp",
+                "assets/images/projects/prj_19c860ddca0e2973b93/prj_19c860ddca0e2973b93__003.webp",
+                "assets/images/projects/prj_19c860ddca0e2973b93/prj_19c860ddca0e2973b93__004.webp",
+                "assets/images/projects/prj_19c860ddca0e2973b93/prj_19c860ddca0e2973b93__005.webp",
+                "assets/images/projects/prj_19c860ddca0e2973b93/prj_19c860ddca0e2973b93__006.webp",
+                "assets/images/projects/prj_19c860ddca0e2973b93/prj_19c860ddca0e2973b93__007.webp",
+                "assets/images/projects/prj_19c860ddca0e2973b93/prj_19c860ddca0e2973b93__008.webp",
+                "assets/images/projects/prj_19c860ddca0e2973b93/prj_19c860ddca0e2973b93__009.webp"
+            ]
+        },
+        {
+            "id": "prj_19c85fd8c407559d0bc",
+            "title": "Onli Street",
+            "description": "<p>E-commerce Shopify | Diseño personalizado | Paleta minimalista de ropa urbana</p><p></p><p><strong>Contexto y objetivo:</strong> El cliente deseaba llevar su marca de ropa urbana al mundo digital, creando una vitrina en línea que tradujera la actitud y el estilo urbano de la marca. El objetivo era construir una tienda que fuera directa, enfocada en el producto, y que transmitiera una imagen moderna sin elementos excesivos.</p><p><strong>Desafío:</strong> Por indicación del cliente, la paleta de colores debía ser extremadamente básica, prácticamente limitada a negro y blanco para que coincidiera con el logo. Esto limitó la posibilidad de trabajar con variaciones o semitonos y requirió encontrar un punto de énfasis sin desviarse de la identidad. El único color fuera de este esquema permitido fue un verde específico en los botones de acción, utilizado para llamar la atención sobre las conversiones.</p><p><strong>Solución y ejecución:</strong> Implementé todo el diseño en Shopify, utilizando el negro y el blanco como base para realzar las prendas, especialmente las zapatillas de colores. El verde se aplicó en los botones y llamadas a la acción para guiar la mirada sin romper la propuesta monocromática. Mantuve un diseño minimalista, enfocándome en una tipografía fuerte e imágenes de productos de alta calidad, permitiendo que tanto los artículos de colores como los básicos encajaran de manera armónica dentro del contexto de la marca.</p><p><strong>Resultado:</strong> El resultado fue una tienda de ropa urbana limpia y moderna que enfatiza los productos. La elección de colores hace que las zapatillas y las prendas con variaciones de tono destaquen, mientras que los artículos en negro y blanco se integran perfectamente en la estética general. La simplicidad y la organización del diseño crean una experiencia de navegación fluida y directa, reforzando la personalidad de la marca en el entorno digital.</p>",
+            "image": "assets/images/thumbs/prj_19c85fd8c407559d0bc.webp",
+            "initialDate": "20/11/2025",
+            "endDate": "21/11/2025",
+            "projectUrlLink": "https://onlistreet.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c85fd8c407559d0bc/prj_19c85fd8c407559d0bc__001.webp",
+                "assets/images/projects/prj_19c85fd8c407559d0bc/prj_19c85fd8c407559d0bc__002.webp",
+                "assets/images/projects/prj_19c85fd8c407559d0bc/prj_19c85fd8c407559d0bc__003.webp",
+                "assets/images/projects/prj_19c85fd8c407559d0bc/prj_19c85fd8c407559d0bc__004.webp",
+                "assets/images/projects/prj_19c85fd8c407559d0bc/prj_19c85fd8c407559d0bc__005.webp",
+                "assets/images/projects/prj_19c85fd8c407559d0bc/prj_19c85fd8c407559d0bc__006.webp",
+                "assets/images/projects/prj_19c85fd8c407559d0bc/prj_19c85fd8c407559d0bc__007.webp",
+                "assets/images/projects/prj_19c85fd8c407559d0bc/prj_19c85fd8c407559d0bc__008.webp"
+            ]
+        },
+        {
+            "id": "prj_19c85f81bd54e445d96",
+            "title": "Rian Store",
+            "description": "<p>E-commerce Shopify | Diseño personalizado | Streetwear<br /></p><p><strong>Contexto y objetivo:</strong> Rian Store surgió con la propuesta de llevar una marca de streetwear al mundo digital de una manera profesional y lista para vender. El objetivo fue estructurar una tienda en línea que transmitiera el estilo urbano de la marca con un visual limpio, directo y fácil de navegar, valorando el producto como protagonista.</p><p><strong>Desafío:</strong> El proyecto fue muy fluido y no presentó desafíos técnicos relevantes, lo que permitió enfocarse más en la organización y el acabado visual. Con las bases bien definidas desde el principio, la prioridad fue garantizar consistencia, legibilidad y una experiencia de compra objetiva.</p><p><strong>Solución y ejecución:</strong> Implementé el diseño en Shopify buscando una identidad minimalista, alineada con el streetwear, con un enfoque en una estructura de escaparate clara y una navegación sencilla. Trabajé el visual con una predominancia de blanco y negro para mantener la tienda sofisticada y moderna, dejando siempre el foco en las prendas. La construcción se realizó pensando en el rendimiento visual y en un flujo de compra directo.</p><p><strong>Resultado:</strong> El resultado fue una tienda con una estética estandarizada y armoniosa, impulsada por el hecho de que el cliente ya tenía fotos de la ropa con un fondo muy consistente. La combinación de este patrón fotográfico con un diseño en blanco y negro creó un escaparate fuerte, organizado y con identidad de marca, reforzando la identidad callejera de una manera limpia y profesional.</p>",
+            "image": "assets/images/thumbs/prj_19c85f81bd54e445d96.webp",
+            "initialDate": "20/10/2025",
+            "endDate": "19/10/2025",
+            "projectUrlLink": "https://rianstorenew013.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c85f81bd54e445d96/prj_19c85f81bd54e445d96__001.webp",
+                "assets/images/projects/prj_19c85f81bd54e445d96/prj_19c85f81bd54e445d96__002.webp",
+                "assets/images/projects/prj_19c85f81bd54e445d96/prj_19c85f81bd54e445d96__003.webp",
+                "assets/images/projects/prj_19c85f81bd54e445d96/prj_19c85f81bd54e445d96__004.webp",
+                "assets/images/projects/prj_19c85f81bd54e445d96/prj_19c85f81bd54e445d96__005.webp",
+                "assets/images/projects/prj_19c85f81bd54e445d96/prj_19c85f81bd54e445d96__006.webp",
+                "assets/images/projects/prj_19c85f81bd54e445d96/prj_19c85f81bd54e445d96__007.webp",
+                "assets/images/projects/prj_19c85f81bd54e445d96/prj_19c85f81bd54e445d96__008.webp"
+            ]
+        },
+        {
+            "id": "prj_19c85a4eea506238516",
+            "title": "Screw Company",
+            "description": "<p>E-commerce Shopify | Diseño personalizado + identidad visual + banners | Streetwear con una estética limpia</p><p></p><p><strong>Contexto y objetivo:</strong> El proyecto surgió a partir del deseo del cliente de lanzar una tienda de streetwear con una estética más básica y directa, sin depender de colores llamativos. La propuesta era construir una presencia digital moderna y coherente con el estilo de la marca, manteniendo un visual limpio, urbano y con personalidad.</p><p><strong>Desafío:</strong> El logo pasó por varias fases antes de llegar a la versión final, lo que hizo que la vectorización fuera más trabajosa y requirió cuidado para preservar proporciones y acabado. Otro desafío fue la limitación de fotos, ya que el cliente tenía imágenes de las camisetas sin modelo, lo que reducía el impacto visual de los productos. Para resolver esto sin perder fidelidad, fue necesario crear alternativas que mantuvieran la estampa original y parecieran naturales para el público.</p><p><strong>Solución y ejecución:</strong> Además de implementar el diseño en Shopify, creé los banners y desarrollé la identidad visual vectorizada en Illustrator, siguiendo las elecciones del cliente, incluyendo la tipografía serif moderna. A petición suya, reemplacé el símbolo de registrado por un “3” para representar a los tres socios de la marca, aportando un detalle único y lleno de significado. Para los banners, trabajé en un lenguaje blanco y negro con apoyo del azul marino oscuro de la marca, y utilicé recursos visuales discretos como elementos de calle y efecto de papel rasgado. También utilicé IA para generar modelos realistas aplicando la estampa original, aumentando la fuerza de la presentación del producto.</p><p><strong>Resultado:</strong> El resultado fue una tienda de streetwear con un estilo limpio y moderno, manteniendo la estética urbana sin exageraciones. La identidad visual quedó fuerte y diferenciada, con un detalle simbólico que refuerza la historia de la marca. Los banners aportaron consistencia y actitud, valorando las piezas y elevando la percepción profesional del proyecto.</p>",
+            "image": "assets/images/thumbs/prj_19c85a4eea506238516.webp",
+            "initialDate": "12/10/2025",
+            "endDate": "13/10/2025",
+            "projectUrlLink": "https://screwcompanyshop.myshopify.com/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "illustrator",
+                    "tooltip": "ILLUSTRATOR"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c85a4eea506238516/prj_19c85a4eea506238516__001.webp",
+                "assets/images/projects/prj_19c85a4eea506238516/prj_19c85a4eea506238516__002.webp",
+                "assets/images/projects/prj_19c85a4eea506238516/prj_19c85a4eea506238516__003.webp",
+                "assets/images/projects/prj_19c85a4eea506238516/prj_19c85a4eea506238516__004.webp",
+                "assets/images/projects/prj_19c85a4eea506238516/prj_19c85a4eea506238516__005.webp",
+                "assets/images/projects/prj_19c85a4eea506238516/prj_19c85a4eea506238516__006.webp",
+                "assets/images/projects/prj_19c85a4eea506238516/prj_19c85a4eea506238516__007.webp",
+                "assets/images/projects/prj_19c85a4eea506238516/prj_19c85a4eea506238516__008.webp",
+                "assets/images/projects/prj_19c85a4eea506238516/prj_19c85a4eea506238516__009.webp"
+            ]
+        },
+        {
+            "id": "prj_19c83ade848d1c97f84",
+            "title": "Los Secretos de Marie",
+            "description": "<p>E-commerce Shopify | Diseño personalizado + campo de personalización | Tienda de moda infantil<br /></p><p><strong>Contexto y objetivo:</strong> La tienda necesitaba un diseño completamente nuevo para reflejar la delicadeza y ternura del universo infantil. El objetivo era crear una experiencia de compra amigable y suave, que valorizara los productos personalizados y se comunicara con la paleta de colores de la marca.</p><p><strong>Desafío:</strong> La paleta original tenía varios colores claros y fue necesario seleccionar los tonos que garantizaran una legibilidad y contraste adecuados. Otro desafío importante fue implementar un campo de personalización donde el cliente pudiera ingresar el nombre de su hijo para la confección personalizada, algo esencial para el tipo de producto ofrecido.</p><p><strong>Solución y ejecución:</strong> Diseñé el diseño en Shopify, ajustando el tema base con HTML y CSS para lograr una estética delicada y coherente con el segmento. Integré una aplicación específica de la plataforma para agregar el campo de personalización, asegurando que la funcionalidad funcionara de manera estable. Los colores fueron elegidos cuidadosamente, manteniendo tonos pastel que armonizaran con las miniaturas de los productos y transmitieran la sensación acogedora que la marca pretendía.</p><p><strong>Resultado:</strong> El resultado fue una tienda moderna y delicada, donde los colores claros y los elementos visuales están en armonía con las fotos de los productos. El campo de personalización permitió a los padres agregar el nombre de su hijo de manera simple e intuitiva, agregando valor al producto y mejorando la experiencia de compra.</p>",
+            "image": "assets/images/thumbs/prj_19c83ade848d1c97f84.webp",
+            "initialDate": "22/10/2025",
+            "endDate": "23/10/2025",
+            "projectUrlLink": "https://ivaqic-5r.myshopify.com/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c83ade848d1c97f84/prj_19c83ade848d1c97f84__001.webp",
+                "assets/images/projects/prj_19c83ade848d1c97f84/prj_19c83ade848d1c97f84__002.webp",
+                "assets/images/projects/prj_19c83ade848d1c97f84/prj_19c83ade848d1c97f84__003.webp",
+                "assets/images/projects/prj_19c83ade848d1c97f84/prj_19c83ade848d1c97f84__004.webp",
+                "assets/images/projects/prj_19c83ade848d1c97f84/prj_19c83ade848d1c97f84__005.webp",
+                "assets/images/projects/prj_19c83ade848d1c97f84/prj_19c83ade848d1c97f84__006.webp",
+                "assets/images/projects/prj_19c83ade848d1c97f84/prj_19c83ade848d1c97f84__007.webp",
+                "assets/images/projects/prj_19c83ade848d1c97f84/prj_19c83ade848d1c97f84__008.webp"
             ]
         }
     ]
