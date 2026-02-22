@@ -8,6 +8,35 @@ let currentProjectImages = [];
 let currentImageIndex = 0;
 let shareInProgress = false;
 
+function normalizeLegacySlug(title) {
+  return removerAcentuacao(String(title || '')).replace(/\s+/g, '-').toLowerCase();
+}
+
+function findProjectByIdOrSlug(projetos, projectId, fallbackSlug) {
+  if (projectId) {
+    for (const categoria of Object.keys(projetos)) {
+      const index = projetos[categoria].findIndex((projeto) => String(projeto.id || '') === String(projectId));
+      if (index >= 0) {
+        return { categoria, index, projeto: projetos[categoria][index] };
+      }
+    }
+  }
+
+  if (fallbackSlug) {
+    const normalizedSlug = String(fallbackSlug || '').toLowerCase();
+    for (const categoria of Object.keys(projetos)) {
+      const index = projetos[categoria].findIndex(
+        (projeto) => normalizeLegacySlug(projeto.title) === normalizedSlug
+      );
+      if (index >= 0) {
+        return { categoria, index, projeto: projetos[categoria][index] };
+      }
+    }
+  }
+
+  return null;
+}
+
 function abrirMiniModal() {
   const miniModal = document.getElementById('mini-modal');
   miniModal.classList.remove('hidden');
@@ -183,7 +212,7 @@ function closeModalDetect() {
   });
 }
 
-export async function openModal(categoria, index) {
+async function openModalInternal(categoria, index, projectId = '', fallbackSlug = '') {
   const modal = document.getElementById('modal');
   const modalTitle = document.querySelector('.modal-title h1, .modal-title h2');
   const modalDescription = document.getElementById('project-description');
@@ -235,8 +264,26 @@ export async function openModal(categoria, index) {
     const file = lang === 'en' ? 'data/projects/projects-en.json' : lang === 'es' ? 'data/projects/projects-es.json' : 'data/projects/projects.json';
     const response = await fetch(file);
     const projetos = await response.json();
-    const projeto = projetos[categoria][index];
-    const projectUrl = `${window.location.origin}?projeto=${removerAcentuacao(projeto.title).replace(/\s+/g, '-').toLowerCase()}`;
+    let selectedCategory = categoria;
+    let selectedIndex = index;
+
+    if (projectId || fallbackSlug) {
+      const located = findProjectByIdOrSlug(projetos, projectId, fallbackSlug);
+      if (located) {
+        selectedCategory = located.categoria;
+        selectedIndex = located.index;
+      }
+    }
+
+    const projeto = projetos[selectedCategory]?.[selectedIndex];
+    if (!projeto) {
+      throw new Error('Projeto nao encontrado para abrir no modal.');
+    }
+    const finalProjectId = String(projeto.id || '').trim();
+    const legacySlug = normalizeLegacySlug(projeto.title);
+    const projectUrl = finalProjectId
+      ? `${window.location.origin}?id=${encodeURIComponent(finalProjectId)}`
+      : `${window.location.origin}?projeto=${encodeURIComponent(legacySlug)}`;
     const iconsTranslation = translations?.['icons-items'] || {
       mobile: 'Compatível com Mobile',
       tablet: 'Compatível com Tablet',
@@ -260,7 +307,7 @@ export async function openModal(categoria, index) {
     const pc3Tooltip = document.querySelector('.pc3 .tooltip-text');
     if (pc3Tooltip) pc3Tooltip.textContent = iconsTranslation.desktop;
     const baseModal = translations?.search?.paths?.projectsRoot || 'Portfolio/projetos/';
-    searchBar.textContent = `${baseModal}${categoria}/${removerAcentuacao(projeto.title)}`;
+    searchBar.textContent = `${baseModal}${selectedCategory}/${removerAcentuacao(projeto.title)}`;
 
     if (projeto.compatibility == 1) {
       pc3.classList.add('hidden');
@@ -441,6 +488,15 @@ export async function openModal(categoria, index) {
   } catch (error) {
     console.error('Erro ao carregar os modais', error);
   }
+}
+
+export async function openModal(categoria, index) {
+  return openModalInternal(categoria, index);
+}
+
+export async function openModalById(projectId, options = {}) {
+  const fallbackSlug = options?.fallbackSlug || '';
+  return openModalInternal('', -1, projectId, fallbackSlug);
 }
 
 export function updateModalIconsTheme() {

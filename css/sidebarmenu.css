@@ -211,7 +211,7 @@ button.sidebar-Btn.sidebar-Btn-Minimized {
 .sidebar-Btn-Text {
     position: absolute;
     left: 55px;
-    width: 100px;
+    width: 200px;
     text-align: left;
     overflow: hidden;
     transition: all .5s;

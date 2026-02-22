@@ -1,4 +1,4 @@
-import { openModal } from './modal.js';
+import { openModal, openModalById } from './modal.js';
 import { removerAcentuacao } from './functions.js';
 import { getIconMarkup } from './icons.js';
 import { getCurrentLang, getTranslations } from './translation.js';
@@ -11,22 +11,22 @@ const sidebarRelative = document.querySelector('.sidebar-relative');
 
 async function projectUrlDetector() {
     const urlParams = new URLSearchParams(window.location.search);
+    const projectId = urlParams.get('id');
     const nomeDoProjeto = urlParams.get('projeto');
 
-    if (nomeDoProjeto) {
+    if (projectId || nomeDoProjeto) {
         try {
-            const lang = getCurrentLang();
-            const file = lang === "en" ? "data/projects/projects-en.json" : lang === "es" ? "data/projects/projects-es.json" : "data/projects/projects.json";
-            const response = await fetch(file);
-            const projetos = await response.json();
-
-            Object.keys(projetos).forEach(categoria => {
-                projetos[categoria].forEach((projeto, index) => {
-                    if (removerAcentuacao(projeto.title).replace(/\s+/g, '-').toLowerCase() === nomeDoProjeto.toLowerCase()) {
-                        openModal(categoria, index);
-                    }
+            if (projectId) {
+                await openModalById(projectId, {
+                    fallbackSlug: nomeDoProjeto || '',
                 });
-            });
+                return;
+            }
+            if (nomeDoProjeto) {
+                await openModalById('', {
+                    fallbackSlug: nomeDoProjeto,
+                });
+            }
         } catch (error) {
             console.error('Erro ao carregar o projeto via url', error);
         }
@@ -35,8 +35,17 @@ async function projectUrlDetector() {
 
 function projectButtonOpenModal() {
     document.getElementById('conteudo').addEventListener('click', function (event) {
-        if (event.target.classList.contains('card-button')) {
-            const index = [...event.target.parentElement.parentElement.children].indexOf(event.target.parentElement);
+        const button = event.target.closest('.card-button');
+        if (button) {
+            const projectId = button.getAttribute('data-project-id') || '';
+            const slugFallback = button.getAttribute('data-project-slug') || '';
+            if (projectId) {
+                openModalById(projectId, { fallbackSlug: slugFallback });
+                return;
+            }
+            const card = button.closest('.project-item');
+            if (!card) return;
+            const index = [...card.parentElement.children].indexOf(card);
             const categoria = document.querySelector('.sidebar-Btn.sb-active').getAttribute('data-category');
             openModal(categoria, index);
         }
@@ -219,7 +228,7 @@ export async function loadProjects(categoria) {
                             `).join('')}
                         </ul>
                     </div>
-                    <button class="card-button" data-i18n="projects.see_more"><i class="fa-solid fa-eye"></i>Ver mais</button>
+                    <button class="card-button" data-project-id="${projeto.id || ''}" data-project-slug="${removerAcentuacao(projeto.title).replace(/\s+/g, '-').toLowerCase()}" data-i18n="projects.see_more"><i class="fa-solid fa-eye"></i>Ver mais</button>
                 `);
                 conteudo.appendChild(projectElement);
             });

@@ -3,7 +3,7 @@
         {
             "title": "Portfólio",
             "description": "<p> Mi portafolio personal es un proyecto autoral que refleja con precisión mi identidad visual y mi trayectoria profesional como desarrollador front-end. Empleando una paleta de colores que combina tonos naranja y gris, el diseño fue cuidadosamente planificado para transmitir una imagen moderna, creativa y al mismo tiempo profesional. Cada sección fue diseñada estratégicamente para mostrar no solo mis habilidades técnicas, sino también mi personalidad y estilo visual únicos.</p><p >El desarrollo se extendió durante aproximadamente 11 meses, compaginando mis estudios de Análisis y Desarrollo de Sistemas con proyectos realizados como freelancer. Más que una simple vitrina de trabajos, el portafolio ofrece una experiencia de navegación fluida y dinámica, con alternancia de colores entre secciones que mantiene al usuario involucrado de principio a fin.</p><p >Toda la estructura del front-end se construyó con HTML, CSS y JavaScript puros, garantizando control total sobre el rendimiento, la capacidad de respuesta y la personalización de la interfaz. Este enfoque sin frameworks fue intencional: demuestra mi aptitud para crear soluciones desde cero, priorizando la ligereza del código, la claridad y la autonomía visual.</p><p >Para las funcionalidades más complejas del proyecto, conté con el apoyo del agente de software Codex de OpenAI para generar la base del back-end. Mediante prompts técnicos elaborados con precisión, Codex desarrolló funciones avanzadas como cargas dinámicas de contenido, interacciones con botones, animaciones personalizadas, apertura de modales y comportamientos adaptativos. A continuación, implementé las conexiones necesarias entre el front-end y esa estructura de back-end, asegurando que todo funcionara de manera integrada y eficiente.</p><p >Este portafolio es un proyecto en constante evolución, al igual que mi trayectoria profesional. Representa no solo lo que soy capaz de crear hoy, sino también mi disposición a aprender, mejorar e innovar de forma continua.</p>",
-            "image": "assets/images/projects/thumbs/portfolio.webp",
+            "image": "assets/images/thumbs/prj_9f7454093d214dd3b0e97de9d638f44a.webp",
             "initialDate": "08/2024",
             "endDate": "07/2025",
             "projectUrlLink": "https://www.lorenzodacunha.com.br/",
@@ -35,13 +35,14 @@
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/thumbs/portfolio.webp"
-            ]
+                "assets/images/projects/prj_9f7454093d214dd3b0e97de9d638f44a/prj_9f7454093d214dd3b0e97de9d638f44a__001.webp"
+            ],
+            "id": "prj_9f7454093d214dd3b0e97de9d638f44a"
         },
         {
             "title": "Loja da RO",
             "description": "<p>Siempre he tenido como meta crear una tienda virtual para rendir homenaje a mi madre. En marzo de 2023, comencé el desarrollo del proyecto “Loja da RO” en la plataforma Shopify. Durante tres meses, profundicé mis conocimientos técnicos estudiando intensivamente la documentación de Liquid y empleando lenguajes esenciales como HTML, CSS, JavaScript y JSON, con el fin de superar las limitaciones de los temas gratuitos de Shopify.</p><p>Partiendo de un tema estándar de Shopify, realicé un rediseño visual completo: añadí elementos gráficos suaves, esquinas redondeadas y seleccioné cuidadosamente una paleta de tonos rosados pensada especialmente para un público femenino. También desarrollé formularios de contacto personalizados y un pie de página a medida para mejorar la usabilidad y la experiencia del usuario. Cada detalle gráfico y estructural se ideó para reflejar las características únicas de mi madre a través de vectores y colores.</p><p>El resultado final no solo superó mis expectativas personales, sino que también marcó oficialmente el inicio de mi carrera como desarrollador front-end. Este proyecto destaca mis habilidades en desarrollo web, diseño de interfaces, personalización de temas de Shopify y dominio de HTML, CSS, JavaScript y JSON.</p>",
-            "image": "assets/images/projects/thumbs/lojadaro.webp",
+            "image": "assets/images/thumbs/prj_9f78051128e14b888a04adda88aa7d26.webp",
             "initialDate": "09/2023",
             "endDate": "12/2023",
             "projectUrlLink": " ",
@@ -73,20 +74,21 @@
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/lojadaro/lojadaro1.webp",
-                "assets/images/projects/lojadaro/lojadaro2.webp",
-                "assets/images/projects/lojadaro/lojadaro3.webp",
-                "assets/images/projects/lojadaro/lojadaro4.webp",
-                "assets/images/projects/lojadaro/lojadaro5.webp",
-                "assets/images/projects/lojadaro/lojadaro6.webp",
-                "assets/images/projects/lojadaro/lojadaro7.webp",
-                "assets/images/projects/lojadaro/lojadaro8.webp"
-            ]
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__001.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__002.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__003.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__004.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__005.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__006.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__007.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__008.webp"
+            ],
+            "id": "prj_9f78051128e14b888a04adda88aa7d26"
         },
         {
             "title": "Adega Paradiso",
             "description": "<p>Adega Paradiso representó un hito significativo en mi trayectoria como desarrollador freelancer, siendo mi segundo proyecto profesional. El cliente entregó un diseño innovador y desafiante creado en Figma, con tarjetas estilizadas en formato de ticket: un elemento que inicialmente se consideró difícil de implementar. Asumiendo este reto, realicé una traducción fiel de cada detalle del diseño original a la plataforma Shopify, empleando técnicas avanzadas en Liquid, HTML, CSS, JavaScript y JSON.</p><p>El resultado fue una tienda virtual visualmente sofisticada, con una identidad de marca coherente y una experiencia de usuario optimizada tanto en escritorio como en dispositivos móviles. Destaca especialmente la página de producto, la cual desarrollé con metacampos detallados y enriquecí con íconos ilustrativos que brindan información esencial sobre cada vino, desde su origen hasta su potencial de envejecimiento.</p><p>Negociado a través de la plataforma Workana, este proyecto demostró claramente que la combinación de dedicación y experiencia técnica puede convertir ideas complejas en resultados tangibles y exitosos. Adega Paradiso consolidó aún más mis habilidades en desarrollo front-end, diseño de interfaces y personalización avanzada en Shopify.</p>",
-            "image": "assets/images/projects/thumbs/paradiso.webp",
+            "image": "assets/images/thumbs/prj_e20835bec8cf4e4a99f00381b6f5860e.webp",
             "initialDate": "01/2025",
             "endDate": "02/2025",
             "projectUrlLink": "https://adegaparadiso.com.br/",
@@ -118,22 +120,23 @@
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/adega/adega1.webp",
-                "assets/images/projects/adega/adega2.webp",
-                "assets/images/projects/adega/adega3.webp",
-                "assets/images/projects/adega/adega4.webp",
-                "assets/images/projects/adega/adega5.webp",
-                "assets/images/projects/adega/adega6.webp",
-                "assets/images/projects/adega/adega7.webp",
-                "assets/images/projects/adega/adega8.webp",
-                "assets/images/projects/adega/adega9.webp",
-                "assets/images/projects/adega/adega10.webp"
-            ]
+                "assets/images/projects/prj_e20835bec8cf4e4a99f00381b6f5860e/prj_e20835bec8cf4e4a99f00381b6f5860e__001.webp",
+                "assets/images/projects/prj_e20835bec8cf4e4a99f00381b6f5860e/prj_e20835bec8cf4e4a99f00381b6f5860e__002.webp",
+                "assets/images/projects/prj_e20835bec8cf4e4a99f00381b6f5860e/prj_e20835bec8cf4e4a99f00381b6f5860e__003.webp",
+                "assets/images/projects/prj_e20835bec8cf4e4a99f00381b6f5860e/prj_e20835bec8cf4e4a99f00381b6f5860e__004.webp",
+                "assets/images/projects/prj_e20835bec8cf4e4a99f00381b6f5860e/prj_e20835bec8cf4e4a99f00381b6f5860e__005.webp",
+                "assets/images/projects/prj_e20835bec8cf4e4a99f00381b6f5860e/prj_e20835bec8cf4e4a99f00381b6f5860e__006.webp",
+                "assets/images/projects/prj_e20835bec8cf4e4a99f00381b6f5860e/prj_e20835bec8cf4e4a99f00381b6f5860e__007.webp",
+                "assets/images/projects/prj_e20835bec8cf4e4a99f00381b6f5860e/prj_e20835bec8cf4e4a99f00381b6f5860e__008.webp",
+                "assets/images/projects/prj_e20835bec8cf4e4a99f00381b6f5860e/prj_e20835bec8cf4e4a99f00381b6f5860e__009.webp",
+                "assets/images/projects/prj_e20835bec8cf4e4a99f00381b6f5860e/prj_e20835bec8cf4e4a99f00381b6f5860e__010.webp"
+            ],
+            "id": "prj_e20835bec8cf4e4a99f00381b6f5860e"
         },
         {
             "title": "Wee Magazine",
             "description": "<p>El proyecto Wee Magazine consistió en una compleja migración de plataforma, trasladando toda la tienda virtual de VTEX a Shopify. Con experiencia previa en migraciones de plataformas, mi responsabilidad fue recrear completamente el tema de la tienda, asegurando fidelidad visual al diseño original y optimizando aspectos cruciales como el rendimiento y el SEO.</p><p>El nuevo tema presenta menús interactivos organizados con subcategorías y destacados estratégicos de productos, proporcionando una navegación intuitiva. Entre las funcionalidades implementadas destaca el cálculo de envío en tiempo real directamente en la página de producto, utilizando una API intermediaria integrada con Frenet que desarrollé. Además, el proyecto contó con un diseño responsive eficiente, garantizando una excelente experiencia de navegación tanto en dispositivos móviles como en escritorio.</p><p>Otras mejoras importantes incluyen un pie de página estructurado en secciones distintas organizando claramente la información institucional y los sellos de seguridad, así como un botón exclusivo para compras por WhatsApp que facilita el contacto directo entre clientes y atención.</p><p>Este proyecto reforzó mi capacidad para transformar desafíos técnicos en soluciones innovadoras siempre alineadas con la identidad visual y los objetivos estratégicos de la tienda Wee Magazine, demostrando habilidades avanzadas en Shopify, integración con APIs externas y optimización para motores de búsqueda.</p>",
-            "image": "assets/images/projects/thumbs/weemagazine.webp",
+            "image": "assets/images/thumbs/prj_5bbea0ce5af54aa18aa18b0aacb88e64.webp",
             "initialDate": "04/2025",
             "endDate": "05/2025",
             "projectUrlLink": "https://www.weemagazine.com.br/",
@@ -165,21 +168,22 @@
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/weemagazine/wee1.webp",
-                "assets/images/projects/weemagazine/wee2.webp",
-                "assets/images/projects/weemagazine/wee3.webp",
-                "assets/images/projects/weemagazine/wee4.webp",
-                "assets/images/projects/weemagazine/wee5.webp",
-                "assets/images/projects/weemagazine/wee6.webp",
-                "assets/images/projects/weemagazine/wee7.webp",
-                "assets/images/projects/weemagazine/wee8.webp",
-                "assets/images/projects/weemagazine/wee9.webp"
-            ]
+                "assets/images/projects/prj_5bbea0ce5af54aa18aa18b0aacb88e64/prj_5bbea0ce5af54aa18aa18b0aacb88e64__001.webp",
+                "assets/images/projects/prj_5bbea0ce5af54aa18aa18b0aacb88e64/prj_5bbea0ce5af54aa18aa18b0aacb88e64__002.webp",
+                "assets/images/projects/prj_5bbea0ce5af54aa18aa18b0aacb88e64/prj_5bbea0ce5af54aa18aa18b0aacb88e64__003.webp",
+                "assets/images/projects/prj_5bbea0ce5af54aa18aa18b0aacb88e64/prj_5bbea0ce5af54aa18aa18b0aacb88e64__004.webp",
+                "assets/images/projects/prj_5bbea0ce5af54aa18aa18b0aacb88e64/prj_5bbea0ce5af54aa18aa18b0aacb88e64__005.webp",
+                "assets/images/projects/prj_5bbea0ce5af54aa18aa18b0aacb88e64/prj_5bbea0ce5af54aa18aa18b0aacb88e64__006.webp",
+                "assets/images/projects/prj_5bbea0ce5af54aa18aa18b0aacb88e64/prj_5bbea0ce5af54aa18aa18b0aacb88e64__007.webp",
+                "assets/images/projects/prj_5bbea0ce5af54aa18aa18b0aacb88e64/prj_5bbea0ce5af54aa18aa18b0aacb88e64__008.webp",
+                "assets/images/projects/prj_5bbea0ce5af54aa18aa18b0aacb88e64/prj_5bbea0ce5af54aa18aa18b0aacb88e64__009.webp"
+            ],
+            "id": "prj_5bbea0ce5af54aa18aa18b0aacb88e64"
         },
         {
             "title": "Snugfly",
             "description": "<p>SnugFly fue un proyecto de desarrollo continuo mensual en la plataforma Shopify. Comenzó con optimizaciones orientadas al rendimiento y evolucionó hasta un rediseño completo del tema, culminando en la creación de un tema completamente nuevo que más tarde fue descontinuado por el cliente. A lo largo de este proceso, implementé varias mejoras visuales en el diseño de la tienda, introduciendo elementos gráficos redondeados e ilustraciones vectoriales, como pequeños aviones estilizados, que aportaron un aspecto visual más ligero y atractivo.</p><p>Utilicé ampliamente HTML, CSS y JavaScript, junto con conocimientos avanzados de lógica de programación, para personalizar y adaptar la tienda a la integración con diversos plugins estadounidenses, creando soluciones a medida que garantizaron una armonía perfecta entre todas las funcionalidades.</p><p>Aunque algunas decisiones visuales se basaron en las preferencias personales del cliente, el proyecto SnugFly fue una oportunidad significativa para demostrar mi creatividad técnica y profundizar mis habilidades en desarrollo web, integración de plugins y personalización avanzada en Shopify.</p>",
-            "image": "assets/images/projects/thumbs/snugfly.webp",
+            "image": "assets/images/thumbs/prj_7b394e903d954af884df001e6c79c92f.webp",
             "initialDate": "05/2024",
             "endDate": "10/2024",
             "projectUrlLink": "https://www.snugfly.com.br",
@@ -211,19 +215,20 @@
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/snugfly/snugfly1.webp",
-                "assets/images/projects/snugfly/snugfly2.webp",
-                "assets/images/projects/snugfly/snugfly3.webp",
-                "assets/images/projects/snugfly/snugfly4.webp",
-                "assets/images/projects/snugfly/snugfly5.webp",
-                "assets/images/projects/snugfly/snugfly6.webp",
-                "assets/images/projects/snugfly/snugfly7.webp"
-            ]
+                "assets/images/projects/prj_7b394e903d954af884df001e6c79c92f/prj_7b394e903d954af884df001e6c79c92f__001.webp",
+                "assets/images/projects/prj_7b394e903d954af884df001e6c79c92f/prj_7b394e903d954af884df001e6c79c92f__002.webp",
+                "assets/images/projects/prj_7b394e903d954af884df001e6c79c92f/prj_7b394e903d954af884df001e6c79c92f__003.webp",
+                "assets/images/projects/prj_7b394e903d954af884df001e6c79c92f/prj_7b394e903d954af884df001e6c79c92f__004.webp",
+                "assets/images/projects/prj_7b394e903d954af884df001e6c79c92f/prj_7b394e903d954af884df001e6c79c92f__005.webp",
+                "assets/images/projects/prj_7b394e903d954af884df001e6c79c92f/prj_7b394e903d954af884df001e6c79c92f__006.webp",
+                "assets/images/projects/prj_7b394e903d954af884df001e6c79c92f/prj_7b394e903d954af884df001e6c79c92f__007.webp"
+            ],
+            "id": "prj_7b394e903d954af884df001e6c79c92f"
         },
         {
             "title": "CervejaBox",
             "description": "<p>El proyecto CervejaBox consistió en la migración de una página de suscripciones de un club de cervezas de la plataforma VTEX a Shopify. El principal desafío fue mantener la flexibilidad de la página, permitiendo al cliente editar fácilmente las combinaciones de cervezas ofrecidas cada mes sin comprometer el rendimiento ni la usabilidad.</p><p>Todo el diseño de la página se reconstruyó completamente utilizando HTML y CSS. La lógica de las combinaciones se desarrolló con JavaScript, garantizando que los usuarios pudieran personalizar sus pedidos de manera sencilla y sin errores ni limitaciones técnicas. Problemas previamente experimentados en la plataforma VTEX se resolvieron en esta nueva implementación, dando como resultado una página más estable, eficiente e intuitiva para los suscriptores.</p><p>Este proyecto reforzó mis competencias técnicas en desarrollo front-end, integración entre plataformas, resolución de problemas y personalización avanzada en Shopify, además de mejorar significativamente la experiencia general del usuario en el sitio CervejaBox.</p>",
-            "image": "assets/images/projects/thumbs/cervejabox.webp",
+            "image": "assets/images/thumbs/prj_8da6e13d25f34f7f850b5d752beaf5f0.webp",
             "initialDate": "12/2024",
             "endDate": "01/2025",
             "projectUrlLink": "",
@@ -255,15 +260,16 @@
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/cervejabox/cervejabox1.webp",
-                "assets/images/projects/cervejabox/cervejabox2.webp",
-                "assets/images/projects/cervejabox/cervejabox3.webp"
-            ]
+                "assets/images/projects/prj_8da6e13d25f34f7f850b5d752beaf5f0/prj_8da6e13d25f34f7f850b5d752beaf5f0__001.webp",
+                "assets/images/projects/prj_8da6e13d25f34f7f850b5d752beaf5f0/prj_8da6e13d25f34f7f850b5d752beaf5f0__002.webp",
+                "assets/images/projects/prj_8da6e13d25f34f7f850b5d752beaf5f0/prj_8da6e13d25f34f7f850b5d752beaf5f0__003.webp"
+            ],
+            "id": "prj_8da6e13d25f34f7f850b5d752beaf5f0"
         },
         {
             "title": "Blend",
             "description": "<p>Blend Comunicación fue un proyecto desarrollado en colaboración con mi socia, en el que creamos una identidad visual completa destinada a una futura agencia. Aunque actualmente está pausado, desarrollamos una página de aterrizaje de estilo “idle” que funciona como una vitrina visual de la marca.</p><p>La página muestra el logotipo de Blend Comunicación centrado, acompañado de un fondo con degradado animado que mezcla colores de forma fluida y sofisticada. Empleando exclusivamente HTML, CSS y JavaScript puros, construimos una experiencia visual moderna y envolvente que destaca dinámicamente los colores y elementos de la marca, proporcionando un impacto visual único y atractivo. Este proyecto refuerza mi competencia en desarrollo front-end, diseño visual e implementación de animaciones interactivas en la web.</p>",
-            "image": "assets/images/projects/thumbs/blend.webp",
+            "image": "assets/images/thumbs/prj_aaa3ce65e9334a78980aeaf2e5ae9735.webp",
             "initialDate": "10/2024",
             "endDate": "11/2024",
             "projectUrlLink": "https://blendcomunicacao.com/",
@@ -299,13 +305,14 @@
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/blend/blend.webp"
-            ]
+                "assets/images/projects/prj_aaa3ce65e9334a78980aeaf2e5ae9735/prj_aaa3ce65e9334a78980aeaf2e5ae9735__001.webp"
+            ],
+            "id": "prj_aaa3ce65e9334a78980aeaf2e5ae9735"
         },
         {
             "title": "GLRifas",
             "description": "<p>El proyecto GLRifas tuvo como objetivo crear una página de aterrizaje estilo LinkTree para centralizar los principales accesos de un negocio especializado en la venta de rifas en línea. Desarrollé una interfaz moderna que destaca el diseño glassmorphism en la tarjeta principal, mostrando el icono y la marca GLRifas de manera sofisticada.</p><p>La paleta de colores elegida combina negro y gris, complementada con un vibrante amarillo en el botón principal, que dirige a los usuarios al servidor de Discord (la plataforma utilizada para rifas y sorteos). También incluí botones para redes sociales para mantener un diseño limpio, claro y enfocado.</p><p>Para el desarrollo de esta página, utilicé HTML, JavaScript y Tailwind CSS, garantizando una estructura responsive, estilo ágil y facilidad para futuras actualizaciones. El resultado final es una página de aterrizaje visualmente impactante y muy funcional, alineada perfectamente con la identidad joven y dinámica de GLRifas, demostrando mi pericia en diseño moderno, desarrollo front-end responsive e integración de tecnologías actuales.</p>",
-            "image": "assets/images/projects/thumbs/glrifas.webp",
+            "image": "assets/images/thumbs/prj_ba27ec3ef0554c6bb540df808d447339.webp",
             "initialDate": "07/2024",
             "endDate": "07/2025",
             "projectUrlLink": "https://glrifas.com/",
@@ -333,13 +340,14 @@
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/glrifas/glrifas.webp"
-            ]
+                "assets/images/projects/prj_ba27ec3ef0554c6bb540df808d447339/prj_ba27ec3ef0554c6bb540df808d447339__001.webp"
+            ],
+            "id": "prj_ba27ec3ef0554c6bb540df808d447339"
         },
         {
             "title": "Razzo",
             "description": "<p>El proyecto de Razo consistió en la creación de una página de aterrizaje en la plataforma WordPress, basada en un diseño previamente proporcionado por el cliente a través de Figma. Aunque el enfoque principal no fue la programación intensiva, el reto residió en reproducir fielmente el diseño original, complementado con ajustes finales específicos para satisfacer plenamente las expectativas del cliente.</p><p>El resultado fue un sitio moderno y responsive, enriquecido con bordes redondeados y elementos animados, que ofrece a los usuarios una experiencia dinámica y agradable. La página también incluye un plugin de traducción para garantizar accesibilidad a una audiencia diversa y está estructurada en tres secciones principales: Inicio, Servicios y Contacto.</p><p>La landing page de Razo ejemplifica cómo la combinación de un diseño cuidadoso y una implementación precisa puede generar resultados visualmente atractivos y altamente funcionales, valorizando tanto la experiencia del usuario como la identidad de la marca.</p>",
-            "image": "assets/images/projects/thumbs/razzo.webp",
+            "image": "assets/images/thumbs/prj_1119bd2067864ecba080d888d7d16b2f.webp",
             "initialDate": "03/2025",
             "endDate": "03/2025",
             "projectUrlLink": "https://razzo.tech/",
@@ -363,21 +371,22 @@
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/razzo/razzo1.webp",
-                "assets/images/projects/razzo/razzo2.webp",
-                "assets/images/projects/razzo/razzo3.webp",
-                "assets/images/projects/razzo/razzo4.webp",
-                "assets/images/projects/razzo/razzo5.webp",
-                "assets/images/projects/razzo/razzo6.webp",
-                "assets/images/projects/razzo/razzo7.webp",
-                "assets/images/projects/razzo/razzo8.webp",
-                "assets/images/projects/razzo/razzo9.webp"
-            ]
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__001.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__002.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__003.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__004.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__005.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__006.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__007.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__008.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__009.webp"
+            ],
+            "id": "prj_1119bd2067864ecba080d888d7d16b2f"
         },
         {
             "title": "Registrando Marca",
             "description": "<p>El proyecto Registrando Marca implicó la reformulación completa de una landing page desarrollada en WordPress utilizando Elementor y Elementor Pro. El objetivo principal fue modernizar la apariencia visual del sitio, que hasta entonces no comunicaba adecuadamente la credibilidad deseada por la marca.</p><p>Mediante una combinación armoniosa de los colores de la marca con elementos de diseño contemporáneo, el nuevo diseño introdujo características visuales como ondas suaves, esquinas redondeadas e iconos modernos, otorgando al sitio una sensación de ligereza y actualidad. Adicionalmente, se incorporaron un vídeo institucional y formularios con verificación antispam para garantizar que los datos enviados por los usuarios fueran completos y estuvieran protegidos.</p><p>El resultado fue una página atractiva y funcional que cumplió plenamente con las expectativas del cliente, destacándose por su claridad visual y la seguridad en el envío de información. Este proyecto fortaleció mi experiencia en diseño de interfaces, optimización de usabilidad, seguridad y dominio avanzado de WordPress y Elementor.</p>",
-            "image": "assets/images/projects/thumbs/registrando.webp",
+            "image": "assets/images/thumbs/prj_dd369fdc6fb04f21a1a79c7353b6d82f.webp",
             "initialDate": "08/2024",
             "endDate": "08/2024",
             "projectUrlLink": "https://registrandomarca.com.br/",
@@ -401,19 +410,20 @@
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/registrando/registrando1.webp",
-                "assets/images/projects/registrando/registrando2.webp",
-                "assets/images/projects/registrando/registrando3.webp",
-                "assets/images/projects/registrando/registrando4.webp",
-                "assets/images/projects/registrando/registrando5.webp",
-                "assets/images/projects/registrando/registrando6.webp",
-                "assets/images/projects/registrando/registrando8.webp"
-            ]
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__001.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__002.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__003.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__004.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__005.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__006.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__007.webp"
+            ],
+            "id": "prj_dd369fdc6fb04f21a1a79c7353b6d82f"
         },
         {
             "title": "Imperial Sexshop",
             "description": "<p>El proyecto Imperial SexShop surgió de la necesidad del cliente de modernizar el diseño de la tienda, que presentaba diversos problemas técnicos y de rendimiento. La solución consistió en crear una landing page desarrollada en WordPress utilizando Elementor y Elementor Pro. El objetivo principal era mantener la coherencia visual con la identidad de la tienda principal en línea, garantizando una experiencia fluida para los usuarios procedentes de campañas de Google Ads.</p><p>Además de un rediseño completo, el proyecto tuvo un fuerte enfoque en la optimización del rendimiento. Con mejoras significativas en las métricas de rendimiento y SEO, la página alcanzó puntuaciones entre 96 y 100, asegurando una navegación rápida y fiable para los usuarios.</p><p>El resultado final fue una landing page alineada visualmente con la tienda principal, que ofrece un rendimiento superior y un diseño moderno y eficiente. Este proyecto consolidó mi experiencia técnica en desarrollo de WordPress, Elementor, optimización de rendimiento y estrategias avanzadas de SEO.</p>",
-            "image": "assets/images/projects/thumbs/imperial.webp",
+            "image": "assets/images/thumbs/prj_1af5ecd8cd184016997d26bd90a3d984.webp",
             "initialDate": "07/2025",
             "endDate": "06/2025",
             "projectUrlLink": "https://sexshopamericana.com.br/",
@@ -437,17 +447,18 @@
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/imperial/imperial1.webp",
-                "assets/images/projects/imperial/imperial2.webp",
-                "assets/images/projects/imperial/imperial3.webp"
-            ]
+                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__001.webp",
+                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__002.webp",
+                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__003.webp"
+            ],
+            "id": "prj_1af5ecd8cd184016997d26bd90a3d984"
         }
     ],
     "ui-design": [
         {
             "title": "Portfólio Wireframe",
             "description": "<p>Mi portafolio personal es un proyecto desarrollado con el objetivo de reflejar plenamente mi identidad visual y profesional, utilizando una combinación estratégica de tonos naranja y gris para lograr un diseño impactante y diferenciado. Cada sección se planificó cuidadosamente para transmitir una imagen que equilibre profesionalismo y creatividad, destacando mi personalidad y estilo único.</p><p>Este proyecto se ha desarrollado durante aproximadamente 11 meses, compaginando mis estudios académicos con trabajos freelance. El resultado es una plataforma que no solo muestra mis principales proyectos, sino que también comunica de forma auténtica mi esencia como profesional. La alternancia de colores entre secciones ofrece a los visitantes una experiencia visual dinámica y envolvente.</p>",
-            "image": "assets/images/projects/thumbs/portfoliowireframe.webp",
+            "image": "assets/images/thumbs/prj_ac509a0154f14460844014d97e5c4697.webp",
             "initialDate": "8/2024",
             "endDate": "8/2024",
             "projectUrlLink": "https://www.figma.com/design/54GeBLCzAfogJqiYlhQmZf/Lorenzodacunha-Wireframe?node-id=0-1&p=f&t=UIksFIrFurywrBMM-0",
@@ -471,12 +482,59 @@
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/portfolio/wireframe/wireframe1.webp",
-                "assets/images/projects/portfolio/wireframe/wireframe2.webp",
-                "assets/images/projects/portfolio/wireframe/wireframe3.webp",
-                "assets/images/projects/portfolio/wireframe/wireframe4.webp",
-                "assets/images/projects/portfolio/wireframe/wireframe5.webp",
-                "assets/images/projects/portfolio/wireframe/wireframe6.webp"
+                "assets/images/projects/prj_ac509a0154f14460844014d97e5c4697/prj_ac509a0154f14460844014d97e5c4697__001.webp",
+                "assets/images/projects/prj_ac509a0154f14460844014d97e5c4697/prj_ac509a0154f14460844014d97e5c4697__002.webp",
+                "assets/images/projects/prj_ac509a0154f14460844014d97e5c4697/prj_ac509a0154f14460844014d97e5c4697__003.webp",
+                "assets/images/projects/prj_ac509a0154f14460844014d97e5c4697/prj_ac509a0154f14460844014d97e5c4697__004.webp",
+                "assets/images/projects/prj_ac509a0154f14460844014d97e5c4697/prj_ac509a0154f14460844014d97e5c4697__005.webp",
+                "assets/images/projects/prj_ac509a0154f14460844014d97e5c4697/prj_ac509a0154f14460844014d97e5c4697__006.webp"
+            ],
+            "id": "prj_ac509a0154f14460844014d97e5c4697"
+        }
+    ],
+    "web-designer": [
+        {
+            "id": "prj_19c838e94c03e4d3e92",
+            "title": "Torelly Joias",
+            "description": "<p><strong>Contexto y objetivo:</strong> Torelly Joias surgió de una necesidad directa de la cliente: actualizar la tienda virtual para un visual más premium y fino, alineado con la propuesta real del producto. La meta era aumentar el valor percibido y hacer la experiencia de compra más elegante, sin perder claridad y confianza durante la navegación.</p><p><strong>Desafío:</strong> La cliente buscaba una estética inspirada en referencias fuertes del mercado, con el toque sofisticado de marcas como Tiffany y Pandora. El desafío fue crear esta sensación de lujo sin parecer una copia, encontrando un equilibrio entre delicadeza, presencia e identidad propia. Para ello, la dirección visual necesitó una paleta bien pensada, trayendo tonos inspirados en las aguas verdes del mar como firma de la marca.</p><p><strong>Solución y ejecución:</strong> Desarrollé el logo y todo el kit de marca, definí el color primario y conduje el montaje completo del layout en Shopify utilizando un tema de terceros ya adoptado por la empresa. La mayor parte de la estructura fue construida sin código, priorizando consistencia y rapidez, pero con ajustes específicos hechos en HTML y CSS para refinar detalles importantes. Estos refinamientos ayudaron a reforzar sofisticación en el acabado visual y a mantener la tienda organizada para vitrinas, colecciones y destacados de producto.</p><p><strong>Resultado:</strong> El resultado fue una tienda con presencia más sofisticada, combinando la intensidad de los tonos verdosos del mar con un tema elegante y alineado al posicionamiento premium. La identidad final trajo personalidad para la marca y elevó el estándar visual de la vitrina, preparando la operación para campañas, expansión de colecciones y una comunicación más fuerte de valor percibido.</p>",
+            "image": "assets/images/thumbs/prj_19c838e94c03e4d3e92.webp",
+            "initialDate": "08/01/2026",
+            "endDate": "09/01/2026",
+            "projectUrlLink": "https://www.torellyjoias.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c838e94c03e4d3e92/prj_19c838e94c03e4d3e92__001.webp",
+                "assets/images/projects/prj_19c838e94c03e4d3e92/prj_19c838e94c03e4d3e92__002.webp",
+                "assets/images/projects/prj_19c838e94c03e4d3e92/prj_19c838e94c03e4d3e92__003.webp",
+                "assets/images/projects/prj_19c838e94c03e4d3e92/prj_19c838e94c03e4d3e92__004.webp",
+                "assets/images/projects/prj_19c838e94c03e4d3e92/prj_19c838e94c03e4d3e92__005.webp",
+                "assets/images/projects/prj_19c838e94c03e4d3e92/prj_19c838e94c03e4d3e92__006.webp",
+                "assets/images/projects/prj_19c838e94c03e4d3e92/prj_19c838e94c03e4d3e92__007.webp",
+                "assets/images/projects/prj_19c838e94c03e4d3e92/prj_19c838e94c03e4d3e92__008.webp",
+                "assets/images/projects/prj_19c838e94c03e4d3e92/prj_19c838e94c03e4d3e92__009.webp",
+                "assets/images/projects/prj_19c838e94c03e4d3e92/prj_19c838e94c03e4d3e92__010.webp"
             ]
         }
     ]

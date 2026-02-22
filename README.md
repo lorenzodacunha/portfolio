@@ -117,3 +117,11 @@ Você pode visualizar o código, mas **não é permitido copiar, modificar ou di
 - **E-mail:** contato@lorenzodacunha.com.br
 
 
+
+
+---
+
+## Padrao de URL dos projetos
+- Canonico: `index.html?id=<projectId>`
+- Retrocompatibilidade: `index.html?projeto=<slug-legado>` ainda e aceito como fallback
+- O `id` e imutavel e deve ser a fonte de verdade para abrir o modal correto
