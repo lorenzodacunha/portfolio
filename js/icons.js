@@ -19,18 +19,23 @@ export const iconMap = {
   c: 'assets/icons/skills/C.svg',
   git: 'assets/icons/skills/git.svg',
   python: 'assets/icons/skills/python.svg',
+  yampi: 'assets/icons/skills/yampi.svg',
+  tray: 'assets/icons/skills/tray.svg',
+  nuvemshop: 'assets/icons/skills/nuvemshop.svg',
+  wbuy: 'assets/icons/skills/wbuy.svg',
 };
 
 export function getIconMarkup(name, useWhiteIcon = false) {
   if (!name) return '';
-  if (iconMap[name]) {
-    let src = iconMap[name];
+  const key = String(name).trim().toLowerCase();
+  if (iconMap[key]) {
+    let src = iconMap[key];
     if (useWhiteIcon) {
       src = src.replace('.svg', '-w.svg');
     }
-    return `<img loading="lazy" width="30" height="30" src="${src}" alt="${name} icon">`;
+    return `<img loading="lazy" width="30" height="30" src="${src}" alt="${key} icon">`;
   }
-  if (name.includes('fa-')) {
+  if (String(name).includes('fa-')) {
     return `<i class="${name}"></i>`;
   }
   return '';

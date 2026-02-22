@@ -711,7 +711,7 @@
         },
         {
             "id": "prj_19c85ddaa432bb49d79",
-            "title": "Zayah Fine Accessories",
+            "title": "Zayah Accessories",
             "description": "<p>Shopify e-commerce | Custom layout | Handmade earrings with stones<br /></p><p><strong>Context and objective:</strong> The project arose at a delicate moment, when the client was already completely dissatisfied with the current store and had no expectations of improvement. The brand sells handmade earrings with stones, full of color and personality, and needed a digital showcase that valued this beauty and restored confidence in online sales.</p><p><strong>Challenge:</strong> The client realized, in practice, that most purchases occurred from the homepage, because many customers accessed the site and bought directly what was visible there. This transformed the home page into the main showcase of the business and increased the responsibility of the layout, since the organization of the products needed to be clear, attractive and designed for immediate conversion.</p><p><strong>Solution and execution:</strong> I implemented a new layout in Shopify and reorganized the colors to be more faithful to the logo and the brand's positioning. I structured the home page to function as an open catalog, with a wide and well-distributed grid, prioritizing variety and visual impact. The idea was to reduce distractions and give prominence to the earrings, making the navigation simple and objective to facilitate the purchase decision.</p><p><strong>Result:</strong> The result was a strong showcase, built to highlight the diversity, beauty and unique colors of the handmade earrings. Instead of relying on carousels, the home page now presents a large and direct grid, with many products exposed immediately. This reinforced the main objective of the store, which is to sell by showing product clearly, abundantly and visually irresistible.</p>",
             "image": "assets/images/thumbs/prj_19c85ddaa432bb49d79.webp",
             "initialDate": "08/01/2026",
@@ -752,8 +752,79 @@
             ]
         },
         {
+            "id": "prj_19c870bea66fc602c77",
+            "title": "Silfer Joias",
+            "description": "<p>Yampi E-commerce | Custom layout + CSS adjustments | 925 silver with clean aesthetics</p><p></p><p><strong>Context and objective:</strong> Silfer Joias was born from the need to expand sales from social networks to a more structured and scalable environment. The goal was to create a virtual store that conveyed trust and sophistication, valuing the 925 silver pieces with a light and well-organized visual.</p><p><strong>Challenge:</strong> The project did not have complex execution challenges, but required attention to the limits of the front end on the platform. Some desired visual choices needed direct CSS adjustments to unlock layout details and elevate the finish.</p><p><strong>Solution and execution:</strong> I implemented the layout on Yampi and made CSS improvements to make the experience more refined and sophisticated, taking care of spacing, hierarchy and a sense of elegance. I worked on the composition with light tones to keep the site clean and intuitive, ensuring that the focus remained on the pieces and navigation.</p><p><strong>Result:</strong> The result was a store with a fine and practical design, with light tones that harmonize with the brand's gray and the natural shine of the 925 silver. The structure is intuitive and easy to buy, reinforcing the perception of quality and preparing the brand to grow digitally with more consistency.</p>",
+            "image": "assets/images/thumbs/prj_19c870bea66fc602c77.webp",
+            "initialDate": "04/12/2025",
+            "endDate": "05/12/2025",
+            "projectUrlLink": "https://www.silferjoias.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "yampi",
+                    "tooltip": "YAMPI"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c870bea66fc602c77/prj_19c870bea66fc602c77__001.webp",
+                "assets/images/projects/prj_19c870bea66fc602c77/prj_19c870bea66fc602c77__002.webp",
+                "assets/images/projects/prj_19c870bea66fc602c77/prj_19c870bea66fc602c77__003.webp",
+                "assets/images/projects/prj_19c870bea66fc602c77/prj_19c870bea66fc602c77__004.webp",
+                "assets/images/projects/prj_19c870bea66fc602c77/prj_19c870bea66fc602c77__005.webp",
+                "assets/images/projects/prj_19c870bea66fc602c77/prj_19c870bea66fc602c77__006.webp",
+                "assets/images/projects/prj_19c870bea66fc602c77/prj_19c870bea66fc602c77__007.webp",
+                "assets/images/projects/prj_19c870bea66fc602c77/prj_19c870bea66fc602c77__008.webp",
+                "assets/images/projects/prj_19c870bea66fc602c77/prj_19c870bea66fc602c77__009.webp"
+            ]
+        },
+        {
+            "id": "prj_19c87226acf23a663e1",
+            "title": "Adonai Semi Jewelry",
+            "description": "<p>Yampi e-commerce | Custom layout + CSS adjustments | Semi-jewelry brand identity in wine</p><p></p><p><strong>Context and objective:</strong> The project arose from the client's desire to build a virtual store for semi-jewelry that faithfully reflected the colors and personality of the brand. The objective was to create a sophisticated and modern digital storefront, with a simple shopping experience and a visual that reinforced perceived value.</p><p><strong>Challenge:</strong> The main difficulty was the limitations of the front-end on the platform, which required technical solutions to achieve the expected finish. It was necessary to adjust layout details and visual behavior to maintain consistency, readability and brand presence on all pages.</p><p><strong>Solution and execution:</strong> I implemented the layout on Yampi and made modifications in CSS to circumvent the limitations and elevate the design level. I worked with the palette with wine as the highlight color, balancing with light tones to keep the site clean and elegant. Rounded edges and the organization of sections helped to create a fluid navigation, with a current and well-aligned aesthetic to the semi-jewelry segment.</p><p><strong>Result:</strong> The result was a modern and sophisticated store, with well-applied predominant colors and a clean layout that values the products. The CSS improvements ensured a more refined finish, reinforcing the brand identity and delivering a digital storefront ready to sell with more presence and professionalism.</p>",
+            "image": "assets/images/thumbs/prj_19c87226acf23a663e1-2.webp",
+            "initialDate": "19/01/2026",
+            "endDate": "20/01/2026",
+            "projectUrlLink": "https://adonaisemijoiass.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "yampi",
+                    "tooltip": "YAMPI"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c87226acf23a663e1/prj_19c87226acf23a663e1__001.webp",
+                "assets/images/projects/prj_19c87226acf23a663e1/prj_19c87226acf23a663e1__002.webp",
+                "assets/images/projects/prj_19c87226acf23a663e1/prj_19c87226acf23a663e1__003.webp",
+                "assets/images/projects/prj_19c87226acf23a663e1/prj_19c87226acf23a663e1__004.webp",
+                "assets/images/projects/prj_19c87226acf23a663e1/prj_19c87226acf23a663e1__005.webp",
+                "assets/images/projects/prj_19c87226acf23a663e1/prj_19c87226acf23a663e1__006.webp",
+                "assets/images/projects/prj_19c87226acf23a663e1/prj_19c87226acf23a663e1__007.webp",
+                "assets/images/projects/prj_19c87226acf23a663e1/prj_19c87226acf23a663e1__008.webp",
+                "assets/images/projects/prj_19c87226acf23a663e1/prj_19c87226acf23a663e1__009.webp",
+                "assets/images/projects/prj_19c87226acf23a663e1/prj_19c87226acf23a663e1__010.webp"
+            ]
+        },
+        {
             "id": "prj_19c8638e6611a4a3a2f",
-            "title": "Seu Cantinho Cristão",
+            "title": "Cantinho Cristão",
             "description": "<p>Shopify e-commerce | Custom layout | Christian articles</p><p></p><p><strong>Context and objective:</strong> The project arose from the client's desire to migrate their Christian articles website, which operated on another platform, to Shopify. The intention was to modernize the homepage and the rest of the store, maintaining the welcoming look and original identity that already pleased customers.</p><p><strong>Challenge:</strong> The main difficulty was to recreate the old layout, hosted on wbuy, faithfully on the new platform. The client wanted the visual experience to remain practically the same, which required care to adapt the original design using the structure and resources of Shopify.</p><p><strong>Solution and execution:</strong> I implemented the entire layout on Shopify, making specific adjustments in CSS and HTML to bring the new site as close as possible to the old one. I worked on the colors of the logo in a clean and harmonious way, to convey tranquility and facilitate navigation. At the same time, I preserved elements that the client considered essential for the brand identity.</p><p><strong>Result:</strong> The result was a well-designed Christian articles store, with an organized visual and reinforced brand presence. I achieved an approximate 95% fidelity level to the previous layout, offering a familiar experience to customers while being more modern and functional.</p>",
             "image": "assets/images/thumbs/prj_19c8638e6611a4a3a2f.webp",
             "initialDate": "05/10/2025",
@@ -871,6 +942,42 @@
             ]
         },
         {
+            "id": "prj_19c86ee15797f4e552b",
+            "title": "Oliver Essence",
+            "description": "<p>Yampi E-commerce | Custom layout | Fine perfumery with a sophisticated proposal</p><p></p><p><strong>Context and objective:</strong> Oliver Essence emerged with the intention of creating a perfume e-commerce with a premium presence, translating the idea of fine perfumery into a more elegant and reliable digital environment. The idea was to have a direct showcase, with a sober visual language and a total focus on the product, reinforcing quality and credibility from the start.</p><p><strong>Challenge:</strong> The development was very smooth and did not have any relevant challenges, which allowed us to concentrate energy on visual finishing, organization and consistency. The greatest care was to maintain a sophisticated and clean aesthetic, to match the brand positioning and facilitate navigation.</p><p><strong>Solution and execution:</strong> I implemented the layout in Yampi working a minimalist identity, with basic colors like black and white and a more straight composition, using less rounded formats to elevate the feeling of sophistication. I structured the home to present the store as a perfumery showcase, highlighting collections and organized navigation by categories.</p><p><strong>Result:</strong> The result was a modern, clean store aligned with the concept of fine perfumery, where the brand appears clearly and the product takes center stage. The more organized aesthetic reinforces the sophisticated positioning and makes the purchase journey more objective, without visual noise.</p>",
+            "image": "assets/images/thumbs/prj_19c86ee15797f4e552b.webp",
+            "initialDate": "04/11/2025",
+            "endDate": "05/11/2025",
+            "projectUrlLink": "https://www.oliveressence.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "yampi",
+                    "tooltip": "YAMPI"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c86ee15797f4e552b/prj_19c86ee15797f4e552b__001.webp",
+                "assets/images/projects/prj_19c86ee15797f4e552b/prj_19c86ee15797f4e552b__002.webp",
+                "assets/images/projects/prj_19c86ee15797f4e552b/prj_19c86ee15797f4e552b__003.webp",
+                "assets/images/projects/prj_19c86ee15797f4e552b/prj_19c86ee15797f4e552b__004.webp",
+                "assets/images/projects/prj_19c86ee15797f4e552b/prj_19c86ee15797f4e552b__005.webp",
+                "assets/images/projects/prj_19c86ee15797f4e552b/prj_19c86ee15797f4e552b__006.webp",
+                "assets/images/projects/prj_19c86ee15797f4e552b/prj_19c86ee15797f4e552b__007.webp",
+                "assets/images/projects/prj_19c86ee15797f4e552b/prj_19c86ee15797f4e552b__008.webp",
+                "assets/images/projects/prj_19c86ee15797f4e552b/prj_19c86ee15797f4e552b__009.webp",
+                "assets/images/projects/prj_19c86ee15797f4e552b/prj_19c86ee15797f4e552b__010.webp"
+            ]
+        },
+        {
             "id": "prj_19c83ccb8d59b222b67",
             "title": "Solore Beachwear",
             "description": "<p>Shopify E-commerce | Custom layout | Women's beach fashion<br /></p><p><strong>Context and objective:</strong> The client already had a presence selling beach fashion in a more informal way and wanted to expand sales to the digital realm through Shopify. The goal was to create an online store that reflected the brand's relaxed and elegant style, with a visual that evoked the coastal climate.</p><p><strong>Challenge:</strong> The client requested a centered header, which required adaptations to the theme's CSS code to ensure that the centering did not break on different screen sizes. In addition, it was necessary to balance light and strong colors to convey the feeling of sea and beach without losing readability or overloading the page.</p><p><strong>Solution and execution:</strong> I implemented the layout on Shopify following the client's references and personal taste, adjusting the CSS to center the header harmoniously. I worked on a dynamic palette with shades of sand and sea blue, varying these colors in different sections to give movement and avoid visual monotony. These choices helped align the brand's identity with the beach spirit that was intended to be conveyed.</p><p><strong>Result:</strong> The result was a modern and well-organized website, with a centered header that gives balance to the navigation. The chosen colors evoke the sea and the beach, creating a pleasant atmosphere that combines with the products. The variation between shades of sand and sea blue brought harmony and dynamism, reflecting the essence of a seaside lifestyle.</p>",
@@ -984,6 +1091,40 @@
                 "assets/images/projects/prj_19c85fd8c407559d0bc/prj_19c85fd8c407559d0bc__006.webp",
                 "assets/images/projects/prj_19c85fd8c407559d0bc/prj_19c85fd8c407559d0bc__007.webp",
                 "assets/images/projects/prj_19c85fd8c407559d0bc/prj_19c85fd8c407559d0bc__008.webp"
+            ]
+        },
+        {
+            "id": "prj_19c874365fc8722977b",
+            "title": "Carioca Concept",
+            "description": "<p>Yampi E-commerce | Custom layout + CSS adjustments | Brand with a clean and striking identity</p><p></p><p><strong>Context and objective:</strong> The project arose from the client's desire to create a professional online store to consolidate the brand in the digital space. The goal was to build a consistent storefront with a clean visual and a strong identity, ensuring that the experience conveyed trust and valued the products.</p><p><strong>Challenge:</strong> The development was smooth, without major execution obstacles. The point of attention was the limitations of CSS on the platform, which required punctual adjustments to maintain fidelity to the identity manual and ensure a more refined finish.</p><p><strong>Solution and execution:</strong> I implemented the layout in Yampi based on the identity manual, following color patterns, visual hierarchy, and brand style. I made modifications in CSS to correct front-end details and maintain consistency between sections and pages. The composition was designed so that navigation was simple, focused on the product and reinforcing the brand.</p><p><strong>Result:</strong> The result was a clean, well-organized website with a strong identity. The brand's tones appear throughout the store, creating visual unity and presence, while the structure maintains a practical and intuitive shopping experience.</p>",
+            "image": "assets/images/thumbs/prj_19c874365fc8722977b.webp",
+            "initialDate": "02/02/2026",
+            "endDate": "03/02/2026",
+            "projectUrlLink": "https://cariocaconcept.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "yampi",
+                    "tooltip": "YAMPI"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__001.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__002.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__003.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__004.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__005.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__006.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__007.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__008.webp"
             ]
         },
         {
