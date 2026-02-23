@@ -1,6 +1,6 @@
 .projects-Sidebar {
     background-color: var(--window-color-5);
-    width: 200px;
+    width: 250px;
     height: auto;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,7 @@
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 10px;
+    gap: 5px;
     flex-direction: column;
 }
 
@@ -88,7 +88,7 @@ button.sidebar-Btn.sidebar-Btn-Minimized {
 .sidebar-Tittle {
     text-align: center;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     overflow: hidden;
     font-weight: bold !important;
     transition: all .5s;

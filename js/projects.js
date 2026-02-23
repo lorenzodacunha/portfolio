@@ -8,6 +8,26 @@ const sidebar = document.querySelector('.projects-Sidebar');
 const closeButton = document.querySelector('.sidebar-Btn-Close');
 const sidebarTexts = document.querySelectorAll('.sidebar-Btn-Text, .sidebar-Tittle');
 const sidebarRelative = document.querySelector('.sidebar-relative');
+const ALL_PROJECTS_CATEGORY = 'all-projects';
+const PREFERRED_ALL_ORDER = ['web-designer', 'front-end', 'ui-design'];
+
+function getProjectEntries(projetos, categoria) {
+    if (categoria !== ALL_PROJECTS_CATEGORY) {
+        const list = Array.isArray(projetos[categoria]) ? projetos[categoria] : [];
+        return list.map((projeto, index) => ({ projeto, sourceCategory: categoria, sourceIndex: index }));
+    }
+
+    const categories = Object.keys(projetos);
+    const orderedCategories = [
+        ...PREFERRED_ALL_ORDER.filter(category => categories.includes(category)),
+        ...categories.filter(category => !PREFERRED_ALL_ORDER.includes(category))
+    ];
+
+    return orderedCategories.flatMap(category => {
+        const list = Array.isArray(projetos[category]) ? projetos[category] : [];
+        return list.map((projeto, index) => ({ projeto, sourceCategory: category, sourceIndex: index }));
+    });
+}
 
 async function projectUrlDetector() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -45,9 +65,17 @@ function projectButtonOpenModal() {
             }
             const card = button.closest('.project-item');
             if (!card) return;
-            const index = [...card.parentElement.children].indexOf(card);
-            const categoria = document.querySelector('.sidebar-Btn.sb-active').getAttribute('data-category');
-            openModal(categoria, index);
+            const fallbackCategory = document.querySelector('.sidebar-Btn.sb-active').getAttribute('data-category');
+            const category = card.getAttribute('data-project-category') || fallbackCategory;
+            const index = Number(card.getAttribute('data-project-index'));
+
+            if (!Number.isNaN(index)) {
+                openModal(category, index);
+                return;
+            }
+
+            const fallbackIndex = [...card.parentElement.children].indexOf(card);
+            openModal(category, fallbackIndex);
         }
     });
 }
@@ -204,9 +232,13 @@ export async function loadProjects(categoria) {
             const base = t?.search?.paths?.projectsCategory || 'Portfolio/projetos/categorias/';
             searchBar.textContent = `${base}${categoria}`;
 
-            projetos[categoria].forEach(projeto => {
+            const projectEntries = getProjectEntries(projetos, categoria);
+
+            projectEntries.forEach(({ projeto, sourceCategory, sourceIndex }) => {
                 const projectElement = document.createElement('div');
                 projectElement.classList.add('project-item', 'card-template');
+                projectElement.setAttribute('data-project-category', sourceCategory);
+                projectElement.setAttribute('data-project-index', String(sourceIndex));
 
                 const badge = !projeto.developed ? `<span class="developing-badge" data-i18n="projects.in_progress">Em desenvolvimento</span>` : '';
                 const thumbClass = !projeto.developed ? 'card-thumb developing' : 'card-thumb';
@@ -228,7 +260,7 @@ export async function loadProjects(categoria) {
                             `).join('')}
                         </ul>
                     </div>
-                    <button class="card-button" data-project-id="${projeto.id || ''}" data-project-slug="${removerAcentuacao(projeto.title).replace(/\s+/g, '-').toLowerCase()}" data-i18n="projects.see_more"><i class="fa-solid fa-eye"></i>Ver mais</button>
+                    <button class="card-button" data-project-id="${projeto.id || ''}" data-project-slug="${removerAcentuacao(projeto.title).replace(/\s+/g, '-').toLowerCase()}" data-project-category="${sourceCategory}" data-project-index="${sourceIndex}" data-i18n="projects.see_more"><i class="fa-solid fa-eye"></i>Ver mais</button>
                 `);
                 conteudo.appendChild(projectElement);
             });

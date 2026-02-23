@@ -34,8 +34,9 @@
   },
   "projects": {
     "categories": "Categories",
+    "all": "All Projects",
     "frontend": "Front-End",
-    "ui": "UI Designer",
+    "ui": "UI/UX Designer",
     "webdesigner": "Web Designer",
     "see_more": "<i class=\"fa-solid fa-eye\"></i>See more",
     "in_progress": "In development"
