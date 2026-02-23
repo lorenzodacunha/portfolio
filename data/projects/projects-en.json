@@ -1,9 +1,10 @@
 {
     "front-end": [
         {
+            "id": "prj_9f7454093d214dd3b0e97de9d638f44a",
             "title": "Portfólio",
-            "description": "<p> My personal portfolio is an original project that accurately reflects my visual identity and professional journey as a front-end developer. Using a color palette that blends shades of orange and gray, the layout was carefully crafted to convey a modern, creative, yet professional image. Each section was strategically designed to showcase not only my technical skills but also my unique personality and visual style.</p><p >The development spanned roughly 11 months, balancing my full-time studies in Systems Analysis and Development with freelance projects. More than a simple showcase of work, the portfolio delivers a smooth, dynamic browsing experience, with alternating color schemes between sections that keep users engaged from start to finish.</p><p >The entire front-end structure was built with pure HTML, CSS, and JavaScript, ensuring complete control over performance, responsiveness, and interface customization. This framework-free approach was intentional: it demonstrates my ability to create solutions from scratch, prioritizing lightweight code, clarity, and visual autonomy.</p><p >For the project’s most complex features, I leveraged OpenAI’s Codex software agent to generate the back-end foundation. Through precisely crafted technical prompts, Codex produced advanced functionalities such as dynamic content loading, button interactions, custom animations, modal dialogs, and responsive behaviors. I then implemented the necessary connections between the front-end and that back-end structure, ensuring everything worked together seamlessly and efficiently.</p><p >This portfolio is an ever-evolving project, just like my career. It represents not only what I can build today but also my commitment to continuous learning, improvement, and innovation.</p>",
-            "image": "assets/images/thumbs/prj_9f7454093d214dd3b0e97de9d638f44a.webp",
+            "description": "<p> My personal portfolio is an original project that accurately reflects my visual identity and professional journey as a front-end developer. Using a color palette that blends shades of orange and gray, the layout was carefully crafted to convey a modern, creative, yet professional image. Each section was strategically designed to showcase not only my technical skills but also my unique personality and visual style.</p><p>The development spanned roughly 11 months, balancing my full-time studies in Systems Analysis and Development with freelance projects. More than a simple showcase of work, the portfolio delivers a smooth, dynamic browsing experience, with alternating color schemes between sections that keep users engaged from start to finish.</p><p>The entire front-end structure was built with pure HTML, CSS, and JavaScript, ensuring complete control over performance, responsiveness, and interface customization. This framework-free approach was intentional: it demonstrates my ability to create solutions from scratch, prioritizing lightweight code, clarity, and visual autonomy.</p><p>For the project’s most complex features, I leveraged OpenAI’s Codex software agent to generate the back-end foundation. Through precisely crafted technical prompts, Codex produced advanced functionalities such as dynamic content loading, button interactions, custom animations, modal dialogs, and responsive behaviors. I then implemented the necessary connections between the front-end and that back-end structure, ensuring everything worked together seamlessly and efficiently.</p><p>This portfolio is an ever-evolving project, just like my career. It represents not only what I can build today but also my commitment to continuous learning, improvement, and innovation.</p>",
+            "image": "assets/images/thumbs/prj_9f7454093d214dd3b0e97de9d638f44a-2.webp",
             "initialDate": "08/2024",
             "endDate": "07/2025",
             "projectUrlLink": "https://www.lorenzodacunha.com.br/",
@@ -36,8 +37,7 @@
             "compatibility": 3,
             "images": [
                 "assets/images/projects/prj_9f7454093d214dd3b0e97de9d638f44a/prj_9f7454093d214dd3b0e97de9d638f44a__001.webp"
-            ],
-            "id": "prj_9f7454093d214dd3b0e97de9d638f44a"
+            ]
         },
         {
             "title": "Loja da RO",
@@ -343,115 +343,6 @@
                 "assets/images/projects/prj_ba27ec3ef0554c6bb540df808d447339/prj_ba27ec3ef0554c6bb540df808d447339__001.webp"
             ],
             "id": "prj_ba27ec3ef0554c6bb540df808d447339"
-        },
-        {
-            "title": "Razzo",
-            "description": "<p>The Razo project involved creating a landing page on the WordPress platform based on a layout previously provided by the client via Figma. Although the main focus was not on intensive programming, the challenge lay in faithfully reproducing the original design, supplemented by final adjustments to fully meet the client’s expectations.</p><p>The result was a modern, responsive site enriched with rounded borders and animated elements, delivering a dynamic and enjoyable experience for users. The page also includes a translation plugin to ensure accessibility for a diverse audience and is structured into three main sections: Home, Services, and Contact.</p><p>Razo’s landing page exemplifies how the combination of thoughtful design and precise implementation can produce visually appealing and highly functional results, enhancing both user experience and brand identity.</p>",
-            "image": "assets/images/thumbs/prj_1119bd2067864ecba080d888d7d16b2f.webp",
-            "initialDate": "03/2025",
-            "endDate": "03/2025",
-            "projectUrlLink": "https://razzo.tech/",
-            "linkedinUrlLink": " ",
-            "githubUrlLink": " ",
-            "developed": true,
-            "developingPorcentage": 100,
-            "icons": [
-                {
-                    "class": "wordpress",
-                    "tooltip": "Wordpress"
-                },
-                {
-                    "class": "css3",
-                    "tooltip": "CSS3"
-                },
-                {
-                    "class": "javascript",
-                    "tooltip": "JavaScript"
-                }
-            ],
-            "compatibility": 3,
-            "images": [
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__001.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__002.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__003.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__004.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__005.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__006.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__007.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__008.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__009.webp"
-            ],
-            "id": "prj_1119bd2067864ecba080d888d7d16b2f"
-        },
-        {
-            "title": "Registrando Marca",
-            "description": "<p>The Registrando Marca project involved the complete redesign of a landing page developed on WordPress using Elementor and Elementor Pro. The primary objective was to modernize the site’s visual appearance, which had previously fallen short in conveying the brand’s desired credibility.</p><p>By harmoniously combining the brand’s colors with contemporary design elements, the new layout introduced visual features such as smooth waves, rounded corners, and modern icons, giving the site a sense of lightness and modernity. Additionally, an institutional video and forms with antispam verification were incorporated to ensure that user-submitted data was both complete and protected.</p><p>The result was an attractive and functional page that fully met the client’s expectations, standing out for its visual clarity and secure data submission. This project strengthened my expertise in interface design, usability optimization, security, and advanced proficiency in WordPress and Elementor.</p>",
-            "image": "assets/images/thumbs/prj_dd369fdc6fb04f21a1a79c7353b6d82f.webp",
-            "initialDate": "08/2024",
-            "endDate": "08/2024",
-            "projectUrlLink": "https://registrandomarca.com.br/",
-            "linkedinUrlLink": " ",
-            "githubUrlLink": " ",
-            "developed": true,
-            "developingPorcentage": 100,
-            "icons": [
-                {
-                    "class": "wordpress",
-                    "tooltip": "Shopify"
-                },
-                {
-                    "class": "css3",
-                    "tooltip": "CSS3"
-                },
-                {
-                    "class": "javascript",
-                    "tooltip": "JavaScript"
-                }
-            ],
-            "compatibility": 3,
-            "images": [
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__001.webp",
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__002.webp",
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__003.webp",
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__004.webp",
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__005.webp",
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__006.webp",
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__007.webp"
-            ],
-            "id": "prj_dd369fdc6fb04f21a1a79c7353b6d82f"
-        },
-        {
-            "title": "Imperial Sexshop",
-            "description": "<p>The Imperial SexShop project emerged from the client’s need to modernize the store’s layout, which was struggling with various technical and performance issues. The solution was to create a landing page developed on WordPress using Elementor and Elementor Pro. The primary objective was to maintain visual consistency with the main online store’s identity, ensuring a seamless experience for users arriving via Google Ads campaigns.</p><p>In addition to a full redesign, the project placed strong emphasis on performance optimization. With significant improvements in performance and SEO metrics, the page achieved scores between 96 and 100, guaranteeing fast and reliable navigation for users.</p><p>The final outcome was a landing page visually aligned with the main store, offering superior performance and a modern, efficient design. This project consolidated my technical expertise in WordPress development, Elementor, performance optimization, and advanced SEO strategies.</p>",
-            "image": "assets/images/thumbs/prj_1af5ecd8cd184016997d26bd90a3d984.webp",
-            "initialDate": "07/2025",
-            "endDate": "06/2025",
-            "projectUrlLink": "https://sexshopamericana.com.br/",
-            "linkedinUrlLink": " ",
-            "githubUrlLink": " ",
-            "developed": true,
-            "developingPorcentage": 100,
-            "icons": [
-                {
-                    "class": "wordpress",
-                    "tooltip": "Wordpress"
-                },
-                {
-                    "class": "css3",
-                    "tooltip": "CSS3"
-                },
-                {
-                    "class": "javascript",
-                    "tooltip": "JavaScript"
-                }
-            ],
-            "compatibility": 3,
-            "images": [
-                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__001.webp",
-                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__002.webp",
-                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__003.webp"
-            ],
-            "id": "prj_1af5ecd8cd184016997d26bd90a3d984"
         }
     ],
     "ui-design": [
@@ -749,6 +640,45 @@
                 "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__010.webp",
                 "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__011.webp",
                 "assets/images/projects/prj_19c85ddaa432bb49d79/prj_19c85ddaa432bb49d79__012.webp"
+            ]
+        },
+        {
+            "id": "prj_19c876a2e2a1093f05d",
+            "title": "Garden Joias",
+            "description": "<p>Nuvemshop e-commerce | Custom layout + banners | Fine jewelry with premium showcase<br /></p><p><strong>Context &amp; objective:</strong> The client was dissatisfied with the previous visual, which seemed amateurish and did not value the fine jewelry proposal. The objective was to rebuild the store with a more elegant presence, bringing credibility and a finish that matched the product level.</p><p><strong>Challenge:</strong> The brand's photos were of high quality, so the banners needed to follow this standard to avoid “undermining” the perceived value. The focus was to create sophisticated compositions, with well-adjusted typography and cutouts, maintaining a fine and consistent aesthetic with the showcase.</p><p><strong>Solution &amp; execution:</strong> I implemented the entire layout on Nuvemshop and created the banners following a more premium line, enhancing the images and organizing the home to function as the main showcase. I worked on visual hierarchy, spacing, and a cleaner composition to give prominence to the pieces, maintaining an elegant rhythm between sections and highlighting products.</p><p><strong>Result:</strong> The result was a modern and elegant store, with high-quality visual content and an initial showcase that reinforces the feeling of sophistication. The banners were refined and consistent with the photos, creating a stronger and more aligned experience with the fine jewelry positioning.</p>",
+            "image": "assets/images/thumbs/prj_19c876a2e2a1093f05d.webp",
+            "initialDate": "08/01/2026",
+            "endDate": "09/01/2026",
+            "projectUrlLink": "https://gardensjoias.com/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "nuvemshop",
+                    "tooltip": "NUVEMSHOP"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c876a2e2a1093f05d/prj_19c876a2e2a1093f05d__001.webp",
+                "assets/images/projects/prj_19c876a2e2a1093f05d/prj_19c876a2e2a1093f05d__002.webp",
+                "assets/images/projects/prj_19c876a2e2a1093f05d/prj_19c876a2e2a1093f05d__003.webp",
+                "assets/images/projects/prj_19c876a2e2a1093f05d/prj_19c876a2e2a1093f05d__004.webp",
+                "assets/images/projects/prj_19c876a2e2a1093f05d/prj_19c876a2e2a1093f05d__005.webp",
+                "assets/images/projects/prj_19c876a2e2a1093f05d/prj_19c876a2e2a1093f05d__006.webp",
+                "assets/images/projects/prj_19c876a2e2a1093f05d/prj_19c876a2e2a1093f05d__007.webp",
+                "assets/images/projects/prj_19c876a2e2a1093f05d/prj_19c876a2e2a1093f05d__008.webp",
+                "assets/images/projects/prj_19c876a2e2a1093f05d/prj_19c876a2e2a1093f05d__009.webp"
             ]
         },
         {
@@ -1094,37 +1024,32 @@
             ]
         },
         {
-            "id": "prj_19c874365fc8722977b",
-            "title": "Carioca Concept",
-            "description": "<p>Yampi E-commerce | Custom layout + CSS adjustments | Brand with a clean and striking identity</p><p></p><p><strong>Context and objective:</strong> The project arose from the client's desire to create a professional online store to consolidate the brand in the digital space. The goal was to build a consistent storefront with a clean visual and a strong identity, ensuring that the experience conveyed trust and valued the products.</p><p><strong>Challenge:</strong> The development was smooth, without major execution obstacles. The point of attention was the limitations of CSS on the platform, which required punctual adjustments to maintain fidelity to the identity manual and ensure a more refined finish.</p><p><strong>Solution and execution:</strong> I implemented the layout in Yampi based on the identity manual, following color patterns, visual hierarchy, and brand style. I made modifications in CSS to correct front-end details and maintain consistency between sections and pages. The composition was designed so that navigation was simple, focused on the product and reinforcing the brand.</p><p><strong>Result:</strong> The result was a clean, well-organized website with a strong identity. The brand's tones appear throughout the store, creating visual unity and presence, while the structure maintains a practical and intuitive shopping experience.</p>",
-            "image": "assets/images/thumbs/prj_19c874365fc8722977b.webp",
-            "initialDate": "02/02/2026",
-            "endDate": "03/02/2026",
-            "projectUrlLink": "https://cariocaconcept.com.br/",
+            "id": "prj_19c8793646d28eca9c4",
+            "title": "Dom Skateboards",
+            "description": "<p>WBuy E-commerce | Personalized home in a free theme | Skateboards and parts with a premium look<br /></p><p><strong>Context and objective:</strong> Dom Patinetes was born from the client's need to bring the strength of the physical store to the digital, acting in a less conventional niche and with few competitors really well positioned. The objective was to create a reliable online showcase, with a professional appearance and a focus on conversion, transmitting authority in the segment of skateboards, parts and accessories.</p><p><strong>Challenge:</strong> Being one of the first experiences in WBuy, adapting to the interfaces and the way to edit the theme took time to understand the flow and “get the hang” of the platform. In addition, the client used the free theme, which limits customizations on the product page, concentrating improvements and resources mainly on the home page.</p><p><strong>Solution and execution:</strong> I implemented and organized the entire layout of the home within the limits of the free theme, building a strong showcase with an impactful main banner, shortcuts by categories and well-defined sections for new releases and bestsellers. I took advantage of the brand manual and high-quality photos to transform the aesthetics into something premium, working contrast and presence with dark tones and yellow, as well as visual elements that reinforce the urban and sporty universe of the skateboard. I also structured areas of social proof and purchase benefits to increase confidence and facilitate the decision.</p><p><strong>Result:</strong> The result was a store on WBuy with a premium appearance, even using a free theme and respecting its limitations. The home page became organized, visually strong and with a clear hierarchy, highlighting products, categories and brand differentials. This raised the standard of presentation and left Dom Patinetes ready to compete with more authority in the digital.</p>",
+            "image": "assets/images/thumbs/prj_19c8793646d28eca9c4.webp",
+            "initialDate": "15/01/2026",
+            "endDate": "16/01/2026",
+            "projectUrlLink": "https://dompatinetes.lojawbuy.com.br/",
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
             "developingPorcentage": 100,
             "icons": [
                 {
-                    "class": "yampi",
-                    "tooltip": "YAMPI"
-                },
-                {
-                    "class": "css3",
-                    "tooltip": "CSS3"
+                    "class": "wbuy",
+                    "tooltip": "WBUY"
                 }
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__001.webp",
-                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__002.webp",
-                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__003.webp",
-                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__004.webp",
-                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__005.webp",
-                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__006.webp",
-                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__007.webp",
-                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__008.webp"
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__001.webp",
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__002.webp",
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__003.webp",
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__004.webp",
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__005.webp",
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__006.webp",
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__007.webp"
             ]
         },
         {
@@ -1213,6 +1138,40 @@
             ]
         },
         {
+            "id": "prj_19c874365fc8722977b",
+            "title": "Carioca Concept",
+            "description": "<p>Yampi E-commerce | Custom layout + CSS adjustments | Brand with a clean and striking identity</p><p></p><p><strong>Context and objective:</strong> The project arose from the client's desire to create a professional online store to consolidate the brand in the digital space. The goal was to build a consistent storefront with a clean visual and a strong identity, ensuring that the experience conveyed trust and valued the products.</p><p><strong>Challenge:</strong> The development was smooth, without major execution obstacles. The point of attention was the limitations of CSS on the platform, which required punctual adjustments to maintain fidelity to the identity manual and ensure a more refined finish.</p><p><strong>Solution and execution:</strong> I implemented the layout in Yampi based on the identity manual, following color patterns, visual hierarchy, and brand style. I made modifications in CSS to correct front-end details and maintain consistency between sections and pages. The composition was designed so that navigation was simple, focused on the product and reinforcing the brand.</p><p><strong>Result:</strong> The result was a clean, well-organized website with a strong identity. The brand's tones appear throughout the store, creating visual unity and presence, while the structure maintains a practical and intuitive shopping experience.</p>",
+            "image": "assets/images/thumbs/prj_19c874365fc8722977b.webp",
+            "initialDate": "02/02/2026",
+            "endDate": "03/02/2026",
+            "projectUrlLink": "https://cariocaconcept.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "yampi",
+                    "tooltip": "YAMPI"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__001.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__002.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__003.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__004.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__005.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__006.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__007.webp",
+                "assets/images/projects/prj_19c874365fc8722977b/prj_19c874365fc8722977b__008.webp"
+            ]
+        },
+        {
             "id": "prj_19c83ade848d1c97f84",
             "title": "Marie's Secrets",
             "description": "<p>Shopify E-commerce | Custom layout + personalization field | Children's fashion store<br /></p><p><strong>Context and objective:</strong> The store needed a completely new layout to reflect the delicacy and tenderness of the children's universe. The goal was to create a friendly and gentle shopping experience that valued personalized products and communicated with the brand's color palette.</p><p><strong>Challenge:</strong> The original palette had several light colors and it was necessary to select the shades that ensured adequate readability and contrast. Another important challenge was to implement a personalization field where the customer could enter their child's name for custom production, something essential for the type of product offered.</p><p><strong>Solution and execution:</strong> I designed the layout on Shopify, adjusting the base theme with HTML and CSS to achieve a delicate and coherent visual with the segment. I integrated a specific application from the platform to add the personalization field, ensuring that the functionality worked stably. The colors were chosen carefully, maintaining pastel tones that harmonized with the product thumbnails and transmitted the welcoming feeling that the brand intended.</p><p><strong>Result:</strong> The result was a modern and delicate store, where the light colors and visual elements are in harmony with the product photos. The personalization field made it possible for parents to add their child's name simply and intuitively, adding value to the product and improving the shopping experience.</p>",
@@ -1248,6 +1207,177 @@
                 "assets/images/projects/prj_19c83ade848d1c97f84/prj_19c83ade848d1c97f84__006.webp",
                 "assets/images/projects/prj_19c83ade848d1c97f84/prj_19c83ade848d1c97f84__007.webp",
                 "assets/images/projects/prj_19c83ade848d1c97f84/prj_19c83ade848d1c97f84__008.webp"
+            ]
+        },
+        {
+            "id": "prj_19c877dd3c47ee5cf28",
+            "title": "520 Rouparia",
+            "description": "<p>Tray E-commerce | Institutional layout | Women's fashion with direct storefront<br /></p><p><strong>Context and objective:</strong> 520 Rouparia was created to quickly and functionally bring the brand online, with a store ready to organize categories and sell without relying solely on social media. The idea was to have a simple storefront, with direct communication of promotions and a light environment to showcase the pieces.</p><p><strong>Challenge:</strong> Being a project with a more generic structure within Tray, the focus was to work with what the platform offers as standard, without promising something totally exclusive. The greatest care was to maintain visual consistency and organization, so that the store would not have an improvised appearance even using a more standard template.</p><p><strong>Solution and execution:</strong> I implemented the store using a clean and neutral aesthetic, exploring earthy and light tones to create a sense of elegance and lightness. I structured the home as the main storefront, with a large promotion banner, benefits right below, and shortcuts by category with images, making it easier for the user to reach the products. The new arrivals and favorites sections were organized objectively, maintaining plenty of visual breathing room to enhance the photos.</p><p><strong>Result:</strong> The result was a functional and well-presented store, with a clear storefront and simple navigation. Even with a more generic layout, the whole set was coherent and had a professional appearance, highlighting promotions, categories and products with a light visual identity aligned with the fashion segment.</p>",
+            "image": "assets/images/thumbs/prj_19c877dd3c47ee5cf28.webp",
+            "initialDate": "03/02/2026",
+            "endDate": "04/02/2026",
+            "projectUrlLink": "https://520rouparia.commercesuite.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "tray",
+                    "tooltip": "TRAY"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c877dd3c47ee5cf28/prj_19c877dd3c47ee5cf28__001.webp",
+                "assets/images/projects/prj_19c877dd3c47ee5cf28/prj_19c877dd3c47ee5cf28__002.webp",
+                "assets/images/projects/prj_19c877dd3c47ee5cf28/prj_19c877dd3c47ee5cf28__003.webp",
+                "assets/images/projects/prj_19c877dd3c47ee5cf28/prj_19c877dd3c47ee5cf28__004.webp",
+                "assets/images/projects/prj_19c877dd3c47ee5cf28/prj_19c877dd3c47ee5cf28__005.webp",
+                "assets/images/projects/prj_19c877dd3c47ee5cf28/prj_19c877dd3c47ee5cf28__006.webp",
+                "assets/images/projects/prj_19c877dd3c47ee5cf28/prj_19c877dd3c47ee5cf28__007.webp"
+            ]
+        },
+        {
+            "id": "prj_19c87acb771bc2efe8b",
+            "title": "Niterói Electric Store",
+            "description": "<p></p>",
+            "image": "assets/images/thumbs/prj_19c87acb771bc2efe8b.webp",
+            "initialDate": "02/02/2026",
+            "endDate": "03/02/2026",
+            "projectUrlLink": "https://lojaeletricaniteroi.lojawbuy.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "wbuy",
+                    "tooltip": "WBUY"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__001.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__002.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__003.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__004.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__005.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__006.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__007.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__008.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__009.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__010.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__011.webp"
+            ]
+        },
+        {
+            "id": "prj_1119bd2067864ecba080d888d7d16b2f",
+            "title": "Razzo",
+            "description": "<p>The Razo project involved creating a landing page on the WordPress platform based on a layout previously provided by the client via Figma. Although the main focus was not on intensive programming, the challenge lay in faithfully reproducing the original design, supplemented by final adjustments to fully meet the client’s expectations.</p><p>The result was a modern, responsive site enriched with rounded borders and animated elements, delivering a dynamic and enjoyable experience for users. The page also includes a translation plugin to ensure accessibility for a diverse audience and is structured into three main sections: Home, Services, and Contact.</p><p>Razo’s landing page exemplifies how the combination of thoughtful design and precise implementation can produce visually appealing and highly functional results, enhancing both user experience and brand identity.</p>",
+            "image": "assets/images/thumbs/prj_1119bd2067864ecba080d888d7d16b2f.webp",
+            "initialDate": "03/2025",
+            "endDate": "03/2025",
+            "projectUrlLink": "https://razzo.tech/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "wordpress",
+                    "tooltip": "Wordpress"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "javascript",
+                    "tooltip": "JavaScript"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__001.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__002.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__003.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__004.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__005.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__006.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__007.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__008.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__009.webp"
+            ]
+        },
+        {
+            "id": "prj_dd369fdc6fb04f21a1a79c7353b6d82f",
+            "title": "Registrando Marca",
+            "description": "<p>The Registrando Marca project involved the complete redesign of a landing page developed on WordPress using Elementor and Elementor Pro. The primary objective was to modernize the site’s visual appearance, which had previously fallen short in conveying the brand’s desired credibility.</p><p>By harmoniously combining the brand’s colors with contemporary design elements, the new layout introduced visual features such as smooth waves, rounded corners, and modern icons, giving the site a sense of lightness and modernity. Additionally, an institutional video and forms with antispam verification were incorporated to ensure that user-submitted data was both complete and protected.</p><p>The result was an attractive and functional page that fully met the client’s expectations, standing out for its visual clarity and secure data submission. This project strengthened my expertise in interface design, usability optimization, security, and advanced proficiency in WordPress and Elementor.</p>",
+            "image": "assets/images/thumbs/prj_dd369fdc6fb04f21a1a79c7353b6d82f.webp",
+            "initialDate": "08/2024",
+            "endDate": "08/2024",
+            "projectUrlLink": "https://registrandomarca.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "wordpress",
+                    "tooltip": "Shopify"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "javascript",
+                    "tooltip": "JavaScript"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__001.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__002.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__003.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__004.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__005.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__006.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__007.webp"
+            ]
+        },
+        {
+            "id": "prj_1af5ecd8cd184016997d26bd90a3d984",
+            "title": "Imperial Sexshop",
+            "description": "<p>The Imperial SexShop project emerged from the client’s need to modernize the store’s layout, which was struggling with various technical and performance issues. The solution was to create a landing page developed on WordPress using Elementor and Elementor Pro. The primary objective was to maintain visual consistency with the main online store’s identity, ensuring a seamless experience for users arriving via Google Ads campaigns.</p><p>In addition to a full redesign, the project placed strong emphasis on performance optimization. With significant improvements in performance and SEO metrics, the page achieved scores between 96 and 100, guaranteeing fast and reliable navigation for users.</p><p>The final outcome was a landing page visually aligned with the main store, offering superior performance and a modern, efficient design. This project consolidated my technical expertise in WordPress development, Elementor, performance optimization, and advanced SEO strategies.</p>",
+            "image": "assets/images/thumbs/prj_1af5ecd8cd184016997d26bd90a3d984.webp",
+            "initialDate": "07/2025",
+            "endDate": "06/2025",
+            "projectUrlLink": "https://sexshopamericana.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "wordpress",
+                    "tooltip": "Wordpress"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "javascript",
+                    "tooltip": "JavaScript"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__001.webp",
+                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__002.webp",
+                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__003.webp"
             ]
         }
     ]
