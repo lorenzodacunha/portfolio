@@ -28,7 +28,7 @@
       ]
     }
   },
-  "about_me": "Soy <b>Lorenzo da Cunha</b>, desarrollador front-end apasionado por crear interfaces modernas y experiencias digitales únicas. Con 18 años, he trabajado en proyectos de comercio electrónico, sistemas web y landing pages, siempre buscando transformar ideas en soluciones sorprendentes.",
+  "about_me": "<p>Soy <strong>Lorenzo da Cunha</strong>, desarrollador front-end especializado en <strong>e-commerce</strong> y <strong>rendimiento</strong>, con enfoque principal en <strong>React</strong> y <strong>Shopify (Liquid)</strong>.</p><p>He participado en <strong>más de 75 proyectos</strong>, incluyendo <strong>más de 60 tiendas online</strong>, además de <strong>sistemas web</strong> y <strong>landing pages</strong>. Mi trabajo va más allá de lo visual: me enfoco en la <strong>estructura técnica</strong>, el <strong>rendimiento</strong> y la <strong>experiencia de usuario</strong>, garantizando que cada interfaz no solo funcione, sino que también rinda.</p><p>Tengo facilidad para transformar requerimientos de negocio en soluciones claras, escalables y bien estructuradas, desde el diseño hasta el código en producción.</p><p>Aunque tengo <strong>19 años</strong>, he construido experiencia práctica en proyectos reales, priorizando siempre la <strong>organización</strong>, la <strong>velocidad</strong> y el <strong>impacto</strong>.</p>",
   "button": {
     "resume": "Ver Currículum"
   },
@@ -39,7 +39,8 @@
     "ui": "UI/UX Designer",
     "webdesigner": "Web Designer",
     "see_more": "<i class=\"fa-solid fa-eye\"></i>Ver más",
-    "in_progress": "En desarrollo"
+    "in_progress": "En desarrollo",
+    "featured": "Destacado"
   },
   "titles": {
     "about": "SOBRE MÍ",

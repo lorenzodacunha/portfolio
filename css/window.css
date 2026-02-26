@@ -9,7 +9,7 @@
 .window {
     background: var(--window-color-1);
     border-radius: 20px;
-    width: 500px;
+    width: 600px;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -67,6 +67,19 @@
     color: var(--text-color);
     text-align: center;
     transition: all .5s;
+}
+
+.about-me-richtext {
+    text-align: left;
+    line-height: 1.5;
+}
+
+.about-me-richtext > :first-child {
+    margin-top: 0;
+}
+
+.about-me-richtext > :last-child {
+    margin-bottom: 0;
 }
 
 .code-format {
@@ -193,12 +206,14 @@
 .window-search {
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
     background: var(--window-color-2);
     border-radius: 10px 10px 0 0;
     z-index: 4;
     transition: all .5s;
+    gap: 10px;
+    padding: 0 10px;
+    min-height: 45px;
+    max-height: 45px;
 }
 
 .wbs {
@@ -261,10 +276,19 @@
     display: flex;
     justify-content: center;
     max-width: max-content;
-    margin: 0 5px;
     gap: 5px;
     color: var(--searchbar-button-color);
 
+}
+.search-results {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    max-width: max-content;
+    gap: 5px;
+    color: var(--searchbar-button-color);
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .window-display {
@@ -306,7 +330,6 @@
     color: white;
     border-radius: 20px;
     padding: 0 10px;
-    margin: 10px 0px 10px 0;
     font-weight: 500;
     font-size: 16px;
     height: 25px;

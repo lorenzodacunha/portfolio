@@ -34,23 +34,63 @@ export async function loadTranslations(lang) {
 
 export function applyTranslations(translations) {
   applyingTranslations = true;
-  const allowedTags = ['b', 'i', 'strong', 'em', 'br', 'u'];
+  const isDomPurifyAvailable = typeof window !== 'undefined' && window.DOMPurify;
+
+  const sanitizeTranslationHtml = (value, key) => {
+    const raw = String(value ?? '');
+
+    if (!isDomPurifyAvailable) {
+      const temp = document.createElement('div');
+      temp.textContent = raw;
+      return temp.innerHTML;
+    }
+
+    const baseConfig = {
+      ALLOWED_TAGS: ['b', 'i', 'strong', 'em', 'br', 'u', 'span'],
+      ALLOWED_ATTR: ['class'],
+      ALLOW_DATA_ATTR: false,
+    };
+
+    if (key === 'about_me') {
+      return window.DOMPurify.sanitize(raw, {
+        ALLOWED_TAGS: [
+          'p',
+          'br',
+          'strong',
+          'b',
+          'em',
+          'i',
+          'u',
+          'span',
+          'h1',
+          'h2',
+          'h3',
+          'h4',
+          'h5',
+          'h6',
+          'ul',
+          'ol',
+          'li',
+          'blockquote',
+          'a',
+          'code',
+          'pre',
+        ],
+        ALLOWED_ATTR: ['class', 'href', 'target', 'rel'],
+        ALLOWED_URI_REGEXP: /^(?:(?:https?|mailto):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i,
+        ALLOW_DATA_ATTR: false,
+      });
+    }
+
+    return window.DOMPurify.sanitize(raw, baseConfig);
+  };
 
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
     const value = getNestedTranslation(translations, key);
 
     if (value) {
-      const tempDiv = document.createElement('div');
-      tempDiv.innerHTML = value;
-
-      tempDiv.querySelectorAll('*').forEach(node => {
-        if (!allowedTags.includes(node.tagName.toLowerCase())) {
-          node.replaceWith(...node.childNodes);
-        }
-      });
-
-      element.innerHTML = tempDiv.innerHTML;
+      element.innerHTML = sanitizeTranslationHtml(value, key);
     }
   });
   applyingTranslations = false;

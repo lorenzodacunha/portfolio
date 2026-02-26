@@ -99,6 +99,8 @@
     --bender-fill-r: url(#r-eye-gradient);
     --bender-fill-l: url(#r-eye-gradient);
     --gap-size: 16px;
+    --in-progress: #ffc400; 
+    --featured: #4caf50
 }
 
 :root.light-theme {
@@ -146,6 +148,8 @@
     --bender-fill-r: url(#r-eye-gradient);
     --bender-fill-l: url(#l-eye-gradient);
     --gap-size: 16px;
+    --in-progress: #ffc400; 
+    --featured: #4caf50;
 }
 
 html {

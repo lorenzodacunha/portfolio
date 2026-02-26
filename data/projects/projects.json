@@ -12,6 +12,7 @@
             "githubUrlLink": "",
             "developed": false,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 95,
             "icons": [
                 {
@@ -66,6 +67,7 @@
             "githubUrlLink": "https://github.com/lorenzodacunha/portfolio",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -106,6 +108,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -161,6 +164,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -210,6 +214,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": true,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -260,6 +265,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -308,6 +314,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -354,6 +361,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -396,6 +404,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -440,6 +449,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 10,
             "icons": [
                 {
@@ -463,6 +473,31 @@
             "images": [
                 "assets/images/projects/prj_ba27ec3ef0554c6bb540df808d447339/prj_ba27ec3ef0554c6bb540df808d447339__001.webp"
             ]
+        },
+        {
+            "id": "prj_19c9ab3cd1f5288a356",
+            "title": "teste",
+            "description": "  <p>\n    Sou <strong>Lorenzo da Cunha</strong>, desenvolvedor front-end especializado em\n    <strong>e-commerce</strong> e <strong>performance</strong>, com foco principal em\n    <strong>React</strong> e <strong>Shopify (Liquid)</strong>.\n  </p>\n\n  <p>\n    Já participei de <strong>mais de 75 projetos</strong>, sendo <strong>mais de 60 e-commerces</strong>,\n    além de <strong>sistemas web</strong> e <strong>landing pages</strong>. Minha atuação vai além do visual:\n    trabalho na <strong>estrutura técnica</strong>, <strong>performance</strong> e\n    <strong>experiência do usuário</strong>, garantindo que cada interface não apenas funcione, mas performe.\n  </p>\n\n  <p>\n    Tenho facilidade em transformar requisitos de negócio em soluções claras, escaláveis e bem estruturadas,\n    do layout ao código em produção.\n  </p>\n\n  <p>\n    Mesmo com <strong>19 anos</strong>, construí experiência prática em projetos reais, sempre priorizando\n    <strong>organização</strong>, <strong>velocidade</strong> e <strong>impacto</strong>.\n  </p>",
+            "image": "assets/images/thumbs/prj_19c9ab3cd1f5288a356.webp",
+            "initialDate": "111",
+            "endDate": "111",
+            "projectUrlLink": "",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "featured": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "figma",
+                    "tooltip": "FIGMA"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c9ab3cd1f5288a356/prj_19c9ab3cd1f5288a356__001.webp"
+            ]
         }
     ],
     "ui-design": [
@@ -478,6 +513,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -521,6 +557,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": true,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -565,6 +602,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -604,6 +642,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -644,6 +683,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -690,6 +730,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -728,6 +769,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -767,6 +809,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -804,6 +847,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -835,6 +879,44 @@
             ]
         },
         {
+            "id": "prj_19c9a42ed16a94695d8",
+            "title": "AlterEgo Infinity",
+            "description": "<p>Alterego | Landing Page Shopify com GemPages | Direção visual + estrutura de conversão | Supply para festas</p><p></p><h2><strong>Visão geral</strong></h2><p>Este projeto foi a criação de uma landing page para a Alterego, com foco em entregar um visual moderno, agressivo e memorável, alinhado ao universo de supply para festas. A página foi construída na Shopify utilizando o GemPages, estruturando uma narrativa de venda completa para o produto Infinity Cable, combinando identidade forte, prova social e blocos de benefícios pensados para conversão.</p><p></p><h2><strong>Contexto e objetivo</strong></h2><p>O objetivo era sair do padrão de página de produto tradicional e criar uma experiência que parecesse uma página de campanha, com ritmo visual, seções bem definidas e CTAs distribuídos ao longo da jornada. A identidade da marca precisava aparecer em cada dobra, com contraste alto, tipografia marcante e uma estética que remete diretamente ao ambiente de festas, energia e performance.</p><p></p><h2><strong>O desafio</strong></h2><p>O desafio foi equilibrar impacto visual com leitura rápida. A página precisava ser ousada e escura, mas sem perder clareza, principalmente nos pontos de decisão como preço, variações e CTA. Além disso, era necessário construir uma narrativa completa com prova social, comparativos, especificações e FAQ sem transformar a LP em um bloco pesado e cansativo.</p><p></p><h2><strong>A estratégia</strong></h2><p>A estratégia foi trabalhar em camadas de persuasão, usando contraste para guiar o olhar e alternância de blocos para manter ritmo. A página começa com um hero direto e comercial, passa por seções de benefícios com copy objetiva, incorpora prova social em vídeo no meio da jornada e finaliza com comparativo, especificações, avaliações e FAQ. Os botões de ação aparecem em pontos recorrentes para capturar intenção no momento certo.</p><p></p><h2><strong>O que foi implementado</strong></h2><p><strong>Estrutura de conversão no GemPages:</strong></p><ul><li><p><strong>Hero com hierarquia forte:</strong> foco no produto, preço e CTA principal, com área de mídia e informações de compra organizadas para decisão rápida.</p></li><li><p><strong>Blocos de benefícios por dobras:</strong> seções explicando diferenciais do produto com títulos curtos e visuais de apoio, mantendo leitura escaneável.</p></li><li><p><strong>CTAs recorrentes:</strong> botões de ação distribuídos ao longo da página para reduzir fricção e aumentar conversão.</p></li></ul><p></p><p><strong>Direção visual e identidade de marca:</strong></p><ul><li><p><strong>Contraste alto e estética noturna:</strong> uso de fundo escuro com destaques em rosa e botões em verde para criar energia visual e guiar atenção para ações.</p></li><li><p><strong>Ritmo com alternância de seções:</strong> blocos claros e escuros alternados para manter a página dinâmica e evitar sensação de monotonia.</p></li><li><p><strong>Tipografia e composição:</strong> títulos grandes e diretos, com hierarquia pensada para leitura rápida em mobile e desktop.</p></li></ul><p></p><p><strong>Prova social e credibilidade:</strong></p><ul><li><p><strong>Conteúdo em vídeo no meio da jornada:</strong> seção com vídeos no formato UGC para reforçar uso real e reduzir objeções.</p></li><li><p><strong>Avaliações e reputação:</strong> bloco final com reviews para sustentar confiança antes do FAQ e fechamento.</p></li></ul><p></p><p><strong>Conteúdo técnico e redução de objeções:</strong></p><ul><li><p><strong>Comparativo visual:</strong> seção de comparação para posicionar o produto de forma mais clara e fortalecer decisão.</p></li><li><p><strong>Especificações essenciais:</strong> lista objetiva com pontos técnicos para deixar o produto mais transparente e confiável.</p></li><li><p><strong>FAQ estruturado:</strong> perguntas frequentes organizadas para reduzir dúvidas e preparar o usuário para compra.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>O resultado foi uma landing page moderna, com identidade forte e narrativa de venda completa, construída para conversão. A combinação de Shopify com GemPages permitiu criar uma experiência com ritmo, alto impacto visual e estrutura estratégica, traduzindo a essência da Alterego para uma página que parece campanha, sustenta autoridade com prova social e conduz o usuário com clareza até a ação.</p>",
+            "image": "assets/images/thumbs/prj_19c9a42ed16a94695d8.webp",
+            "initialDate": "16/09/2025",
+            "endDate": "19/09/2025",
+            "projectUrlLink": "https://www.alterego.supply/products/infinity-cable",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "featured": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__001.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__002.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__003.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__004.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__005.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__006.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__007.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__008.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__009.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__010.webp"
+            ]
+        },
+        {
             "id": "prj_dd369fdc6fb04f21a1a79c7353b6d82f",
             "title": "Registrando Marca",
             "description": "<p>Registrando Marca | Landing page WordPress | Elementor + Elementor Pro</p><p></p><h2><strong>Visão geral</strong></h2><p>O projeto Registrando Marca envolveu a reformulação completa de uma landing page em WordPress, utilizando Elementor e Elementor Pro. A entrega teve como foco modernizar a experiência visual e elevar a percepção de credibilidade da marca, corrigindo um layout anterior que não comunicava confiança nem padrão profissional.</p><p></p><h2><strong>Contexto e objetivo</strong></h2><p>Landing pages voltadas à captação precisam gerar segurança nos primeiros segundos. O objetivo foi criar uma página com estética atual, hierarquia clara e navegação fluida, mantendo consistência com a identidade visual da marca e reforçando autoridade. Também foi essencial melhorar o fluxo de contato, garantindo que os leads chegassem com dados completos e protegidos contra spam.</p><p></p><h2><strong>O desafio</strong></h2><p>O desafio principal foi transformar uma página com aparência fraca em uma experiência moderna sem perder simplicidade. Era necessário reorganizar seções, criar ritmo visual e melhorar escaneabilidade, equilibrando leveza com postura institucional. Além disso, o formulário precisava ser mais confiável, com validações e proteção para evitar envios incompletos ou automatizados.</p><p></p><h2><strong>A estratégia</strong></h2><p>A estratégia foi reconstruir a interface com base em um sistema visual consistente, usando as cores da marca como pontos de destaque e fundos mais leves para conforto visual. O layout foi estruturado em dobras com hierarquia previsível, utilizando elementos contemporâneos para transmitir modernidade e organização. Paralelamente, o fluxo de conversão foi reforçado com vídeo institucional e formulários mais seguros.</p><p></p><h2><strong>O que foi implementado</strong></h2><p><strong>Redesign visual e estrutura de dobras:</strong></p><ul><li><p><strong>Reformulação completa do layout:</strong> reorganização das seções para melhorar leitura, clareza e jornada até o contato.</p></li><li><p><strong>Elementos contemporâneos:</strong> uso de ondas suaves, cantos arredondados e ícones modernos para criar um visual atual e leve.</p></li><li><p><strong>Paleta aplicada com consistência:</strong> combinação harmoniosa das cores da marca com fundos e blocos de respiro para reforçar credibilidade.</p></li></ul><p></p><p><strong>Conversão e confiança:</strong></p><ul><li><p><strong>Vídeo institucional:</strong> inserção de conteúdo audiovisual para reforçar autoridade e melhorar retenção na página.</p></li><li><p><strong>Formulários com proteção:</strong> implementação de verificação antispam e validações para garantir envios completos e reduzir lixo de leads.</p></li></ul><p></p><p><strong>Implementação em WordPress:</strong></p><ul><li><p><strong>Elementor e Elementor Pro:</strong> construção das seções com componentes editáveis, facilitando manutenção e futuras melhorias.</p></li><li><p><strong>Responsividade:</strong> ajustes para manter boa leitura e experiência consistente em desktop e mobile.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>O resultado foi uma landing page atrativa e funcional, com visual moderno, hierarquia clara e maior percepção de credibilidade. O fluxo de contato ficou mais seguro e confiável, com proteção contra spam e coleta mais consistente de dados. O projeto fortaleceu minha experiência em UI, usabilidade e segurança aplicada à conversão, com domínio avançado de WordPress, Elementor e Elementor Pro.</p>",
@@ -846,6 +928,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -884,6 +967,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -924,6 +1008,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -964,6 +1049,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1011,6 +1097,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1056,6 +1143,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1089,6 +1177,44 @@
             ]
         },
         {
+            "id": "prj_19c9aa2905bc5f059c5",
+            "title": "ALLPRO",
+            "description": "<p>ALLPRO | E-commerce Yampi | Direção visual + configuração de layout | Universo gamer e geek</p><p></p><h2><strong>Visão geral</strong></h2><p>A ALLPRO foi um projeto de e-commerce desenvolvido na plataforma Yampi, com foco em criar uma experiência moderna, organizada e comercial para um catálogo gamer e geek. Minha responsabilidade foi estruturar o layout e a apresentação visual da loja, garantindo uma vitrine forte na home e uma página de produto clara, escaneável e pronta para conversão.</p><p></p><h2><strong>Contexto e objetivo</strong></h2><p>O objetivo era entregar uma loja com identidade marcante, mas fácil de navegar, considerando um catálogo com produtos visuais, como Funko Pop, acessórios e periféricos. A estratégia foi construir uma home que funcionasse como vitrine de promoções e categorias, ao mesmo tempo em que a página de produto mantivesse hierarquia simples para acelerar decisão de compra.</p><p></p><h2><strong>O desafio</strong></h2><p>O desafio principal foi equilibrar um visual forte, com cores intensas e atmosfera gamer, sem perder legibilidade. Além disso, era necessário organizar múltiplas seções de vitrine, promoções e prova social sem transformar a página inicial em um bloco poluído. Na página de produto, a prioridade foi manter clareza no preço, chamada de ação e informações essenciais, com leitura rápida tanto no desktop quanto no mobile.</p><p></p><h2><strong>A estratégia</strong></h2><p>A estratégia foi aplicar um sistema visual consistente baseado em contraste e repetição de componentes. A home foi estruturada com um hero promocional forte, seguida por atalhos de categorias e vitrines em carrossel, criando ritmo e mantendo o usuário navegando. O layout também priorizou elementos de confiança, como benefícios de compra, avaliações e áreas de cadastro, reforçando credibilidade ao longo da jornada.</p><p></p><h2><strong>O que foi implementado</strong></h2><p><strong>Home page como vitrine comercial:</strong></p><ul><li><p><strong>Hero promocional:</strong> banner principal com oferta de primeira compra e CTA em destaque, criando impacto imediato e direcionando ação.</p></li><li><p><strong>Atalhos de categorias:</strong> cards com ícones para acesso rápido a categorias como acessórios, jogos, Funko Pop, periféricos e hardware.</p></li><li><p><strong>Vitrines por intenção:</strong> seções como “Mais vendidos” e “Promoção” em formato de carrossel para aumentar descoberta e facilitar comparação.</p></li><li><p><strong>Banners de destaque:</strong> blocos horizontais para reforçar categorias e campanhas, mantendo ritmo visual ao longo da home.</p></li></ul><p></p><p><strong>Identidade visual e consistência:</strong></p><ul><li><p><strong>Paleta com alto contraste:</strong> base roxa com detalhes em laranja para reforçar o universo gamer, com CTAs bem visíveis.</p></li><li><p><strong>Tipografia e hierarquia:</strong> títulos grandes e leitura direta, com botões e preços em evidência para decisão rápida.</p></li><li><p><strong>Componentes padronizados:</strong> repetição de cards de produto e botões para criar previsibilidade e melhorar escaneabilidade.</p></li></ul><p></p><p><strong>Página de produto orientada a conversão:</strong></p><ul><li><p><strong>Galeria clara:</strong> imagens com miniaturas laterais para visualização rápida do produto.</p></li><li><p><strong>Área de compra objetiva:</strong> preço em destaque, seleção de quantidade e CTA principal com leitura imediata.</p></li><li><p><strong>Cálculo de frete acessível:</strong> campo de CEP posicionado de forma visível, sem competir com o CTA.</p></li><li><p><strong>Conteúdo organizado:</strong> descrição do produto, especificações técnicas e avaliações estruturadas em blocos para leitura leve.</p></li></ul><p></p><p><strong>Confiança e retenção:</strong></p><ul><li><p><strong>Bloco de avaliações:</strong> seção dedicada para reforçar prova social e reduzir objeções.</p></li><li><p><strong>Newsletter:</strong> área de cadastro para captar leads e manter relacionamento com a audiência.</p></li><li><p><strong>Rodapé completo:</strong> estrutura com informações institucionais, políticas, atendimento e selos de segurança para reforçar credibilidade.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>O resultado foi uma loja Yampi com visual marcante e navegação simples, pronta para vender dentro do universo gamer e geek. A home funciona como vitrine comercial com campanhas e categorias bem organizadas, enquanto a página de produto mantém foco em conversão com hierarquia clara, conteúdo escaneável e elementos de confiança distribuídos na jornada.</p>",
+            "image": "assets/images/thumbs/prj_19c9aa2905bc5f059c5.webp",
+            "initialDate": "24/02/2026",
+            "endDate": "25/02/2026",
+            "projectUrlLink": "",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "featured": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "yampi",
+                    "tooltip": "YAMPI"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__001.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__002.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__003.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__004.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__005.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__006.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__007.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__008.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__009.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__010.webp"
+            ]
+        },
+        {
             "id": "prj_19c83c3dd09f0b6cdc2",
             "title": "Pratesia",
             "description": "<p>E-commerce Shopify | Layout personalizado | Loja de acessórios em prata<br /></p><p><strong>Contexto e objetivo:</strong> A cliente já comercializava acessórios de prata pelas redes sociais e queria ampliar as vendas com uma presença digital mais robusta. O objetivo era traduzir a elegância e o brilho da prata para um layout de loja online que fosse ao mesmo tempo sofisticado, fino e convidativo para novos clientes.</p><p><strong>Desafio:</strong> A logo da marca tem um formato um pouco fora do convencional, o que dificultou sua aplicação sobre um cabeçalho branco. Também foi necessário equilibrar várias cores claras da paleta original para manter legibilidade e modernidade, sem abrir mão do aspecto refinado que a marca de joias exige.</p><p><strong>Solução e execução:</strong> Desenvolvi o layout na Shopify buscando modernidade e sofisticação, utilizando bordas arredondadas e uma composição de cores pensada para valorizar a logo. Ajustei o cabeçalho para usar a cor principal da marca, criando contraste e destacando a identidade visual. A paleta escolhida, com prata, azul-marinho e branco, foi aplicada de forma consistente em toda a loja, harmonizando com os produtos e reforçando a proposta de acessório refinado.</p><p><strong>Resultado:</strong> O layout resultante ficou bem organizado e transmitiu uma sensação de luxo leve, com harmonia entre o brilho da prata e os tons de azul e branco. A mudança no cabeçalho valorizou a logo e conferiu um ar sofisticado ao conjunto, contribuindo para uma experiência de compra mais coerente com a qualidade dos produtos oferecidos.</p>",
@@ -1100,6 +1226,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1139,6 +1266,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1182,6 +1310,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1222,6 +1351,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1258,6 +1388,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1295,6 +1426,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1334,6 +1466,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1374,6 +1507,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1417,6 +1551,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1454,6 +1589,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1494,6 +1630,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1534,6 +1671,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1573,6 +1711,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1611,6 +1750,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": true,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1645,6 +1785,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1684,6 +1825,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1723,6 +1865,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1753,6 +1896,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1801,6 +1945,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1835,6 +1980,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1870,6 +2016,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1909,6 +2056,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {

@@ -426,21 +426,36 @@
   position: relative;
 }
 
-.card-thumb.developing img {
-  filter: grayscale(01) blur(0.8px);
+.badge {
+  color: #fff;
+  padding: 2.5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: max-content;
 }
 
-.developing-badge {
+.featured-badge{
+  background: var(--featured);
+  
+}
+
+.in-progress-badge {
+  background: var(--in-progress);
+  color: var(--primary-gray);
+}
+
+.card-badges {
   position: absolute;
   top: 5px;
   left: 5px;
-  color: #fff;
-  padding: 2px 6px;
-  font-size: 13px;
-  font-weight: 600;
   z-index: 2;
-  border-radius: 5px;
-  background: var(--extreme-black-orange);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .card-thumb img {

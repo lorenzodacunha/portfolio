@@ -10,6 +10,27 @@ const sidebarTexts = document.querySelectorAll('.sidebar-Btn-Text, .sidebar-Titt
 const sidebarRelative = document.querySelector('.sidebar-relative');
 const ALL_PROJECTS_CATEGORY = 'all-projects';
 const PREFERRED_ALL_ORDER = ['web-designer', 'front-end', 'ui-design'];
+const MOBILE_MAX_WIDTH = 768;
+let currentProjectCount = 0;
+let projectCountResizeTimer = null;
+
+function isMobileViewport() {
+    return window.matchMedia(`(max-width: ${MOBILE_MAX_WIDTH}px)`).matches;
+}
+
+function updateProjectCount(count = currentProjectCount) {
+    const projectCountElement = document.getElementById('project-count');
+    if (!projectCountElement) return;
+
+    const normalizedCount = Number.isFinite(Number(count))
+        ? Math.max(0, Math.floor(Number(count)))
+        : 0;
+
+    currentProjectCount = normalizedCount;
+    projectCountElement.textContent = isMobileViewport()
+        ? `${normalizedCount}`
+        : `${normalizedCount} Projetos`;
+}
 
 function getProjectEntries(projetos, categoria) {
     if (categoria !== ALL_PROJECTS_CATEGORY) {
@@ -231,8 +252,20 @@ export async function loadProjects(categoria) {
             const t = getTranslations();
             const base = t?.search?.paths?.projectsCategory || 'Portfolio/projetos/categorias/';
             searchBar.textContent = `${base}${categoria}`;
+            const inProgressLabel = t?.projects?.in_progress || 'Em desenvolvimento';
+            const featuredLabel = t?.projects?.featured || 'Destaque';
 
-            const projectEntries = getProjectEntries(projetos, categoria);
+            const projectEntries = getProjectEntries(projetos, categoria)
+                .map((entry, originalOrder) => ({ ...entry, originalOrder }))
+                .sort((a, b) => {
+                    const featuredA = Boolean(a?.projeto?.featured);
+                    const featuredB = Boolean(b?.projeto?.featured);
+                    if (featuredA !== featuredB) {
+                        return featuredB ? 1 : -1;
+                    }
+                    return a.originalOrder - b.originalOrder;
+                });
+            updateProjectCount(projectEntries.length);
 
             projectEntries.forEach(({ projeto, sourceCategory, sourceIndex }) => {
                 const projectElement = document.createElement('div');
@@ -240,12 +273,27 @@ export async function loadProjects(categoria) {
                 projectElement.setAttribute('data-project-category', sourceCategory);
                 projectElement.setAttribute('data-project-index', String(sourceIndex));
 
-                const badge = !projeto.developed ? `<span class="developing-badge" data-i18n="projects.in_progress">Em desenvolvimento</span>` : '';
+                const badges = [];
+                if (Boolean(projeto.featured)) {
+                    badges.push(`
+                        <span class="badge featured-badge" aria-label="${featuredLabel}">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i> ${featuredLabel}
+                        </span>
+                    `);
+                }
+                if (!projeto.developed) {
+                    badges.push(`
+                        <span class="badge in-progress-badge" aria-label="${inProgressLabel}">
+                            <i class="fa-solid fa-gear" aria-hidden="true"></i> ${inProgressLabel}
+                        </span>
+                    `);
+                }
+                const badgesMarkup = badges.length ? `<div class="card-badges">${badges.join('')}</div>` : '';
                 const thumbClass = !projeto.developed ? 'card-thumb developing' : 'card-thumb';
 
                 projectElement.innerHTML = DOMPurify.sanitize(`
                     <div class="${thumbClass}">
-                        ${badge}
+                        ${badgesMarkup}
                         <img width="234px" height="117px" src="${projeto.image}" alt="Thumb do projeto ${projeto.title} desenvolvido por Lorenzo da Cunha">
                     </div>
                     <h3 class="card-title">${projeto.title}</h3>
@@ -273,6 +321,7 @@ export async function loadProjects(categoria) {
         console.error('Erro ao carregar os projetos:', error);
         loading.hidden = true;
         conteudo.innerHTML = '<p>Erro ao carregar os projetos. Tente novamente mais tarde.</p>';
+        updateProjectCount(0);
     }
 }
 closeButton.addEventListener('click', toggleProjectSidebar);
@@ -285,7 +334,6 @@ document.addEventListener('languageChanged', () => {
 // Finger hint and mobile width
 const NUDGE_DISTANCE = 120;
 const NUDGE_CYCLES = 2;
-const MOBILE_MAX_WIDTH = 768;
 const CENTER_SCROLL_DELAY = 500;
 let hintTriggered = false;
 const section = document.getElementById('projects');
@@ -350,3 +398,11 @@ function initSwipeHint() {
     observer.observe(section);
 }
 window.addEventListener('load', initSwipeHint);
+window.addEventListener('resize', () => {
+    if (projectCountResizeTimer) {
+        clearTimeout(projectCountResizeTimer);
+    }
+    projectCountResizeTimer = setTimeout(() => {
+        updateProjectCount();
+    }, 120);
+});

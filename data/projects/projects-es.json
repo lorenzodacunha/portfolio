@@ -12,6 +12,7 @@
             "githubUrlLink": "",
             "developed": false,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 95,
             "icons": [
                 {
@@ -66,6 +67,7 @@
             "githubUrlLink": "https://github.com/lorenzodacunha/portfolio",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -106,6 +108,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -161,6 +164,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -210,6 +214,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": true,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -260,6 +265,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -308,6 +314,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -354,6 +361,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -396,6 +404,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -440,6 +449,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 10,
             "icons": [
                 {
@@ -463,6 +473,31 @@
             "images": [
                 "assets/images/projects/prj_ba27ec3ef0554c6bb540df808d447339/prj_ba27ec3ef0554c6bb540df808d447339__001.webp"
             ]
+        },
+        {
+            "id": "prj_19c9ab3cd1f5288a356",
+            "title": "teste",
+            "description": "<p>teste</p>",
+            "image": "assets/images/thumbs/prj_19c9ab3cd1f5288a356.webp",
+            "initialDate": "111",
+            "endDate": "111",
+            "projectUrlLink": "",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "featured": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "figma",
+                    "tooltip": "FIGMA"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c9ab3cd1f5288a356/prj_19c9ab3cd1f5288a356__001.webp"
+            ]
         }
     ],
     "ui-design": [
@@ -478,6 +513,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -521,6 +557,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": true,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -565,6 +602,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -604,6 +642,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -644,6 +683,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -690,6 +730,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -728,6 +769,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -767,6 +809,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -804,6 +847,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -835,6 +879,44 @@
             ]
         },
         {
+            "id": "prj_19c9a42ed16a94695d8",
+            "title": "AlterEgo Infinity",
+            "description": "<p>Alterego | Landing Page Shopify con GemPages | Dirección visual + estructura de conversión | Supply para fiestas</p><p></p><h2><strong>Visión general</strong></h2><p>Este proyecto fue la creación de una landing page para Alterego, con foco en entregar un visual moderno, audaz y memorable, alineado al universo de supply para fiestas. La página fue construida en Shopify utilizando GemPages, estructurando una narrativa completa de venta para el producto Infinity Cable, combinando identidad fuerte, prueba social y bloques de beneficios pensados para conversión.</p><p></p><h2><strong>Contexto y objetivo</strong></h2><p>El objetivo fue salir del formato tradicional de página de producto y construir una experiencia que se sienta como una página de campaña, con ritmo visual, secciones bien definidas y CTAs distribuidos a lo largo del recorrido. La identidad de marca debía aparecer en cada sección, con alto contraste, tipografía marcada y una estética que remite directamente a la noche, energía y performance.</p><p></p><h2><strong>El desafío</strong></h2><p>El desafío fue equilibrar impacto visual con lectura rápida. La página debía ser audaz y oscura sin perder claridad, especialmente en puntos de decisión como precio, variantes y CTA. Además, era necesario construir una narrativa completa con prueba social, comparativos, especificaciones y FAQ sin convertir la LP en un bloque pesado.</p><p></p><h2><strong>La estrategia</strong></h2><p>La estrategia fue trabajar con persuasión por capas, usando contraste para guiar la mirada y alternancia de bloques para mantener ritmo. La página comienza con un hero directo y comercial, avanza con beneficios en copy objetiva, incorpora prueba social en video tipo UGC a mitad del recorrido y finaliza con comparativo, especificaciones, reseñas y FAQ. Los botones de acción aparecen de forma recurrente para capturar intención en el momento correcto.</p><p></p><h2><strong>Lo que se implementó</strong></h2><p><strong>Estructura de conversión en GemPages:</strong></p><ul><li><p><strong>Hero con jerarquía fuerte:</strong> foco en producto, precio y CTA principal, con área de medios e información de compra organizada para decisión rápida.</p></li><li><p><strong>Bloques de beneficios por secciones:</strong> explicación de diferenciales con títulos cortos y visuales de apoyo, manteniendo lectura escaneable.</p></li><li><p><strong>CTAs recurrentes:</strong> botones distribuidos a lo largo de la página para reducir fricción y aumentar conversión.</p></li></ul><p></p><p><strong>Dirección visual e identidad de marca:</strong></p><ul><li><p><strong>Alto contraste y estética nocturna:</strong> fondo oscuro con destaques en rosa y botones en verde para generar energía y guiar la atención hacia las acciones.</p></li><li><p><strong>Ritmo con alternancia de secciones:</strong> bloques claros y oscuros alternados para mantener dinamismo y evitar monotonía.</p></li><li><p><strong>Tipografía y composición:</strong> títulos grandes y directos, con jerarquía diseñada para lectura rápida en mobile y desktop.</p></li></ul><p></p><p><strong>Prueba social y credibilidad:</strong></p><ul><li><p><strong>Contenido en video a mitad del recorrido:</strong> sección con videos tipo UGC para reforzar uso real y reducir objeciones.</p></li><li><p><strong>Reseñas y reputación:</strong> bloque final de reviews para sostener confianza antes del FAQ y cierre.</p></li></ul><p></p><p><strong>Contenido técnico y reducción de objeciones:</strong></p><ul><li><p><strong>Comparativo visual:</strong> sección de comparación para posicionar el producto con más claridad y fortalecer la decisión.</p></li><li><p><strong>Especificaciones esenciales:</strong> lista objetiva con puntos técnicos para dar transparencia y confianza.</p></li><li><p><strong>FAQ estructurado:</strong> preguntas frecuentes organizadas para reducir dudas y preparar al usuario para comprar.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>El resultado fue una landing page moderna, con identidad fuerte y narrativa de venta completa, construida para conversión. La combinación de Shopify con GemPages permitió crear una experiencia con ritmo, alto impacto visual y estructura estratégica, traduciendo la esencia de Alterego en una página tipo campaña que sostiene autoridad con prueba social y guía al usuario con claridad hasta la acción.</p>",
+            "image": "assets/images/thumbs/prj_19c9a42ed16a94695d8.webp",
+            "initialDate": "16/09/2025",
+            "endDate": "19/09/2025",
+            "projectUrlLink": "https://www.alterego.supply/products/infinity-cable",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "featured": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__001.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__002.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__003.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__004.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__005.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__006.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__007.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__008.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__009.webp",
+                "assets/images/projects/prj_19c9a42ed16a94695d8/prj_19c9a42ed16a94695d8__010.webp"
+            ]
+        },
+        {
             "id": "prj_dd369fdc6fb04f21a1a79c7353b6d82f",
             "title": "Registrando Marca",
             "description": "<p>Registrando Marca | Landing page en WordPress | Elementor + Elementor Pro</p><p></p>\n\n<h2><strong>Visión general</strong></h2>\n<p>Registrando Marca consistió en un rediseño completo de una landing page en WordPress utilizando Elementor y Elementor Pro. El foco fue modernizar la experiencia visual y elevar la percepción de credibilidad de la marca, corrigiendo un layout anterior que no transmitía confianza ni un estándar profesional.</p><p></p>\n\n<h2><strong>Contexto y objetivo</strong></h2>\n<p>Las landing pages de captación deben generar seguridad en los primeros segundos. El objetivo fue crear una página con estética actual, jerarquía clara y navegación fluida, manteniendo coherencia con la identidad visual de la marca y reforzando autoridad. También fue esencial mejorar el flujo de contacto, garantizando que los leads lleguen con datos completos y protección contra spam.</p><p></p>\n\n<h2><strong>El desafío</strong></h2>\n<p>El principal desafío fue transformar una página con apariencia débil en una experiencia moderna sin perder simplicidad. Fue necesario reorganizar secciones, crear ritmo visual y mejorar la escaneabilidad, equilibrando ligereza con tono institucional. Además, el formulario debía ser más confiable, con validaciones y protección para evitar envíos incompletos o automatizados.</p><p></p>\n\n<h2><strong>La estrategia</strong></h2>\n<p>La estrategia fue reconstruir la interfaz a partir de un sistema visual consistente, usando los colores de la marca como puntos de destaque y fondos más claros para comodidad visual. El layout se estructuró en secciones con jerarquía predecible, utilizando elementos contemporáneos para transmitir modernidad y organización. En paralelo, el flujo de conversión se reforzó con video institucional y formularios más seguros.</p><p></p>\n\n<h2><strong>Lo que se implementó</strong></h2>\n<p><strong>Rediseño visual y estructura por secciones:</strong></p>\n<ul>\n  <li><p><strong>Reconstrucción completa del layout:</strong> reorganización de secciones para mejorar lectura, claridad y el recorrido hasta el contacto.</p></li>\n  <li><p><strong>Elementos contemporáneos:</strong> ondas suaves, esquinas redondeadas e íconos modernos para un visual actual y liviano.</p></li>\n  <li><p><strong>Uso consistente de la paleta:</strong> combinación armoniosa de colores de marca con bloques de respiro y fondos claros para reforzar credibilidad.</p></li>\n</ul><p></p>\n\n<p><strong>Conversión y confianza:</strong></p>\n<ul>\n  <li><p><strong>Video institucional:</strong> incorporación de contenido audiovisual para reforzar autoridad y aumentar retención en la página.</p></li>\n  <li><p><strong>Formularios con protección:</strong> implementación de verificación antispam y validaciones para garantizar envíos completos y reducir ruido de leads.</p></li>\n</ul><p></p>\n\n<p><strong>Implementación en WordPress:</strong></p>\n<ul>\n  <li><p><strong>Elementor y Elementor Pro:</strong> construcción con componentes editables, facilitando mantenimiento y mejoras futuras.</p></li>\n  <li><p><strong>Responsividad:</strong> ajustes para mantener buena lectura y experiencia consistente en desktop y mobile.</p></li>\n</ul><p></p>\n\n<h2><strong>Resultado</strong></h2>\n<p>El resultado fue una landing page atractiva y funcional, con visual moderno, jerarquía clara y mayor percepción de credibilidad. El flujo de contacto se volvió más seguro y confiable, con protección contra spam y captura de datos más consistente. El proyecto fortaleció mi experiencia en UI, usabilidad y seguridad aplicada a conversión, con dominio avanzado de WordPress, Elementor y Elementor Pro.</p>",
@@ -846,6 +928,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -884,6 +967,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -924,6 +1008,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -964,6 +1049,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1011,6 +1097,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1056,6 +1143,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": true,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1089,6 +1177,44 @@
             ]
         },
         {
+            "id": "prj_19c9aa2905bc5f059c5",
+            "title": "ALLPRO",
+            "description": "<p>Alterego | Landing Page Shopify con GemPages | Dirección visual + estructura de conversión | Supply para fiestas</p><p></p><h2><strong>Visión general</strong></h2><p>Este proyecto fue la creación de una landing page para Alterego, con foco en entregar un visual moderno, audaz y memorable, alineado al universo de supply para fiestas. La página fue construida en Shopify utilizando GemPages, estructurando una narrativa completa de venta para el producto Infinity Cable, combinando identidad fuerte, prueba social y bloques de beneficios pensados para conversión.</p><p></p><h2><strong>Contexto y objetivo</strong></h2><p>El objetivo fue salir del formato tradicional de página de producto y construir una experiencia que se sienta como una página de campaña, con ritmo visual, secciones bien definidas y CTAs distribuidos a lo largo del recorrido. La identidad de marca debía aparecer en cada sección, con alto contraste, tipografía marcada y una estética que remite directamente a la noche, energía y performance.</p><p></p><h2><strong>El desafío</strong></h2><p>El desafío fue equilibrar impacto visual con lectura rápida. La página debía ser audaz y oscura sin perder claridad, especialmente en puntos de decisión como precio, variantes y CTA. Además, era necesario construir una narrativa completa con prueba social, comparativos, especificaciones y FAQ sin convertir la LP en un bloque pesado.</p><p></p><h2><strong>La estrategia</strong></h2><p>La estrategia fue trabajar con persuasión por capas, usando contraste para guiar la mirada y alternancia de bloques para mantener ritmo. La página comienza con un hero directo y comercial, avanza con beneficios en copy objetiva, incorpora prueba social en video tipo UGC a mitad del recorrido y finaliza con comparativo, especificaciones, reseñas y FAQ. Los botones de acción aparecen de forma recurrente para capturar intención en el momento correcto.</p><p></p><h2><strong>Lo que se implementó</strong></h2><p><strong>Estructura de conversión en GemPages:</strong></p><ul><li><p><strong>Hero con jerarquía fuerte:</strong> foco en producto, precio y CTA principal, con área de medios e información de compra organizada para decisión rápida.</p></li><li><p><strong>Bloques de beneficios por secciones:</strong> explicación de diferenciales con títulos cortos y visuales de apoyo, manteniendo lectura escaneable.</p></li><li><p><strong>CTAs recurrentes:</strong> botones distribuidos a lo largo de la página para reducir fricción y aumentar conversión.</p></li></ul><p></p><p><strong>Dirección visual e identidad de marca:</strong></p><ul><li><p><strong>Alto contraste y estética nocturna:</strong> fondo oscuro con destaques en rosa y botones en verde para generar energía y guiar la atención hacia las acciones.</p></li><li><p><strong>Ritmo con alternancia de secciones:</strong> bloques claros y oscuros alternados para mantener dinamismo y evitar monotonía.</p></li><li><p><strong>Tipografía y composición:</strong> títulos grandes y directos, con jerarquía diseñada para lectura rápida en mobile y desktop.</p></li></ul><p></p><p><strong>Prueba social y credibilidad:</strong></p><ul><li><p><strong>Contenido en video a mitad del recorrido:</strong> sección con videos tipo UGC para reforzar uso real y reducir objeciones.</p></li><li><p><strong>Reseñas y reputación:</strong> bloque final de reviews para sostener confianza antes del FAQ y cierre.</p></li></ul><p></p><p><strong>Contenido técnico y reducción de objeciones:</strong></p><ul><li><p><strong>Comparativo visual:</strong> sección de comparación para posicionar el producto con más claridad y fortalecer la decisión.</p></li><li><p><strong>Especificaciones esenciales:</strong> lista objetiva con puntos técnicos para dar transparencia y confianza.</p></li><li><p><strong>FAQ estructurado:</strong> preguntas frecuentes organizadas para reducir dudas y preparar al usuario para comprar.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>El resultado fue una landing page moderna, con identidad fuerte y narrativa de venta completa, construida para conversión. La combinación de Shopify con GemPages permitió crear una experiencia con ritmo, alto impacto visual y estructura estratégica, traduciendo la esencia de Alterego en una página tipo campaña que sostiene autoridad con prueba social y guía al usuario con claridad hasta la acción.</p>",
+            "image": "assets/images/thumbs/prj_19c9aa2905bc5f059c5.webp",
+            "initialDate": "24/02/2026",
+            "endDate": "25/02/2026",
+            "projectUrlLink": "",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "featured": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "yampi",
+                    "tooltip": "YAMPI"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__001.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__002.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__003.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__004.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__005.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__006.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__007.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__008.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__009.webp",
+                "assets/images/projects/prj_19c9aa2905bc5f059c5/prj_19c9aa2905bc5f059c5__010.webp"
+            ]
+        },
+        {
             "id": "prj_19c83c3dd09f0b6cdc2",
             "title": "Pratesia",
             "description": "<p>E-commerce Shopify | Diseño personalizado | Tienda de accesorios de plata<br /></p><p><strong>Contexto y objetivo:</strong> La cliente ya comercializaba accesorios de plata en las redes sociales y quería ampliar las ventas con una presencia digital más robusta. El objetivo era traducir la elegancia y el brillo de la plata en un diseño de tienda online que fuera a la vez sofisticado, delicado y atractivo para nuevos clientes.</p><p><strong>Desafío:</strong> El logo de la marca tiene un formato un poco fuera de lo convencional, lo que dificultó su aplicación sobre un encabezado blanco. También fue necesario equilibrar varios colores claros de la paleta original para mantener la legibilidad y la modernidad, sin renunciar al aspecto refinado que exige una marca de joyería.</p><p><strong>Solución y ejecución:</strong> Desarrollé el diseño en Shopify buscando modernidad y sofisticación, utilizando bordes redondeados y una composición de colores pensada para realzar el logo. Ajusté el encabezado para usar el color principal de la marca, creando contraste y destacando la identidad visual. La paleta elegida, con plata, azul marino y blanco, se aplicó de forma consistente en toda la tienda, armonizando con los productos y reforzando la propuesta de accesorio refinado.</p><p><strong>Resultado:</strong> El diseño resultante quedó bien organizado y transmitió una sensación de lujo ligero, con armonía entre el brillo de la plata y los tonos de azul y blanco. El cambio en el encabezado valoró el logo y le dio un aire sofisticado al conjunto, contribuyendo a una experiencia de compra más coherente con la calidad de los productos ofrecidos.</p>",
@@ -1100,6 +1226,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1139,6 +1266,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1182,6 +1310,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1222,6 +1351,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1258,6 +1388,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1295,6 +1426,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1334,6 +1466,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1374,6 +1507,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1417,6 +1551,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1454,6 +1589,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1494,6 +1630,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1534,6 +1671,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1573,6 +1711,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1611,6 +1750,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": true,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1645,6 +1785,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1684,6 +1825,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1723,6 +1865,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1753,6 +1896,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1801,6 +1945,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1835,6 +1980,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1870,6 +2016,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1909,6 +2056,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
