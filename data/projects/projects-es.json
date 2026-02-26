@@ -473,31 +473,6 @@
             "images": [
                 "assets/images/projects/prj_ba27ec3ef0554c6bb540df808d447339/prj_ba27ec3ef0554c6bb540df808d447339__001.webp"
             ]
-        },
-        {
-            "id": "prj_19c9ab3cd1f5288a356",
-            "title": "teste",
-            "description": "<p>teste</p>",
-            "image": "assets/images/thumbs/prj_19c9ab3cd1f5288a356.webp",
-            "initialDate": "111",
-            "endDate": "111",
-            "projectUrlLink": "",
-            "linkedinUrlLink": "",
-            "githubUrlLink": "",
-            "developed": true,
-            "adult": false,
-            "featured": false,
-            "developingPorcentage": 100,
-            "icons": [
-                {
-                    "class": "figma",
-                    "tooltip": "FIGMA"
-                }
-            ],
-            "compatibility": 3,
-            "images": [
-                "assets/images/projects/prj_19c9ab3cd1f5288a356/prj_19c9ab3cd1f5288a356__001.webp"
-            ]
         }
     ],
     "ui-design": [

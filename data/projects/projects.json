@@ -473,31 +473,6 @@
             "images": [
                 "assets/images/projects/prj_ba27ec3ef0554c6bb540df808d447339/prj_ba27ec3ef0554c6bb540df808d447339__001.webp"
             ]
-        },
-        {
-            "id": "prj_19c9ab3cd1f5288a356",
-            "title": "teste",
-            "description": "  <p>\n    Sou <strong>Lorenzo da Cunha</strong>, desenvolvedor front-end especializado em\n    <strong>e-commerce</strong> e <strong>performance</strong>, com foco principal em\n    <strong>React</strong> e <strong>Shopify (Liquid)</strong>.\n  </p>\n\n  <p>\n    Já participei de <strong>mais de 75 projetos</strong>, sendo <strong>mais de 60 e-commerces</strong>,\n    além de <strong>sistemas web</strong> e <strong>landing pages</strong>. Minha atuação vai além do visual:\n    trabalho na <strong>estrutura técnica</strong>, <strong>performance</strong> e\n    <strong>experiência do usuário</strong>, garantindo que cada interface não apenas funcione, mas performe.\n  </p>\n\n  <p>\n    Tenho facilidade em transformar requisitos de negócio em soluções claras, escaláveis e bem estruturadas,\n    do layout ao código em produção.\n  </p>\n\n  <p>\n    Mesmo com <strong>19 anos</strong>, construí experiência prática em projetos reais, sempre priorizando\n    <strong>organização</strong>, <strong>velocidade</strong> e <strong>impacto</strong>.\n  </p>",
-            "image": "assets/images/thumbs/prj_19c9ab3cd1f5288a356.webp",
-            "initialDate": "111",
-            "endDate": "111",
-            "projectUrlLink": "",
-            "linkedinUrlLink": "",
-            "githubUrlLink": "",
-            "developed": true,
-            "adult": false,
-            "featured": false,
-            "developingPorcentage": 100,
-            "icons": [
-                {
-                    "class": "figma",
-                    "tooltip": "FIGMA"
-                }
-            ],
-            "compatibility": 3,
-            "images": [
-                "assets/images/projects/prj_19c9ab3cd1f5288a356/prj_19c9ab3cd1f5288a356__001.webp"
-            ]
         }
     ],
     "ui-design": [
