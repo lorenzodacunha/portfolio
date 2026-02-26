@@ -296,6 +296,9 @@
   color: gold;
 }
 
+.window-mini {
+  border-radius: 10px;
+}
 .mini-modal {
   position: fixed;
   top: 0;
@@ -337,13 +340,33 @@
   width: 100%;
   align-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: 10px;
 }
 
 .mini-modal-content h1 {
   font-size: 20px;
   margin: 10px;
 }
+.mini-modal-content p {
+  margin: 0;
+  text-align: center;
+  line-height: 1.45;
+  color: #ebebeb;
+  font-weight: 500;
+  font-size: 16px;
+}
+.mini-modal-actions {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.mini-modal-actions .card-button {
+  min-width: 120px;
+  white-space: nowrap;
+}
+
 
 .rating {
   font-family: 'FontAwesome';
@@ -503,7 +526,7 @@
     padding: 16px;
     margin: 0;
     border-radius: 0px;
-    text-align: center;
+    text-align: left;
     text-indent: 0;
   }
 

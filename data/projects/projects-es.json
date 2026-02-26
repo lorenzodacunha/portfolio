@@ -1,16 +1,71 @@
 {
     "front-end": [
         {
+            "id": "prj_19c970353505a014b2c",
+            "title": "Aurora Tecidos",
+            "description": "<p>Shopify Engineering + Diseño de Sistema UI | Tema Propietario ELOY V2</p><p></p><h3>Visión general</h3><p>Aurora Tecidos no fue simplemente un rediseño.<br />Fue una reconstrucción completa de la experiencia digital de la marca.</p><p>El proyecto comenzó con la creación estratégica de la UI en Figma un prototipo desarrollado en aproximadamente 8 horas para validar rápidamente la dirección visual, la jerarquía y la usabilidad. El cliente enfrentaba problemas claros: layout sobrecargado, baja legibilidad y fricción en la navegación.</p><p>El objetivo era transformar la tienda en un entorno moderno, claro y altamente funcional para un público que no está acostumbrado a interfaces complejas.</p><p>La UI fue pensada como sistema.<br />El tema fue desarrollado como infraestructura.</p><p></p><h3>Contexto y problema</h3><p>El público de Aurora valora principalmente la claridad y la practicidad. Tipografías pequeñas, exceso de información y múltiples elementos compitiendo por atención estaban afectando directamente la experiencia de compra.</p><p>El desafío no era simplemente “hacerlo más bonito”.<br />Era convertir la experiencia en algo intuitivo, predecible y cómodo.</p><p>Era necesario:</p><ul><li><p>Reducir el ruido visual</p></li><li><p>Establecer una jerarquía clara de información</p></li><li><p>Mejorar la legibilidad</p></li><li><p>Reforzar señales de confianza</p></li><li><p>Mantener un flujo de compra sin fricción</p></li></ul><p></p><h3>Estrategia de UI (Sistema de Diseño)</h3><p>La estrategia fue estructurar la tienda como un sistema visual coherente, con patrones replicables.</p><p>1. Home como escaparate estratégico</p><p>La página de inicio fue diseñada para funcionar como un showroom digital:</p><ul><li><p>Slideshow de alto impacto</p></li><li><p>Cards informativos con íconos objetivos</p></li><li><p>Vitrinas organizadas (Más vendidos, Nuevos productos, También te puede gustar)</p></li><li><p>Prueba social integrada</p></li><li><p>Bloque de ubicación física (mapa) reforzando presencia real</p></li></ul><p>Cada sección sigue un ritmo visual predecible, facilitando la escaneabilidad y reduciendo el esfuerzo cognitivo.</p><p></p><p>2. Página de producto orientada a la decisión</p><p>La página de producto fue simplificada de forma intencional.</p><p>Prioridad absoluta para:</p><ul><li><p>Título del producto</p></li><li><p>Precio con tipografía ampliada</p></li><li><p>Información de cuotas visible</p></li><li><p>CTA claro y dominante</p></li></ul><p>La información secundaria (cálculo de envío, detalles técnicos, etc.) fue organizada en menús desplegables y secciones controladas para evitar sobrecarga visual.</p><p>El enfoque fue reducir fricción y acelerar la toma de decisión.</p><p></p><p>3. Header y Footer funcionales</p><ul><li><p>Navegación directa por categorías</p></li><li><p>Iconografía clara</p></li><li><p>Información institucional organizada</p></li><li><p>Estructura limpia y objetiva</p></li></ul><p>Nada ornamental. Todo funcional.</p><p></p><h3>Fidelidad de ejecución</h3><p>La implementación alcanzó aproximadamente un <strong>98% de fidelidad respecto al prototipo aprobado en Figma</strong>, preservando:</p><ul><li><p>Escala tipográfica</p></li><li><p>Sistema de espaciado</p></li><li><p>Jerarquía visual</p></li><li><p>Paleta de colores institucional</p></li></ul><p>La UI fue tratada como un sistema, no como una referencia.</p><p></p><h1>Ingeniería del Tema</h1><h2>ELOY V2 – Arquitectura Reingenierizada sobre Dawn</h2><p>La UI fue solo la superficie.</p><p>Para sostener esa experiencia, utilicé mi tema propietario <strong>ELOY</strong>, originalmente construido sobre el tema Dawn de Shopify. Para Aurora, evolucionó a una <strong>V2 completamente reestructurada y optimizada</strong>.</p><p>No fue una simple actualización.<br />Fue una reingeniería técnica.</p><p></p><h3>Stack técnico</h3><ul><li><p>Arquitectura modular en Liquid con lógica avanzada de variantes</p></li><li><p>JavaScript personalizado</p></li><li><p>HTML semántico optimizado para SEO</p></li><li><p>CSS3 refinado con control total de responsividad</p></li></ul><p></p><h3>Principales mejoras de la V2</h3><p>🔍 Sistema de zoom en alta resolución</p><ul><li><p>Visualización en máxima definición</p></li><li><p>Modal fluido sin romper la navegación</p></li><li><p>Rendimiento preservado</p></li></ul><p>🖼 Optimización de imágenes</p><ul><li><p>Compresión inteligente</p></li><li><p>Carga progresiva</p></li><li><p>Mejora en métricas de rendimiento (Core Web Vitals)</p></li></ul><p>🎨 Sistema inteligente de variantes para telas</p><ul><li><p>Swatches visuales con miniaturas reales</p></li><li><p>Compatibilidad con múltiples estampas</p></li><li><p>Selección intuitiva de metragem (50cm / 1m)</p></li></ul><p>🚚 Integración con API de Frenet</p><ul><li><p>Cálculo de envío en tiempo real</p></li><li><p>Integración limpia y no invasiva</p></li></ul><p>🛒 Carrito deslizante (Slide Cart)</p><ul><li><p>Sin redireccionamientos completos</p></li><li><p>Actualización instantánea</p></li><li><p>Mensaje dinámico incentivando envío gratis</p></li></ul><p>📍 Mapa integrado</p><ul><li><p>Refuerzo de presencia física</p></li><li><p>Mayor credibilidad y confianza</p></li></ul><p></p><h3>Rendimiento y estabilidad</h3><p>ELOY V2 fue desarrollado con enfoque en:</p><ul><li><p>Mejor puntuación de rendimiento</p></li><li><p>Arquitectura escalable</p></li><li><p>Menor dependencia de scripts externos</p></li><li><p>Estabilidad a largo plazo para futuras expansiones</p></li></ul><p></p><h2>Resultado</h2><p>Aurora Tecidos obtuvo mucho más que un nuevo diseño.</p><p>Obtuvo:</p><ul><li><p>Un sistema visual coherente</p></li><li><p>Una arquitectura técnica robusta</p></li><li><p>Una experiencia simplificada para el usuario</p></li><li><p>Una base escalable para crecimiento</p></li></ul><p>UI e Ingeniería trabajaron como un único sistema integrado.</p><p>El resultado es un e-commerce Shopify que combina claridad, rendimiento y estabilidad estructural preparado para crecer sin comprometer la experiencia del usuario.</p>",
+            "image": "assets/images/thumbs/prj_19c970353505a014b2c.webp",
+            "initialDate": "08/01/2026",
+            "endDate": "18/02/2026",
+            "projectUrlLink": "https://auroratecidos.com/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": false,
+            "adult": false,
+            "developingPorcentage": 95,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "javascript",
+                    "tooltip": "JAVASCRIPT"
+                },
+                {
+                    "class": "json",
+                    "tooltip": "JSON"
+                },
+                {
+                    "class": "illustrator",
+                    "tooltip": "ILLUSTRATOR"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__001.webp",
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__002.webp",
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__003.webp",
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__004.webp",
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__005.webp",
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__006.webp",
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__007.webp"
+            ]
+        },
+        {
             "id": "prj_9f7454093d214dd3b0e97de9d638f44a",
             "title": "Portfólio",
-            "description": "<p> Mi portafolio personal es un proyecto autoral que refleja con precisión mi identidad visual y mi trayectoria profesional como desarrollador front-end. Empleando una paleta de colores que combina tonos naranja y gris, el diseño fue cuidadosamente planificado para transmitir una imagen moderna, creativa y al mismo tiempo profesional. Cada sección fue diseñada estratégicamente para mostrar no solo mis habilidades técnicas, sino también mi personalidad y estilo visual únicos.</p><p>El desarrollo se extendió durante aproximadamente 11 meses, compaginando mis estudios de Análisis y Desarrollo de Sistemas con proyectos realizados como freelancer. Más que una simple vitrina de trabajos, el portafolio ofrece una experiencia de navegación fluida y dinámica, con alternancia de colores entre secciones que mantiene al usuario involucrado de principio a fin.</p><p>Toda la estructura del front-end se construyó con HTML, CSS y JavaScript puros, garantizando control total sobre el rendimiento, la capacidad de respuesta y la personalización de la interfaz. Este enfoque sin frameworks fue intencional: demuestra mi aptitud para crear soluciones desde cero, priorizando la ligereza del código, la claridad y la autonomía visual.</p><p>Para las funcionalidades más complejas del proyecto, conté con el apoyo del agente de software Codex de OpenAI para generar la base del back-end. Mediante prompts técnicos elaborados con precisión, Codex desarrolló funciones avanzadas como cargas dinámicas de contenido, interacciones con botones, animaciones personalizadas, apertura de modales y comportamientos adaptativos. A continuación, implementé las conexiones necesarias entre el front-end y esa estructura de back-end, asegurando que todo funcionara de manera integrada y eficiente.</p><p>Este portafolio es un proyecto en constante evolución, al igual que mi trayectoria profesional. Representa no solo lo que soy capaz de crear hoy, sino también mi disposición a aprender, mejorar e innovar de forma continua.</p>",
+            "description": "<p>Portafolio Personal | Proyecto autoral + front-end desde cero | HTML, CSS y JavaScript</p><p></p>\n\n<h2><strong>Visión general</strong></h2>\n<p>Mi portafolio personal es un proyecto autoral creado para representar con precisión mi identidad visual y mi trayectoria profesional como desarrollador front-end. El concepto va más allá de mostrar trabajos, fue diseñado como una experiencia de marca personal, con una estética moderna, creativa y profesional basada en una paleta de naranja y gris.</p><p></p>\n\n<h2><strong>Contexto y objetivo</strong></h2>\n<p>El desarrollo se extendió por aproximadamente 11 meses, equilibrando mis estudios en Análisis y Desarrollo de Sistemas con entregas reales como freelancer. El objetivo fue construir una vitrina que comunique madurez técnica, consistencia visual y capacidad de ejecución, entregando una experiencia de navegación fluida y atractiva de principio a fin.</p><p></p>\n\n<h2><strong>El desafío</strong></h2>\n<p>El principal desafío fue equilibrar una personalidad visual fuerte con claridad y rendimiento, sin depender de frameworks. Fue necesario mantener ritmo, legibilidad y responsividad en cada sección, además de sostener una experiencia dinámica con animaciones e interacciones sin perder ligereza, organización de código ni consistencia estética.</p><p></p>\n\n<h2><strong>La estrategia</strong></h2>\n<p>Estructurar el portafolio como una narrativa de navegación, donde cada sección refuerza una etapa de mi identidad profesional. La alternancia de colores y la jerarquía del contenido fueron planificadas para crear ritmo visual y guiar al usuario de forma natural, manteniendo la lectura predecible y la atención en los puntos más importantes.</p><p></p>\n\n<h2><strong>Lo que se implementó</strong></h2>\n<p><strong>Front-end desarrollado desde cero:</strong></p>\n<ul>\n  <li><p><strong>HTML, CSS y JavaScript puro:</strong> estructura completa sin frameworks para mantener control total de rendimiento, responsividad y personalización visual.</p></li>\n  <li><p><strong>Estandarización visual:</strong> definición consistente de tipografías, tamaños, espaciados y contraste para mantener legibilidad y unidad.</p></li>\n  <li><p><strong>Navegación con ritmo:</strong> alternancia de colores entre secciones para crear una experiencia de scroll más envolvente.</p></li>\n</ul><p></p>\n\n<p><strong>Interacciones y experiencia dinámica:</strong></p>\n<ul>\n  <li><p><strong>Cargas y comportamientos dinámicos:</strong> implementación de flujos que hacen la experiencia más responsiva y viva.</p></li>\n  <li><p><strong>Animaciones y microinteracciones:</strong> efectos visuales diseñados para reforzar modernidad sin comprometer el rendimiento.</p></li>\n  <li><p><strong>Modales y botones de acción:</strong> apertura de modales, interacciones con CTAs y comportamientos responsivos integrados al layout.</p></li>\n</ul><p></p>\n\n<p><strong>Soporte de IA y estructura complementaria:</strong></p>\n<ul>\n  <li><p><strong>OpenAI Codex:</strong> uso del agente para generar la base del back-end a partir de prompts técnicos elaborados con precisión.</p></li>\n  <li><p><strong>Integración del front-end y lógica:</strong> implementación de las conexiones necesarias para garantizar un funcionamiento integrado y consistente.</p></li>\n</ul><p></p>\n\n<h2><strong>Resultado</strong></h2>\n<p>El resultado es un portafolio que funciona como vitrina y como producto, comunicando identidad, consistencia y ejecución técnica. Representa lo que soy capaz de construir hoy y también cómo evoluciono continuamente, como un proyecto vivo en constante refinamiento, acompañando mi trayectoria profesional y mi búsqueda de innovación.</p>",
             "image": "assets/images/thumbs/prj_9f7454093d214dd3b0e97de9d638f44a-2.webp",
             "initialDate": "08/2024",
             "endDate": "07/2025",
             "projectUrlLink": "https://www.lorenzodacunha.com.br/",
-            "linkedinUrlLink": "",
-            "githubUrlLink": "",
+            "linkedinUrlLink": "https://www.linkedin.com/posts/lorenzodacunha_construir-um-portf%C3%B3lio-sempre-foi-um-dos-activity-7364382833370456064-4Cy2/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEGED2gB4-pmgVzJhA2DeIWDcFBZIAjkt3o",
+            "githubUrlLink": "https://github.com/lorenzodacunha/portfolio",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -40,15 +95,17 @@
             ]
         },
         {
+            "id": "prj_9f78051128e14b888a04adda88aa7d26",
             "title": "Loja da RO",
-            "description": "<p>Siempre he tenido como meta crear una tienda virtual para rendir homenaje a mi madre. En marzo de 2023, comencé el desarrollo del proyecto “Loja da RO” en la plataforma Shopify. Durante tres meses, profundicé mis conocimientos técnicos estudiando intensivamente la documentación de Liquid y empleando lenguajes esenciales como HTML, CSS, JavaScript y JSON, con el fin de superar las limitaciones de los temas gratuitos de Shopify.</p><p>Partiendo de un tema estándar de Shopify, realicé un rediseño visual completo: añadí elementos gráficos suaves, esquinas redondeadas y seleccioné cuidadosamente una paleta de tonos rosados pensada especialmente para un público femenino. También desarrollé formularios de contacto personalizados y un pie de página a medida para mejorar la usabilidad y la experiencia del usuario. Cada detalle gráfico y estructural se ideó para reflejar las características únicas de mi madre a través de vectores y colores.</p><p>El resultado final no solo superó mis expectativas personales, sino que también marcó oficialmente el inicio de mi carrera como desarrollador front-end. Este proyecto destaca mis habilidades en desarrollo web, diseño de interfaces, personalización de temas de Shopify y dominio de HTML, CSS, JavaScript y JSON.</p>",
+            "description": "<p>Loja da RO | Proyecto autoral | Shopify + Liquid + HTML, CSS, JavaScript y JSON</p><p></p>\n\n<h2><strong>Visión general</strong></h2>\n<p>Loja da RO nació como un proyecto personal con un propósito especial: crear una tienda online como homenaje a mi madre. Más que un ejercicio técnico, fue un proyecto pensado para traducir emoción en identidad visual, construyendo una experiencia digital con presencia, delicadeza e intención.</p><p></p>\n\n<h2><strong>Contexto y objetivo</strong></h2>\n<p>En marzo de 2023, inicié el desarrollo en Shopify con el objetivo de ir más allá de lo que normalmente permiten los temas gratuitos. Durante tres meses, profundicé mi dominio de Liquid y la estructura del ecosistema Shopify, estudiando la documentación y aplicando HTML, CSS, JavaScript y JSON para evolucionar el tema y personalizar la experiencia con mayor libertad.</p><p></p>\n\n<h2><strong>El desafío</strong></h2>\n<p>El principal desafío fue superar las limitaciones de los temas gratuitos sin perder consistencia ni calidad visual. Era necesario rediseñar la interfaz para un público femenino, mantener una navegación intuitiva y, al mismo tiempo, crear componentes personalizados que elevaran la experiencia del usuario y reforzaran la identidad de marca con un acabado profesional.</p><p></p>\n\n<h2><strong>La estrategia</strong></h2>\n<p>La estrategia fue partir de un tema estándar de Shopify y reconstruir la experiencia mediante un rediseño visual completo, creando un sistema visual moderno y delicado. La paleta en tonos rosados, las esquinas redondeadas y los elementos suaves fueron pensados para fortalecer la conexión emocional con la propuesta, mientras que los ajustes estructurales garantizaron claridad, usabilidad y ritmo visual durante la navegación.</p><p></p>\n\n<h2><strong>Lo que se implementó</strong></h2>\n<p><strong>Rediseño visual e identidad:</strong></p>\n<ul>\n  <li><p><strong>Interfaz rediseñada:</strong> esquinas redondeadas, elementos gráficos suaves y una composición más ligera para reforzar una estética femenina y acogedora.</p></li>\n  <li><p><strong>Paleta rosada:</strong> selección y estandarización de colores para reforzar presencia de marca y mantener consistencia en todas las páginas.</p></li>\n  <li><p><strong>Detalles autorales:</strong> vectores y decisiones visuales pensadas para representar características únicas de mi madre dentro del universo de la tienda.</p></li>\n</ul><p></p>\n\n<p><strong>Personalización técnica en Shopify:</strong></p>\n<ul>\n  <li><p><strong>Liquid como base de personalización:</strong> estudio y aplicación práctica para adaptar secciones, componentes y comportamiento del tema.</p></li>\n  <li><p><strong>HTML y CSS:</strong> ajustes estructurales y refinamiento visual para elevar el acabado y la consistencia del layout.</p></li>\n  <li><p><strong>JavaScript y JSON:</strong> implementación de comportamientos y configuraciones para aumentar flexibilidad, mejorar la experiencia y superar limitaciones del tema base.</p></li>\n</ul><p></p>\n\n<p><strong>Componentes y experiencia del usuario:</strong></p>\n<ul>\n  <li><p><strong>Formularios personalizados:</strong> desarrollo de contacto con estructura y estilo propios para mejorar usabilidad.</p></li>\n  <li><p><strong>Footer a medida:</strong> creación de un pie de página personalizado para organizar información y mejorar la navegación al final del recorrido.</p></li>\n  <li><p><strong>Consistencia de UX:</strong> atención al flujo de páginas y al ritmo visual para mantener una experiencia fluida e intuitiva.</p></li>\n</ul><p></p>\n\n<h2><strong>Resultado</strong></h2>\n<p>El resultado final superó mis expectativas personales y marcó oficialmente el inicio de mi carrera como desarrollador front-end. Además de la entrega visual, el proyecto consolidó dominio práctico de Shopify y Liquid, capacidad de rediseño y personalización de temas, y ejecución técnica con HTML, CSS, JavaScript y JSON, todo con una propuesta autoral y llena de significado.</p>",
             "image": "assets/images/thumbs/prj_9f78051128e14b888a04adda88aa7d26.webp",
             "initialDate": "09/2023",
             "endDate": "12/2023",
-            "projectUrlLink": " ",
-            "linkedinUrlLink": " ",
-            "githubUrlLink": " ",
+            "projectUrlLink": "",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -70,6 +127,14 @@
                 {
                     "class": "json",
                     "tooltip": "JSON"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                },
+                {
+                    "class": "illustrator",
+                    "tooltip": "ILLUSTRATOR"
                 }
             ],
             "compatibility": 3,
@@ -82,19 +147,20 @@
                 "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__006.webp",
                 "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__007.webp",
                 "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__008.webp"
-            ],
-            "id": "prj_9f78051128e14b888a04adda88aa7d26"
+            ]
         },
         {
+            "id": "prj_e20835bec8cf4e4a99f00381b6f5860e",
             "title": "Adega Paradiso",
-            "description": "<p>Adega Paradiso representó un hito significativo en mi trayectoria como desarrollador freelancer, siendo mi segundo proyecto profesional. El cliente entregó un diseño innovador y desafiante creado en Figma, con tarjetas estilizadas en formato de ticket: un elemento que inicialmente se consideró difícil de implementar. Asumiendo este reto, realicé una traducción fiel de cada detalle del diseño original a la plataforma Shopify, empleando técnicas avanzadas en Liquid, HTML, CSS, JavaScript y JSON.</p><p>El resultado fue una tienda virtual visualmente sofisticada, con una identidad de marca coherente y una experiencia de usuario optimizada tanto en escritorio como en dispositivos móviles. Destaca especialmente la página de producto, la cual desarrollé con metacampos detallados y enriquecí con íconos ilustrativos que brindan información esencial sobre cada vino, desde su origen hasta su potencial de envejecimiento.</p><p>Negociado a través de la plataforma Workana, este proyecto demostró claramente que la combinación de dedicación y experiencia técnica puede convertir ideas complejas en resultados tangibles y exitosos. Adega Paradiso consolidó aún más mis habilidades en desarrollo front-end, diseño de interfaces y personalización avanzada en Shopify.</p>",
+            "description": "<p>Adega Paradiso | E-commerce Shopify | Implementación de UI desde Figma + Liquid, HTML, CSS, JavaScript y JSON</p><p></p>\n\n<h2><strong>Visión general</strong></h2>\n<p>Adega Paradiso fue un hito importante en mi trayectoria como freelancer, siendo mi segundo proyecto profesional. El cliente presentó un layout en Figma con una propuesta visual audaz, incluyendo cards con formato de ticket, lo que aumentó la complejidad y convirtió el proyecto en un gran desafío de ejecución.</p><p></p>\n\n<h2><strong>Contexto y objetivo</strong></h2>\n<p>El objetivo fue traducir el diseño de Figma a una tienda Shopify con máxima fidelidad, preservando identidad, jerarquía y acabado visual. La experiencia debía funcionar con la misma fuerza en desktop y mobile, entregando una vitrina sofisticada, escaneable y comercialmente eficiente para un catálogo de vinos.</p><p></p>\n\n<h2><strong>El desafío</strong></h2>\n<p>El desafío principal fue implementar un layout que, a primera vista, parecía difícil de reproducir en Shopify, especialmente por los cards en formato de ticket y por la necesidad de mantener consistencia entre secciones. Además, la página de producto debía ser rica en información sin verse pesada, organizando detalles técnicos del vino de forma visual y fácil de consumir.</p><p></p>\n\n<h2><strong>La estrategia</strong></h2>\n<p>La estrategia fue tratar la UI como un sistema y ejecutar cada componente con precisión, asegurando que el estándar visual de Figma se mantuviera a lo largo de toda la experiencia. En paralelo, la página de producto fue estructurada para transformar información técnica en contenido escaneable, utilizando íconos y metafields como soporte visual, elevando la percepción de calidad y facilitando la decisión de compra.</p><p></p>\n\n<h2><strong>Lo que se implementó</strong></h2>\n<p><strong>Implementación fiel de Figma:</strong></p>\n<ul>\n  <li><p><strong>Cards con formato de ticket:</strong> construcción del componente con estructura personalizada y CSS, preservando el estilo y el acabado del layout original.</p></li>\n  <li><p><strong>Responsividad completa:</strong> adaptación de grids y secciones para mantener legibilidad y consistencia visual en desktop y mobile.</p></li>\n  <li><p><strong>Jerarquía y consistencia:</strong> estandarización de espaciados, tipografía y colores para sostener una estética sofisticada en toda la tienda.</p></li>\n</ul><p></p>\n\n<p><strong>Página de producto rica y escaneable:</strong></p>\n<ul>\n  <li><p><strong>Metafields detallados:</strong> estructuración de datos como origen, perfil y potencial de envejecimiento para enriquecer el contenido del producto.</p></li>\n  <li><p><strong>Íconos ilustrativos:</strong> uso de iconografía para transformar información técnica en lectura rápida y reforzar valor percibido.</p></li>\n  <li><p><strong>Contenido bien distribuido:</strong> organización por bloques para que la página sea informativa sin verse sobrecargada.</p></li>\n</ul><p></p>\n\n<p><strong>Stack técnica aplicada:</strong></p>\n<ul>\n  <li><p><strong>Liquid y JSON:</strong> personalizaciones del tema y configuración de secciones y datos para soportar la UI y los metafields.</p></li>\n  <li><p><strong>HTML y CSS:</strong> construcción de componentes y refinamiento visual con atención a los detalles.</p></li>\n  <li><p><strong>JavaScript:</strong> ajustes de interacción y comportamiento para mantener una experiencia dinámica y fluida.</p></li>\n</ul><p></p>\n\n<p><strong>Entrega profesional y validación:</strong></p>\n<ul>\n  <li><p><strong>Proyecto vía Workana:</strong> negociación y entrega con alineación profesional, garantizando que una propuesta compleja fuera ejecutada con calidad.</p></li>\n</ul><p></p>\n\n<h2><strong>Resultado</strong></h2>\n<p>El resultado fue una tienda online visualmente sofisticada y consistente, con una experiencia optimizada para desktop y mobile. La página de producto se convirtió en un diferencial, transformando información del vino en una presentación clara y premium mediante metafields e iconografía. Adega Paradiso consolidó aún más mis habilidades en front-end, implementación fiel de UI y personalización avanzada en Shopify.</p>",
             "image": "assets/images/thumbs/prj_e20835bec8cf4e4a99f00381b6f5860e.webp",
             "initialDate": "01/2025",
             "endDate": "02/2025",
             "projectUrlLink": "https://adegaparadiso.com.br/",
-            "linkedinUrlLink": " ",
-            "githubUrlLink": " ",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -130,8 +196,57 @@
                 "assets/images/projects/prj_e20835bec8cf4e4a99f00381b6f5860e/prj_e20835bec8cf4e4a99f00381b6f5860e__008.webp",
                 "assets/images/projects/prj_e20835bec8cf4e4a99f00381b6f5860e/prj_e20835bec8cf4e4a99f00381b6f5860e__009.webp",
                 "assets/images/projects/prj_e20835bec8cf4e4a99f00381b6f5860e/prj_e20835bec8cf4e4a99f00381b6f5860e__010.webp"
+            ]
+        },
+        {
+            "id": "prj_19c8b00c17bb1b8d068",
+            "title": "Mundosado",
+            "description": "<p>E-commerce Shopify | Branding premium + UI en Figma + tema personalizado (Dawn) | Marketplace BDSM y sexyshop</p><p></p><h2><strong>Visión general</strong></h2><p>MundoSado nació a partir de una conversación estratégica con el cliente, que imaginaba una marca de alto estándar para el universo BDSM. El objetivo fue construir un e-commerce con identidad fuerte y un recorrido de compra directo, ocupando un espacio donde la competencia aún no entregaba un nivel premium de presentación.</p><p></p><h2><strong>Contexto y objetivo</strong></h2><p>La meta no era solo publicar productos, sino construir una marca con presencia, claridad y estándares visuales consistentes, capaz de competir por percepción de calidad. Shopify fue elegida como decisión operativa y de escala, mientras que el proyecto visual y la ingeniería del tema garantizarían diferenciación, confianza y una experiencia de compra fluida.</p><p></p><h2><strong>El desafío</strong></h2><p>Este segmento exige equilibrio entre impacto visual y objetividad, porque el recorrido debe ser rápido, discreto y confiable. Fue necesario traducir referencias del escenario de sexyshop en Brasil en algo único, sin verse genérico, manteniendo estándares estrictos de espaciado, márgenes y legibilidad. Además, la implementación debía ir más allá de un “tema estándar” y convertirse en un tema realmente personalizable, con lógica, componentes y contenido que sostuvieran un posicionamiento premium, reforzando privacidad, entrega discreta y seguridad de compra.</p><p></p><h2><strong>La estrategia</strong></h2><p>Construir una vitrina premium con navegación limpia y directa, priorizando jerarquía, escaneabilidad y consistencia en todas las páginas. El proceso comenzó en Figma con investigación de competidores y síntesis de ideas, transformando referencias en un sistema visual propio. Luego, la estrategia fue convertir ese sistema en un tema altamente editable, reforzando elementos de confianza con comunicación clara y repetible, incluyendo el uso de íconos objetivos y estandarizados como lenguaje visual continuo en todo el sitio.</p><p></p><h2><strong>Lo que se implementó</strong></h2><p><strong>Dirección de arte y UI en Figma:</strong></p><ul><li><p><strong>Investigación y referencias:</strong> análisis de competidores del mercado sexyshop en Brasil para mapear patrones de vitrina, señales de credibilidad y recorridos.</p></li><li><p><strong>Layout y sistema visual:</strong> creación de un layout limpio y directo, con espaciado, márgenes y jerarquía consistentes para facilitar la decisión de compra.</p></li><li><p><strong>Vitrina orientada a conversión:</strong> diseño de secciones para destacar más vendidos, novedades y recomendaciones, manteniendo lectura rápida y foco en el producto.</p></li></ul><p></p><p><strong>Desarrollo del tema e ingeniería front-end:</strong></p><ul><li><p><strong>Base del tema:</strong> uso de Dawn como base por su estructura robusta y secciones, sirviendo como punto de partida para un tema V1 y evolución continua.</p></li><li><p><strong>HTML y CSS:</strong> cambios estructurales para reproducir fielmente el layout de Figma, refinando composición, grids, espaciado y consistencia visual.</p></li><li><p><strong>JavaScript:</strong> reescritura y adición de scripts para mejorar interacciones y comportamiento de componentes, garantizando una experiencia más fluida.</p></li><li><p><strong>Liquid y lógica condicional:</strong> creación y ajuste de reglas para hacer el tema flexible, atendiendo distintos escenarios de catálogo y páginas.</p></li></ul><p></p><p><strong>Experiencia, confianza y consistencia visual:</strong></p><ul><li><p><strong>Íconos estandarizados y objetivos:</strong> implementación de un sistema recurrente de íconos para beneficios y seguridad, mejorando la escaneabilidad y reforzando confianza en puntos clave del recorrido.</p></li><li><p><strong>Comunicación de privacidad:</strong> énfasis estratégico en mensajes como entrega discreta, embalaje contra curiosos, remitente neutro y factura discreta, reduciendo fricción y aumentando la comodidad del usuario.</p></li><li><p><strong>Página de producto estructurada:</strong> organización del contenido en bloques claros, incluyendo descripción, instrucciones y especificaciones técnicas, mejorando lectura y decisión de compra.</p></li><li><p><strong>Identidad consistente:</strong> aplicación firme de una paleta oscura con acento rojo, creando presencia premium y guiando la atención hacia acciones e información clave.</p></li></ul><p></p><p><strong>SEO orgánico y contenido técnico:</strong></p><ul><li><p><strong>Estructura SEO:</strong> organización de meta descripciones y elementos esenciales para mejorar la interpretación por motores de búsqueda.</p></li><li><p><strong>Optimización de imágenes:</strong> estandarización y mejora de atributos y textos relacionados, con foco en palabras clave y encontrabilidad.</p></li><li><p><strong>Base para evolución:</strong> planificación del tema para soportar mejoras continuas de rendimiento y métricas en versiones futuras.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>El proyecto llegó a una versión estable del tema V1 en aproximadamente 45 días y se publicó tras alineamientos con el cliente, entregando una vitrina premium con identidad fuerte y un recorrido de compra directo. La experiencia se volvió más confiable y cómoda, con mensajes claros de privacidad y un sistema de íconos estandarizado que refuerza beneficios a lo largo del sitio. En 2026, el proyecto se pausó por motivos personales del cliente, lo que impidió continuar con optimizaciones y evolución de métricas, pero la base quedó sólida y lista para crecer.</p>",
+            "image": "assets/images/thumbs/prj_19c8b00c17bb1b8d068.webp",
+            "initialDate": "22/07/2025",
+            "endDate": "05/09/2025",
+            "projectUrlLink": "https://mundosado.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "javascript",
+                    "tooltip": "JAVASCRIPT"
+                },
+                {
+                    "class": "json",
+                    "tooltip": "JSON"
+                },
+                {
+                    "class": "git",
+                    "tooltip": "GIT"
+                }
             ],
-            "id": "prj_e20835bec8cf4e4a99f00381b6f5860e"
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c8b00c17bb1b8d068/prj_19c8b00c17bb1b8d068__001.webp",
+                "assets/images/projects/prj_19c8b00c17bb1b8d068/prj_19c8b00c17bb1b8d068__002.webp",
+                "assets/images/projects/prj_19c8b00c17bb1b8d068/prj_19c8b00c17bb1b8d068__003.webp",
+                "assets/images/projects/prj_19c8b00c17bb1b8d068/prj_19c8b00c17bb1b8d068__004.webp",
+                "assets/images/projects/prj_19c8b00c17bb1b8d068/prj_19c8b00c17bb1b8d068__005.webp",
+                "assets/images/projects/prj_19c8b00c17bb1b8d068/prj_19c8b00c17bb1b8d068__006.webp",
+                "assets/images/projects/prj_19c8b00c17bb1b8d068/prj_19c8b00c17bb1b8d068__007.webp"
+            ]
         },
         {
             "title": "Wee Magazine",
@@ -143,6 +258,7 @@
             "linkedinUrlLink": " ",
             "githubUrlLink": " ",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -190,6 +306,7 @@
             "linkedinUrlLink": " ",
             "githubUrlLink": " ",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -235,6 +352,7 @@
             "linkedinUrlLink": " ",
             "githubUrlLink": " ",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -276,6 +394,7 @@
             "linkedinUrlLink": " ",
             "githubUrlLink": " ",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -319,6 +438,7 @@
             "linkedinUrlLink": " ",
             "githubUrlLink": " ",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 10,
             "icons": [
                 {
@@ -347,15 +467,17 @@
     ],
     "ui-design": [
         {
-            "title": "Portfólio Wireframe",
-            "description": "<p>Mi portafolio personal es un proyecto desarrollado con el objetivo de reflejar plenamente mi identidad visual y profesional, utilizando una combinación estratégica de tonos naranja y gris para lograr un diseño impactante y diferenciado. Cada sección se planificó cuidadosamente para transmitir una imagen que equilibre profesionalismo y creatividad, destacando mi personalidad y estilo único.</p><p>Este proyecto se ha desarrollado durante aproximadamente 11 meses, compaginando mis estudios académicos con trabajos freelance. El resultado es una plataforma que no solo muestra mis principales proyectos, sino que también comunica de forma auténtica mi esencia como profesional. La alternancia de colores entre secciones ofrece a los visitantes una experiencia visual dinámica y envolvente.</p>",
-            "image": "assets/images/thumbs/prj_ac509a0154f14460844014d97e5c4697.webp",
-            "initialDate": "8/2024",
-            "endDate": "8/2024",
-            "projectUrlLink": "https://www.figma.com/design/54GeBLCzAfogJqiYlhQmZf/Lorenzodacunha-Wireframe?node-id=0-1&p=f&t=UIksFIrFurywrBMM-0",
-            "linkedinUrlLink": " ",
-            "githubUrlLink": " ",
+            "id": "prj_19c955be7fe66fc25d1",
+            "title": "UI Aurora Tecidos",
+            "description": "<p></p><p>E-commerce Shopify | UI en Figma + Implementación del tema | Telas y mercería</p><p></p><h2><strong>Visión general</strong></h2><p>Aurora Tecidos fue un proyecto Shopify creado para elevar la experiencia visual y facilitar la compra para un público que no está acostumbrado a interfaces complejas. El proyecto comenzó con un prototipo en Figma desarrollado en aproximadamente 8 horas, con el objetivo de presentar rápidamente la nueva dirección visual y alinear expectativas con el cliente.</p><p></p><h2><strong>Contexto y objetivo</strong></h2><p>El cliente enfrentaba problemas visuales en la tienda Shopify actual y necesitaba una experiencia más directa, moderna y limpia. El objetivo fue simplificar la navegación, aumentar la legibilidad y crear consistencia reforzando los colores principales de la marca y estandarizando tipografías, tamaños y jerarquía de información para una lectura rápida y una compra sin fricción.</p><p></p><h2><strong>El desafío</strong></h2><p>El principal desafío fue diseñar una experiencia accesible para consumidores que pueden sentirse abrumados por fuentes pequeñas, exceso de información y elementos compitiendo por atención. Era necesario reducir el ruido visual, mantener el foco en lo esencial y, al mismo tiempo, preservar la confianza y credibilidad mediante elementos de apoyo como información de cuotas y compra segura.</p><p></p><h2><strong>La estrategia</strong></h2><p>La estrategia consistió en construir un recorrido escaneable con bloques claros y previsibles. En la página de inicio, la tienda funciona como una vitrina orientada a la decisión, con secciones que repiten patrones visuales y facilitan la comparación. En la página de producto, se priorizó únicamente la información esencial, dejando los datos secundarios accesibles mediante botones o secciones desplegables, sin saturar la primera vista.</p><p></p><h2><strong>Lo que se implementó</strong></h2><p><strong>Página de inicio diseñada como vitrina:</strong></p><ul><li><p><strong>Slideshow y destaque principal:</strong> sección inicial enfocada en impacto visual y lectura inmediata.</p></li><li><p><strong>Cards informativos:</strong> bloques objetivos destacando envío gratis, atención al cliente, opciones de pago en cuotas y compra segura, reforzando confianza sin sobrecargar el layout.</p></li><li><p><strong>Vitrinas estratégicas:</strong> organización de productos en “Más vendidos”, “Nuevos productos” y “También te puede gustar” para cross-sell y continuidad de navegación.</p></li><li><p><strong>Prueba social y presencia física:</strong> sección con reseñas reales y un bloque “dónde encontrarnos” preparado para integrar mapa y reforzar la ubicación física de la tienda.</p></li></ul><p></p><p><strong>Página de producto enfocada en lo esencial:</strong></p><ul><li><p><strong>Jerarquía clara:</strong> título y precio en destaque con tipografía mayor para facilitar visualización y reducir esfuerzo cognitivo.</p></li><li><p><strong>Información secundaria por interacción:</strong> detalles de cuotas y cálculo de envío tratados como soporte, accesibles mediante botones o secciones desplegables sin competir con el CTA principal.</p></li><li><p><strong>Contenido organizado:</strong> descripción y reseñas estructuradas en bloques limpios, manteniendo consistencia visual y lectura agradable.</p></li></ul><p></p><p><strong>Header y footer con navegación objetiva:</strong></p><ul><li><p><strong>Menús directos:</strong> categorías mostradas claramente para que el cliente encuentre rápidamente lo que busca, reduciendo fricción.</p></li><li><p><strong>Íconos y textos de apoyo:</strong> refuerzo visual para funciones clave e información institucional, manteniendo un estándar limpio y funcional.</p></li></ul><p></p><p><strong>Fidelidad de UI:</strong></p><ul><li><p><strong>Implementación alineada al prototipo:</strong> la UI final alcanzó aproximadamente un 98 por ciento de fidelidad respecto al diseño aprobado en Figma, preservando tipografía, espaciado y colores.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>El resultado fue una tienda Shopify más moderna, limpia y fácil de usar, enfocada en legibilidad y toma de decisión rápida. La página de inicio se consolidó como una vitrina estructurada con prueba social y secciones comerciales fuertes, mientras que la página de producto prioriza lo esencial y reduce ruido visual, manteniendo claridad y confianza desde la entrada hasta el checkout.</p>",
+            "image": "assets/images/thumbs/prj_19c955be7fe66fc25d1.webp",
+            "initialDate": "06/01/2026",
+            "endDate": "07/01/2026",
+            "projectUrlLink": "https://www.figma.com/design/qiVWjEcwWSalhaTXERSq22/auroratecidos.com?node-id=0-1&t=QSg93eXZRWWsuAQR-1",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -373,14 +495,140 @@
             ],
             "compatibility": 3,
             "images": [
+                "assets/images/projects/prj_19c955be7fe66fc25d1/prj_19c955be7fe66fc25d1__001.webp",
+                "assets/images/projects/prj_19c955be7fe66fc25d1/prj_19c955be7fe66fc25d1__002.webp",
+                "assets/images/projects/prj_19c955be7fe66fc25d1/prj_19c955be7fe66fc25d1__003.webp",
+                "assets/images/projects/prj_19c955be7fe66fc25d1/prj_19c955be7fe66fc25d1__004.webp",
+                "assets/images/projects/prj_19c955be7fe66fc25d1/prj_19c955be7fe66fc25d1__005.webp",
+                "assets/images/projects/prj_19c955be7fe66fc25d1/prj_19c955be7fe66fc25d1__006.webp",
+                "assets/images/projects/prj_19c955be7fe66fc25d1/prj_19c955be7fe66fc25d1__007.webp",
+                "assets/images/projects/prj_19c955be7fe66fc25d1/prj_19c955be7fe66fc25d1__008.webp",
+                "assets/images/projects/prj_19c955be7fe66fc25d1/prj_19c955be7fe66fc25d1__009.webp",
+                "assets/images/projects/prj_19c955be7fe66fc25d1/prj_19c955be7fe66fc25d1__010.webp",
+                "assets/images/projects/prj_19c955be7fe66fc25d1/prj_19c955be7fe66fc25d1__011.webp",
+                "assets/images/projects/prj_19c955be7fe66fc25d1/prj_19c955be7fe66fc25d1__012.webp"
+            ]
+        },
+        {
+            "id": "prj_19c94f49b168d91b2e3",
+            "title": "UI Mundosado",
+            "description": "<p>E-commerce Shopify | UI en Figma + íconos en Illustrator + tema personalizado (Dawn) | Marketplace BDSM y sexyshop</p><p></p><h2><strong>Visión general</strong></h2><p>MundoSado nació a partir de una conversación estratégica con el cliente, que imaginaba una marca de alto estándar para el universo BDSM. El objetivo fue construir una experiencia premium y discreta, con navegación directa y comunicación visual adulta, elevando la confianza en un segmento donde la privacidad forma parte de la compra.</p><p></p><h2><strong>Contexto y objetivo</strong></h2><p>La meta no era solo lanzar un e-commerce, sino construir una marca con presencia y estándares visuales consistentes, capaz de transmitir comodidad y seguridad en cada etapa del recorrido. Shopify fue elegida por su robustez operativa, mientras que la UI en Figma definió el sistema de layout, componentes y ritmo visual, garantizando una experiencia rápida, escaneable y coherente en desktop y mobile.</p><p></p><h2><strong>El desafío</strong></h2><p>Este segmento exige equilibrio entre impacto y discreción, porque el usuario necesita comprar con rapidez, claridad y sin ruido visual. Era necesario construir una vitrina fuerte sin verse genérica, manteniendo estándares estrictos de grid, espaciado y jerarquía, y reforzando confianza con mensajes de privacidad repetidos en los puntos correctos. Otro desafío fue estandarizar un lenguaje de íconos y cards que fuera adulto y clean, sin infantilizar el tema y sin perder objetividad.</p><p></p><h2><strong>La estrategia</strong></h2><p>Comenzar por la UI en Figma para definir un sistema consistente de layout y componentes, y luego convertirlo en un tema altamente personalizable. La estrategia fue transformar la home en una vitrina orientada a conversión, con bloques de beneficios y secciones de producto bien organizadas, y estructurar la página de producto como una página completa, con bloques objetivos para descripción, instrucciones, especificaciones y reseñas. Para reforzar discreción y lectura rápida, utilicé un sistema de íconos propio y estandarizado, con estética moderna, directa y adulta.</p><p></p><h2><strong>Lo que se implementó</strong></h2><p><strong>UI y sistema visual en Figma:</strong></p><ul><li><p><strong>Home Desktop:</strong> banner principal con mensaje de privacidad como eje de comunicación, seguido por cards de beneficios y vitrinas organizadas por intención, como más vendidos, nuevos productos y recomendaciones.</p></li><li><p><strong>Página de producto Desktop:</strong> layout completo con galería, variaciones, CTA fuerte y bloques de contenido bien separados, incluyendo descripción, instrucciones, especificaciones técnicas y reseñas.</p></li><li><p><strong>Home y página de producto Mobile:</strong> adaptación responsiva con jerarquía preservada, priorizando búsqueda, CTA y lectura por bloques, evitando scroll cansador y reduciendo fricción.</p></li><li><p><strong>Grid y espaciado:</strong> estandarización de márgenes, alineación y respiro para mantener consistencia visual y lectura rápida en todas las secciones.</p></li></ul><p></p><p><strong>Íconos en Illustrator y lenguaje discreto:</strong></p><ul><li><p><strong>Iconografía original:</strong> íconos ilustrados y refinados en Illustrator para ser más adultos, clean y modernos, reforzando beneficios sin saturar la interfaz.</p></li><li><p><strong>Mensajes de confianza estandarizados:</strong> uso recurrente de íconos y microtextos para reforzar puntos como embalaje discreto, remitente oculto, factura genérica y compra segura.</p></li><li><p><strong>Consistencia entre páginas:</strong> repetición estratégica de la iconografía en puntos de decisión entre home y páginas de producto, generando señales de confianza recurrentes.</p></li></ul><p></p><p><strong>Estructura de conversión y confianza:</strong></p><ul><li><p><strong>Barra superior de privacidad:</strong> mensaje objetivo en la parte superior para reducir ansiedad desde el primer contacto.</p></li><li><p><strong>Vitrinas por intención:</strong> secciones claras como más vendidos, nuevos productos y “también te puede gustar”, con cards consistentes y botones de acción.</p></li><li><p><strong>Bloque educativo para objeciones:</strong> sección paso a paso explicando el proceso de compra discreta para reducir fricción y aumentar comodidad.</p></li><li><p><strong>Prueba social:</strong> área de reseñas y destaque de reputación para reforzar seguridad y reducir objeciones antes del checkout.</p></li><li><p><strong>Contenido técnico por bloques:</strong> separación de descripción, instrucciones y especificaciones para facilitar lectura y escaneabilidad.</p></li><li><p><strong>Recomendación y aumento de ticket:</strong> sección “quien vio, compró” para cross-sell y continuidad de navegación.</p></li></ul><p></p><p><strong>Header y experiencia mobile:</strong></p><ul><li><p><strong>Header funcional:</strong> composición con menú hamburguesa, logo centrado, carrito con contador y búsqueda destacada para reducir tiempo de descubrimiento.</p></li><li><p><strong>Búsqueda como prioridad:</strong> campo de búsqueda amplio en mobile para acelerar descubrimiento y reducir clics en un catálogo grande.</p></li><li><p><strong>CTAs consistentes:</strong> botones con alto contraste y estilo uniforme para mantener la acción siempre visible.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>MundoSado obtuvo una UI premium y consistente, con una experiencia directa y discreta, reforzando privacidad y seguridad como pilares de confianza. El sistema de íconos propio mejoró la lectura rápida y la madurez visual, mientras que la estructura de home y producto quedó organizada para conversión, con beneficios claros, prueba social y recomendaciones. El resultado es un e-commerce con apariencia profesional, cómodo de navegar en desktop y mobile, y preparado para vender dentro de las exigencias del segmento.</p>",
+            "image": "assets/images/thumbs/prj_19c94f49b168d91b2e3.webp",
+            "initialDate": "15/07/2025",
+            "endDate": "22/07/2025",
+            "projectUrlLink": "https://www.figma.com/design/94hZU1XzRdsm7A3cqFzJt7/Mundosado.com.br?node-id=0-1&t=MVt37Vt4SnY1gFYb-1",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "figma",
+                    "tooltip": "FIGMA"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                },
+                {
+                    "class": "illustrator",
+                    "tooltip": "ILLUSTRATOR"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c94f49b168d91b2e3/prj_19c94f49b168d91b2e3__001.webp",
+                "assets/images/projects/prj_19c94f49b168d91b2e3/prj_19c94f49b168d91b2e3__002.webp",
+                "assets/images/projects/prj_19c94f49b168d91b2e3/prj_19c94f49b168d91b2e3__003.webp",
+                "assets/images/projects/prj_19c94f49b168d91b2e3/prj_19c94f49b168d91b2e3__004.webp",
+                "assets/images/projects/prj_19c94f49b168d91b2e3/prj_19c94f49b168d91b2e3__005.webp",
+                "assets/images/projects/prj_19c94f49b168d91b2e3/prj_19c94f49b168d91b2e3__006.webp",
+                "assets/images/projects/prj_19c94f49b168d91b2e3/prj_19c94f49b168d91b2e3__007.webp",
+                "assets/images/projects/prj_19c94f49b168d91b2e3/prj_19c94f49b168d91b2e3__008.webp",
+                "assets/images/projects/prj_19c94f49b168d91b2e3/prj_19c94f49b168d91b2e3__009.webp",
+                "assets/images/projects/prj_19c94f49b168d91b2e3/prj_19c94f49b168d91b2e3__010.webp",
+                "assets/images/projects/prj_19c94f49b168d91b2e3/prj_19c94f49b168d91b2e3__011.webp",
+                "assets/images/projects/prj_19c94f49b168d91b2e3/prj_19c94f49b168d91b2e3__012.webp",
+                "assets/images/projects/prj_19c94f49b168d91b2e3/prj_19c94f49b168d91b2e3__013.webp"
+            ]
+        },
+        {
+            "id": "prj_19c950c5d57d971d18a",
+            "title": "UI Portafolio",
+            "description": "<p>Prototipo de UI | Wireframe en Figma + sistema visual | Portafolio personal</p><p></p><h2><strong>Visión general</strong></h2><p>Este fue el prototipo inicial de mi portafolio personal, creado para validar una experiencia visual inmersiva y fuera de lo convencional antes del desarrollo final. Pasó por varias iteraciones a lo largo del proceso, pero sirvió como base para definir narrativa, ritmo de scroll e identidad visual.</p><p></p><h2><strong>Contexto y objetivo</strong></h2><p>Antes de esta versión, ya había construido el wireframe en Figma y luego lo evolucioné a un prototipo más completo, con estética y jerarquía de contenido bien definidas. El objetivo fue diseñar una navegación clara por secciones, dejando evidente la progresión de información entre inicio, sobre mí, habilidades, proyectos, certificaciones y contacto.</p><p></p><h2><strong>El desafío</strong></h2><p>El principal desafío fue equilibrar una personalidad visual fuerte con lectura rápida. El layout debía ser muy memorable sin comprometer la escaneabilidad, especialmente en mobile, y además debía soportar distintos tipos de contenido como cards de proyectos, bloques de habilidades y el área de certificaciones, manteniendo unidad estética durante todo el recorrido.</p><p></p><h2><strong>La estrategia</strong></h2><p>Diseñé el prototipo pensando en una narrativa de scroll por secciones, con divisiones bien marcadas y una jerarquía predecible para el usuario. La estrategia visual fue crear un “universo” consistente, con componentes reutilizables y contraste suficiente para guiar la mirada, manteniendo una experiencia fluida desde el inicio hasta el contacto.</p><p></p><h2><strong>Lo que se implementó</strong></h2><p><strong>Arquitectura de secciones y flujo:</strong></p><ul><li><p><strong>Navegación por etapas:</strong> definición de un flujo que recorre inicio, sobre mí, proyectos, habilidades, certificaciones y contacto de forma secuencial y fácil de entender.</p></li><li><p><strong>Ritmo visual:</strong> separación clara entre bloques con respiro y transiciones, manteniendo sensación de continuidad al hacer scroll.</p></li></ul><p></p><p><strong>Sistema de componentes:</strong></p><ul><li><p><strong>Cards de proyectos:</strong> estructura estándar con título, miniatura, descripción y CTA de “ver proyecto”, creando repetición y previsibilidad en la lectura.</p></li><li><p><strong>Habilidades en grillas:</strong> bloques reutilizables para listar tecnologías y nivel, facilitando comparación y escaneabilidad.</p></li><li><p><strong>Certificaciones en cards:</strong> organización de certificados con identidad consistente, manteniendo el área limpia y objetiva.</p></li></ul><p></p><p><strong>Identidad visual y consistencia:</strong></p><ul><li><p><strong>Paleta y contraste:</strong> uso de tonos oscuros con acentos en naranja para crear una firma visual fuerte y guiar la atención.</p></li><li><p><strong>Elementos gráficos del universo:</strong> composición con elementos ilustrados y decoración temática para reforzar memorabilidad sin perder organización.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>El prototipo consolidó la base de mi portafolio en términos de estructura, narrativa e identidad visual, sirviendo como puente entre el wireframe y el desarrollo final. Ayudó a validar la jerarquía de secciones y la consistencia del sistema de componentes, dejando el proyecto listo para evolucionar con ajustes y refinamientos a lo largo del proceso.</p>",
+            "image": "assets/images/thumbs/prj_19c950c5d57d971d18a.webp",
+            "initialDate": "08/2024",
+            "endDate": "09/2024",
+            "projectUrlLink": "https://www.figma.com/design/PE8TmpOpuqbpoJSmpfTgLc/Portfolio?node-id=0-1&t=tHBNtBI05AwUIOs0-1",
+            "linkedinUrlLink": "https://www.figma.com/design/PE8TmpOpuqbpoJSmpfTgLc/Portfolio?node-id=0-1&t=tHBNtBI05AwUIOs0-1",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "figma",
+                    "tooltip": "FIGMA"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                },
+                {
+                    "class": "illustrator",
+                    "tooltip": "ILLUSTRATOR"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c950c5d57d971d18a/prj_19c950c5d57d971d18a__001.webp",
+                "assets/images/projects/prj_19c950c5d57d971d18a/prj_19c950c5d57d971d18a__002.webp",
+                "assets/images/projects/prj_19c950c5d57d971d18a/prj_19c950c5d57d971d18a__003.webp",
+                "assets/images/projects/prj_19c950c5d57d971d18a/prj_19c950c5d57d971d18a__004.webp",
+                "assets/images/projects/prj_19c950c5d57d971d18a/prj_19c950c5d57d971d18a__005.webp",
+                "assets/images/projects/prj_19c950c5d57d971d18a/prj_19c950c5d57d971d18a__006.webp",
+                "assets/images/projects/prj_19c950c5d57d971d18a/prj_19c950c5d57d971d18a__007.webp",
+                "assets/images/projects/prj_19c950c5d57d971d18a/prj_19c950c5d57d971d18a__008.webp"
+            ]
+        },
+        {
+            "id": "prj_ac509a0154f14460844014d97e5c4697",
+            "title": "Portfólio Wireframe",
+            "description": "<p>Mi portafolio personal es un proyecto desarrollado con el objetivo de reflejar plenamente mi identidad visual y profesional, utilizando una combinación estratégica de tonos naranja y gris para lograr un diseño impactante y diferenciado. Cada sección se planificó cuidadosamente para transmitir una imagen que equilibre profesionalismo y creatividad, destacando mi personalidad y estilo único.</p><p>Este proyecto se ha desarrollado durante aproximadamente 11 meses, compaginando mis estudios académicos con trabajos freelance. El resultado es una plataforma que no solo muestra mis principales proyectos, sino que también comunica de forma auténtica mi esencia como profesional. La alternancia de colores entre secciones ofrece a los visitantes una experiencia visual dinámica y envolvente.</p>",
+            "image": "assets/images/thumbs/prj_ac509a0154f14460844014d97e5c4697-2.webp",
+            "initialDate": "8/2024",
+            "endDate": "8/2024",
+            "projectUrlLink": "https://www.figma.com/design/54GeBLCzAfogJqiYlhQmZf/Lorenzodacunha-Wireframe?node-id=0-1&p=f&t=UIksFIrFurywrBMM-0",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "figma",
+                    "tooltip": "FIGMA"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                },
+                {
+                    "class": "illustrator",
+                    "tooltip": "ILLUSTRATOR"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_ac509a0154f14460844014d97e5c4697/prj_ac509a0154f14460844014d97e5c4697__007.webp",
                 "assets/images/projects/prj_ac509a0154f14460844014d97e5c4697/prj_ac509a0154f14460844014d97e5c4697__001.webp",
                 "assets/images/projects/prj_ac509a0154f14460844014d97e5c4697/prj_ac509a0154f14460844014d97e5c4697__002.webp",
                 "assets/images/projects/prj_ac509a0154f14460844014d97e5c4697/prj_ac509a0154f14460844014d97e5c4697__003.webp",
                 "assets/images/projects/prj_ac509a0154f14460844014d97e5c4697/prj_ac509a0154f14460844014d97e5c4697__004.webp",
                 "assets/images/projects/prj_ac509a0154f14460844014d97e5c4697/prj_ac509a0154f14460844014d97e5c4697__005.webp",
                 "assets/images/projects/prj_ac509a0154f14460844014d97e5c4697/prj_ac509a0154f14460844014d97e5c4697__006.webp"
-            ],
-            "id": "prj_ac509a0154f14460844014d97e5c4697"
+            ]
         }
     ],
     "web-designer": [
@@ -395,6 +643,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -430,6 +679,280 @@
             ]
         },
         {
+            "id": "prj_19c8ca4a0d2f6e27481",
+            "title": "Farmarela",
+            "description": "<p>Landing page en GreatPages | Dirección de arte + diseño de conversión | Licenciamiento Farmarela</p><p></p><h2><strong>Visión general</strong></h2><p>La landing page de Farmarela fue creada para campañas de expansión enfocadas en la venta de licencias, con el objetivo de convertir tráfico en leads calificados de forma consistente. El foco del proyecto fue construir una página con fuerte presencia institucional, alta claridad de oferta y una experiencia visual premium que sostenga confianza e intención de contacto.</p><p></p><h2><strong>Contexto y objetivo</strong></h2><p>El proyecto llegó a través de una operación de partnership B2B, donde se necesitaban landing pages listas para campañas de adquisición. Tras el alineamiento, fui responsable de toda la creación visual de la página en GreatPages, garantizando una narrativa clara de conversión, alineada con los pilares del modelo de licenciamiento y con una estética coherente con la identidad de Farmarela.</p><p></p><h2><strong>El desafío</strong></h2><p>Una landing page de alta conversión exige equilibrio entre impacto y lectura, especialmente en una oferta de inversión, donde la credibilidad y la claridad pesan mucho. El desafío fue crear una página visualmente fuerte sin cansar al usuario, organizar las secciones con jerarquía sólida y elevar la calidad de las imágenes para mantener un estándar premium. Además, fue necesario construir elementos gráficos originales para diferenciar la página de layouts genéricos y reforzar la presencia de marca.</p><p></p><h2><strong>La estrategia</strong></h2><p>Construir una narrativa por secciones que guiara al usuario con fluidez, combinando bloques de autoridad, pilares, prueba social y CTAs recurrentes. A nivel visual, utilicé los colores principales de Farmarela como puntos de destaque y fondos blancos para mantener respiro y comodidad visual. La estrategia también incluyó elevar los activos visuales con IA y acabado profesional, además de sumar vectores e íconos personalizados para aumentar percepción de marca y consistencia.</p><p></p><h2><strong>Lo que se implementó</strong></h2><p><strong>Dirección visual y composición de la página:</strong></p><ul><li><p><strong>Creación de la LP en GreatPages:</strong> estructuración de secciones, jerarquía de contenido y posicionamiento estratégico de CTAs para guiar al usuario al formulario.</p></li><li><p><strong>Paleta e identidad:</strong> uso de los colores principales de la marca como destaque y fondos claros para aumentar legibilidad y reducir fatiga visual.</p></li><li><p><strong>Mockups modernos:</strong> creación de mockups de celular con estética actual y sensación de profundidad para destacar materiales y contenidos de campaña.</p></li></ul><p></p><p><strong>Imágenes, calidad y acabado premium:</strong></p><ul><li><p><strong>Mejora con IA:</strong> creación y mejora de imágenes usando Gemini con Nano Banana Pro para elevar nitidez, iluminación y realismo.</p></li><li><p><strong>Retoque final profesional:</strong> finalización y correcciones en Photoshop para asegurar consistencia de color, contraste y pulido visual.</p></li></ul><p></p><p><strong>Íconos, vectores y elementos originales:</strong></p><ul><li><p><strong>Vectorización en Illustrator:</strong> creación y vectorización de secciones con dibujos y elementos gráficos con la marca, elevando el nivel de profesionalismo.</p></li><li><p><strong>Íconos y refuerzo de lectura:</strong> aplicación de íconos para mejorar escaneabilidad, separar temas y reforzar comprensión rápida de los pilares.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>El resultado fue una landing page con estética institucional fuerte, visual limpio y una narrativa de conversión bien guiada. La combinación de fondos claros con colores de destaque aportó comodidad y presencia de marca, mientras que las imágenes mejoradas y los vectores originales elevaron la percepción premium. La LP quedó lista para campañas con una presentación más profesional, reforzando confianza y aumentando el potencial de generación de leads calificados.</p>",
+            "image": "assets/images/thumbs/prj_19c8ca4a0d2f6e27481.webp",
+            "initialDate": "31/01/2026",
+            "endDate": "10/02/2026",
+            "projectUrlLink": "https://lp1.redeeconomize.com/farmarela",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "greatpages",
+                    "tooltip": "GREATPAGES"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                },
+                {
+                    "class": "illustrator",
+                    "tooltip": "ILLUSTRATOR"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c8ca4a0d2f6e27481/prj_19c8ca4a0d2f6e27481__001.webp",
+                "assets/images/projects/prj_19c8ca4a0d2f6e27481/prj_19c8ca4a0d2f6e27481__002.webp",
+                "assets/images/projects/prj_19c8ca4a0d2f6e27481/prj_19c8ca4a0d2f6e27481__003.webp",
+                "assets/images/projects/prj_19c8ca4a0d2f6e27481/prj_19c8ca4a0d2f6e27481__004.webp",
+                "assets/images/projects/prj_19c8ca4a0d2f6e27481/prj_19c8ca4a0d2f6e27481__005.webp",
+                "assets/images/projects/prj_19c8ca4a0d2f6e27481/prj_19c8ca4a0d2f6e27481__006.webp",
+                "assets/images/projects/prj_19c8ca4a0d2f6e27481/prj_19c8ca4a0d2f6e27481__007.webp"
+            ]
+        },
+        {
+            "id": "prj_19c8cbd0a4c936b1a0d",
+            "title": "Economize",
+            "description": "<p>Landing page en GreatPages | Dirección de arte + diseño de conversión | Licenciamiento Farmácia Economize</p><p></p><h2><strong>Visión general</strong></h2><p>La landing page de Farmácia Economize fue creada para campañas de expansión enfocadas en la venta de licencias dentro del posicionamiento más premium de la red. El foco del proyecto fue convertir tráfico en leads calificados con una página que comunique fuerza de marca, credibilidad y claridad de propuesta desde las primeras secciones.</p><p></p><h2><strong>Contexto y objetivo</strong></h2><p>El proyecto llegó a través de una operación de partnership B2B, donde se necesitaban landing pages listas para campañas de adquisición y captación de interesados en licenciamiento. Tras el alineamiento, fui responsable de toda la creación visual de la página en GreatPages, asegurando consistencia institucional, narrativa clara de conversión y un look alineado al segmento premium.</p><p></p><h2><strong>El desafío</strong></h2><p>Una LP de licenciamiento debe equilibrar impacto y lectura, especialmente cuando la decisión implica inversión y comparación con otras opciones del mercado. El desafío fue construir una página visualmente fuerte sin cansar al usuario, organizar las secciones con jerarquía clara y sostener credibilidad con imágenes y elementos gráficos de alta calidad. También fue necesario diferenciar la LP de layouts genéricos, usando piezas originales y una composición moderna.</p><p></p><h2><strong>La estrategia</strong></h2><p>Estructurar una narrativa por secciones que guiara al usuario con fluidez, reforzando oferta, autoridad, pilares y prueba social con CTAs recurrentes. A nivel visual, utilicé los colores principales de Farmácia Economize como puntos de destaque y fondos blancos para mantener respiro y comodidad visual. La estrategia también incluyó elevar la percepción premium con imágenes mejoradas con IA, acabado profesional y vectores personalizados incorporando la marca para reforzar consistencia.</p><p></p><h2><strong>Lo que se implementó</strong></h2><p><strong>Dirección visual y composición de la página:</strong></p><ul><li><p><strong>Creación de la LP en GreatPages:</strong> estructura de secciones, jerarquía de contenido y posicionamiento estratégico de CTAs para guiar al usuario al formulario.</p></li><li><p><strong>Paleta e identidad:</strong> aplicación del rojo y elementos de marca como puntos de destaque, combinados con fondos claros para legibilidad y ritmo visual.</p></li><li><p><strong>Mockups modernos:</strong> creación de mockups de celular con estética actual y sensación de profundidad, reforzando materiales y presencia digital de la operación.</p></li></ul><p></p><p><strong>Imágenes, calidad y acabado premium:</strong></p><ul><li><p><strong>Mejora con IA:</strong> creación y mejora de imágenes usando Gemini con Nano Banana Pro para elevar nitidez, iluminación y realismo.</p></li><li><p><strong>Retoque final profesional:</strong> finalización y correcciones en Photoshop para asegurar consistencia de color, contraste y pulido visual.</p></li></ul><p></p><p><strong>Íconos, vectores y elementos originales:</strong></p><ul><li><p><strong>Vectorización en Illustrator:</strong> creación y vectorización de secciones con dibujos y elementos gráficos incorporando la marca, aumentando la percepción de profesionalismo.</p></li><li><p><strong>Íconos y refuerzo de lectura:</strong> aplicación de íconos para mejorar escaneabilidad, separar temas y acelerar la comprensión de pilares y beneficios.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>El resultado fue una landing page con estética institucional fuerte, visual limpio y una narrativa de conversión bien guiada. Los colores de destaque refuerzan presencia de marca sin comprometer la lectura, mientras que las imágenes mejoradas y los vectores originales elevan la percepción premium. La LP quedó lista para campañas con una presentación más profesional y mayor potencial de generación de leads calificados para licenciamiento.</p>",
+            "image": "assets/images/thumbs/prj_19c8cbd0a4c936b1a0d.webp",
+            "initialDate": "31/01/2026",
+            "endDate": "19/02/2026",
+            "projectUrlLink": "https://lp2.redeeconomize.com/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "greatpages",
+                    "tooltip": "GREATPAGES"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                },
+                {
+                    "class": "illustrator",
+                    "tooltip": "ILLUSTRATOR"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c8cbd0a4c936b1a0d/prj_19c8cbd0a4c936b1a0d__001.webp",
+                "assets/images/projects/prj_19c8cbd0a4c936b1a0d/prj_19c8cbd0a4c936b1a0d__002.webp",
+                "assets/images/projects/prj_19c8cbd0a4c936b1a0d/prj_19c8cbd0a4c936b1a0d__003.webp",
+                "assets/images/projects/prj_19c8cbd0a4c936b1a0d/prj_19c8cbd0a4c936b1a0d__004.webp",
+                "assets/images/projects/prj_19c8cbd0a4c936b1a0d/prj_19c8cbd0a4c936b1a0d__005.webp",
+                "assets/images/projects/prj_19c8cbd0a4c936b1a0d/prj_19c8cbd0a4c936b1a0d__006.webp",
+                "assets/images/projects/prj_19c8cbd0a4c936b1a0d/prj_19c8cbd0a4c936b1a0d__007.webp",
+                "assets/images/projects/prj_19c8cbd0a4c936b1a0d/prj_19c8cbd0a4c936b1a0d__008.webp"
+            ]
+        },
+        {
+            "id": "prj_19c8ccdbea9f9bf9336",
+            "title": "Rede Economize",
+            "description": "<p>Landing page en GreatPages | Dirección de arte + diseño de conversión | Licenciamiento Rede Economize (dos modelos)</p><p></p>\n\n<h2><strong>Visión general</strong></h2>\n<p>La landing page de Rede Economize fue creada para campañas de expansión con un objetivo estratégico adicional: presentar de forma clara y convincente los dos modelos de licenciamiento de la operación. El foco del proyecto fue convertir tráfico en leads calificados, guiando al usuario para entender rápidamente las diferencias entre un modelo eficiente y un modelo eficiente con posicionamiento premium.</p><p></p>\n\n<h2><strong>Contexto y objetivo</strong></h2>\n<p>Este es el tercer proyecto de LP dentro de la misma operación de expansión, manteniendo consistencia visual y narrativa entre las páginas. La diferencia principal de esta LP es su rol comparativo: además de captar leads, debe orientar la elección del modelo ideal sin generar confusión, preservando la fuerza institucional de la red y manteniendo ambos caminos como opciones válidas.</p><p></p>\n\n<h2><strong>El desafío</strong></h2>\n<p>Cuando existen dos ofertas, el mayor riesgo es perder conversión por exceso de duda. El desafío fue organizar la página para educar rápidamente al usuario sin aumentar fricción, dejando las diferencias entre modelos evidentes y fáciles de comparar. Al mismo tiempo, era necesario mantener una estética premium, con lectura cómoda, jerarquía fuerte y materiales visuales con el mismo estándar elevado de las otras LPs de la operación.</p><p></p>\n\n<h2><strong>La estrategia</strong></h2>\n<p>Construir una narrativa por secciones que comienza con promesa y autoridad, y luego conduce a un bloque comparativo claro entre los dos modelos. La estrategia fue trabajar con lenguaje visual consistente, CTAs recurrentes y bloques fáciles de escanear, usando destaque de color e iconografía para guiar comprensión y decisión. El diseño mantuvo fondos claros para comodidad y colores institucionales como puntos de foco, reforzando credibilidad sin cansar al usuario.</p><p></p>\n\n<h2><strong>Lo que se implementó</strong></h2>\n<p><strong>Dirección visual y composición de la página:</strong></p>\n<ul>\n  <li><p><strong>Creación de la LP en GreatPages:</strong> estructuración de secciones, jerarquía y posicionamiento de CTAs para mantener el flujo de conversión de inicio a fin.</p></li>\n  <li><p><strong>Sección de comparación de modelos:</strong> organización visual para presentar ambos formatos de licenciamiento con claridad, destacando diferencias sin desvalorizar ninguna opción.</p></li>\n  <li><p><strong>Paleta e identidad:</strong> aplicación de colores institucionales como destaque y fondos claros para aumentar legibilidad y mantener ritmo visual.</p></li>\n</ul><p></p>\n\n<p><strong>Imágenes, calidad y acabado premium:</strong></p>\n<ul>\n  <li><p><strong>Mejora con IA:</strong> creación y mejora de imágenes usando Gemini con Nano Banana Pro para elevar nitidez, iluminación y realismo.</p></li>\n  <li><p><strong>Retoque final profesional:</strong> finalización y correcciones en Photoshop para asegurar consistencia de color, contraste y pulido.</p></li>\n  <li><p><strong>Mockups modernos:</strong> creación de mockups de celular con estética actual y sensación de profundidad para reforzar materiales y presencia digital.</p></li>\n</ul><p></p>\n\n<p><strong>Íconos, vectores y refuerzo de lectura:</strong></p>\n<ul>\n  <li><p><strong>Vectorización en Illustrator:</strong> creación y vectorización de secciones y elementos gráficos con presencia de marca, elevando la percepción de profesionalismo.</p></li>\n  <li><p><strong>Iconografía para comparación:</strong> uso de íconos para separar beneficios, organizar información y acelerar la comprensión de diferencias entre modelos.</p></li>\n  <li><p><strong>Bloques escaneables:</strong> estructuración del contenido en cards y secciones objetivas para reducir fricción y aumentar retención.</p></li>\n</ul><p></p>\n\n<h2><strong>Resultado</strong></h2>\n<p>El resultado fue una landing page institucional fuerte y alineada con las otras LPs de la operación, con un diferencial claro: la capacidad de presentar dos modelos de licenciamiento de manera objetiva y persuasiva. La página guía al usuario con más claridad, reduce indecisión y mantiene el foco en conversión, reforzando credibilidad y aumentando el potencial de generación de leads calificados para ambos perfiles de inversión.</p>",
+            "image": "assets/images/thumbs/prj_19c8ccdbea9f9bf9336.webp",
+            "initialDate": "31/01/2026",
+            "endDate": "19/02/2026",
+            "projectUrlLink": "https://lp3.redeeconomize.com/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "greatpages",
+                    "tooltip": "GREATPAGES"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                },
+                {
+                    "class": "illustrator",
+                    "tooltip": "ILLUSTRATOR"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c8ccdbea9f9bf9336/prj_19c8ccdbea9f9bf9336__001.webp",
+                "assets/images/projects/prj_19c8ccdbea9f9bf9336/prj_19c8ccdbea9f9bf9336__002.webp",
+                "assets/images/projects/prj_19c8ccdbea9f9bf9336/prj_19c8ccdbea9f9bf9336__003.webp",
+                "assets/images/projects/prj_19c8ccdbea9f9bf9336/prj_19c8ccdbea9f9bf9336__004.webp",
+                "assets/images/projects/prj_19c8ccdbea9f9bf9336/prj_19c8ccdbea9f9bf9336__005.webp",
+                "assets/images/projects/prj_19c8ccdbea9f9bf9336/prj_19c8ccdbea9f9bf9336__006.webp"
+            ]
+        },
+        {
+            "id": "prj_19c8a7c27c932a27383",
+            "title": "Capriccio",
+            "description": "<p>E-commerce Tray | Dirección visual + configuración de tema | Alimentos y condimentos</p><p></p><h2><strong>Visión general</strong></h2><p>Capriccio ya tenía fuerza en el retail físico, presente en estanterías de supermercados y tiendas de barrio, pero necesitaba transformar esa autoridad en una experiencia digital que realmente diera ganas de comprar. El foco del proyecto fue crear una vitrina online sólida, con identidad consistente y comunicación visual profesional para acelerar la entrada de la marca en el e-commerce.</p><p></p><h2><strong>Contexto y objetivo</strong></h2><p>El desafío aquí no era simplemente “estar en lo digital”, sino parecer una marca grande desde la primera visita. La tienda debía comunicar variedad de líneas, reforzar confianza, destacar kits y ofertas y, al mismo tiempo, transmitir la sensación de una marca real y presente en el día a día, tal como ya lo era en el punto de venta físico.</p><p></p><h2><strong>El desafío</strong></h2><p>La mayor responsabilidad del proyecto estuvo en lo visual, porque en e-commerce de alimentos la decisión de compra está muy influenciada por la imagen, la composición y la lectura rápida de beneficios. Era necesario crear un ecosistema completo de piezas, garantizando unidad entre banners, íconos, vitrinas y secciones, sin dejar el sitio con “cara de plantilla”. Además, parte de las imágenes debían ganar más calidad para mantener un estándar premium en todo el layout.</p><p></p><h2><strong>La estrategia</strong></h2><p>Transformar la home en una vitrina tipo supermercado premium, con comunicación clara y repetible. El enfoque fue organizar la experiencia en bloques fáciles de escanear, reforzando líneas de productos, ofertas de la semana, kits y secciones de recomendación, siempre con consistencia visual. El objetivo fue guiar al usuario con claridad y crear ritmo visual, reduciendo ruido y aumentando confianza.</p><p></p><h2><strong>Lo que se implementó</strong></h2><p><strong>Dirección visual y contenido estático:</strong></p><ul><li><p><strong>Banners y campañas:</strong> creación de banners principales, banners de categoría, tarjetas de kits y piezas destacadas para ofertas y beneficios.</p></li><li><p><strong>Íconos y elementos del tema:</strong> desarrollo de íconos e imágenes estáticas para reforzar credibilidad, ventajas y lectura rápida.</p></li><li><p><strong>Humanización de los banners:</strong> uso de banco de imágenes premium para aportar contexto real de cocina, familia y rutina, elevando la percepción de marca.</p></li></ul><p></p><p><strong>Calidad de imagen y refinamiento:</strong></p><ul><li><p><strong>Upscale y mejora visual:</strong> uso de Gemini Pro con Nano Banana para aumentar la calidad y el acabado de imágenes específicas, manteniendo consistencia de nitidez e iluminación.</p></li><li><p><strong>Estandarización del catálogo:</strong> cuidado con recortes, proporciones y coherencia entre imágenes para que vitrinas, kits y secciones no compitan entre sí.</p></li></ul><p></p><p><strong>Configuración y estructura del tema:</strong></p><ul><li><p><strong>Layout y jerarquía:</strong> configuración de colores, posicionamiento de secciones, organización de vitrinas e inserción de contenido en áreas estratégicas.</p></li><li><p><strong>Responsividad:</strong> ajustes de contenido para mantener buena lectura e impacto tanto en desktop como en mobile.</p></li><li><p><strong>Buenas prácticas de presentación:</strong> estructuración de bloques como ofertas, más vendidos, kits y contenidos complementarios para aumentar el tiempo de navegación y la intención de compra.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>Capriccio obtuvo una tienda con presencia visual fuerte, coherente y comercial, con apariencia profesional desde el primer pliegue. El proyecto elevó la presencia digital de la marca con banners más humanos, vitrinas mejor organizadas y una identidad visual consistente, creando un entorno listo para vender y competir con marcas consolidadas en el e-commerce.</p>",
+            "image": "assets/images/thumbs/prj_19c8a7c27c932a27383.webp",
+            "initialDate": "01/12/2025",
+            "endDate": "16/12/2025",
+            "projectUrlLink": "https://familiacapriccio.commercesuite.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "tray",
+                    "tooltip": "TRAY"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                },
+                {
+                    "class": "illustrator",
+                    "tooltip": "ILLUSTRATOR"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c8a7c27c932a27383/prj_19c8a7c27c932a27383__001.webp",
+                "assets/images/projects/prj_19c8a7c27c932a27383/prj_19c8a7c27c932a27383__002.webp",
+                "assets/images/projects/prj_19c8a7c27c932a27383/prj_19c8a7c27c932a27383__003.webp",
+                "assets/images/projects/prj_19c8a7c27c932a27383/prj_19c8a7c27c932a27383__004.webp",
+                "assets/images/projects/prj_19c8a7c27c932a27383/prj_19c8a7c27c932a27383__005.webp",
+                "assets/images/projects/prj_19c8a7c27c932a27383/prj_19c8a7c27c932a27383__006.webp",
+                "assets/images/projects/prj_19c8a7c27c932a27383/prj_19c8a7c27c932a27383__007.webp",
+                "assets/images/projects/prj_19c8a7c27c932a27383/prj_19c8a7c27c932a27383__008.webp",
+                "assets/images/projects/prj_19c8a7c27c932a27383/prj_19c8a7c27c932a27383__009.webp",
+                "assets/images/projects/prj_19c8a7c27c932a27383/prj_19c8a7c27c932a27383__010.webp",
+                "assets/images/projects/prj_19c8a7c27c932a27383/prj_19c8a7c27c932a27383__011.webp"
+            ]
+        },
+        {
+            "id": "prj_dd369fdc6fb04f21a1a79c7353b6d82f",
+            "title": "Registrando Marca",
+            "description": "<p>El proyecto Registrando Marca implicó la reformulación completa de una landing page desarrollada en WordPress utilizando Elementor y Elementor Pro. El objetivo principal fue modernizar la apariencia visual del sitio, que hasta entonces no comunicaba adecuadamente la credibilidad deseada por la marca.</p><p>Mediante una combinación armoniosa de los colores de la marca con elementos de diseño contemporáneo, el nuevo diseño introdujo características visuales como ondas suaves, esquinas redondeadas e iconos modernos, otorgando al sitio una sensación de ligereza y actualidad. Adicionalmente, se incorporaron un vídeo institucional y formularios con verificación antispam para garantizar que los datos enviados por los usuarios fueran completos y estuvieran protegidos.</p><p>El resultado fue una página atractiva y funcional que cumplió plenamente con las expectativas del cliente, destacándose por su claridad visual y la seguridad en el envío de información. Este proyecto fortaleció mi experiencia en diseño de interfaces, optimización de usabilidad, seguridad y dominio avanzado de WordPress y Elementor.</p>",
+            "image": "assets/images/thumbs/prj_dd369fdc6fb04f21a1a79c7353b6d82f.webp",
+            "initialDate": "08/2024",
+            "endDate": "08/2024",
+            "projectUrlLink": "https://registrandomarca.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "wordpress",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "javascript",
+                    "tooltip": "JAVASCRIPT"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__001.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__002.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__003.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__004.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__005.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__006.webp",
+                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__007.webp"
+            ]
+        },
+        {
+            "id": "prj_1119bd2067864ecba080d888d7d16b2f",
+            "title": "Razzo",
+            "description": "<p>El proyecto de Razo consistió en la creación de una página de aterrizaje en la plataforma WordPress, basada en un diseño previamente proporcionado por el cliente a través de Figma. Aunque el enfoque principal no fue la programación intensiva, el reto residió en reproducir fielmente el diseño original, complementado con ajustes finales específicos para satisfacer plenamente las expectativas del cliente.</p><p>El resultado fue un sitio moderno y responsive, enriquecido con bordes redondeados y elementos animados, que ofrece a los usuarios una experiencia dinámica y agradable. La página también incluye un plugin de traducción para garantizar accesibilidad a una audiencia diversa y está estructurada en tres secciones principales: Inicio, Servicios y Contacto.</p><p>La landing page de Razo ejemplifica cómo la combinación de un diseño cuidadoso y una implementación precisa puede generar resultados visualmente atractivos y altamente funcionales, valorizando tanto la experiencia del usuario como la identidad de la marca.</p>",
+            "image": "assets/images/thumbs/prj_1119bd2067864ecba080d888d7d16b2f.webp",
+            "initialDate": "03/2025",
+            "endDate": "03/2025",
+            "projectUrlLink": "https://razzo.tech/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "wordpress",
+                    "tooltip": "WORDPRESS"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "javascript",
+                    "tooltip": "JAVASCRIPT"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__001.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__002.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__003.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__004.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__005.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__006.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__007.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__008.webp",
+                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__009.webp"
+            ]
+        },
+        {
+            "id": "prj_19c90bfe95af39ec4d8",
+            "title": "Vibe Terapias",
+            "description": "<p>Landing page en WordPress | Dirección visual + construcción en Elementor Pro | Captación para terapia de liberación miofascial</p><p></p>\n\n<h2><strong>Visión general</strong></h2>\n<p>Vibe Terapias fue desarrollada como una landing page de captación enfocada en conversión, diseñada para transformar visitas en agendamientos. La propuesta central de la página es posicionar el servicio como una solución real para el alivio del dolor, con storytelling visual fuerte, prueba social y un camino claro hacia el contacto.</p><p></p>\n\n<h2><strong>Contexto y objetivo</strong></h2>\n<p>El cliente necesitaba una página que comunicara autoridad y diferenciación dentro del segmento de terapias, dejando claro que no se trata de un spa, sino de un servicio orientado al alivio del dolor y la mejora funcional. El objetivo fue crear una estructura visual que guiara al usuario por dolores, método, diferenciales, paso a paso de la sesión y resultados, con CTAs bien distribuidos y lectura cómoda.</p><p></p>\n\n<h2><strong>El desafío</strong></h2>\n<p>En páginas de salud y bienestar, el mayor desafío es equilibrar calidez con credibilidad técnica sin caer en un visual genérico. Era necesario sostener un posicionamiento profesional con estética premium, organizar bastante contenido sin cansar y crear ritmo visual con secciones bien marcadas. Otro punto crítico fue mantener consistencia de imágenes y componentes, preservando unidad visual mientras la página alterna entre autoridad, explicaciones técnicas, paso a paso y prueba social.</p><p></p>\n\n<h2><strong>La estrategia</strong></h2>\n<p>Construir una narrativa por secciones con jerarquía fuerte, combinando posicionamiento, beneficios, prueba y guía hacia la acción. Visualmente, la estrategia fue trabajar una paleta terrosa sofisticada con fondos claros para dar respiro, usar transiciones curvas para crear ritmo y guiar la mirada, y estructurar bloques escaneables con íconos y cards para facilitar lectura. El objetivo fue reducir fricción y aumentar confianza para que el usuario avance hacia el agendamiento.</p><p></p>\n\n<h2><strong>Lo que se implementó</strong></h2>\n<p><strong>Dirección visual y narrativa de la página:</strong></p>\n<ul>\n  <li><p><strong>Jerarquía clara por secciones:</strong> un recorrido que inicia con posicionamiento, avanza con explicación del método y finaliza con prueba social y FAQ.</p></li>\n  <li><p><strong>Ritmo visual con secciones curvas:</strong> alternancia de bloques y transiciones para mantener fluidez y evitar sensación de página larga y cansadora.</p></li>\n  <li><p><strong>CTAs recurrentes:</strong> botones de acción distribuidos en secciones clave para capturar intención en el momento correcto.</p></li>\n</ul><p></p>\n\n<p><strong>Estructura y construcción en WordPress:</strong></p>\n<ul>\n  <li><p><strong>WordPress con Elementor Pro:</strong> construcción completa de la estructura visual, organizando secciones, grids, cards y componentes para facilitar mantenimiento y evolución.</p></li>\n  <li><p><strong>Secciones orientadas a conversión:</strong> bloques dedicados a diferenciales, evaluación del dolor, proceso de la sesión, historias de transformación y preguntas frecuentes.</p></li>\n</ul><p></p>\n\n<p><strong>Imágenes y consistencia premium:</strong></p>\n<ul>\n  <li><p><strong>Curaduría y aplicación de imágenes:</strong> selección y posicionamiento de imágenes para reforzar la propuesta terapéutica, con foco en credibilidad y calidez.</p></li>\n  <li><p><strong>Prueba visual del método:</strong> destaque de elementos que comunican técnica y diferencial, como la evaluación con cámara térmica y el enfoque en liberación miofascial.</p></li>\n</ul><p></p>\n\n<p><strong>Elementos de confianza y prueba social:</strong></p>\n<ul>\n  <li><p><strong>Bloques de diferenciales:</strong> presentación escaneable de beneficios y puntos de autoridad en cards con íconos.</p></li>\n  <li><p><strong>Historias de transformación:</strong> sección con videos y reseñas para reforzar credibilidad y reducir objeciones.</p></li>\n  <li><p><strong>FAQ estructurado:</strong> preguntas organizadas para responder dudas y apoyar la decisión de contacto.</p></li>\n</ul><p></p>\n\n<h2><strong>Resultado</strong></h2>\n<p>El resultado fue una landing page premium, con lectura cómoda y narrativa clara, capaz de posicionar Vibe Terapias como solución profesional para el alivio del dolor. La estructura en WordPress con Elementor Pro entregó flexibilidad y consistencia visual, mientras el uso de imágenes, secciones bien marcadas y prueba social fortaleció la confianza y aumentó el potencial de conversión en agendamientos.</p>",
+            "image": "assets/images/thumbs/prj_19c90bfe95af39ec4d8.webp",
+            "initialDate": "20/09/2025",
+            "endDate": "23/09/2025",
+            "projectUrlLink": "https://terapiasvibe.com.br/sao-paulo",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "wordpress",
+                    "tooltip": "WORDPRESS"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                },
+                {
+                    "class": "illustrator",
+                    "tooltip": "ILLUSTRATOR"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c90bfe95af39ec4d8/prj_19c90bfe95af39ec4d8__001.webp",
+                "assets/images/projects/prj_19c90bfe95af39ec4d8/prj_19c90bfe95af39ec4d8__002.webp",
+                "assets/images/projects/prj_19c90bfe95af39ec4d8/prj_19c90bfe95af39ec4d8__003.webp",
+                "assets/images/projects/prj_19c90bfe95af39ec4d8/prj_19c90bfe95af39ec4d8__004.webp",
+                "assets/images/projects/prj_19c90bfe95af39ec4d8/prj_19c90bfe95af39ec4d8__005.webp",
+                "assets/images/projects/prj_19c90bfe95af39ec4d8/prj_19c90bfe95af39ec4d8__006.webp",
+                "assets/images/projects/prj_19c90bfe95af39ec4d8/prj_19c90bfe95af39ec4d8__007.webp",
+                "assets/images/projects/prj_19c90bfe95af39ec4d8/prj_19c90bfe95af39ec4d8__008.webp",
+                "assets/images/projects/prj_19c90bfe95af39ec4d8/prj_19c90bfe95af39ec4d8__009.webp"
+            ]
+        },
+        {
             "id": "prj_19c862dda2d3ee06e74",
             "title": "Apolodog",
             "description": "<p>E-commerce Shopify | Diseño personalizado + páginas de destino especiales | Productos para perros<br /></p><p><strong>Contexto y objetivo:</strong> El cliente deseaba crear una tienda en línea para vender los productos que fabrica especialmente para perros. La meta era llevar el amor por las mascotas al mundo digital con una vitrina que transmitiera calidad y mostrara su uso en el día a día de los dueños.</p><p><strong>Desafío:</strong> La página de inicio necesitaba ser muy visual, llena de imágenes que evoquen la convivencia con las mascotas, y los productos debían tener páginas ricas en detalles, incluyendo videos, fotos e información técnica. Además, era necesario incorporar páginas de destino exclusivas para kits y ofertas especiales, sin perder la uniformidad del resto de la tienda.</p><p><strong>Solución y ejecución:</strong> Desarrollé toda la implementación del diseño en Shopify, creando un diseño moderno y adaptable. Trabajé en páginas de productos personalizadas para kits, con una estructura diferenciada, y mantuve un estándar para los demás artículos. Ajusté el tema con secciones extra para soportar videos, fotos y textos más largos. Utilicé el tono naranja y negro de la marca en varios elementos, reforzando la identidad visual y la presencia de los colores en todo el sitio.</p><p><strong>Resultado:</strong> El resultado fue un diseño moderno y bien construido, que presenta fotos realistas del día a día con los productos y transmite una sensación de confianza y calidad. Los videos, GIFs e imágenes de uso refuerzan cómo los artículos se integran en la rutina de quienes tienen perros, mientras que las páginas de destino especiales destacan los kits de forma estratégica.</p>",
@@ -440,6 +963,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -486,6 +1010,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -530,6 +1055,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -573,6 +1099,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -611,6 +1138,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -653,6 +1181,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -692,6 +1221,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -727,6 +1257,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -763,6 +1294,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -801,6 +1333,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -840,6 +1373,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -882,6 +1416,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -918,6 +1453,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -957,6 +1493,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -986,6 +1523,117 @@
             ]
         },
         {
+            "id": "prj_19c9589125f04952fe4",
+            "title": "Base Forte",
+            "description": "<p>Landing Page Shopify | Estructura estratégica + Personalización con Liquid | Suplemento alimenticio</p><p></p><h2><strong>Visión general</strong></h2><p>La landing page de Colágeno Forte fue desarrollada con un enfoque claro en la conversión directa, destacando beneficios evidentes, prueba social y ofertas estructuradas para diferentes ciclos de consumo. El objetivo principal fue transformar una página de producto estándar en una experiencia persuasiva, organizada y visualmente confiable, adecuada para campañas y tráfico pago.</p><p></p><h2><strong>Contexto y objetivo</strong></h2><p>El desafío era construir una LP dentro de Shopify que no pareciera una página de producto común. Fue necesario utilizar las secciones del tema de terceros como base, pero elevando el nivel estratégico mediante organización visual, jerarquía clara de información y bloques enfocados en conversión. La meta fue estructurar una narrativa que guiara al usuario desde los beneficios hasta la prueba social, y de la prueba a la oferta.</p><p></p><h2><strong>El desafío</strong></h2><p>Trabajar dentro de las limitaciones de un tema preconstruido requiere precisión técnica. Algunas secciones debieron adaptarse para incorporar nuevos bloques de contenido, mejor organización visual y refuerzo de elementos de conversión. Además, era fundamental mantener el rendimiento y la responsividad tanto en desktop como en mobile.</p><p></p><h2><strong>La estrategia</strong></h2><p>La estructura de la página siguió una lógica de persuasión en capas:</p><ul><li><p><strong>Primera sección impactante:</strong> destaque del producto, promesa clara y CTA directo.</p></li><li><p><strong>Bloques de beneficios:</strong> secciones explicando colágeno, hidratación, elasticidad, vitaminas y minerales con apoyo visual.</p></li><li><p><strong>Prueba social:</strong> reseñas y resultados comprobados para generar credibilidad.</p></li><li><p><strong>Ofertas estructuradas:</strong> planes de 1, 2 y 3 meses con incentivos progresivos de ahorro.</p></li><li><p><strong>Información nutricional y FAQ:</strong> reducción de objeciones antes de la decisión final.</p></li></ul><p></p><h2><strong>Lo que se implementó</strong></h2><p><strong>Personalización técnica:</strong></p><ul><li><p><strong>Liquid:</strong> creación y adaptación de secciones personalizadas para organización estratégica del contenido.</p></li><li><p><strong>CSS adicional:</strong> ajustes finos de layout, espaciado, tipografía y destaques visuales para reforzar la jerarquía.</p></li><li><p><strong>HTML complementario:</strong> estructuración de áreas específicas como comparativos de planes, sellos de confianza y bloques informativos.</p></li></ul><p></p><p><strong>Estructura de conversión:</strong></p><ul><li><p><strong>Secciones de beneficios con íconos:</strong> lectura rápida y objetiva.</p></li><li><p><strong>Bloques con fondos contrastantes:</strong> destaque visual para fórmula y diferenciales.</p></li><li><p><strong>Cards de oferta:</strong> comparación clara entre planes con incentivo de ahorro.</p></li><li><p><strong>Testimonios y resultados:</strong> refuerzo de autoridad y validación social.</p></li><li><p><strong>FAQ estratégico:</strong> anticipación de dudas para reducir fricción en el checkout.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>La landing page de Colágeno Forte pasó de ser una simple página de producto a convertirse en una experiencia estructurada y orientada a la conversión. Con narrativa clara, bloques organizados y personalizaciones técnicas a medida, la LP entrega credibilidad, claridad e incentivo directo a la compra, manteniendo el rendimiento y la responsividad dentro de Shopify.</p>",
+            "image": "assets/images/thumbs/prj_19c9589125f04952fe4.webp",
+            "initialDate": "10/12/2025",
+            "endDate": "11/12/2025",
+            "projectUrlLink": "https://www.basefortesuplementos.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c9589125f04952fe4/prj_19c9589125f04952fe4__009.webp",
+                "assets/images/projects/prj_19c9589125f04952fe4/prj_19c9589125f04952fe4__010.webp",
+                "assets/images/projects/prj_19c9589125f04952fe4/prj_19c9589125f04952fe4__011.webp",
+                "assets/images/projects/prj_19c9589125f04952fe4/prj_19c9589125f04952fe4__012.webp",
+                "assets/images/projects/prj_19c9589125f04952fe4/prj_19c9589125f04952fe4__013.webp",
+                "assets/images/projects/prj_19c9589125f04952fe4/prj_19c9589125f04952fe4__014.webp",
+                "assets/images/projects/prj_19c9589125f04952fe4/prj_19c9589125f04952fe4__015.webp",
+                "assets/images/projects/prj_19c9589125f04952fe4/prj_19c9589125f04952fe4__016.webp"
+            ]
+        },
+        {
+            "id": "prj_19c9596d8aadac92921",
+            "title": "Thouren",
+            "description": "<p>Landing Page Shopify | Secciones personalizadas con Liquid + CSS | Producto masculino (Mercado EE.UU.)</p><p></p><h2><strong>Visión general</strong></h2><p>Esta landing page fue desarrollada para una empresa estadounidense del segmento de grooming masculino, con enfoque en rendimiento, claridad y estructura orientada a la conversión. Aunque utiliza la misma stack técnica que otros proyectos, la narrativa, el posicionamiento y la construcción visual fueron adaptados completamente al comportamiento y expectativas del consumidor en Estados Unidos.</p><p></p><h2><strong>Contexto y objetivo</strong></h2><p>El objetivo era crear una LP centrada en el producto, comunicando fuerza, seguridad y tecnología. La marca necesitaba transmitir una identidad visual masculina y contundente, combinada con una estructura clara basada en beneficios: tecnología anti-corte, diseño ergonómico, resistencia al agua e ingeniería avanzada. La página fue construida para respaldar campañas de tráfico pago y maximizar conversiones directas.</p><p></p><h2><strong>El desafío</strong></h2><p>Aunque se utilizó un tema de Shopify como base, la landing debía evitar parecer una página de producto estándar. Fue necesario reorganizar estratégicamente las secciones, reforzar la jerarquía visual y construir un storytelling enfocado en la decisión de compra. Además, el mercado estadounidense exige señales claras de confianza, especificaciones objetivas y un flujo de compra rápido, sin saturar la experiencia.</p><p></p><h2><strong>La estrategia</strong></h2><p>La estructura siguió una narrativa persuasiva centrada en el producto:</p><ul><li><p><strong>Hero con propuesta de valor fuerte:</strong> imagen impactante, anclaje de precio, reseñas y CTA directo.</p></li><li><p><strong>Grid de beneficios:</strong> bloques escaneables destacando resistencia al agua, cuchillas seguras, diseño ergonómico, bajo ruido, portabilidad y batería potente.</p></li><li><p><strong>Secciones técnicas individuales:</strong> explicación visual de la tecnología anti-corte, agarre ergonómico, waterproof e ingeniería avanzada.</p></li><li><p><strong>Prueba social:</strong> reseñas con estrellas y testimonios para reforzar credibilidad.</p></li><li><p><strong>FAQ estratégico:</strong> reducción de objeciones antes del checkout.</p></li></ul><p></p><h2><strong>Lo que se implementó</strong></h2><p><strong>Personalización técnica:</strong></p><ul><li><p><strong>Liquid:</strong> creación de secciones personalizadas para reorganizar el flujo narrativo más allá del template estándar.</p></li><li><p><strong>CSS refinado:</strong> ajustes de contraste, espaciado, bloques oscuros y destaque de CTAs para mantener una estética masculina fuerte.</p></li><li><p><strong>HTML adicional:</strong> construcción de grids de beneficios, cards informativos e indicadores de confianza.</p></li></ul><p></p><p><strong>Estructura enfocada en conversión:</strong></p><ul><li><p><strong>Repetición estratégica de CTA:</strong> botones “Add to Cart” distribuidos a lo largo de la página.</p></li><li><p><strong>Layout con contraste:</strong> uso de negro y naranja para crear ritmo visual y destacar diferenciales.</p></li><li><p><strong>Señales de autoridad:</strong> reseñas, información de envío y garantías.</p></li><li><p><strong>Copy orientado al rendimiento:</strong> comunicación directa alineada al consumidor estadounidense.</p></li></ul><p></p><h2><strong>Resultado</strong></h2><p>La landing page final ofrece una experiencia impactante, directa y altamente orientada a la conversión, adaptada al mercado estadounidense. La combinación de storytelling estructurado, jerarquía visual sólida y personalización técnica dentro de Shopify transformó un layout estándar en una página estratégica de ventas optimizada para adquisición paga.</p>",
+            "image": "assets/images/thumbs/prj_19c9596d8aadac92921.webp",
+            "initialDate": "10/11/2025",
+            "endDate": "10/11/2025",
+            "projectUrlLink": "",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c9596d8aadac92921/prj_19c9596d8aadac92921__001.webp",
+                "assets/images/projects/prj_19c9596d8aadac92921/prj_19c9596d8aadac92921__002.webp",
+                "assets/images/projects/prj_19c9596d8aadac92921/prj_19c9596d8aadac92921__003.webp",
+                "assets/images/projects/prj_19c9596d8aadac92921/prj_19c9596d8aadac92921__004.webp",
+                "assets/images/projects/prj_19c9596d8aadac92921/prj_19c9596d8aadac92921__005.webp",
+                "assets/images/projects/prj_19c9596d8aadac92921/prj_19c9596d8aadac92921__006.webp",
+                "assets/images/projects/prj_19c9596d8aadac92921/prj_19c9596d8aadac92921__007.webp"
+            ]
+        },
+        {
+            "id": "prj_1af5ecd8cd184016997d26bd90a3d984",
+            "title": "Imperial Sexshop",
+            "description": "<p>El proyecto Imperial SexShop surgió de la necesidad del cliente de modernizar el diseño de la tienda, que presentaba diversos problemas técnicos y de rendimiento. La solución consistió en crear una landing page desarrollada en WordPress utilizando Elementor y Elementor Pro. El objetivo principal era mantener la coherencia visual con la identidad de la tienda principal en línea, garantizando una experiencia fluida para los usuarios procedentes de campañas de Google Ads.</p><p>Además de un rediseño completo, el proyecto tuvo un fuerte enfoque en la optimización del rendimiento. Con mejoras significativas en las métricas de rendimiento y SEO, la página alcanzó puntuaciones entre 96 y 100, asegurando una navegación rápida y fiable para los usuarios.</p><p>El resultado final fue una landing page alineada visualmente con la tienda principal, que ofrece un rendimiento superior y un diseño moderno y eficiente. Este proyecto consolidó mi experiencia técnica en desarrollo de WordPress, Elementor, optimización de rendimiento y estrategias avanzadas de SEO.</p>",
+            "image": "assets/images/thumbs/prj_1af5ecd8cd184016997d26bd90a3d984.webp",
+            "initialDate": "07/2025",
+            "endDate": "06/2025",
+            "projectUrlLink": "https://sexshopamericana.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "wordpress",
+                    "tooltip": "WORDPRESS"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "javascript",
+                    "tooltip": "JAVASCRIPT"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__001.webp",
+                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__002.webp",
+                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__003.webp"
+            ]
+        },
+        {
             "id": "prj_19c85fd8c407559d0bc",
             "title": "Onli Street",
             "description": "<p>E-commerce Shopify | Diseño personalizado | Paleta minimalista de ropa urbana</p><p></p><p><strong>Contexto y objetivo:</strong> El cliente deseaba llevar su marca de ropa urbana al mundo digital, creando una vitrina en línea que tradujera la actitud y el estilo urbano de la marca. El objetivo era construir una tienda que fuera directa, enfocada en el producto, y que transmitiera una imagen moderna sin elementos excesivos.</p><p><strong>Desafío:</strong> Por indicación del cliente, la paleta de colores debía ser extremadamente básica, prácticamente limitada a negro y blanco para que coincidiera con el logo. Esto limitó la posibilidad de trabajar con variaciones o semitonos y requirió encontrar un punto de énfasis sin desviarse de la identidad. El único color fuera de este esquema permitido fue un verde específico en los botones de acción, utilizado para llamar la atención sobre las conversiones.</p><p><strong>Solución y ejecución:</strong> Implementé todo el diseño en Shopify, utilizando el negro y el blanco como base para realzar las prendas, especialmente las zapatillas de colores. El verde se aplicó en los botones y llamadas a la acción para guiar la mirada sin romper la propuesta monocromática. Mantuve un diseño minimalista, enfocándome en una tipografía fuerte e imágenes de productos de alta calidad, permitiendo que tanto los artículos de colores como los básicos encajaran de manera armónica dentro del contexto de la marca.</p><p><strong>Resultado:</strong> El resultado fue una tienda de ropa urbana limpia y moderna que enfatiza los productos. La elección de colores hace que las zapatillas y las prendas con variaciones de tono destaquen, mientras que los artículos en negro y blanco se integran perfectamente en la estética general. La simplicidad y la organización del diseño crean una experiencia de navegación fluida y directa, reforzando la personalidad de la marca en el entorno digital.</p>",
@@ -996,6 +1644,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1024,35 +1673,6 @@
             ]
         },
         {
-            "id": "prj_19c8793646d28eca9c4",
-            "title": "Dom Skateboards",
-            "description": "<p>E-commerce WBuy | Home personalizada en un tema gratuito | Monopatines y piezas con un aspecto premium<br /></p><p><strong>Contexto y objetivo:</strong> Dom Patinetes nació de la necesidad del cliente de llevar la fuerza de la tienda física al digital, actuando en un nicho menos convencional y con pocos competidores realmente bien posicionados. El objetivo era crear un escaparate online confiable, con una apariencia profesional y un enfoque en conversión, transmitiendo autoridad en el segmento de monopatines, piezas y accesorios.</p><p><strong>Desafío:</strong> Siendo una de las primeras experiencias en WBuy, adaptarse a las interfaces y a la forma de editar el tema llevó tiempo para entender el flujo y “cogerle el truco” a la plataforma. Además, el cliente utilizaba el tema gratuito, que limita personalizaciones en la página de producto, concentrando las mejoras y recursos principalmente en la página inicial.</p><p><strong>Solución y ejecución:</strong> Implementé y organicé todo el diseño de la home dentro de los límites del tema gratuito, construyendo un escaparate fuerte con un banner principal de impacto, accesos directos por categorías y secciones bien definidas para novedades y más vendidos. Aproveché el manual de marca y las fotos de alta calidad para transformar la estética en algo premium, trabajando contraste y presencia con tonos oscuros y amarillo, así como elementos visuales que refuerzan el universo urbano y deportivo del monopatín. Estructuré también áreas de prueba social y beneficios de compra para aumentar confianza y facilitar la decisión.</p><p><strong>Resultado:</strong> El resultado fue una tienda en WBuy con un aspecto premium, incluso utilizando un tema gratuito y respetando sus limitaciones. La página inicial quedó organizada, visualmente fuerte y con una jerarquía clara, destacando productos, categorías y diferenciales de la marca. Esto elevó el estándar de presentación y dejó a Dom Patinetes lista para competir con más autoridad en el digital.</p>",
-            "image": "assets/images/thumbs/prj_19c8793646d28eca9c4.webp",
-            "initialDate": "15/01/2026",
-            "endDate": "16/01/2026",
-            "projectUrlLink": "https://dompatinetes.lojawbuy.com.br/",
-            "linkedinUrlLink": "",
-            "githubUrlLink": "",
-            "developed": true,
-            "developingPorcentage": 100,
-            "icons": [
-                {
-                    "class": "wbuy",
-                    "tooltip": "WBUY"
-                }
-            ],
-            "compatibility": 3,
-            "images": [
-                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__001.webp",
-                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__002.webp",
-                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__003.webp",
-                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__004.webp",
-                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__005.webp",
-                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__006.webp",
-                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__007.webp"
-            ]
-        },
-        {
             "id": "prj_19c85f81bd54e445d96",
             "title": "Rian Store",
             "description": "<p>E-commerce Shopify | Diseño personalizado | Streetwear<br /></p><p><strong>Contexto y objetivo:</strong> Rian Store surgió con la propuesta de llevar una marca de streetwear al mundo digital de una manera profesional y lista para vender. El objetivo fue estructurar una tienda en línea que transmitiera el estilo urbano de la marca con un visual limpio, directo y fácil de navegar, valorando el producto como protagonista.</p><p><strong>Desafío:</strong> El proyecto fue muy fluido y no presentó desafíos técnicos relevantes, lo que permitió enfocarse más en la organización y el acabado visual. Con las bases bien definidas desde el principio, la prioridad fue garantizar consistencia, legibilidad y una experiencia de compra objetiva.</p><p><strong>Solución y ejecución:</strong> Implementé el diseño en Shopify buscando una identidad minimalista, alineada con el streetwear, con un enfoque en una estructura de escaparate clara y una navegación sencilla. Trabajé el visual con una predominancia de blanco y negro para mantener la tienda sofisticada y moderna, dejando siempre el foco en las prendas. La construcción se realizó pensando en el rendimiento visual y en un flujo de compra directo.</p><p><strong>Resultado:</strong> El resultado fue una tienda con una estética estandarizada y armoniosa, impulsada por el hecho de que el cliente ya tenía fotos de la ropa con un fondo muy consistente. La combinación de este patrón fotográfico con un diseño en blanco y negro creó un escaparate fuerte, organizado y con identidad de marca, reforzando la identidad callejera de una manera limpia y profesional.</p>",
@@ -1063,6 +1683,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1091,6 +1712,36 @@
             ]
         },
         {
+            "id": "prj_19c8793646d28eca9c4",
+            "title": "Dom Skateboards",
+            "description": "<p>E-commerce WBuy | Home personalizada en un tema gratuito | Monopatines y piezas con un aspecto premium<br /></p><p><strong>Contexto y objetivo:</strong> Dom Patinetes nació de la necesidad del cliente de llevar la fuerza de la tienda física al digital, actuando en un nicho menos convencional y con pocos competidores realmente bien posicionados. El objetivo era crear un escaparate online confiable, con una apariencia profesional y un enfoque en conversión, transmitiendo autoridad en el segmento de monopatines, piezas y accesorios.</p><p><strong>Desafío:</strong> Siendo una de las primeras experiencias en WBuy, adaptarse a las interfaces y a la forma de editar el tema llevó tiempo para entender el flujo y “cogerle el truco” a la plataforma. Además, el cliente utilizaba el tema gratuito, que limita personalizaciones en la página de producto, concentrando las mejoras y recursos principalmente en la página inicial.</p><p><strong>Solución y ejecución:</strong> Implementé y organicé todo el diseño de la home dentro de los límites del tema gratuito, construyendo un escaparate fuerte con un banner principal de impacto, accesos directos por categorías y secciones bien definidas para novedades y más vendidos. Aproveché el manual de marca y las fotos de alta calidad para transformar la estética en algo premium, trabajando contraste y presencia con tonos oscuros y amarillo, así como elementos visuales que refuerzan el universo urbano y deportivo del monopatín. Estructuré también áreas de prueba social y beneficios de compra para aumentar confianza y facilitar la decisión.</p><p><strong>Resultado:</strong> El resultado fue una tienda en WBuy con un aspecto premium, incluso utilizando un tema gratuito y respetando sus limitaciones. La página inicial quedó organizada, visualmente fuerte y con una jerarquía clara, destacando productos, categorías y diferenciales de la marca. Esto elevó el estándar de presentación y dejó a Dom Patinetes lista para competir con más autoridad en el digital.</p>",
+            "image": "assets/images/thumbs/prj_19c8793646d28eca9c4.webp",
+            "initialDate": "15/01/2026",
+            "endDate": "16/01/2026",
+            "projectUrlLink": "https://dompatinetes.lojawbuy.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "wbuy",
+                    "tooltip": "WBUY"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__001.webp",
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__002.webp",
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__003.webp",
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__004.webp",
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__005.webp",
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__006.webp",
+                "assets/images/projects/prj_19c8793646d28eca9c4/prj_19c8793646d28eca9c4__007.webp"
+            ]
+        },
+        {
             "id": "prj_19c85a4eea506238516",
             "title": "Screw Company",
             "description": "<p>E-commerce Shopify | Diseño personalizado + identidad visual + banners | Streetwear con una estética limpia</p><p></p><p><strong>Contexto y objetivo:</strong> El proyecto surgió a partir del deseo del cliente de lanzar una tienda de streetwear con una estética más básica y directa, sin depender de colores llamativos. La propuesta era construir una presencia digital moderna y coherente con el estilo de la marca, manteniendo un visual limpio, urbano y con personalidad.</p><p><strong>Desafío:</strong> El logo pasó por varias fases antes de llegar a la versión final, lo que hizo que la vectorización fuera más trabajosa y requirió cuidado para preservar proporciones y acabado. Otro desafío fue la limitación de fotos, ya que el cliente tenía imágenes de las camisetas sin modelo, lo que reducía el impacto visual de los productos. Para resolver esto sin perder fidelidad, fue necesario crear alternativas que mantuvieran la estampa original y parecieran naturales para el público.</p><p><strong>Solución y ejecución:</strong> Además de implementar el diseño en Shopify, creé los banners y desarrollé la identidad visual vectorizada en Illustrator, siguiendo las elecciones del cliente, incluyendo la tipografía serif moderna. A petición suya, reemplacé el símbolo de registrado por un “3” para representar a los tres socios de la marca, aportando un detalle único y lleno de significado. Para los banners, trabajé en un lenguaje blanco y negro con apoyo del azul marino oscuro de la marca, y utilicé recursos visuales discretos como elementos de calle y efecto de papel rasgado. También utilicé IA para generar modelos realistas aplicando la estampa original, aumentando la fuerza de la presentación del producto.</p><p><strong>Resultado:</strong> El resultado fue una tienda de streetwear con un estilo limpio y moderno, manteniendo la estética urbana sin exageraciones. La identidad visual quedó fuerte y diferenciada, con un detalle simbólico que refuerza la historia de la marca. Los banners aportaron consistencia y actitud, valorando las piezas y elevando la percepción profesional del proyecto.</p>",
@@ -1101,6 +1752,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1138,6 +1790,40 @@
             ]
         },
         {
+            "id": "prj_19c87acb771bc2efe8b",
+            "title": "Tienda Eléctrica Niterói",
+            "description": "<p>E-commerce WBuy | Home personalizada en tema gratuito | Materiales eléctricos e iluminación<br /></p><p><strong>Contexto y objetivo:</strong> La Tienda Eléctrica Niterói surgió con la necesidad de colocar el catálogo de materiales eléctricos en el mundo digital con un escaparate claro, organizado y listo para convertir. Siendo un nicho de compra práctica, el objetivo fue facilitar el recorrido del cliente, destacando categorías, productos más buscados y ofertas, sin perder credibilidad y la sensación de una tienda estructurada.</p><p><strong>Desafío:</strong> El proyecto se construyó dentro de las limitaciones del tema gratuito de WBuy, que concentra las posibilidades de personalización principalmente en la página de inicio. Esto requirió estrategia para transformar el home en la principal herramienta de venta, creando una jerarquía visual fuerte para presentar una variedad de productos sin parecer una lista interminable.</p><p><strong>Solución y ejecución:</strong> Implementé la página de inicio priorizando la navegación directa y la organización por secciones, con un banner principal impactante, accesos directos a categorías y bloques de productos como más vendidos, lanzamientos y ofertas. Trabajé en una identidad visual con un contraste marcado y la presencia del rojo, alineando con la idea de una tienda eléctrica y reforzando energía y urgencia en promociones. La estructura fue pensada para hacer el catálogo “fácil de escanear”, con escaparates bien separados, beneficios de compra desde el principio y un área de prueba social para reforzar la confianza.</p><p><strong>Resultado:</strong> El resultado fue una tienda en WBuy con un aspecto más profesional y premium, incluso usando un tema gratuito. El home se convirtió en un escaparate fuerte y funcional, con un diseño organizado, categorías claras y secciones de productos que facilitan las compras rápidas. Esto mejora la experiencia del cliente y prepara la operación para escalar ventas en el mundo digital con más consistencia.</p>",
+            "image": "assets/images/thumbs/prj_19c87acb771bc2efe8b.webp",
+            "initialDate": "02/02/2026",
+            "endDate": "03/02/2026",
+            "projectUrlLink": "https://lojaeletricaniteroi.lojawbuy.com.br/",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "wbuy",
+                    "tooltip": "WBUY"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__001.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__002.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__003.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__004.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__005.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__006.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__007.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__008.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__009.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__010.webp",
+                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__011.webp"
+            ]
+        },
+        {
             "id": "prj_19c874365fc8722977b",
             "title": "Carioca Concept",
             "description": "<p>E-commerce Yampi | Diseño personalizado + ajustes en CSS | Marca con identidad limpia y llamativa</p><p></p><p><strong>Contexto y objetivo:</strong> El proyecto surgió del deseo de la cliente de crear una tienda virtual profesional para consolidar la marca en el entorno digital. El objetivo fue construir una vitrina consistente, con un visual limpio y una identidad fuerte, garantizando que la experiencia transmitiera confianza y valorizara los productos.</p><p><strong>Desafío:</strong> El desarrollo fue fluido, sin grandes obstáculos de ejecución. El punto de atención fueron las limitaciones del CSS en la plataforma, que requirieron ajustes puntuales para mantener la fidelidad al manual de identidad y garantizar un acabado más refinado.</p><p><strong>Solución y ejecución:</strong> Implementé el diseño en Yampi basándome en el manual de identidad, siguiendo patrones de color, jerarquía visual y estilo de la marca. Realicé modificaciones en CSS para corregir detalles del front-end y mantener la consistencia entre secciones y páginas. La composición se pensó para que la navegación fuera simple, enfocada en el producto y reforzando la marca.</p><p><strong>Resultado:</strong> El resultado fue un sitio web limpio, bien organizado y con una identidad fuerte. Los tonos de la marca aparecen a lo largo de toda la tienda, creando unidad visual y presencia, mientras que la estructura mantiene una experiencia práctica e intuitiva para la compra.</p>",
@@ -1148,6 +1834,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1182,6 +1869,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1220,6 +1908,7 @@
             "linkedinUrlLink": "",
             "githubUrlLink": "",
             "developed": true,
+            "adult": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1236,148 +1925,6 @@
                 "assets/images/projects/prj_19c877dd3c47ee5cf28/prj_19c877dd3c47ee5cf28__005.webp",
                 "assets/images/projects/prj_19c877dd3c47ee5cf28/prj_19c877dd3c47ee5cf28__006.webp",
                 "assets/images/projects/prj_19c877dd3c47ee5cf28/prj_19c877dd3c47ee5cf28__007.webp"
-            ]
-        },
-        {
-            "id": "prj_19c87acb771bc2efe8b",
-            "title": "Tienda Eléctrica Niterói",
-            "description": "<p>E-commerce WBuy | Home personalizada en tema gratuito | Materiales eléctricos e iluminación<br /></p><p><strong>Contexto y objetivo:</strong> La Tienda Eléctrica Niterói surgió con la necesidad de colocar el catálogo de materiales eléctricos en el mundo digital con un escaparate claro, organizado y listo para convertir. Siendo un nicho de compra práctica, el objetivo fue facilitar el recorrido del cliente, destacando categorías, productos más buscados y ofertas, sin perder credibilidad y la sensación de una tienda estructurada.</p><p><strong>Desafío:</strong> El proyecto se construyó dentro de las limitaciones del tema gratuito de WBuy, que concentra las posibilidades de personalización principalmente en la página de inicio. Esto requirió estrategia para transformar el home en la principal herramienta de venta, creando una jerarquía visual fuerte para presentar una variedad de productos sin parecer una lista interminable.</p><p><strong>Solución y ejecución:</strong> Implementé la página de inicio priorizando la navegación directa y la organización por secciones, con un banner principal impactante, accesos directos a categorías y bloques de productos como más vendidos, lanzamientos y ofertas. Trabajé en una identidad visual con un contraste marcado y la presencia del rojo, alineando con la idea de una tienda eléctrica y reforzando energía y urgencia en promociones. La estructura fue pensada para hacer el catálogo “fácil de escanear”, con escaparates bien separados, beneficios de compra desde el principio y un área de prueba social para reforzar la confianza.</p><p><strong>Resultado:</strong> El resultado fue una tienda en WBuy con un aspecto más profesional y premium, incluso usando un tema gratuito. El home se convirtió en un escaparate fuerte y funcional, con un diseño organizado, categorías claras y secciones de productos que facilitan las compras rápidas. Esto mejora la experiencia del cliente y prepara la operación para escalar ventas en el mundo digital con más consistencia.</p>",
-            "image": "assets/images/thumbs/prj_19c87acb771bc2efe8b.webp",
-            "initialDate": "02/02/2026",
-            "endDate": "03/02/2026",
-            "projectUrlLink": "https://lojaeletricaniteroi.lojawbuy.com.br/",
-            "linkedinUrlLink": "",
-            "githubUrlLink": "",
-            "developed": true,
-            "developingPorcentage": 100,
-            "icons": [
-                {
-                    "class": "wbuy",
-                    "tooltip": "WBUY"
-                }
-            ],
-            "compatibility": 3,
-            "images": [
-                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__001.webp",
-                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__002.webp",
-                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__003.webp",
-                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__004.webp",
-                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__005.webp",
-                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__006.webp",
-                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__007.webp",
-                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__008.webp",
-                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__009.webp",
-                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__010.webp",
-                "assets/images/projects/prj_19c87acb771bc2efe8b/prj_19c87acb771bc2efe8b__011.webp"
-            ]
-        },
-        {
-            "id": "prj_1119bd2067864ecba080d888d7d16b2f",
-            "title": "Razzo",
-            "description": "<p>El proyecto de Razo consistió en la creación de una página de aterrizaje en la plataforma WordPress, basada en un diseño previamente proporcionado por el cliente a través de Figma. Aunque el enfoque principal no fue la programación intensiva, el reto residió en reproducir fielmente el diseño original, complementado con ajustes finales específicos para satisfacer plenamente las expectativas del cliente.</p><p>El resultado fue un sitio moderno y responsive, enriquecido con bordes redondeados y elementos animados, que ofrece a los usuarios una experiencia dinámica y agradable. La página también incluye un plugin de traducción para garantizar accesibilidad a una audiencia diversa y está estructurada en tres secciones principales: Inicio, Servicios y Contacto.</p><p>La landing page de Razo ejemplifica cómo la combinación de un diseño cuidadoso y una implementación precisa puede generar resultados visualmente atractivos y altamente funcionales, valorizando tanto la experiencia del usuario como la identidad de la marca.</p>",
-            "image": "assets/images/thumbs/prj_1119bd2067864ecba080d888d7d16b2f.webp",
-            "initialDate": "03/2025",
-            "endDate": "03/2025",
-            "projectUrlLink": "https://razzo.tech/",
-            "linkedinUrlLink": "",
-            "githubUrlLink": "",
-            "developed": true,
-            "developingPorcentage": 100,
-            "icons": [
-                {
-                    "class": "wordpress",
-                    "tooltip": "WORDPRESS"
-                },
-                {
-                    "class": "css3",
-                    "tooltip": "CSS3"
-                },
-                {
-                    "class": "javascript",
-                    "tooltip": "JAVASCRIPT"
-                }
-            ],
-            "compatibility": 3,
-            "images": [
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__001.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__002.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__003.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__004.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__005.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__006.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__007.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__008.webp",
-                "assets/images/projects/prj_1119bd2067864ecba080d888d7d16b2f/prj_1119bd2067864ecba080d888d7d16b2f__009.webp"
-            ]
-        },
-        {
-            "id": "prj_dd369fdc6fb04f21a1a79c7353b6d82f",
-            "title": "Registrando Marca",
-            "description": "<p>El proyecto Registrando Marca implicó la reformulación completa de una landing page desarrollada en WordPress utilizando Elementor y Elementor Pro. El objetivo principal fue modernizar la apariencia visual del sitio, que hasta entonces no comunicaba adecuadamente la credibilidad deseada por la marca.</p><p>Mediante una combinación armoniosa de los colores de la marca con elementos de diseño contemporáneo, el nuevo diseño introdujo características visuales como ondas suaves, esquinas redondeadas e iconos modernos, otorgando al sitio una sensación de ligereza y actualidad. Adicionalmente, se incorporaron un vídeo institucional y formularios con verificación antispam para garantizar que los datos enviados por los usuarios fueran completos y estuvieran protegidos.</p><p>El resultado fue una página atractiva y funcional que cumplió plenamente con las expectativas del cliente, destacándose por su claridad visual y la seguridad en el envío de información. Este proyecto fortaleció mi experiencia en diseño de interfaces, optimización de usabilidad, seguridad y dominio avanzado de WordPress y Elementor.</p>",
-            "image": "assets/images/thumbs/prj_dd369fdc6fb04f21a1a79c7353b6d82f.webp",
-            "initialDate": "08/2024",
-            "endDate": "08/2024",
-            "projectUrlLink": "https://registrandomarca.com.br/",
-            "linkedinUrlLink": "",
-            "githubUrlLink": "",
-            "developed": true,
-            "developingPorcentage": 100,
-            "icons": [
-                {
-                    "class": "wordpress",
-                    "tooltip": "SHOPIFY"
-                },
-                {
-                    "class": "css3",
-                    "tooltip": "CSS3"
-                },
-                {
-                    "class": "javascript",
-                    "tooltip": "JAVASCRIPT"
-                }
-            ],
-            "compatibility": 3,
-            "images": [
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__001.webp",
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__002.webp",
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__003.webp",
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__004.webp",
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__005.webp",
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__006.webp",
-                "assets/images/projects/prj_dd369fdc6fb04f21a1a79c7353b6d82f/prj_dd369fdc6fb04f21a1a79c7353b6d82f__007.webp"
-            ]
-        },
-        {
-            "id": "prj_1af5ecd8cd184016997d26bd90a3d984",
-            "title": "Imperial Sexshop",
-            "description": "<p>El proyecto Imperial SexShop surgió de la necesidad del cliente de modernizar el diseño de la tienda, que presentaba diversos problemas técnicos y de rendimiento. La solución consistió en crear una landing page desarrollada en WordPress utilizando Elementor y Elementor Pro. El objetivo principal era mantener la coherencia visual con la identidad de la tienda principal en línea, garantizando una experiencia fluida para los usuarios procedentes de campañas de Google Ads.</p><p>Además de un rediseño completo, el proyecto tuvo un fuerte enfoque en la optimización del rendimiento. Con mejoras significativas en las métricas de rendimiento y SEO, la página alcanzó puntuaciones entre 96 y 100, asegurando una navegación rápida y fiable para los usuarios.</p><p>El resultado final fue una landing page alineada visualmente con la tienda principal, que ofrece un rendimiento superior y un diseño moderno y eficiente. Este proyecto consolidó mi experiencia técnica en desarrollo de WordPress, Elementor, optimización de rendimiento y estrategias avanzadas de SEO.</p>",
-            "image": "assets/images/thumbs/prj_1af5ecd8cd184016997d26bd90a3d984.webp",
-            "initialDate": "07/2025",
-            "endDate": "06/2025",
-            "projectUrlLink": "https://sexshopamericana.com.br/",
-            "linkedinUrlLink": "",
-            "githubUrlLink": "",
-            "developed": true,
-            "developingPorcentage": 100,
-            "icons": [
-                {
-                    "class": "wordpress",
-                    "tooltip": "WORDPRESS"
-                },
-                {
-                    "class": "css3",
-                    "tooltip": "CSS3"
-                },
-                {
-                    "class": "javascript",
-                    "tooltip": "JAVASCRIPT"
-                }
-            ],
-            "compatibility": 3,
-            "images": [
-                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__001.webp",
-                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__002.webp",
-                "assets/images/projects/prj_1af5ecd8cd184016997d26bd90a3d984/prj_1af5ecd8cd184016997d26bd90a3d984__003.webp"
             ]
         }
     ]

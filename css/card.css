@@ -274,8 +274,9 @@
 }
 
 .modal-text-content ul {
-  margin: 0;
   padding-left: 1.7em;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 .modal-text-content li {
@@ -394,6 +395,12 @@
   color: white;
   box-sizing: border-box;
   gap: 5px !important;
+}
+
+.card-button-cancel {
+  background: transparent;
+  border: 2px solid var(--gbtn-red);
+  color: var(--gbtn-red);
 }
 
 .card-button:active {

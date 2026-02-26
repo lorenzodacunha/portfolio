@@ -7,6 +7,13 @@ let swiper = null;
 let currentProjectImages = [];
 let currentImageIndex = 0;
 let shareInProgress = false;
+let miniModalPendingResolver = null;
+const ADULT_BYPASS_PARAM = 'adult_bypass';
+const ADULT_BLOCK_PARAM = 'adult_blocked';
+const ADULT_GATE_MESSAGE =
+  'O conteúdo a seguir não é destinado para menores de 18 anos ou pode ser sensível para algumas pessoas.';
+const ADULT_BLOCKED_MESSAGE = 'Você não tem idade suficiente para abrir este conteúdo';
+const ADULT_BYPASS_MESSAGE = 'Agora você pode abrir projetos +18';
 
 function normalizeLegacySlug(title) {
   return removerAcentuacao(String(title || '')).replace(/\s+/g, '-').toLowerCase();
@@ -39,6 +46,7 @@ function findProjectByIdOrSlug(projetos, projectId, fallbackSlug) {
 
 function abrirMiniModal() {
   const miniModal = document.getElementById('mini-modal');
+  if (!miniModal) return;
   miniModal.classList.remove('hidden');
 
   setTimeout(() => {
@@ -48,22 +56,150 @@ function abrirMiniModal() {
 
 function fecharMiniModal() {
   const miniModal = document.getElementById('mini-modal');
+  if (!miniModal) return;
   miniModal.classList.remove('loaded');
 
   setTimeout(() => {
     miniModal.classList.add('hidden');
   }, 100);
 
+  if (miniModalPendingResolver) {
+    const resolve = miniModalPendingResolver;
+    miniModalPendingResolver = null;
+    resolve(false);
+  }
+
+}
+
+function updateUrlState({
+  projectId = '',
+  legacySlug = '',
+  clearProject = false,
+  adultState = 'keep',
+  replace = false,
+} = {}) {
+  const url = new URL(window.location.href);
+
+  if (clearProject) {
+    url.searchParams.delete('id');
+    url.searchParams.delete('projeto');
+  } else if (projectId) {
+    url.searchParams.set('id', projectId);
+    url.searchParams.delete('projeto');
+  } else if (legacySlug) {
+    url.searchParams.set('projeto', legacySlug);
+    url.searchParams.delete('id');
+  }
+
+  if (adultState === 'bypass') {
+    url.searchParams.set(ADULT_BYPASS_PARAM, '1');
+    url.searchParams.delete(ADULT_BLOCK_PARAM);
+  } else if (adultState === 'blocked') {
+    url.searchParams.set(ADULT_BLOCK_PARAM, '1');
+    url.searchParams.delete(ADULT_BYPASS_PARAM);
+  } else if (adultState === 'clear') {
+    url.searchParams.delete(ADULT_BYPASS_PARAM);
+    url.searchParams.delete(ADULT_BLOCK_PARAM);
+  }
+
+  const nextUrl = `${url.pathname}${url.search}${url.hash}`;
+  const method = replace ? 'replaceState' : 'pushState';
+  window.history[method]({}, '', nextUrl);
+}
+
+function getAdultAccessStateFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const hasBypass = params.get(ADULT_BYPASS_PARAM) === '1';
+  const hasBlock = params.get(ADULT_BLOCK_PARAM) === '1';
+  if (hasBypass) return 'bypass';
+  if (hasBlock) return 'blocked';
+  return 'unknown';
+}
+
+function openAdultGateModal() {
+  const miniModal = document.getElementById('mini-modal');
+  const title = document.getElementById('mini-modal-title');
+  const message = document.getElementById('mini-modal-message');
+  const cancelButton = document.getElementById('mini-modal-cancel');
+  const confirmButton = document.getElementById('mini-modal-confirm');
+  const closeButtons = miniModal ? miniModal.querySelectorAll('.close-button-mini') : [];
+
+  if (!miniModal || !cancelButton || !confirmButton) {
+    return Promise.resolve(false);
+  }
+
+  if (title) {
+    title.textContent = 'Conteudo sensivel (+18)';
+  }
+  if (message) {
+    message.textContent = ADULT_GATE_MESSAGE;
+  }
+
+  return new Promise((resolve) => {
+    let resolved = false;
+
+    const finalize = (allowed) => {
+      if (resolved) return;
+      resolved = true;
+      if (miniModalPendingResolver === finalize) {
+        miniModalPendingResolver = null;
+      }
+      cancelButton.onclick = null;
+      confirmButton.onclick = null;
+      closeButtons.forEach((button) => {
+        button.onclick = null;
+      });
+      fecharMiniModal();
+      resolve(allowed);
+    };
+
+    cancelButton.onclick = () => {
+      updateUrlState({ adultState: 'blocked', replace: true });
+      showPopup(ADULT_BLOCKED_MESSAGE, true);
+      finalize(false);
+    };
+
+    confirmButton.onclick = () => {
+      updateUrlState({ adultState: 'bypass', replace: true });
+      showPopup(ADULT_BYPASS_MESSAGE);
+      finalize(true);
+    };
+
+    closeButtons.forEach((button) => {
+      button.onclick = () => finalize(false);
+    });
+
+    miniModalPendingResolver = finalize;
+    abrirMiniModal();
+  });
+}
+
+async function ensureAdultAccess(projeto) {
+  if (!projeto || !Boolean(projeto.adult)) {
+    return true;
+  }
+
+  const state = getAdultAccessStateFromUrl();
+  if (state === 'bypass') {
+    return true;
+  }
+  if (state === 'blocked') {
+    showPopup(ADULT_BLOCKED_MESSAGE, true);
+    return false;
+  }
+
+  return openAdultGateModal();
 }
 
 function closeProjectModal() {
   const modal = document.getElementById('modal');
+  if (!modal) return;
   modal.classList.remove('loaded');
 
   setTimeout(() => {
     modal.classList.add('hidden');
     document.body.classList.remove('no-scroll');
-    window.history.replaceState({}, '', window.location.pathname);
+    updateUrlState({ clearProject: true, replace: true });
     const bar = document.querySelector('.card-icons-modal .modal-progress-bar');
     if (bar) bar.remove();
   }, 300);
@@ -207,9 +343,6 @@ function closeModalDetect() {
     }
   });
 
-  document.querySelectorAll('.close-button-mini').forEach(button => {
-    button.addEventListener('click', fecharMiniModal);
-  });
 }
 
 async function openModalInternal(categoria, index, projectId = '', fallbackSlug = '') {
@@ -279,11 +412,12 @@ async function openModalInternal(categoria, index, projectId = '', fallbackSlug 
     if (!projeto) {
       throw new Error('Projeto nao encontrado para abrir no modal.');
     }
+    const canOpenAdultContent = await ensureAdultAccess(projeto);
+    if (!canOpenAdultContent) {
+      return;
+    }
     const finalProjectId = String(projeto.id || '').trim();
     const legacySlug = normalizeLegacySlug(projeto.title);
-    const projectUrl = finalProjectId
-      ? `${window.location.origin}?id=${encodeURIComponent(finalProjectId)}`
-      : `${window.location.origin}?projeto=${encodeURIComponent(legacySlug)}`;
     const iconsTranslation = translations?.['icons-items'] || {
       mobile: 'Compatível com Mobile',
       tablet: 'Compatível com Tablet',
@@ -484,7 +618,11 @@ async function openModalInternal(categoria, index, projectId = '', fallbackSlug 
     setTimeout(() => {
       modal.classList.add('loaded');
     }, 100);
-    window.history.pushState({}, '', projectUrl);
+    updateUrlState({
+      projectId: finalProjectId,
+      legacySlug,
+      replace: false,
+    });
   } catch (error) {
     console.error('Erro ao carregar os modais', error);
   }

@@ -18,6 +18,7 @@ export const iconMap = {
   json: 'assets/icons/skills/json.svg',
   c: 'assets/icons/skills/C.svg',
   git: 'assets/icons/skills/git.svg',
+  greatpages: 'assets/icons/skills/greatpages.svg',
   python: 'assets/icons/skills/python.svg',
   yampi: 'assets/icons/skills/yampi.svg',
   tray: 'assets/icons/skills/tray.svg',

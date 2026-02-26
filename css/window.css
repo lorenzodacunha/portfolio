@@ -123,7 +123,7 @@
     display: flex;
     align-items: center;
     color: var(--text-color);
-    margin-bottom: -1px;
+    margin-bottom: 0px;
     z-index: 3;
     transition: all .5s;
 }
