@@ -945,18 +945,8 @@ footer {
     z-index: 3;
     overflow: hidden;
     border-radius: 50%;
-    width: 372px;
 }
 
-.about-background {
-    width: 350px;
-    height: 350px;
-    background: var(--secondary-color);
-    border-radius: 50%;
-    position: absolute;
-    z-index: 2;
-    bottom: 0px;
-}
 .about-ball.is-outside {
   z-index: 3;
 }
@@ -1327,7 +1317,7 @@ button {
     }
 
     .about-frame {
-        border-radius: 0px !important;
+        border-radius: 50% 50% 0 0!important;
         transform: translateY(-1px) !important;
     }
 

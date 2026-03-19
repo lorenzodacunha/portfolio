@@ -28,7 +28,7 @@
       ]
     }
   },
-  "about_me": "<p>Soy <strong>Lorenzo da Cunha</strong>, desarrollador front-end especializado en <strong>e-commerce</strong> y <strong>rendimiento</strong>, con enfoque principal en <strong>React</strong> y <strong>Shopify (Liquid)</strong>.</p><p>He participado en <strong>más de 75 proyectos</strong>, incluyendo <strong>más de 60 tiendas online</strong>, además de <strong>sistemas web</strong> y <strong>landing pages</strong>. Mi trabajo va más allá de lo visual: me enfoco en la <strong>estructura técnica</strong>, el <strong>rendimiento</strong> y la <strong>experiencia de usuario</strong>, garantizando que cada interfaz no solo funcione, sino que también rinda.</p><p>Tengo facilidad para transformar requerimientos de negocio en soluciones claras, escalables y bien estructuradas, desde el diseño hasta el código en producción.</p><p>Aunque tengo <strong>19 años</strong>, he construido experiencia práctica en proyectos reales, priorizando siempre la <strong>organización</strong>, la <strong>velocidad</strong> y el <strong>impacto</strong>.</p>",
+  "about_me": "<p>Soy <strong>Lorenzo da Cunha</strong>, tengo 19 años y soy Desarrollador Front-end especializado en <strong>Shopify</strong>.</p><p>Creo y optimizo <strong>temas y storefronts</strong> con foco en <strong>UX, rendimiento, SEO técnico y conversión</strong>, uniendo código, diseño y estrategia para construir una <strong>infraestructura visual-comercial</strong> más eficiente y <strong>reducir la fricción en la jornada de compra</strong>.</p><p>Ya he participado en la entrega de <strong>más de 60 tiendas virtuales reales y activas</strong>, actuando desde la interfaz hasta el desarrollo completo de la experiencia de compra.</p>",
   "button": {
     "resume": "Ver Currículum"
   },
@@ -106,6 +106,6 @@
     }
   },
   "footer": {
-    "rights": "© 2025 Lorenzo da Cunha. Todos los derechos reservados."
+    "rights": "© 2026 Lorenzo da Cunha LTDA. Todos los derechos reservados. CNPJ: 63.990.800/0001-17"
   }
 }
