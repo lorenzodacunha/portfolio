@@ -10,10 +10,10 @@
             "projectUrlLink": "https://auroratecidos.com/",
             "linkedinUrlLink": "",
             "githubUrlLink": "",
-            "developed": false,
+            "developed": true,
             "adult": false,
             "featured": true,
-            "developingPorcentage": 95,
+            "developingPorcentage": 100,
             "icons": [
                 {
                     "class": "shopify",
@@ -36,23 +36,20 @@
                     "tooltip": "JSON"
                 },
                 {
-                    "class": "illustrator",
-                    "tooltip": "ILLUSTRATOR"
-                },
-                {
-                    "class": "photoshop",
-                    "tooltip": "PHOTOSHOP"
+                    "class": "node",
+                    "tooltip": "NODE"
                 }
             ],
             "compatibility": 3,
             "images": [
-                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__001.webp",
-                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__002.webp",
-                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__003.webp",
-                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__004.webp",
-                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__005.webp",
-                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__006.webp",
-                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__007.webp"
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__008.webp",
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__009.webp",
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__010.webp",
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__011.webp",
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__012.webp",
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__013.webp",
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__014.webp",
+                "assets/images/projects/prj_19c970353505a014b2c/prj_19c970353505a014b2c__015.webp"
             ]
         },
         {
@@ -94,62 +91,6 @@
             "compatibility": 3,
             "images": [
                 "assets/images/projects/prj_9f7454093d214dd3b0e97de9d638f44a/prj_9f7454093d214dd3b0e97de9d638f44a__001.webp"
-            ]
-        },
-        {
-            "id": "prj_9f78051128e14b888a04adda88aa7d26",
-            "title": "Loja da RO",
-            "description": "<p>Loja da RO | Author project | Shopify + Liquid + HTML, CSS, JavaScript and JSON</p><p></p><h2><strong>Overview</strong></h2><p>Loja da RO was born as a personal project with a meaningful purpose: creating an online store as a tribute to my mother. More than a technical exercise, it was designed to translate emotion into visual identity, building a digital experience with presence, delicacy, and intention.</p><p></p><h2><strong>Context and objective</strong></h2><p>In March 2023, I started the development on Shopify with the goal of going beyond what free themes usually allow. Over three months, I deepened my knowledge of Liquid and the Shopify ecosystem structure, studying the documentation and applying HTML, CSS, JavaScript, and JSON to evolve the theme and customize the experience with more freedom.</p><p></p><h2><strong>The challenge</strong></h2><p>The main challenge was overcoming free-theme limitations without losing consistency and visual quality. It was necessary to redesign the interface for a female audience, keep navigation intuitive, and at the same time create custom components that elevate the user experience and reinforce brand identity with a professional finish.</p><p></p><h2><strong>The strategy</strong></h2><p>The strategy was to start from a standard Shopify theme and rebuild the experience through a full visual redesign, creating a modern and delicate visual system. The pink-toned palette, rounded corners, and soft elements were designed to strengthen emotional connection with the concept, while structural adjustments ensured clarity, usability, and visual rhythm throughout the navigation.</p><p></p><h2><strong>What was implemented</strong></h2><p><strong>Visual redesign and identity:</strong></p><ul><li><p><strong>Redesigned interface:</strong> rounded corners, soft graphic elements, and a lighter composition to reinforce a feminine and welcoming aesthetic.</p></li><li><p><strong>Pink color palette:</strong> selection and standardization of colors to strengthen brand presence and keep consistency across pages.</p></li><li><p><strong>Author details:</strong> vectors and visual choices designed to represent my mother’s unique characteristics within the store’s universe.</p></li></ul><p></p><p><strong>Technical customization in Shopify:</strong></p><ul><li><p><strong>Liquid as the customization foundation:</strong> study and practical application to adapt sections, components, and theme behavior.</p></li><li><p><strong>HTML and CSS:</strong> structural adjustments and visual refinement to elevate finishing and layout consistency.</p></li><li><p><strong>JavaScript and JSON:</strong> behaviors and configurations implemented to increase flexibility, improve experience, and overcome limitations of the base theme.</p></li></ul><p></p><p><strong>Components and user experience:</strong></p><ul><li><p><strong>Custom contact forms:</strong> contact flow built with its own structure and styling to improve usability.</p></li><li><p><strong>Custom footer:</strong> tailored footer creation to organize information and improve end-of-journey navigation.</p></li><li><p><strong>UX consistency:</strong> careful attention to page flow and visual rhythm to keep the experience smooth and intuitive.</p></li></ul><p></p><h2><strong>Result</strong></h2><p>The final result exceeded my personal expectations and officially marked the beginning of my career as a front-end developer. Beyond the visual delivery, the project consolidated practical mastery of Shopify and Liquid, strong redesign and theme customization skills, and technical execution with HTML, CSS, JavaScript, and JSON, all grounded in an author concept with real meaning.</p>",
-            "image": "assets/images/thumbs/prj_9f78051128e14b888a04adda88aa7d26.webp",
-            "initialDate": "09/2023",
-            "endDate": "12/2023",
-            "projectUrlLink": "",
-            "linkedinUrlLink": "",
-            "githubUrlLink": "",
-            "developed": true,
-            "adult": false,
-            "featured": false,
-            "developingPorcentage": 100,
-            "icons": [
-                {
-                    "class": "shopify",
-                    "tooltip": "SHOPIFY"
-                },
-                {
-                    "class": "html5",
-                    "tooltip": "HTML5"
-                },
-                {
-                    "class": "css3",
-                    "tooltip": "CSS3"
-                },
-                {
-                    "class": "javascript",
-                    "tooltip": "JAVASCRIPT"
-                },
-                {
-                    "class": "json",
-                    "tooltip": "JSON"
-                },
-                {
-                    "class": "photoshop",
-                    "tooltip": "PHOTOSHOP"
-                },
-                {
-                    "class": "illustrator",
-                    "tooltip": "ILLUSTRATOR"
-                }
-            ],
-            "compatibility": 3,
-            "images": [
-                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__001.webp",
-                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__002.webp",
-                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__003.webp",
-                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__004.webp",
-                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__005.webp",
-                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__006.webp",
-                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__007.webp",
-                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__008.webp"
             ]
         },
         {
@@ -203,6 +144,62 @@
             ]
         },
         {
+            "id": "prj_9f78051128e14b888a04adda88aa7d26",
+            "title": "Loja da RO",
+            "description": "<p>Loja da RO | Author project | Shopify + Liquid + HTML, CSS, JavaScript and JSON</p><p></p><h2><strong>Overview</strong></h2><p>Loja da RO was born as a personal project with a meaningful purpose: creating an online store as a tribute to my mother. More than a technical exercise, it was designed to translate emotion into visual identity, building a digital experience with presence, delicacy, and intention.</p><p></p><h2><strong>Context and objective</strong></h2><p>In March 2023, I started the development on Shopify with the goal of going beyond what free themes usually allow. Over three months, I deepened my knowledge of Liquid and the Shopify ecosystem structure, studying the documentation and applying HTML, CSS, JavaScript, and JSON to evolve the theme and customize the experience with more freedom.</p><p></p><h2><strong>The challenge</strong></h2><p>The main challenge was overcoming free-theme limitations without losing consistency and visual quality. It was necessary to redesign the interface for a female audience, keep navigation intuitive, and at the same time create custom components that elevate the user experience and reinforce brand identity with a professional finish.</p><p></p><h2><strong>The strategy</strong></h2><p>The strategy was to start from a standard Shopify theme and rebuild the experience through a full visual redesign, creating a modern and delicate visual system. The pink-toned palette, rounded corners, and soft elements were designed to strengthen emotional connection with the concept, while structural adjustments ensured clarity, usability, and visual rhythm throughout the navigation.</p><p></p><h2><strong>What was implemented</strong></h2><p><strong>Visual redesign and identity:</strong></p><ul><li><p><strong>Redesigned interface:</strong> rounded corners, soft graphic elements, and a lighter composition to reinforce a feminine and welcoming aesthetic.</p></li><li><p><strong>Pink color palette:</strong> selection and standardization of colors to strengthen brand presence and keep consistency across pages.</p></li><li><p><strong>Author details:</strong> vectors and visual choices designed to represent my mother’s unique characteristics within the store’s universe.</p></li></ul><p></p><p><strong>Technical customization in Shopify:</strong></p><ul><li><p><strong>Liquid as the customization foundation:</strong> study and practical application to adapt sections, components, and theme behavior.</p></li><li><p><strong>HTML and CSS:</strong> structural adjustments and visual refinement to elevate finishing and layout consistency.</p></li><li><p><strong>JavaScript and JSON:</strong> behaviors and configurations implemented to increase flexibility, improve experience, and overcome limitations of the base theme.</p></li></ul><p></p><p><strong>Components and user experience:</strong></p><ul><li><p><strong>Custom contact forms:</strong> contact flow built with its own structure and styling to improve usability.</p></li><li><p><strong>Custom footer:</strong> tailored footer creation to organize information and improve end-of-journey navigation.</p></li><li><p><strong>UX consistency:</strong> careful attention to page flow and visual rhythm to keep the experience smooth and intuitive.</p></li></ul><p></p><h2><strong>Result</strong></h2><p>The final result exceeded my personal expectations and officially marked the beginning of my career as a front-end developer. Beyond the visual delivery, the project consolidated practical mastery of Shopify and Liquid, strong redesign and theme customization skills, and technical execution with HTML, CSS, JavaScript, and JSON, all grounded in an author concept with real meaning.</p>",
+            "image": "assets/images/thumbs/prj_9f78051128e14b888a04adda88aa7d26-2.webp",
+            "initialDate": "09/2023",
+            "endDate": "12/2023",
+            "projectUrlLink": "",
+            "linkedinUrlLink": "",
+            "githubUrlLink": "",
+            "developed": true,
+            "adult": false,
+            "featured": true,
+            "developingPorcentage": 100,
+            "icons": [
+                {
+                    "class": "shopify",
+                    "tooltip": "SHOPIFY"
+                },
+                {
+                    "class": "html5",
+                    "tooltip": "HTML5"
+                },
+                {
+                    "class": "css3",
+                    "tooltip": "CSS3"
+                },
+                {
+                    "class": "javascript",
+                    "tooltip": "JAVASCRIPT"
+                },
+                {
+                    "class": "json",
+                    "tooltip": "JSON"
+                },
+                {
+                    "class": "photoshop",
+                    "tooltip": "PHOTOSHOP"
+                },
+                {
+                    "class": "illustrator",
+                    "tooltip": "ILLUSTRATOR"
+                }
+            ],
+            "compatibility": 3,
+            "images": [
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__001.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__002.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__003.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__004.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__005.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__006.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__007.webp",
+                "assets/images/projects/prj_9f78051128e14b888a04adda88aa7d26/prj_9f78051128e14b888a04adda88aa7d26__008.webp"
+            ]
+        },
+        {
             "id": "prj_19c8b00c17bb1b8d068",
             "title": "Mundosado",
             "description": "<p>Shopify e-commerce | Premium branding + Figma UI + custom theme (Dawn) | BDSM marketplace and sexyshop</p><p></p><h2><strong>Overview</strong></h2><p>MundoSado was born from a strategic conversation with the client, who envisioned a high-end brand for the BDSM universe. The goal was to build an e-commerce experience with strong identity and a straightforward purchase flow, occupying a space where competitors still did not deliver a premium level of presentation.</p><p></p><h2><strong>Context and objective</strong></h2><p>The goal was not simply to list products online, but to build a brand with presence, clarity, and consistent visual standards, able to compete on perceived quality. Shopify was chosen as an operational and scaling decision, while the visual project and theme engineering would ensure differentiation, trust, and a smooth buying experience.</p><p></p><h2><strong>The challenge</strong></h2><p>This segment requires balancing visual impact and objectivity, because the journey must be fast, discreet, and trustworthy. We needed to translate references from the Brazilian sexyshop landscape into something unique without feeling generic, keeping strict standards for spacing, margins, and readability. In addition, the implementation had to move beyond a “default theme” into a truly customizable theme, with logic, components, and content that supported a premium positioning, reinforcing privacy, discreet delivery, and purchase security.</p><p></p><h2><strong>The strategy</strong></h2><p>Build a premium storefront with clean, direct navigation, prioritizing hierarchy, scannability, and consistency across every page. The process started in Figma with competitor research and idea synthesis, turning references into a proprietary visual system. Next, the strategy was to convert that system into a highly editable theme, reinforcing trust elements through clear, repeatable communication, including the use of objective, standardized icons as a continuous visual language across the site.</p><p></p><h2><strong>What was implemented</strong></h2><p><strong>Art direction and Figma UI:</strong></p><ul><li><p><strong>Research and references:</strong> analysis of competitors in Brazil’s sexyshop market to map storefront patterns, credibility cues, and user journeys.</p></li><li><p><strong>Layout and visual system:</strong> creation of a clean, direct layout with consistent spacing, margins, and hierarchy to support faster decision-making.</p></li><li><p><strong>Conversion-oriented storefront:</strong> design of sections to highlight best sellers, new arrivals, and recommendations, keeping fast readability and product focus.</p></li></ul><p></p><p><strong>Theme development and front-end engineering:</strong></p><ul><li><p><strong>Theme foundation:</strong> using Dawn as a base due to its robust structure and sections, serving as a starting point for a V1 theme and continuous evolution.</p></li><li><p><strong>HTML and CSS:</strong> structural changes to faithfully reproduce the Figma layout, refining composition, grids, spacing, and visual consistency.</p></li><li><p><strong>JavaScript:</strong> rewriting and adding scripts to improve interactions and component behavior, ensuring a smoother experience.</p></li><li><p><strong>Liquid and conditional logic:</strong> creating and refining rules to make the theme flexible, supporting different catalog and page scenarios.</p></li></ul><p></p><p><strong>Experience, trust, and visual consistency:</strong></p><ul><li><p><strong>Standardized, objective icons:</strong> implementation of a recurring icon system for benefits and security, improving scannability and reinforcing trust at key points in the journey.</p></li><li><p><strong>Privacy communication:</strong> strategic emphasis on messages such as discreet delivery, packaging against curiosity, neutral sender, and discreet invoice, reducing friction and increasing user comfort.</p></li><li><p><strong>Structured product page:</strong> organization of content into clear blocks, including description, instructions, and technical specifications, improving readability and purchase decisions.</p></li><li><p><strong>Consistent identity:</strong> strong application of a dark palette with red accents, creating premium presence and guiding attention to actions and key information.</p></li></ul><p></p><p><strong>Organic SEO and technical content:</strong></p><ul><li><p><strong>SEO structure:</strong> organization of meta descriptions and essential elements to improve search-engine interpretation.</p></li><li><p><strong>Image optimization:</strong> standardization and improvement of related attributes and text, focusing on keywords and discoverability.</p></li><li><p><strong>Foundation for evolution:</strong> planning the theme to support continuous performance and metrics improvements in future versions.</p></li></ul><p></p><h2><strong>Result</strong></h2><p>The project reached a stable V1 theme in about 45 days and was launched after alignment with the client, delivering a premium storefront with strong identity and a direct purchase journey. The experience became more trustworthy and comfortable, with clear privacy messaging and a standardized icon system that reinforces benefits throughout the site. In 2026, the project was paused due to the client’s personal reasons, which prevented ongoing optimization and metric improvements, but the foundation remains solid and ready to evolve.</p>",
@@ -214,7 +211,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": true,
-            "featured": true,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -658,7 +655,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
-            "featured": true,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -705,7 +702,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
-            "featured": true,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -744,7 +741,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
-            "featured": true,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1072,7 +1069,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
-            "featured": true,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
@@ -1118,7 +1115,7 @@
             "githubUrlLink": "",
             "developed": true,
             "adult": false,
-            "featured": true,
+            "featured": false,
             "developingPorcentage": 100,
             "icons": [
                 {
