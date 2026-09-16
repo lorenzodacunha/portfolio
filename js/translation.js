@@ -1,34 +1,81 @@
 import { typingEffect } from './functions.js';
-import { initializeSkills } from './skills.js';
 
 export let currentLang = 'pt';
 let currentTranslations = {};
 let applyingTranslations = false;
+let translationLoadId = 0;
+
+const criticalTranslations = {
+  pt: {
+    lang: 'pt-br',
+    guide: 'bemvindo.html',
+    comment: 'Olá 👋',
+    welcome: 'Seja bem vindo(a)!',
+    prefix: 'Sou um ',
+    roles: ['Dev Front-end ', 'UI Designer ', 'Dev Shopify '],
+  },
+  en: {
+    lang: 'en',
+    guide: 'welcome.html',
+    comment: 'Hello 👋',
+    welcome: 'Welcome!',
+    prefix: "I'm a ",
+    roles: ['Front-end Dev ', 'UI Designer ', 'Shopify Dev '],
+  },
+  es: {
+    lang: 'es',
+    guide: 'bienvenido.html',
+    comment: 'Hola 👋',
+    welcome: '¡Bienvenido(a)!',
+    prefix: 'Soy un ',
+    roles: ['Dev Front-end ', 'UI Designer ', 'Dev Shopify '],
+  },
+};
+
+function applyCriticalTranslations(lang) {
+  const values = criticalTranslations[lang] || criticalTranslations.pt;
+  document.documentElement.lang = values.lang;
+
+  const replacements = [
+    ['[data-i18n="guide.welcome"]', values.guide],
+    ['[data-i18n="window.comment"]', values.comment],
+    ['[data-i18n="window.welcome"]', values.welcome],
+    ['[data-i18n="window.description.prefix"]', values.prefix],
+  ];
+
+  replacements.forEach(([selector, value]) => {
+    const element = document.querySelector(selector);
+    if (element && element.textContent !== value) element.textContent = value;
+  });
+  typingEffect(values.roles, lang);
+}
 
 export function getCurrentLang() { return currentLang; }
 export function getTranslations() { return currentTranslations; }
 
 export async function loadTranslations(lang) {
+  const currentLoadId = ++translationLoadId;
+
   try {
     const path = `data/locales/${lang}.json`;
     const response = await fetch(path);
     if (!response.ok) throw new Error('Erro ao carregar o arquivo de tradução.');
     const translations = await response.json();
 
+    if (currentLoadId !== translationLoadId || lang !== currentLang) return false;
+
     currentTranslations = translations;
     applyTranslations(currentTranslations);
 
     if (translations?.window?.description?.roles?.length) {
-      typingEffect(translations.window.description.roles);
+      typingEffect(translations.window.description.roles, lang);
     }
 
-    initializeSkills(translations);
+    return true;
 
   } catch (error) {
-    console.error(error);
-    if (lang !== 'pt') {
-      return loadTranslations('pt');
-    }
+    if (currentLoadId === translationLoadId && lang === currentLang) console.error(error);
+    return false;
   }
 }
 
@@ -90,7 +137,8 @@ export function applyTranslations(translations) {
     const value = getNestedTranslation(translations, key);
 
     if (value) {
-      element.innerHTML = sanitizeTranslationHtml(value, key);
+      const sanitizedValue = sanitizeTranslationHtml(value, key);
+      if (element.innerHTML !== sanitizedValue) element.innerHTML = sanitizedValue;
     }
   });
   applyingTranslations = false;
@@ -124,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 export function setLanguageButton(flag, lang) {
   const languageButton = document.getElementById('language-button');
-  languageButton.innerHTML = `<span class="flag">${flag}</span> ${lang.toUpperCase()} <i id="lang-arrow" class="fa-solid fa-chevron-down"></i>`;
+  languageButton.innerHTML = `<span class="flag">${flag}</span> ${lang.toUpperCase()} <i id="lang-arrow" class="svg-icon icon-chevron-down" aria-hidden="true"></i>`;
 }
 
 export async function changeLanguage(lang) {
@@ -148,7 +196,9 @@ export async function changeLanguage(lang) {
   }
 
   currentLang = lang;
+  applyCriticalTranslations(lang);
   await loadTranslations(lang);
+  if (lang !== currentLang) return;
   document.dispatchEvent(new CustomEvent('languageChanged', { detail: lang }));
 }
 
@@ -167,12 +217,11 @@ export async function initializeTranslation() {
       defaultLanguage === 'es' ? 'ES' : 'EN');
 
   currentLang = defaultLanguage;
-  await loadTranslations(defaultLanguage);
-  document.dispatchEvent(new CustomEvent('languageChanged', { detail: defaultLanguage }));
+  document.documentElement.lang = defaultLanguage === 'pt' ? 'pt-BR' : defaultLanguage;
+  applyCriticalTranslations(defaultLanguage);
 
-  document.querySelector(`[data-lang="${defaultLanguage}"]`).classList.add('hidden');
-
-  languageButton.addEventListener('click', () => {
+  languageButton.addEventListener('click', (event) => {
+    event.stopPropagation();
     languageOptions.classList.toggle('close');
     setTimeout(() => {
       languageOptions.classList.toggle('active');
@@ -201,4 +250,7 @@ export async function initializeTranslation() {
       }, 300);
     });
   });
+
+  await loadTranslations(defaultLanguage);
+  document.querySelector(`[data-lang="${currentLang}"]`)?.classList.add('hidden');
 }

@@ -1,0 +1,36 @@
+/* Local SVG icon system. Masks preserve the current text color in every theme/state. */
+.svg-icon::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: -0.150em;
+    background-color: currentColor;
+    -webkit-mask: var(--icon-url) center / contain no-repeat;
+    mask: var(--icon-url) center / contain no-repeat;
+}
+
+.icon-menu { --icon-url: url('../assets/icons/ui/menu.svg'); }
+.icon-chevron-down { --icon-url: url('../assets/icons/ui/chevron-down.svg'); }
+.icon-chevron-left { --icon-url: url('../assets/icons/ui/chevron-left.svg'); }
+.icon-close { --icon-url: url('../assets/icons/ui/close.svg'); }
+.icon-arrow-left { --icon-url: url('../assets/icons/ui/arrow-left.svg'); }
+.icon-arrow-right { --icon-url: url('../assets/icons/ui/arrow-right.svg'); }
+.icon-refresh { --icon-url: url('../assets/icons/ui/refresh.svg'); }
+.icon-pointer { --icon-url: url('../assets/icons/ui/pointer.svg'); }
+.icon-envelope { --icon-url: url('../assets/icons/ui/envelope.svg'); }
+.icon-phone { --icon-url: url('../assets/icons/ui/phone.svg'); }
+.icon-linkedin { --icon-url: url('../assets/icons/linkedin.svg'); }
+.icon-github { --icon-url: url('../assets/icons/github.svg'); }
+.icon-mobile { --icon-url: url('../assets/icons/ui/mobile.svg'); }
+.icon-tablet { --icon-url: url('../assets/icons/ui/tablet.svg'); }
+.icon-desktop { --icon-url: url('../assets/icons/ui/desktop.svg'); }
+.icon-download { --icon-url: url('../assets/icons/ui/download.svg'); }
+.icon-eye { --icon-url: url('../assets/icons/ui/eye.svg'); }
+.icon-eye-off { --icon-url: url('../assets/icons/ui/eye-off.svg'); }
+.icon-star { --icon-url: url('../assets/icons/ui/star.svg'); }
+.icon-star-outline { --icon-url: url('../assets/icons/ui/star-outline.svg'); }
+.icon-settings { --icon-url: url('../assets/icons/ui/settings.svg'); }
+.icon-link { --icon-url: url('../assets/icons/ui/link.svg'); }
+.icon-expand { --icon-url: url('../assets/icons/ui/expand.svg'); }
+.icon-check { --icon-url: url('../assets/icons/ui/check.svg'); }

@@ -161,11 +161,19 @@
   display: flex;
   align-items: center;
   height: 100%;
-  background: linear-gradient(90deg, var(--primary-color) 25%, var(--extreme-black-orange), var(--primary-color) 75%);
+  background: var(--primary-color);
   border-radius: 10px 0 0 10px;
-  background-size: 200% 100%;
-  animation: loadingEffect 3s infinite;
   position: relative;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 200%;
+  background: linear-gradient(90deg, var(--primary-color) 25%, var(--extreme-black-orange), var(--primary-color) 75%);
+  animation: loading-shimmer 3s linear infinite;
+  transform: translateX(-50%);
 }
 
 .progress-marker {
@@ -174,7 +182,8 @@
   background-color: var(--secondary-color);
   border-radius: 50%;
   position: absolute;
-  left: calc(96% - 15px);
+  left: 96%;
+  transform: translateX(-50%);
   cursor: pointer;
   z-index: 5;
 }
@@ -496,11 +505,27 @@
 
 .loading {
   color: transparent !important;
-  background: linear-gradient(90deg, #dfdfdf 25%, #d3d3d3, #dfdfdf 75%);
-  background-size: 200% 100%;
-  animation: loadingEffect 2s infinite;
+  background: #dfdfdf;
+  overflow: hidden;
+  position: relative;
   cursor: context-menu !important;
 
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 200%;
+  background: linear-gradient(90deg, #dfdfdf 25%, #d3d3d3, #dfdfdf 75%);
+  animation: loading-shimmer 2s linear infinite;
+  transform: translateX(-50%);
+}
+
+@keyframes loading-shimmer {
+  to {
+    transform: translateX(0);
+  }
 }
 
 .review-client {

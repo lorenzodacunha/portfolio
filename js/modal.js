@@ -8,12 +8,71 @@ let currentProjectImages = [];
 let currentImageIndex = 0;
 let shareInProgress = false;
 let miniModalPendingResolver = null;
+let swiperLoader = null;
+let modalStylesLoader = null;
+const SWIPER_SCRIPT_URL = 'js/vendor/swiper-bundle.min.js';
+const SWIPER_STYLES_URL = 'css/vendor/swiper-bundle.min.css';
+const MODAL_STYLES_URL = 'css/modal.css';
 const ADULT_BYPASS_PARAM = 'adult_bypass';
 const ADULT_BLOCK_PARAM = 'adult_blocked';
 const ADULT_GATE_MESSAGE =
   'O conteúdo a seguir não é destinado para menores de 18 anos ou pode ser sensível para algumas pessoas.';
 const ADULT_BLOCKED_MESSAGE = 'Você não tem idade suficiente para abrir este conteúdo';
 const ADULT_BYPASS_MESSAGE = 'Agora você pode abrir projetos +18';
+
+function ensureModalStyles() {
+  if (modalStylesLoader) return modalStylesLoader;
+
+  modalStylesLoader = new Promise(resolve => {
+    const existingStyles = document.querySelector(`link[href="${MODAL_STYLES_URL}"]`);
+    if (existingStyles) {
+      if (existingStyles.sheet) resolve();
+      else {
+        existingStyles.addEventListener('load', resolve, { once: true });
+        existingStyles.addEventListener('error', resolve, { once: true });
+      }
+      return;
+    }
+
+    const stylesheet = document.createElement('link');
+    stylesheet.rel = 'stylesheet';
+    stylesheet.href = MODAL_STYLES_URL;
+    stylesheet.addEventListener('load', resolve, { once: true });
+    stylesheet.addEventListener('error', resolve, { once: true });
+    document.head.appendChild(stylesheet);
+  });
+
+  return modalStylesLoader;
+}
+
+function ensureSwiper() {
+  if (typeof window.Swiper === 'function') return Promise.resolve();
+  if (swiperLoader) return swiperLoader;
+
+  swiperLoader = new Promise((resolve, reject) => {
+    if (!document.querySelector(`link[href="${SWIPER_STYLES_URL}"]`)) {
+      const stylesheet = document.createElement('link');
+      stylesheet.rel = 'stylesheet';
+      stylesheet.href = SWIPER_STYLES_URL;
+      document.head.appendChild(stylesheet);
+    }
+
+    const existingScript = document.querySelector(`script[src="${SWIPER_SCRIPT_URL}"]`);
+    if (existingScript) {
+      existingScript.addEventListener('load', resolve, { once: true });
+      existingScript.addEventListener('error', reject, { once: true });
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src = SWIPER_SCRIPT_URL;
+    script.onload = resolve;
+    script.onerror = () => reject(new Error('Não foi possível carregar o carrossel.'));
+    document.head.appendChild(script);
+  });
+
+  return swiperLoader;
+}
 
 function normalizeLegacySlug(title) {
   return removerAcentuacao(String(title || '')).replace(/\s+/g, '-').toLowerCase();
@@ -346,6 +405,7 @@ function closeModalDetect() {
 }
 
 async function openModalInternal(categoria, index, projectId = '', fallbackSlug = '') {
+  const modalStylesReady = ensureModalStyles();
   const modal = document.getElementById('modal');
   const modalTitle = document.querySelector('.modal-title h1, .modal-title h2');
   const modalDescription = document.getElementById('project-description');
@@ -392,6 +452,7 @@ async function openModalInternal(categoria, index, projectId = '', fallbackSlug 
   }
 
   try {
+    const swiperReady = ensureSwiper();
     const lang = getCurrentLang();
     const translations = getTranslations();
     const file = lang === 'en' ? 'data/projects/projects-en.json' : lang === 'es' ? 'data/projects/projects-es.json' : 'data/projects/projects.json';
@@ -412,6 +473,7 @@ async function openModalInternal(categoria, index, projectId = '', fallbackSlug 
     if (!projeto) {
       throw new Error('Projeto nao encontrado para abrir no modal.');
     }
+    await modalStylesReady;
     const canOpenAdultContent = await ensureAdultAccess(projeto);
     if (!canOpenAdultContent) {
       return;
@@ -475,8 +537,8 @@ async function openModalInternal(categoria, index, projectId = '', fallbackSlug 
 
     const modalCTAButton = modalVerProjeto.querySelector('button');
     modalCTAButton.innerHTML = projeto.developed
-      ? '<i class="fa-solid fa-link"></i> ' + modalSocialTranslation.project
-      : '<i class="fa-solid fa-eye-low-vision"></i> ' + modalSocialTranslation.peek;
+      ? '<i class="svg-icon icon-link" aria-hidden="true"></i> ' + modalSocialTranslation.project
+      : '<i class="svg-icon icon-eye-off" aria-hidden="true"></i> ' + modalSocialTranslation.peek;
 
     updateCTAButton(modalVerProjeto, modalCTAButton, projeto.projectUrlLink);
     const updateSocialButton = (anchor, button, url, tooltipText) => {
@@ -543,13 +605,13 @@ async function openModalInternal(categoria, index, projectId = '', fallbackSlug 
       slide.classList.add('swiper-slide');
       slide.innerHTML = DOMPurify.sanitize(`
             <img class="expand" src="${image}" alt="Imagem do projeto ${projeto.title}">
-            <button class="expand-button expand fa-solid fa-up-right-and-down-left-from-center tooltip"><span class="tooltip-text">Expandir</span></button>
+            <button class="expand-button expand svg-icon icon-expand tooltip"><span class="tooltip-text">Expandir</span></button>
             `);
       if (!projeto.developed) {
         const overlay = document.createElement('div');
         overlay.className = 'developing-slide-overlay';
         overlay.innerHTML = DOMPurify.sanitize(`
-                <i class='developing-icon fa-regular fa-eye-slash'></i>
+                <i class="developing-icon svg-icon icon-eye-off" aria-hidden="true"></i>
                 <h3 class='developing-title'>Em desenvolvimento</h3>
                 <p class='developing-text'>Acompanhe o progresso do projeto dando uma espiadinha 👀</p>
                 <div class="developing-buttons">
@@ -603,7 +665,8 @@ async function openModalInternal(categoria, index, projectId = '', fallbackSlug 
       delete swiperOptions.autoplay;
     }
 
-    swiper = new Swiper('.swiper-container', swiperOptions);
+    await swiperReady;
+    swiper = new window.Swiper('.swiper-container', swiperOptions);
     modalShareButton.onclick = () => shareProject(window.location.href, projeto.title);
     modal.classList.remove('hidden');
     const mobile = window.innerWidth <= 750;

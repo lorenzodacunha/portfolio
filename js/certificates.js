@@ -133,7 +133,7 @@ export async function initializeCertificates() {
                 : 'data/certificates/certificates.json';
         const response = await fetch(file);
         const certificados = await response.json();
-        setTimeout(() => {
+        requestAnimationFrame(() => {
             const loading = document.getElementById('certification-loading');
             const certificadosCont = document.getElementById('certifications');
             loading.hidden = true;
@@ -142,7 +142,7 @@ export async function initializeCertificates() {
                 const projectElement = document.createElement('div');
                 projectElement.classList.add('certification-item', 'card-template');
                 projectElement.innerHTML = DOMPurify.sanitize(`
-                <div class="card-min-thumb"><img width="auto" height="50px" src="${certificado.thumb}" alt="Imagem do certificado ${certificado.title}"> </div>
+                <div class="card-min-thumb"><img loading="lazy" decoding="async" width="118" height="50" src="${certificado.thumb}" alt="Imagem do certificado ${certificado.title}"> </div>
                 <h3 class="card-title certification-title">${certificado.title}</h3>
                 <div class="card-out-description">
                     <div class="card-line"><b>${translations['certification-item'].issued}:</b><span> ${certificado.institution}</span><br></div>
@@ -158,11 +158,11 @@ export async function initializeCertificates() {
                 <div class="card-buttons">
                     ${certificado.status && certificado.certificationUrl && certificado.certificationUrl.trim() !== ''
                         ? `<a target="_blank" href="${certificado.certificationUrl}" aria-label="Abrir o certificado">
-                            <button class="fa-solid fa-download download-button tooltip" aria-label="Abrir o certificado">
+                            <button class="svg-icon icon-download download-button tooltip" aria-label="Abrir o certificado">
                                 <span class="tooltip-text">Ver certificado</span>
                             </button>
                             </a>`
-                        : `<button class="fa-solid fa-download download-button tooltip disabled" aria-label="Certificado indisponível" disabled>
+                        : `<button class="svg-icon icon-download download-button tooltip disabled" aria-label="Certificado indisponível" disabled>
                             <span class="tooltip-text">Certificado indisponível</span>
                             </button>`
                     }
@@ -174,7 +174,7 @@ export async function initializeCertificates() {
             setTimeout(() => {
                 document.querySelectorAll('.certification-item').forEach(item => item.classList.add('loaded'));
             }, 100);
-        }, 500);
+        });
     } catch (error) {
         console.error('Erro ao carregar os certificados:', error);
         loading.hidden = true;

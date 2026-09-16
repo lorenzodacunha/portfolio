@@ -36,8 +36,5 @@ export function getIconMarkup(name, useWhiteIcon = false) {
     }
     return `<img loading="lazy" width="30" height="30" src="${src}" alt="${key} icon">`;
   }
-  if (String(name).includes('fa-')) {
-    return `<i class="${name}"></i>`;
-  }
   return '';
 }

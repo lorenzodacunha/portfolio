@@ -1,7 +1,7 @@
 {
   "certificados": [
     {
-      "thumb": "assets/images/certificates/fatec.webp",
+      "thumb": "assets/images/certificates/fatec-thumb.webp",
       "title": "Systems Analysis and Development",
       "type": "Graduation",
       "workload": "2800 hours",
@@ -10,7 +10,7 @@
       "certificationUrl": ""
     },
     {
-      "thumb": "assets/images/certificates/aldeia.webp",
+      "thumb": "assets/images/certificates/aldeia-thumb.webp",
       "title": "UI Design",
       "type": "Specialization",
       "workload": "40 hours",
@@ -19,7 +19,7 @@
       "certificationUrl": ""
     },
     {
-      "thumb": "assets/images/certificates/aldeia.webp",
+      "thumb": "assets/images/certificates/aldeia-thumb.webp",
       "title": "UX Design",
       "type": "Specialization",
       "workload": "40 hours",
@@ -28,7 +28,7 @@
       "certificationUrl": ""
     },
     {
-      "thumb": "assets/images/certificates/ibm.webp",
+      "thumb": "assets/images/certificates/ibm-thumb.webp",
       "title": "Introduction to UX Design",
       "type": "Introduction",
       "workload": "2 hours",
@@ -37,7 +37,7 @@
       "certificationUrl": "https://drive.google.com/file/d/1Wiu-IGDyvFRU--7D89z4tfI_IgUrryHM/view"
     },
     {
-        "thumb": "assets/images/certificates/senai.webp",
+        "thumb": "assets/images/certificates/senai-thumb.webp",
         "title": "Python Fundamentals I",
         "type": "Specialization",
         "workload": "30 horas",
@@ -46,7 +46,7 @@
         "certificationUrl": ""
     },
     {
-      "thumb": "assets/images/certificates/senai.webp",
+      "thumb": "assets/images/certificates/senai-thumb.webp",
       "title": "Privacy and Data Protection (LGPD)",
       "type": "Specialization",
       "workload": "4 hours",
@@ -55,7 +55,7 @@
       "certificationUrl": "https://drive.google.com/file/d/19j0t3PHuiV4eRcb3mEUS5u_mMWSW_Jsn/view"
     },
     {
-      "thumb": "assets/images/certificates/senai.webp",
+      "thumb": "assets/images/certificates/senai-thumb.webp",
       "title": "Electrical Maintenance Electrician",
       "type": "Professional Training",
       "workload": "1600 hours",
@@ -64,7 +64,7 @@
       "certificationUrl": "https://drive.google.com/file/d/1c7825-NwcG-zyXgzg_lH3mJ_DC07r-8q/view"
     },
     {
-      "thumb": "assets/images/certificates/senai.webp",
+      "thumb": "assets/images/certificates/senai-thumb.webp",
       "title": "Integrated Solutions with IoT",
       "type": "Specialization",
       "workload": "40 hours",
@@ -73,7 +73,7 @@
       "certificationUrl": "https://drive.google.com/file/d/17iVVMpo4CJXOHjP2E6b_1HyKP-hxyfeE/view"
     },
     {
-      "thumb": "assets/images/certificates/senai.webp",
+      "thumb": "assets/images/certificates/senai-thumb.webp",
       "title": "Arduino",
       "type": "Specialization",
       "workload": "40 hours",
@@ -82,7 +82,7 @@
       "certificationUrl": "https://drive.google.com/file/d/1MaU1d_-4eSvUbAEMb60SDoeZGogu7RcF/view"
     },
     {
-      "thumb": "assets/images/certificates/senai.webp",
+      "thumb": "assets/images/certificates/senai-thumb.webp",
       "title": "WEB 3.0",
       "type": "Specialization",
       "workload": "20 hours",
@@ -91,7 +91,7 @@
       "certificationUrl": "https://drive.google.com/file/d/1qMKkNDraHwHyG_iTWOedviYMdKWLgj_L/view"
     },
     {
-      "thumb": "assets/images/certificates/senai.webp",
+      "thumb": "assets/images/certificates/senai-thumb.webp",
       "title": "Work Safety",
       "type": "General",
       "workload": "14 hours",
@@ -100,7 +100,7 @@
       "certificationUrl": "https://drive.google.com/file/d/1nYcWdApkz0wxbuDTOV9vDFpbdSDM1bK5/view"
     },
     {
-      "thumb": "assets/images/certificates/senai.webp",
+      "thumb": "assets/images/certificates/senai-thumb.webp",
       "title": "Microsoft Power BI",
       "type": "Specialization",
       "workload": "32 hours",

@@ -30,30 +30,6 @@
     src: url('../assets/fonts/inter-latin-700-normal.woff2') format('woff2');
 }
 
-@font-face {
-    font-family: 'Font Awesome 6 Free';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('../assets/fonts/fontawesome/fa-regular-400.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Font Awesome 6 Free';
-    font-style: normal;
-    font-weight: 900;
-    font-display: swap;
-    src: url('../assets/fonts/fontawesome/fa-solid-900.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Font Awesome 6 Brands';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('../assets/fonts/fontawesome/fa-brands-400.woff2') format('woff2');
-}
-
 :root {
     --primary-color: #FFA030;
     --secondary-color: #FFC37D;
@@ -438,7 +414,6 @@ img {
     color: var(--sm-text-color);
     background-size: contain;
     background-repeat: no-repeat;
-    font-family: 'Font Awesome 6 Free';
 }
 
 .switch {
@@ -1416,7 +1391,6 @@ button {
     }
 
     .menubutton {
-        font-family: 'FontAwesome';
         position: fixed;
         right: 10px;
         top: 10px;

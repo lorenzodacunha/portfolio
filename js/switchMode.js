@@ -1,5 +1,3 @@
-import { updateModalIconsTheme } from './modal.js';
-
 export function switchMode() {
     const themeSwitch = document.getElementById('theme-switch');
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
@@ -20,7 +18,10 @@ export function switchMode() {
     function toggleTheme(isLightTheme) {
         document.documentElement.classList.toggle('light-theme', isLightTheme);
         localStorage.setItem('theme', isLightTheme ? 'light' : 'dark');
-        updateModalIconsTheme();
+        const modal = document.getElementById('modal');
+        if (!modal?.classList.contains('hidden')) {
+            import('./modal.js').then(({ updateModalIconsTheme }) => updateModalIconsTheme());
+        }
     }
 
     prefersDarkScheme.addEventListener('change', (event) => {
@@ -35,4 +36,3 @@ export function switchMode() {
         toggleTheme(themeSwitch.checked);
     });
 }
-  

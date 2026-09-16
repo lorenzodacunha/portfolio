@@ -40,7 +40,7 @@ Cada detalhe foi pensado para unir **design impactante** e **funcionalidade**, u
 - JavaScript
 - Swiper.js (Utilizado no Slideshow de projetos)
 - DOMPurify (Sanitização de HTML)
-- Font Awesome (Biblioteca de ícones)
+- SVGs locais (ícones de interface)
 - JSON (Traduções e dados dinâmicos)
 - APIs do navegador: LocalStorage, IntersectionObserver, MutationObserver, Web Share API e Clipboard API
 - Codex (Apoio no desenvolvimento de funcionalidades)

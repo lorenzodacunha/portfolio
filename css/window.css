@@ -142,9 +142,6 @@
 }
 
 .guide-close {
-    content: '\f00d';
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 600;
     margin-left: 5px;
     font-size: 12px;
     width: 15px;

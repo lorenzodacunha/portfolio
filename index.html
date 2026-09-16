@@ -16,7 +16,6 @@
     <link id="favicon" rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
     <title>Lorenzo da Cunha</title>
     <script src="js/vendor/purify.min.js" defer></script>
-    <script src="js/vendor/swiper-bundle.min.js" defer></script>
     <script type="module" src="js/main.js" defer></script>
     <script>
         (() => {
@@ -30,20 +29,16 @@
             document.documentElement.classList.toggle('light-theme', useLightTheme);
         })();
     </script>
-    <link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/sidebarmenu.css">
     <link rel="stylesheet" href="css/window.css">
-    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="css/vendor/fontawesome.min.css">
+    <link rel="stylesheet" href="css/icons.css">
 </head>
 
 <body>
     <header>
-        <button id="hamburguer" aria-label="Menu" role="button" class="menubutton fa-bars"></button>
+        <button id="hamburguer" aria-label="Menu" role="button" class="menubutton svg-icon icon-menu"></button>
         <nav id="navb" class="navbar">
             <ul class="navbar-nav">
                 <li class="navbar-item"><a href="#home" data-i18n="navbar.home">INICIO</a></li>
@@ -66,7 +61,7 @@
                         <span class="flag"><img class="br-flag-svg" width="22px" height="22px" src="assets/icons/br.svg"
                                 alt="Brasil Flag svg" draggable="false"></span>
                         BR
-                        <i id="lang-arrow" class="fa-solid fa-chevron-down"></i>
+                        <i id="lang-arrow" class="svg-icon icon-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div id="language-options" class="language-options close">
                         <button data-lang="en">
@@ -187,14 +182,14 @@
                                     alt="HTML file icon">
                             </div>
                             <span data-i18n="guide.welcome">bemvindo.html</span>
-                            <div class="guide-close fa-xmark" role="button" aria-label="Fechar guia"></div>
+                            <div class="guide-close svg-icon icon-close" role="button" aria-label="Fechar guia"></div>
                         </div>
                     </div>
                     <div class="window-search">
                         <div class="search-buttons">
-                            <div class="search-button fa-solid fa-arrow-left" role="button" aria-label="Voltar"></div>
-                            <div class="search-button fa-solid fa-arrow-right" role="button" aria-label="Avancar"></div>
-                            <div class="search-button window-reload fa-solid fa-rotate-right" role="button"
+                            <div class="search-button svg-icon icon-arrow-left" role="button" aria-label="Voltar"></div>
+                            <div class="search-button svg-icon icon-arrow-right" role="button" aria-label="Avancar"></div>
+                            <div class="search-button window-reload svg-icon icon-refresh" role="button"
                                 aria-label="Recarregar"></div>
                         </div>
                         <div class="search-bar">
@@ -399,14 +394,14 @@
                                     alt="TXT icone">
                             </div>
                             <span data-i18n="guide.aboutme">sobremim.txt</span>
-                            <div class="guide-close fa-xmark" role="button" aria-label="Fechar guia"></div>
+                            <div class="guide-close svg-icon icon-close" role="button" aria-label="Fechar guia"></div>
                         </div>
                     </div>
                     <div class="window-search">
                         <div class="search-buttons">
-                            <div class="search-button fa-solid fa-arrow-left" role="button" aria-label="Voltar"></div>
-                            <div class="search-button fa-solid fa-arrow-right" role="button" aria-label="Avancar"></div>
-                            <div class="search-button window-reload fa-solid fa-rotate-right" role="button"
+                            <div class="search-button svg-icon icon-arrow-left" role="button" aria-label="Voltar"></div>
+                            <div class="search-button svg-icon icon-arrow-right" role="button" aria-label="Avancar"></div>
+                            <div class="search-button window-reload svg-icon icon-refresh" role="button"
                                 aria-label="Recarregar"></div>
                         </div>
                         <div class="search-bar">
@@ -435,8 +430,10 @@
                 </div>
                 <div class="about-picture">
                     <div class="about-frame">
-                        <img loading="lazy" class="about-img" width="400px" height="400px"
-                            src="assets/images/avatar.webp" alt="Foto de Lorenzo da Cunha">
+                        <img loading="lazy" decoding="async" class="about-img" width="400" height="400"
+                            src="assets/images/avatar-400.webp"
+                            srcset="assets/images/avatar-400.webp 400w, assets/images/avatar-800.webp 800w"
+                            sizes="(max-width: 750px) 280px, 400px" alt="Foto de Lorenzo da Cunha">
                     </div>
                     <div class="about-balls">
                         <div class="about-ball"></div>
@@ -476,14 +473,14 @@
                                     alt="HTML file icon">
                             </div>
                             <span data-i18n="guide.projects">projetos.html</span>
-                            <div class="guide-close fa-xmark" role="button" aria-label="Fechar guia"></div>
+                            <div class="guide-close svg-icon icon-close" role="button" aria-label="Fechar guia"></div>
                         </div>
                     </div>
                     <div class="window-search wbs">
                         <div class="search-buttons">
-                            <div class="search-button fa-solid fa-arrow-left" role="button" aria-label="Voltar"></div>
-                            <div class="search-button fa-solid fa-arrow-right" role="button" aria-label="Avancar"></div>
-                            <div class="search-button window-reload fa-solid fa-rotate-right" role="button"
+                            <div class="search-button svg-icon icon-arrow-left" role="button" aria-label="Voltar"></div>
+                            <div class="search-button svg-icon icon-arrow-right" role="button" aria-label="Avancar"></div>
+                            <div class="search-button window-reload svg-icon icon-refresh" role="button"
                                 aria-label="Recarregar"></div>
                         </div>
                         <div class="search-bar">
@@ -549,7 +546,7 @@
                                         </button>
                                     </li>
                                 </ul>
-                                <div class="sidebar-Btn-Close sb-Btn-Rotate"></div>
+                                <div class="sidebar-Btn-Close sb-Btn-Rotate svg-icon icon-chevron-left"></div>
                             </div>
                         </nav>
                         <div class="projects-Content">
@@ -629,7 +626,7 @@
                                 </div>
                             </div>
                             <div id="swipe-hint" class="swipe-hint" aria-hidden="true">
-                                <i class="fa-solid fa-hand-pointer"></i>
+                                <i class="svg-icon icon-pointer" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -667,14 +664,14 @@
                                     alt="HTML file icon">
                             </div>
                             <span data-i18n="guide.skills">habilidades.html</span>
-                            <div class="guide-close fa-xmark" role="button" aria-label="Fechar guia"></div>
+                            <div class="guide-close svg-icon icon-close" role="button" aria-label="Fechar guia"></div>
                         </div>
                     </div>
                     <div class="window-search wbs">
                         <div class="search-buttons">
-                            <div class="search-button fa-solid fa-arrow-left" role="button" aria-label="Voltar"></div>
-                            <div class="search-button fa-solid fa-arrow-right" role="button" aria-label="Avancar"></div>
-                            <div class="search-button window-reload fa-solid fa-rotate-right" role="button"
+                            <div class="search-button svg-icon icon-arrow-left" role="button" aria-label="Voltar"></div>
+                            <div class="search-button svg-icon icon-arrow-right" role="button" aria-label="Avancar"></div>
+                            <div class="search-button window-reload svg-icon icon-refresh" role="button"
                                 aria-label="Recarregar"></div>
                         </div>
                         <div class="search-bar">
@@ -896,14 +893,14 @@
                                     alt="HTML file icon">
                             </div>
                             <span data-i18n="guide.certificates">certificados.html</span>
-                            <div class="guide-close fa-xmark" role="button" aria-label="Fechar guia"></div>
+                            <div class="guide-close svg-icon icon-close" role="button" aria-label="Fechar guia"></div>
                         </div>
                     </div>
                     <div class="window-search wbs">
                         <div class="search-buttons">
-                            <div class="search-button fa-solid fa-arrow-left" role="button" aria-label="Voltar"></div>
-                            <div class="search-button fa-solid fa-arrow-right" role="button" aria-label="Avancar"></div>
-                            <div class="search-button window-reload fa-solid fa-rotate-right" role="button"
+                            <div class="search-button svg-icon icon-arrow-left" role="button" aria-label="Voltar"></div>
+                            <div class="search-button svg-icon icon-arrow-right" role="button" aria-label="Avancar"></div>
+                            <div class="search-button window-reload svg-icon icon-refresh" role="button"
                                 aria-label="Recarregar"></div>
                         </div>
                         <div class="search-bar">
@@ -1067,14 +1064,14 @@
                                     src="assets/icons/html-5.svg" alt="HTML file icon">
                             </div>
                             <span data-i18n="guide.reviews">depoimentos.html</span>
-                            <div class="guide-close fa-xmark" role="button" aria-label="Fechar guia"></div>
+                            <div class="guide-close svg-icon icon-close" role="button" aria-label="Fechar guia"></div>
                         </div>
                     </div>
                     <div class="window-search wbs">
                         <div class="search-buttons">
-                            <div class="search-button fa-solid fa-arrow-left" role="button" aria-label="Voltar"></div>
-                            <div class="search-button fa-solid fa-arrow-right" role="button" aria-label="Avancar"></div>
-                            <div class="search-button window-reload fa-solid fa-rotate-right" role="button"
+                            <div class="search-button svg-icon icon-arrow-left" role="button" aria-label="Voltar"></div>
+                            <div class="search-button svg-icon icon-arrow-right" role="button" aria-label="Avancar"></div>
+                            <div class="search-button window-reload svg-icon icon-refresh" role="button"
                                 aria-label="Recarregar"></div>
                         </div>
                         <div class="search-bar">
@@ -1207,14 +1204,14 @@
                                     alt="HTML file icon">
                             </div>
                             contato.html
-                            <div class="guide-close fa-xmark" role="button" aria-label="Fechar guia"></div>
+                            <div class="guide-close svg-icon icon-close" role="button" aria-label="Fechar guia"></div>
                         </div>
                     </div>
                     <div class="window-search wbs">
                         <div class="search-buttons">
-                            <div class="search-button fa-solid fa-arrow-left" role="button" aria-label="Voltar"></div>
-                            <div class="search-button fa-solid fa-arrow-right" role="button" aria-label="Avancar"></div>
-                            <div class="search-button window-reload fa-solid fa-rotate-right" role="button"
+                            <div class="search-button svg-icon icon-arrow-left" role="button" aria-label="Voltar"></div>
+                            <div class="search-button svg-icon icon-arrow-right" role="button" aria-label="Avancar"></div>
+                            <div class="search-button window-reload svg-icon icon-refresh" role="button"
                                 aria-label="Recarregar"></div>
                         </div>
                         <div class="search-bar">
@@ -1248,13 +1245,13 @@
                             <a href="mailto:lorenzodacunha2006@gmail.com?subject=Contato%20via%20portfólio%20|&body=Escreva%20sua%20mensagem%20aqui."
                                 target="_blank" rel="noopener">
                                 <div class="contact-item" style="--order: 2">
-                                    <div class="contact-icon fa-solid fa-envelope "></div>
+                                    <div class="contact-icon svg-icon icon-envelope"></div>
                                     <div class="contact-info">contato@lorenzodacunha.com.br</div>
                                 </div>
                             </a>
                             <a href="tel:+5519981748197" target="_blank" rel="noopener">
                                 <div class="contact-item" style="--order: 3">
-                                    <div class="contact-icon fa-solid fa-phone"></div>
+                                    <div class="contact-icon svg-icon icon-phone"></div>
                                     <div class="contact-info">(19)98174-8197</div>
                                 </div>
                             </a>
@@ -1262,13 +1259,13 @@
                         <div class="contact-double">
                             <a href="https://www.linkedin.com/in/lorenzodacunha/" target="_blank" rel="noopener">
                                 <div class="contact-item" style="--order: 4">
-                                    <div class="contact-icon fa-brands fa-linkedin"></div>
+                                    <div class="contact-icon svg-icon icon-linkedin"></div>
                                     <div class="contact-info">in/lorenzodacunha</div>
                                 </div>
                             </a>
                             <a href="https://github.com/lorenzodacunha" target="_blank" rel="noopener">
                                 <div class="contact-item" style="--order: 5">
-                                    <div class="contact-icon fa-brands fa-github"></div>
+                                    <div class="contact-icon svg-icon icon-github"></div>
                                     <div class="contact-info">/lorenzodacunha</div>
                                 </div>
                             </a>
@@ -1293,18 +1290,18 @@
                                 alt="HTML file icon">
                         </div>
                         <span class="project-guide">bemvindo.html</span>
-                        <div class="close-button guide-close fa-xmark" id="close" role="button"
+                        <div class="close-button guide-close svg-icon icon-close" id="close" role="button"
                             aria-label="Fechar modal">
                         </div>
                     </div>
                 </div>
-                <span class="close-btn close-button fa-xmark" id="close-button" role="button"
+                <span class="close-btn close-button svg-icon icon-close" id="close-button" role="button"
                     aria-label="Fechar modal"></span>
                 <div class="window-search">
                     <div class="search-buttons">
-                        <div class="search-button fa-solid fa-arrow-left" role="button" aria-label="Voltar"></div>
-                        <div class="search-button fa-solid fa-arrow-right" role="button" aria-label="Avancar"></div>
-                        <div class="search-button window-reload fa-solid fa-rotate-right" role="button"
+                        <div class="search-button svg-icon icon-arrow-left" role="button" aria-label="Voltar"></div>
+                        <div class="search-button svg-icon icon-arrow-right" role="button" aria-label="Avancar"></div>
+                        <div class="search-button window-reload svg-icon icon-refresh" role="button"
                             aria-label="Recarregar"></div>
                     </div>
                     <div class="search-bar">
@@ -1325,15 +1322,15 @@
                                     <ul class="icons-Items project-tecnologies"></ul>
                                     <ul class="icons-Items project-compatibilities">
                                         <li class="pc1 icon-item tooltip">
-                                            <i class="fa-solid fa-mobile-screen-button"></i><span class="tooltip-text"
+                                            <i class="svg-icon icon-mobile" aria-hidden="true"></i><span class="tooltip-text"
                                                 data-i18n="icons-items.mobile">Compatível com Mobile</span>
                                         </li>
                                         <li class="pc2 icon-item tooltip">
-                                            <i class=" fa-solid fa-tablet-screen-button"></i><span class="tooltip-text"
+                                            <i class="svg-icon icon-tablet" aria-hidden="true"></i><span class="tooltip-text"
                                                 data-i18n="icons-items.tablet">Compatível com Tablet</span>
                                         </li>
                                         <li class="pc3 icon-item tooltip">
-                                            <i class=" fa-solid fa-display"></i><span class="tooltip-text"
+                                            <i class="svg-icon icon-desktop" aria-hidden="true"></i><span class="tooltip-text"
                                                 data-i18n="icons-items.desktop">Compatível com Desktop</span>
                                         </li>
                                     </ul>
@@ -1428,7 +1425,7 @@
                                 alt="HTML file icon">
                         </div>
                         <span class="project-guide">conteudo-sensivel.html</span>
-                        <div class="close-button-mini guide-close fa-xmark" role="button" aria-label="Fechar aviso">
+                        <div class="close-button-mini guide-close svg-icon icon-close" role="button" aria-label="Fechar aviso">
                         </div>
                     </div>
                 </div>
@@ -1463,16 +1460,16 @@
                                 alt="HTML file icon">
                         </div>
                         <span class="project-guide">imagem.html</span>
-                        <div class="close-modal guide-close fa-xmark" role="button" aria-label="Fechar modal"></div>
+                        <div class="close-modal guide-close svg-icon icon-close" role="button" aria-label="Fechar modal"></div>
                     </div>
                 </div>
                 <span class="close-btn close-modal" id="close-Modal" role="button"
                     aria-label="Fechar modal">&times;</span>
                 <div class="window-search">
                     <div class="search-buttons">
-                        <div class="search-button fa-solid fa-arrow-left" role="button" aria-label="Voltar"></div>
-                        <div class="search-button fa-solid fa-arrow-right" role="button" aria-label="Avancar"></div>
-                        <div class="search-button window-reload fa-solid fa-rotate-right" role="button"
+                        <div class="search-button svg-icon icon-arrow-left" role="button" aria-label="Voltar"></div>
+                        <div class="search-button svg-icon icon-arrow-right" role="button" aria-label="Avancar"></div>
+                        <div class="search-button window-reload svg-icon icon-refresh" role="button"
                             aria-label="Recarregar"></div>
                     </div>
                     <div class="search-bar">

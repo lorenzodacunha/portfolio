@@ -1,7 +1,7 @@
 {
    "certificados": [
       {
-         "thumb": "assets/images/certificates/fatec.webp",
+         "thumb": "assets/images/certificates/fatec-thumb.webp",
          "title": "Análise e Desenvolvimento de Sistemas",
          "type": "Tecnólogo",
          "workload": "2800 horas",
@@ -10,7 +10,7 @@
          "certificationUrl": ""
       },
       {
-         "thumb": "assets/images/certificates/aldeia.webp",
+         "thumb": "assets/images/certificates/aldeia-thumb.webp",
          "title": "UI Design",
          "type": "Aperfeiçoamento",
          "workload": "40 horas",
@@ -19,7 +19,7 @@
          "certificationUrl": ""
       },
       {
-         "thumb": "assets/images/certificates/aldeia.webp",
+         "thumb": "assets/images/certificates/aldeia-thumb.webp",
          "title": "UX Design",
          "type": "Aperfeiçoamento",
          "workload": "40 horas",
@@ -28,7 +28,7 @@
          "certificationUrl": ""
       },
       {
-         "thumb": "assets/images/certificates/ibm.webp",
+         "thumb": "assets/images/certificates/ibm-thumb.webp",
          "title": "Introduction to UX Design",
          "type": "Introdução",
          "workload": "2 horas",
@@ -37,7 +37,7 @@
          "certificationUrl": "https://drive.google.com/file/d/1Wiu-IGDyvFRU--7D89z4tfI_IgUrryHM/view"
       },
       {
-         "thumb": "assets/images/certificates/senai.webp",
+         "thumb": "assets/images/certificates/senai-thumb.webp",
          "title": "Fundamentos em python I",
          "type": "Profissionalizante",
          "workload": "30 horas",
@@ -46,7 +46,7 @@
          "certificationUrl": ""
       },
       {
-         "thumb": "assets/images/certificates/senai.webp",
+         "thumb": "assets/images/certificates/senai-thumb.webp",
          "title": "Privacidade e Proteção de dados (LGPD)",
          "type": "Aperfeiçoamento",
          "workload": "4 horas",
@@ -55,7 +55,7 @@
          "certificationUrl": "https://drive.google.com/file/d/19j0t3PHuiV4eRcb3mEUS5u_mMWSW_Jsn/view"
       },
       {
-         "thumb": "assets/images/certificates/senai.webp",
+         "thumb": "assets/images/certificates/senai-thumb.webp",
          "title": "Eletrecista de Manutenção Eletrôeletronica",
          "type": "Profissionalizante",
          "workload": "1600 horas",
@@ -64,7 +64,7 @@
          "certificationUrl": "https://drive.google.com/file/d/1c7825-NwcG-zyXgzg_lH3mJ_DC07r-8q/view"
       },
       {
-         "thumb": "assets/images/certificates/senai.webp",
+         "thumb": "assets/images/certificates/senai-thumb.webp",
          "title": "Soluções integradas com IoT",
          "type": "Aperfeiçoamento",
          "workload": "40 horas",
@@ -73,7 +73,7 @@
          "certificationUrl": "https://drive.google.com/file/d/17iVVMpo4CJXOHjP2E6b_1HyKP-hxyfeE/view"
       },
       {
-         "thumb": "assets/images/certificates/senai.webp",
+         "thumb": "assets/images/certificates/senai-thumb.webp",
          "title": "Arduino",
          "type": "Aperfeiçoamento",
          "workload": "40 horas",
@@ -82,7 +82,7 @@
          "certificationUrl": "https://drive.google.com/file/d/1MaU1d_-4eSvUbAEMb60SDoeZGogu7RcF/view"
       },
       {
-         "thumb": "assets/images/certificates/senai.webp",
+         "thumb": "assets/images/certificates/senai-thumb.webp",
          "title": "WEB 3.0",
          "type": "Aperfeiçoamento",
          "workload": "20 horas",
@@ -91,7 +91,7 @@
          "certificationUrl": "https://drive.google.com/file/d/1qMKkNDraHwHyG_iTWOedviYMdKWLgj_L/view"
       },
       {
-         "thumb": "assets/images/certificates/senai.webp",
+         "thumb": "assets/images/certificates/senai-thumb.webp",
          "title": "Sergurança no Trabalho",
          "type": "Transversal",
          "workload": "14 horas",
@@ -100,7 +100,7 @@
          "certificationUrl": "https://drive.google.com/file/d/1nYcWdApkz0wxbuDTOV9vDFpbdSDM1bK5/view"
       },
       {
-         "thumb": "assets/images/certificates/senai.webp",
+         "thumb": "assets/images/certificates/senai-thumb.webp",
          "title": "Microsoft Power BI",
          "type": "Aperfeiçoamento",
          "workload": "32 horas",

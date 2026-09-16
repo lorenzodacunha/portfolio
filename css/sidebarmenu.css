@@ -112,7 +112,6 @@ button.sidebar-Btn.sidebar-Btn-Minimized {
 }
 
 .sidebar-Btn-Close {
-    font-family: 'FontAwesome';
     font-size: 25px;
     display: flex !important;
     justify-content: center;
@@ -130,10 +129,6 @@ button.sidebar-Btn.sidebar-Btn-Minimized {
     bottom: 20px;
     right: 10px;
     display: inline-block;
-}
-
-.sidebar-Btn-Close::before {
-    content: "\f053";
 }
 
 .sidebar-Btn-Close:hover {

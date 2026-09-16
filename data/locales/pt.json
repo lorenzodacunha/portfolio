@@ -38,7 +38,7 @@
     "frontend": "Front-End",
     "ui": "UI/UX Designer",
     "webdesigner": "Web Designer",
-    "see_more": "<i class=\"fa-solid fa-eye\"></i>Ver mais",
+    "see_more": "<i class=\"svg-icon icon-eye\" aria-hidden=\"true\"></i>Ver mais",
     "in_progress": "Em desenvolvimento",
     "featured": "Destaque"
   },

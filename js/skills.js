@@ -1,4 +1,4 @@
-import { applyTranslations } from './translation.js';
+import { applyTranslations, getTranslations } from './translation.js';
 import { getIconMarkup } from './icons.js';
 import { setupProgressBar } from './progressBar.js';
 
@@ -218,7 +218,7 @@ export async function initializeSkills(translations) {
         const response = await fetch('data/skills.json');
         const habilidades = await response.json();
 
-        setTimeout(() => {
+        requestAnimationFrame(() => {
             const loading = document.getElementById('skills-loading');
             const conteudo = document.getElementById('skills');
             loading.hidden = true;
@@ -287,7 +287,7 @@ export async function initializeSkills(translations) {
                 document.querySelectorAll('.skill-item').forEach(item => item.classList.add('loaded'));
                 applyTranslations(translations);
             }, 100);
-        }, 500);
+        });
 
     } catch (error) {
         console.error('Erro ao carregar as Habilidades:', error);
@@ -302,3 +302,5 @@ export function setupSkillsUI() {
     handleResponsiveDisplay(mobileQuery);
     mobileQuery.addEventListener('change', handleResponsiveDisplay);
 }
+
+document.addEventListener('languageChanged', () => initializeSkills(getTranslations()));

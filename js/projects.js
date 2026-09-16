@@ -1,4 +1,3 @@
-import { openModal, openModalById } from './modal.js';
 import { removerAcentuacao } from './functions.js';
 import { getIconMarkup } from './icons.js';
 import { getCurrentLang, getTranslations } from './translation.js';
@@ -13,6 +12,12 @@ const PREFERRED_ALL_ORDER = ['web-designer', 'front-end', 'ui-design'];
 const MOBILE_MAX_WIDTH = 768;
 let currentProjectCount = 0;
 let projectCountResizeTimer = null;
+let modalModulePromise;
+
+function getModalModule() {
+    modalModulePromise ||= import('./modal.js');
+    return modalModulePromise;
+}
 
 function isMobileViewport() {
     return window.matchMedia(`(max-width: ${MOBILE_MAX_WIDTH}px)`).matches;
@@ -57,6 +62,7 @@ async function projectUrlDetector() {
 
     if (projectId || nomeDoProjeto) {
         try {
+            const { openModalById } = await getModalModule();
             if (projectId) {
                 await openModalById(projectId, {
                     fallbackSlug: nomeDoProjeto || '',
@@ -75,9 +81,10 @@ async function projectUrlDetector() {
 }
 
 function projectButtonOpenModal() {
-    document.getElementById('conteudo').addEventListener('click', function (event) {
+    document.getElementById('conteudo').addEventListener('click', async function (event) {
         const button = event.target.closest('.card-button');
         if (button) {
+            const { openModal, openModalById } = await getModalModule();
             const projectId = button.getAttribute('data-project-id') || '';
             const slugFallback = button.getAttribute('data-project-slug') || '';
             if (projectId) {
@@ -243,7 +250,7 @@ export async function loadProjects(categoria) {
         const response = await fetch(file);
         const projetos = await response.json();
 
-        setTimeout(() => {
+        requestAnimationFrame(() => {
             loading.hidden = true;
             conteudo.classList.remove('no-scroll');
             conteudo.innerHTML = '';
@@ -277,14 +284,14 @@ export async function loadProjects(categoria) {
                 if (Boolean(projeto.featured)) {
                     badges.push(`
                         <span class="badge featured-badge" aria-label="${featuredLabel}">
-                            <i class="fa-solid fa-star" aria-hidden="true"></i> ${featuredLabel}
+                            <i class="svg-icon icon-star" aria-hidden="true"></i> ${featuredLabel}
                         </span>
                     `);
                 }
                 if (!projeto.developed) {
                     badges.push(`
                         <span class="badge in-progress-badge" aria-label="${inProgressLabel}">
-                            <i class="fa-solid fa-gear" aria-hidden="true"></i> ${inProgressLabel}
+                            <i class="svg-icon icon-settings" aria-hidden="true"></i> ${inProgressLabel}
                         </span>
                     `);
                 }
@@ -294,7 +301,7 @@ export async function loadProjects(categoria) {
                 projectElement.innerHTML = DOMPurify.sanitize(`
                     <div class="${thumbClass}">
                         ${badgesMarkup}
-                        <img width="234px" height="117px" src="${projeto.image}" alt="Thumb do projeto ${projeto.title} desenvolvido por Lorenzo da Cunha">
+                        <img loading="lazy" decoding="async" width="234" height="117" src="${projeto.image}" alt="Thumb do projeto ${projeto.title} desenvolvido por Lorenzo da Cunha">
                     </div>
                     <h3 class="card-title">${projeto.title}</h3>
                     </div>
@@ -308,7 +315,7 @@ export async function loadProjects(categoria) {
                             `).join('')}
                         </ul>
                     </div>
-                    <button class="card-button" data-project-id="${projeto.id || ''}" data-project-slug="${removerAcentuacao(projeto.title).replace(/\s+/g, '-').toLowerCase()}" data-project-category="${sourceCategory}" data-project-index="${sourceIndex}" data-i18n="projects.see_more"><i class="fa-solid fa-eye"></i>Ver mais</button>
+                    <button class="card-button" data-project-id="${projeto.id || ''}" data-project-slug="${removerAcentuacao(projeto.title).replace(/\s+/g, '-').toLowerCase()}" data-project-category="${sourceCategory}" data-project-index="${sourceIndex}" data-i18n="projects.see_more"><i class="svg-icon icon-eye" aria-hidden="true"></i>Ver mais</button>
                 `);
                 conteudo.appendChild(projectElement);
             });
@@ -316,7 +323,7 @@ export async function loadProjects(categoria) {
             setTimeout(() => {
                 document.querySelectorAll('.project-item').forEach(item => item.classList.add('loaded'));
             }, 100);
-        }, 500);
+        });
     } catch (error) {
         console.error('Erro ao carregar os projetos:', error);
         loading.hidden = true;

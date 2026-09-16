@@ -104,18 +104,18 @@ export async function initializeReviews() {
         const data = await response.json();
         const translations = getTranslations();
 
-        setTimeout(() => {
+        requestAnimationFrame(() => {
             loading.hidden = true;
             container.innerHTML = '';
             data.reviews.forEach(review => {
                 const el = document.createElement('div');
                 el.classList.add('review-item', 'card-template');
-                const stars = '<i class="fa-solid fa-star" aria-hidden="true"></i>'.repeat(review.rating) + '<i class="fa-regular fa-star"></i>'.repeat(5 - review.rating);
+                const stars = '<i class="svg-icon icon-star" aria-hidden="true"></i>'.repeat(review.rating) + '<i class="svg-icon icon-star-outline" aria-hidden="true"></i>'.repeat(5 - review.rating);
                 el.innerHTML = DOMPurify.sanitize(`
                     <div class="review-header">
                       <div class="review-project">${review.projectName}</div>
                       <div class="review-user">
-                          <img class="review-photo" src="${review.clientPhoto}" alt="${review.clientName}">
+                          <img loading="lazy" decoding="async" width="40" height="40" class="review-photo" src="${review.clientPhoto}" alt="${review.clientName}">
                           <div class="review-client">
                             <a class="client-name" href="${review.clientProfileLink}" target="_blank">${review.clientName}</a>
                             <div class="review-stars" role="img" aria-label="${translations['review-item'].rating} ${review.rating}/5">${stars}</div>
@@ -125,7 +125,7 @@ export async function initializeReviews() {
                     <p class="review-description">"${review.description}"</p>
                     <div class="review-footer">
                         <a class="workana-logo" href="${review.sourceLink}" target="_blank">
-                            <img src="${review.sourceLogo}" alt="${review.source}">
+                            <img loading="lazy" decoding="async" src="${review.sourceLogo}" alt="${review.source}">
                         </a>
                     </div>
                 `);
@@ -138,7 +138,7 @@ export async function initializeReviews() {
             setTimeout(() => {
                 document.querySelectorAll('.review-item').forEach(item => item.classList.add('loaded'));
             }, 100);
-        }, 500);
+        });
     } catch (error) {
         console.error('Erro ao carregar os depoimentos:', error);
         loading.hidden = true;

@@ -50,18 +50,21 @@
 }
 
 @media screen and (max-height: 628px) and (min-width: 951px) {
-  .window-modal { 
+  .window-modal {
     max-height: calc(100vh - 5em) !important;
   }
+
   .modal-text-content {
     overflow: hidden !important;
     overflow-x: hidden !important;
     max-height: max-content !important;
   }
+
   #modal-content-inner {
     overflow-x: hidden;
     overflow-y: scroll;
   }
+
   .modal-content-scroll-after {
     overflow: hidden;
     border-radius: 6px
@@ -79,7 +82,6 @@
   height: 25px;
   border-radius: 20px;
   text-align: center;
-  font-family: 'Font Awesome 6 Free';
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,18 +138,21 @@
   overflow-x: hidden;
 }
 
-.modal-text-content::-webkit-scrollbar, #modal-content-inner::-webkit-scrollbar {
+.modal-text-content::-webkit-scrollbar,
+#modal-content-inner::-webkit-scrollbar {
   width: 10px;
 }
 
 .modal-text-content::-webkit-scrollbar-thumb,
-.modal-content::-webkit-scrollbar, #modal-content-inner::-webkit-scrollbar {
+.modal-content::-webkit-scrollbar,
+#modal-content-inner::-webkit-scrollbar {
   background-color: var(--secondary-color);
   border-radius: 40px;
 }
 
 .modal-text-content::-webkit-scrollbar-track,
-.modal-content::-webkit-scrollbar, #modal-content-inner::-webkit-scrollbar {
+.modal-content::-webkit-scrollbar,
+#modal-content-inner::-webkit-scrollbar {
   background: transparent;
 }
 
@@ -299,6 +304,7 @@
 .window-mini {
   border-radius: 10px;
 }
+
 .mini-modal {
   position: fixed;
   top: 0;
@@ -347,6 +353,7 @@
   font-size: 20px;
   margin: 10px;
 }
+
 .mini-modal-content p {
   margin: 0;
   text-align: center;
@@ -355,6 +362,7 @@
   font-weight: 500;
   font-size: 16px;
 }
+
 .mini-modal-actions {
   margin-top: 16px;
   width: 100%;
@@ -362,15 +370,12 @@
   gap: 8px;
   justify-content: center;
 }
+
 .mini-modal-actions .card-button {
   min-width: 120px;
   white-space: nowrap;
 }
 
-
-.rating {
-  font-family: 'FontAwesome';
-}
 
 .rating:not(:checked)>input {
   position: absolute;
@@ -385,7 +390,13 @@
 }
 
 .rating:not(:checked)>label:before {
-  content: '\f005';
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  -webkit-mask: url('../assets/icons/ui/star.svg') center / contain no-repeat;
+  mask: url('../assets/icons/ui/star.svg') center / contain no-repeat;
 }
 
 .rating>input:checked+label:hover,
@@ -435,7 +446,7 @@
   justify-content: center;
 }
 
-.copy-popup i {
+.copy-popup .svg-icon {
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -445,11 +456,11 @@
 
 }
 
-.copy-popup .fa-check {
+.copy-popup .icon-check {
   background-color: var(--gbtn-green);
 }
 
-.copy-popup .fa-xmark {
+.copy-popup .icon-close {
   background-color: var(--gbtn-red);
 }
 
@@ -491,7 +502,7 @@
     font-size: 14px !important;
   }
 
-  i.developing-icon {
+  .developing-icon {
     font-size: 22px;
   }
 
@@ -655,6 +666,14 @@
   .modal-main .modal-text {
     background-color: transparent !important;
   }
+
+  .swiper-button-next {
+    right: 6px !important;
+  }
+
+  .swiper-button-prev {
+     left: 6px !important;
+  }
 }
 
 .swiper-container {
@@ -790,7 +809,7 @@
 
 .swiper-pagination {
   position: relative;
-  bottom: -8px !important;
+  bottom: 0px !important;
 }
 
 .carrossel-button {
@@ -800,6 +819,14 @@
   height: 40px !important;
   z-index: 4;
   transition: all .5s;
+}
+
+.swiper-button-next {
+  right: 16px !important;
+}
+
+.swiper-button-prev {
+  left: 16px !important;
 }
 
 .carrossel-button:hover {
@@ -812,11 +839,11 @@
 }
 
 .carrossel-button img {
-  width: 20px !important;
-  height: 20px !important;
+  width: 16px !important;
+  height: 16px !important;
 }
 
-.carrossel-button svg{
+.carrossel-button svg {
   opacity: 0;
   display: none;
   overflow: hidden;
