@@ -28,15 +28,14 @@
       ]
     }
   },
-  "about_me": "<p>Soy <strong>Lorenzo da Cunha</strong>, tengo 19 años y soy Desarrollador Front-end especializado en <strong>Shopify</strong>.</p><p>Creo y optimizo <strong>temas y storefronts</strong> con foco en <strong>UX, rendimiento, SEO técnico y conversión</strong>, uniendo código, diseño y estrategia para construir una <strong>infraestructura visual-comercial</strong> más eficiente y <strong>reducir la fricción en la jornada de compra</strong>.</p><p>Ya he participado en la entrega de <strong>más de 60 tiendas virtuales reales y activas</strong>, actuando desde la interfaz hasta el desarrollo completo de la experiencia de compra.</p>",
+  "about_me": "<p>Soy <strong>Lorenzo Cunha</strong>, tengo <strong>19 años</strong> y trabajo como <strong>desarrollador full stack júnior</strong>, con foco en <strong>Shopify</strong>. Creo <strong>experiencias digitales para e-commerce</strong>, conectando front-end, back-end, diseño y usabilidad.</p><p>Mi trayectoria reúne desarrollo de tiendas virtuales, diseño web y proyectos independientes. Actualmente, sigo fortaleciendo mi base en <strong>desarrollo back-end, Java y fundamentos de ingeniería de software</strong>, conectando ese aprendizaje con la experiencia que he construido en APIs, automatización e IA generativa.</p><p>Mi objetivo es crear soluciones digitales más completas, funcionales y bien estructuradas.</p>",
   "button": {
     "resume": "Ver Currículum"
   },
   "projects": {
     "categories": "Categorías",
     "all": "Todos los Proyectos",
-    "frontend": "Front-End",
-    "ui": "UI/UX Designer",
+    "fullstack": "Full Stack",
     "webdesigner": "Web Designer",
     "see_more": "<i class=\"svg-icon icon-eye\" aria-hidden=\"true\"></i>Ver más",
     "in_progress": "En desarrollo",

@@ -19,7 +19,7 @@ export function allWindowReload() {
                 setTimeout(() => {
                     actualButton.classList.remove('sb-active');
                     newButton.classList.add('sb-active');
-                    loadProjects('front-end');
+                    loadProjects('full-stack');
                 }, 300);
             };
 

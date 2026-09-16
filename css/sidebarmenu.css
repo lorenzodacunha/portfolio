@@ -47,7 +47,7 @@
 .sidebar-Btn {
     background: none;
     border: none;
-    color: white;
+    color: var(--text-color);
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -82,6 +82,7 @@ button.sidebar-Btn.sidebar-Btn-Minimized {
 
 .sb-active .sidebar-Btn-Icon {
     background-color: var(--primary-color);
+    color: #ffffff;
     transition: all .5s;
 }
 
@@ -102,13 +103,26 @@ button.sidebar-Btn.sidebar-Btn-Minimized {
 }
 
 .sidebar-Btn-Icon {
-    background: #676767;
+    background: var(--sidebar-control-background);
     border-radius: 50%;
     min-width: 35px;
     min-height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.asidebar-Btn-Icon-img {
+    filter: invert(1);
+    transition: filter .5s;
+}
+
+:root.light-theme .asidebar-Btn-Icon-img {
+    filter: none;
+}
+
+.sb-active .sidebar-Btn-Icon .asidebar-Btn-Icon-img {
+    filter: brightness(0) invert(1) !important;
 }
 
 .sidebar-Btn-Close {
@@ -121,8 +135,8 @@ button.sidebar-Btn.sidebar-Btn-Minimized {
     align-items: center;
     border: none;
     z-index: 5;
-    background: #676767;
-    color: white;
+    background: var(--sidebar-control-background);
+    color: var(--text-color);
     transition: all .5s;
     cursor: pointer;
     position: absolute;
