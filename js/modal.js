@@ -15,6 +15,7 @@ const SWIPER_STYLES_URL = 'css/vendor/swiper-bundle.min.css';
 const MODAL_STYLES_URL = 'css/modal.css';
 const ADULT_BYPASS_PARAM = 'adult_bypass';
 const ADULT_BLOCK_PARAM = 'adult_blocked';
+const PORTFOLIO_TITLE = 'Lorenzo Cunha | Desenvolvedor Full Stack Júnior & Shopify';
 const ADULT_GATE_MESSAGE =
   'O conteúdo a seguir não é destinado para menores de 18 anos ou pode ser sensível para algumas pessoas.';
 const ADULT_BLOCKED_MESSAGE = 'Você não tem idade suficiente para abrir este conteúdo';
@@ -259,6 +260,7 @@ function closeProjectModal() {
     modal.classList.add('hidden');
     document.body.classList.remove('no-scroll');
     updateUrlState({ clearProject: true, replace: true });
+    document.title = PORTFOLIO_TITLE;
     const bar = document.querySelector('.card-icons-modal .modal-progress-bar');
     if (bar) bar.remove();
   }, 300);
@@ -278,10 +280,32 @@ function closeImageModal() {
   }, 100);
 }
 
-async function shareProject(projectLink, title) {
+function createCanonicalProjectUrl(projectId) {
+  const url = new URL(window.location.href);
+  url.search = '';
+  url.hash = '';
+  url.searchParams.set('id', projectId);
+  return url.href;
+}
+
+function getShareMessages(title) {
+  const messages = getTranslations()?.['modal-social'] || {};
+  const shareText = (messages['share-text'] || 'Conheça {{title}}, um projeto do portfólio de Lorenzo Cunha.')
+    .replace('{{title}}', title || 'este projeto');
+
+  return {
+    shareText,
+    copied: messages['link-copied'] || 'Link copiado',
+    copyFailed: messages['copy-failed'] || 'Não foi possível copiar o link',
+  };
+}
+
+async function shareProject(projectId, title) {
+  const projectLink = createCanonicalProjectUrl(projectId);
+  const messages = getShareMessages(title);
   const data = {
-    title: title || 'Veja este projeto',
-    text: 'Confira este projeto incr\u00edvel do meu portf\u00f3lio!',
+    title: `${title || 'Projeto'} | Lorenzo Cunha`,
+    text: messages.shareText,
     url: projectLink
   };
 
@@ -309,17 +333,17 @@ async function shareProject(projectLink, title) {
     try {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         await navigator.clipboard.writeText(projectLink);
-        showPopup('Link copiado');
+        showPopup(messages.copied);
       } else if (tryExecCopy()) {
-        showPopup('Link copiado ');
+        showPopup(messages.copied);
       } else {
         throw new Error('copy failed');
       }
     } catch (err) {
       if (!tryExecCopy()) {
-        showPopup('Erro ao copiar', true);
+        showPopup(messages.copyFailed, true);
       } else {
-        showPopup('Link copiado');
+        showPopup(messages.copied);
       }
     }
   } finally {
@@ -667,7 +691,8 @@ async function openModalInternal(categoria, index, projectId = '', fallbackSlug 
 
     await swiperReady;
     swiper = new window.Swiper('.swiper-container', swiperOptions);
-    modalShareButton.onclick = () => shareProject(window.location.href, projeto.title);
+    modalShareButton.onclick = () => shareProject(finalProjectId, projeto.title);
+    document.title = `${projeto.title} | Lorenzo Cunha`;
     modal.classList.remove('hidden');
     const mobile = window.innerWidth <= 750;
     const modalContent = modal.querySelector('.modal-content');

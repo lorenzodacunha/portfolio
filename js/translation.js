@@ -12,7 +12,7 @@ const criticalTranslations = {
     comment: 'Olá 👋',
     welcome: 'Seja bem vindo(a)!',
     prefix: 'Sou um ',
-    roles: ['Dev Front-end ', 'UI Designer ', 'Dev Shopify '],
+    roles: ['Dev Full Stack ', 'Dev Shopify ', 'Dev de APIs e Automações '],
   },
   en: {
     lang: 'en',
@@ -20,7 +20,7 @@ const criticalTranslations = {
     comment: 'Hello 👋',
     welcome: 'Welcome!',
     prefix: "I'm a ",
-    roles: ['Front-end Dev ', 'UI Designer ', 'Shopify Dev '],
+    roles: ['Full-Stack Dev ', 'Shopify Dev ', 'API & Automation Dev '],
   },
   es: {
     lang: 'es',
@@ -28,7 +28,7 @@ const criticalTranslations = {
     comment: 'Hola 👋',
     welcome: '¡Bienvenido(a)!',
     prefix: 'Soy un ',
-    roles: ['Dev Front-end ', 'UI Designer ', 'Dev Shopify '],
+    roles: ['Dev Full Stack ', 'Dev Shopify ', 'Desarrollador de APIs y Automatización '],
   },
 };
 

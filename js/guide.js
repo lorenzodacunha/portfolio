@@ -1,11 +1,11 @@
 
 const rotateWords = [
   "Portfólio Lorenzo da Cunha",
-  "Dev Front-End",
+  "Dev Full Stack",
   "Dev Shopify",
-  "UI Designer"
+  "Dev de APIs e Automações"
 ];
-const fullTitle = "Portfólio Lorenzo da Cunha Dev Front-End | Dev Shopify & UI Designer";
+const fullTitle = "Lorenzo Cunha | Desenvolvedor Full Stack Júnior & Shopify";
 const saudadeMessage = "Ei, volta aqui 👀";
 let wordIndex = 0;
 let titleTimeout;

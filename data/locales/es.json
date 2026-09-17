@@ -22,9 +22,9 @@
     "description": {
       "prefix": "Soy un ",
       "roles": [
-        "Dev Front-end ",
-        "UI Designer ",
-        "Dev Shopify "
+        "Dev Full Stack ",
+        "Dev Shopify ",
+        "Desarrollador de APIs y Automatización "
       ]
     }
   },
@@ -82,7 +82,10 @@
     "project": "Ir al proyecto",
     "share": "Compartir proyecto",
     "peek": "Espiar",
-    "no-link": "Enlace no disponible"
+    "no-link": "Enlace no disponible",
+    "share-text": "Conoce {{title}}, un proyecto del portafolio de Lorenzo Cunha.",
+    "link-copied": "Enlace copiado",
+    "copy-failed": "No fue posible copiar el enlace"
   },
   "review-item": {
     "source": "Fuente",
