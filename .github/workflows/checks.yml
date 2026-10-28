@@ -1,0 +1,44 @@
+# The Vercel Git integration builds and publishes the site on every push to main (set up in the Vercel dashboard).
+# This workflow scans the history for secrets on every push and, once a week (or by hand), asks Vercel for a fresh
+# build through a deploy hook, so the age in "Sobre mim", computed at build from PERSON_BIRTH_DATE, stays current.
+name: Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  secrets-scan:
+    name: Secret scan
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e # v3.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_ENABLE_COMMENTS: false
+
+  weekly-rebuild:
+    name: Weekly rebuild on Vercel
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call the Vercel deploy hook
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::warning::VERCEL_DEPLOY_HOOK is not set: no rebuild (see docs/desenvolvimento.md, Vercel)."
+            exit 0
+          fi
+          curl --fail --silent --show-error --request POST "$HOOK" > /dev/null
