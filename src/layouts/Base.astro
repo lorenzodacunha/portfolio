@@ -1,0 +1,79 @@
+---
+import { Font } from 'astro:assets';
+import Head from '../components/seo/Head.astro';
+import MeshScript from '../components/MeshScript.astro';
+import type { PageSeo } from '../lib/seo';
+import { LANG_TAG, toLocale, DEFAULT_LOCALE, LANG_KEY } from '../i18n';
+import '../styles/site/reset.css';
+import '../styles/design/lz-tokens.css';
+import '../styles/design/lz-components.css';
+import '../styles/design/portfolio.css';
+import '../styles/site/global.css';
+
+type Props = PageSeo;
+const lang = LANG_TAG[toLocale(Astro.currentLocale)];
+
+// First visit in the visitor's language: a pt-BR page (the default, at the root) sends visitors whose browser
+// prefers English or Spanish to the same page under /en/ or /es/, before anything paints. A language picked in the
+// switcher (localStorage, SiteNav.astro) wins over the browser's. Robots are never redirected, so search engines keep
+// every version, and the old ?id= / ?projeto= links are left to LegacyRedirect first. Not on the 404 (noindex).
+const autoLanguage = toLocale(Astro.currentLocale) === DEFAULT_LOCALE && !Astro.props.noindex;
+const autoLanguageCode = `(function () {
+  try {
+    if (/bot|crawl|spider|slurp|lighthouse|headless|preview/i.test(navigator.userAgent)) return;
+    if (/[?&](id|projeto)=/.test(location.search)) return;
+    var pick = localStorage.getItem(${JSON.stringify(LANG_KEY)});
+    if (!pick) {
+      var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+      for (var i = 0; i < list.length && !pick; i++) {
+        var l = String(list[i]).toLowerCase();
+        if (l.indexOf('pt') === 0) pick = 'pt-br';
+        else if (l.indexOf('en') === 0) pick = 'en';
+        else if (l.indexOf('es') === 0) pick = 'es';
+      }
+    }
+    if (pick === 'en' || pick === 'es') location.replace('/' + pick + location.pathname + location.search + location.hash);
+  } catch (e) {}
+})();`;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    {autoLanguage && <script is:inline set:html={autoLanguageCode} />}
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <Font cssVariable="--font-poppins" preload />
+    {/* Widescreen Mixed, the brand display face for titles, comes from the owner's Adobe Fonts kit (served by Adobe,
+        as its license requires). The kit does not hold the first paint: it is fetched as a preload and applied when it
+        arrives, so titles show briefly in the self-hosted fallback (Syncopate) and then switch. */}
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin />
+    {/* The hero's decorative marquee waits for the title font (or 3 s), so the font swap never shifts it (CLS):
+        once the kit stylesheet applies, both weights in use are requested and the class comes off when they load. */}
+    <script is:inline>
+      (function () {
+        var root = document.documentElement;
+        window.__titleKit = function () {};
+        if (!document.fonts || !document.fonts.load) return;
+        root.classList.add('title-font-pending');
+        var done = function () { clearTimeout(timer); root.classList.remove('title-font-pending'); };
+        var timer = setTimeout(done, 3000);
+        window.__titleKit = function () {
+          Promise.all([document.fonts.load('400 1em "widescreen-mixed"'), document.fonts.load('700 1em "widescreen-mixed"')]).then(done, done);
+        };
+      })();
+    </script>
+    <link rel="preload" as="style" href="https://use.typekit.net/rck3lnu.css" onload="this.onload=null;this.rel='stylesheet';window.__titleKit()" />
+    <noscript><link rel="stylesheet" href="https://use.typekit.net/rck3lnu.css" /></noscript>
+    <Font cssVariable="--font-syncopate" />
+    <Font cssVariable="--font-roboto-mono" />
+    <Head {...Astro.props} />
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+    <MeshScript />
+  </body>
+</html>

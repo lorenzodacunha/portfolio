@@ -1,0 +1,14 @@
+---
+// Case pages in English (/en/cases/<id>/) and Spanish (/es/cases/<id>/): the same component as the pt-BR pages.
+import CasePage from '../../../components/pages/CasePage.astro';
+import { getContent, orderedProjects } from '../../../lib/content';
+import { LOCALES, DEFAULT_LOCALE } from '../../../i18n';
+
+export async function getStaticPaths() {
+  const content = await getContent();
+  return LOCALES.filter((locale) => locale !== DEFAULT_LOCALE).flatMap((locale) =>
+    orderedProjects(content).map((project) => ({ params: { locale, slug: project.id } })),
+  );
+}
+---
+<CasePage id={Astro.params.slug} />

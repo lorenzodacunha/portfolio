@@ -1,0 +1,79 @@
+---
+// Store performance panel (PageSpeed Insights replica). On a case page it is rendered with the recorded run,
+// so the score and the metrics read without JavaScript; src/scripts/performance.ts then adds the tabs, the
+// gauge animation and the live measurement. In the modal it is the empty template the script fills per case.
+import type { PerfRun } from '../../lib/types';
+import { icon } from '../../lib/icons';
+import { useT, LANG_TAG, toLocale } from '../../i18n';
+import { METRIC_KEYS, metricRating, scoreRating, fill, statusText, type PsiText } from '../../scripts/performance';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  /** Recorded runs of the case (content.performance[id]). */
+  perf?: { mobile?: PerfRun; desktop?: PerfRun } | null;
+  /** Case id and live store address: the panel only exists for a store with a recorded run. */
+  id?: string;
+  url?: string;
+  /** The empty panel of the modal, filled on the client. */
+  template?: boolean;
+  /** h3 inside the modal (under the h2 title), h2 on the case page (under the h1). */
+  headingLevel?: 2 | 3;
+}
+
+const { perf, id = '', url = '', template = false, headingLevel = 3 } = Astro.props;
+const Heading = `h${headingLevel}`;
+const available = Boolean(url && perf && (perf.mobile || perf.desktop));
+const device = perf?.mobile || template ? 'mobile' : 'desktop';
+const run = !template && available ? perf?.[device] : undefined;
+// Recorded runs are shown in the store's time zone until the script re-renders them in the visitor's.
+const TIME_ZONE = 'America/Sao_Paulo';
+
+const text: PsiText = {
+  gauge: t('case.psi.gauge'),
+  last: t('case.psi.last'),
+  pending: t('case.psi.pending'),
+  live: t('case.psi.live'),
+  failed: t('case.psi.failed'),
+  metrics: Object.fromEntries(METRIC_KEYS.map((key) => [key, t(`case.psi.metrics.${key}`)])),
+};
+const caseData = template ? undefined : JSON.stringify({ id, url, perf: perf ?? null });
+const tabs = [
+  { key: 'mobile', label: t('case.psi.mobile'), icon: icon('smartphone') },
+  { key: 'desktop', label: t('case.psi.desktop'), icon: icon('monitor') },
+];
+---
+{(template || available) && (
+  <section class="psi" data-f="perf-box" aria-labelledby="psi-title" data-psi-text={JSON.stringify(text)} data-psi-case={caseData}>
+    <div class="psi__head">
+      <div>
+        <Heading id="psi-title" class="psi__title">{t('case.psi.title')}</Heading>
+        <p class="psi__status" data-f="psi-status" role="status" aria-live="polite" data-state={run ? 'recorded' : undefined}>{run ? statusText(text, 'recorded', run, TIME_ZONE, LANG_TAG[toLocale(Astro.currentLocale)]) : ''}</p>
+      </div>
+      <div class="psi__tabs" role="tablist" aria-label={t('case.psi.tabsLabel')}>
+        {tabs.map((tab) => (
+          <button type="button" class="psi__tab" role="tab" id={`psi-tab-${tab.key}`} aria-controls="psi-panel" aria-selected={String(tab.key === device)} tabindex={tab.key === device ? undefined : '-1'} data-ff={tab.key}><Fragment set:html={tab.icon} />{tab.label}</button>
+        ))}
+      </div>
+    </div>
+    <div class="psi__panel" id="psi-panel" role="tabpanel" aria-labelledby={`psi-tab-${device}`}>
+      <div class="psi__summary">
+        <div class="psi__gauge" data-f="psi-gauge" role="img" aria-label={run ? fill(text.gauge, { score: run.score }) : ''} data-rating={run ? scoreRating(run.score) : undefined}>
+          <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><circle class="psi__gauge-base" r="56" cx="60" cy="60" stroke-width="8"></circle><circle class="psi__gauge-arc" r="56" cx="60" cy="60" stroke-width="8" style={run ? `stroke-dasharray: ${run.score * 3.52} 352` : undefined}></circle></svg>
+          <span class="psi__score" data-f="psi-score" aria-hidden="true">{run?.score}</span>
+        </div>
+        <p class="psi__label">{t('case.psi.label')}</p>
+        <p class="psi__note">{t('case.psi.note')}</p>
+        <ul class="psi__legend" aria-label={t('case.psi.legendLabel')}><li class="is-fail"><span class="psi__shape"></span>0-49</li><li class="is-average"><span class="psi__shape"></span>50-89</li><li class="is-pass"><span class="psi__shape"></span>90-100</li></ul>
+      </div>
+      <div class="psi__metrics">
+        <p class="psi__metrics-title">{t('case.psi.metricsTitle')}</p>
+        <dl class="psi__grid" data-f="psi-metrics">
+          {run && METRIC_KEYS.filter((key) => run.metrics[key]).map((key) => (
+            <div class={`psi__metric is-${metricRating(run.metrics[key].score)}`}><dt><span class="psi__shape"></span><span translate="no">{text.metrics[key]}</span></dt><dd>{run.metrics[key].value}</dd></div>
+          ))}
+        </dl>
+      </div>
+    </div>
+  </section>
+)}

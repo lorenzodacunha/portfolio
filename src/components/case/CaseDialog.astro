@@ -1,0 +1,71 @@
+---
+// The case modal on the home page (dialog#case-dialog of the approved prototype): the case body (CaseView, empty
+// template) under the sticky bar, plus the custom scrollbar. Clicking a card (a[data-case], href /cases/<id>/)
+// opens it instead of navigating; src/scripts/case-dialog.ts fills it from the JSON below, keeps the address in
+// sync (/cases/<id>/, under /en/ or /es/ in those locales) and morphs the card's front shot into the first shot of the
+// studio. The case write-up is not in this JSON: the script reads it from the case page when the case opens.
+import type { SiteContent } from '../../lib/types';
+import { icon } from '../../lib/icons';
+import { orderedProjects, looks } from '../../lib/content';
+import { caseSeo, caseUrl } from '../../lib/seo';
+import { useT } from '../../i18n';
+import CaseView from './CaseView.astro';
+
+const t = useT(Astro.currentLocale);
+const locale = Astro.currentLocale;
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+const look = looks(content);
+const asset = (path: string) => (/^(https?:)?\//.test(path) ? path : '/' + path);
+
+const cases = orderedProjects(content).map((p) => {
+  const partner = p.partner ? content.profile.partners[p.partner] : undefined;
+  return {
+    id: p.id,
+    href: caseUrl(p.id, locale),
+    pageTitle: caseSeo(p, content, locale).title,
+    title: p.title,
+    platform: p.platform,
+    period: p.period,
+    badge: p.badge || '',
+    summary: p.summary,
+    adult: p.adult,
+    stack: p.stack,
+    url: p.url,
+    partner: partner ? { name: partner.name, logo: asset(partner.logo), w: partner.w, h: partner.h } : null,
+    role: p.role || '',
+    perf: p.performance && !p.offline ? content.performance[p.id] || null : null,
+    offline: Boolean(p.offline),
+    tone: look[p.id]?.tone ?? 'brand',
+    shape: look[p.id]?.shape ?? 'globo',
+    images: p.images.map((im) => ({ src: im.src, alt: im.alt, w: im.width || 1280, h: im.height || 720 })),
+  };
+});
+const json = (value: unknown) => JSON.stringify(value).replace(/</g, '\\u003c');
+const config = { partner: t('case.partner') };
+---
+<dialog id="case-dialog" class="pdp" aria-labelledby="pdp-title" scroll-lock>
+  <div class="pdp__scroll">
+    <div class="pdp__bar">
+      {/* "Início": the explicit way back to the home page, next to the crumbs (the modal changes the address). */}
+      <div class="pdp__bar-start">
+        <button type="button" class="btn-reset case-home" data-close><Fragment set:html={icon('prev')} /><span>{t('case.home')}</span></button>
+        <p class="pdp__crumbs"><span>{t('case.crumbsSection')}</span><span aria-hidden="true">/</span><span data-f="title"></span></p>
+      </div>
+      <button type="button" class="btn-reset pdp__close" data-close aria-label={t('case.close')}><Fragment set:html={icon('close')} /></button>
+    </div>
+    <CaseView content={content} headingLevel={2} />
+  </div>
+  <div class="pdp__rail" aria-hidden="true"><span class="pdp__rail-thumb"></span></div>
+</dialog>
+<script is:inline type="application/json" id="case-data" set:html={json(cases)}></script>
+<script is:inline type="application/json" id="case-config" set:html={json(config)}></script>
+
+<script>
+  import { initCaseDialog } from '../../scripts/case-dialog';
+  initCaseDialog();
+</script>

@@ -1,0 +1,46 @@
+---
+// Sobre mim: the brand band with the warped mesh, portrait, text and facts, and the sitting mascot
+// on the edge with the numbers band (positioned by the design CSS, .about-mascot).
+import type { SiteContent } from '../../lib/types';
+import { brandSafe } from '../../lib/text';
+import { meshSvg } from '../../lib/mesh-svg';
+import { useT } from '../../i18n';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+const { age } = content.profile;
+
+// The age only shows when the build knows it (PERSON_BIRTH_DATE); without it, the sentence drops it.
+const intro = age != null ? brandSafe(t('about.introWithAge')).replace('{age}', String(age)) : brandSafe(t('about.intro'));
+---
+<section id="sobre" aria-labelledby="sobre-title">
+  <div class="lz-band lz-band--brand" data-mesh="wave"><Fragment set:html={meshSvg('lz-band__mesh')} />
+    <div class="lz-band__content">
+      <div class="wrap about-title reveal-title"><h2 id="sobre-title" class="display type-display lz-section-title lz-section-title--on-brand"><span class="lz-section-title__one">{t('about.titleOne')}</span><span class="lz-section-title__two">{t('about.titleTwo')}</span></h2></div>
+    </div>
+  </div>
+  <div class="screen section-pad" style="min-height: auto;">
+    <div class="wrap about-grid">
+      <div class="about-photo reveal">
+        <img class="shape drift" src="/assets/shapes/linhas-diagonais.svg" alt="" width="300" height="300" loading="lazy" style="left: -80px; top: -40px; width: 300px; opacity: .7; --from: 100px; --to: -140px;">
+        <div style="position: relative; z-index: 2; max-width: 460px;">
+          <img class="lz-photo-blob" src="/assets/brand/retrato.webp" alt={t('about.photoAlt')} width="1000" height="1000" loading="lazy">
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p class="type-body" style="font-size: 22px; font-weight: 400;" set:html={intro}></p>
+        <p class="type-body" set:html={brandSafe(t('about.story'))}></p>
+        <p class="type-body" set:html={brandSafe(t('about.focus'))}></p>
+        <ul class="facts-row" aria-label={t('about.factsLabel')}>
+          {content.home.facts.map((fact) => <li>{fact}</li>)}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <img class="about-mascot" src="/assets/brand/mascote-sentado-sacola.webp" alt={t('about.mascotAlt')} width="483" height="760" loading="lazy">
+</section>

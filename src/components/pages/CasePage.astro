@@ -1,0 +1,48 @@
+---
+// One static page per case (/cases/<id>/, /en/cases/<id>/, /es/cases/<id>/): the same case body as the modal on the
+// home page, rendered on the server with an h1, readable without JavaScript, with a visible breadcrumb and prev/next
+// links to the neighbours' pages. The home page opens these same addresses in the modal.
+import Base from '../../layouts/Base.astro';
+import SiteNav from '../sections/SiteNav.astro';
+import SiteFooter from '../sections/SiteFooter.astro';
+import CaseView from '../case/CaseView.astro';
+import { getContent } from '../../lib/content';
+import { caseSeo } from '../../lib/seo';
+import { useT, localePath } from '../../i18n';
+import { icon } from '../../lib/icons';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  /** Project id (the slug). */
+  id: string;
+}
+
+const locale = Astro.currentLocale;
+const content = await getContent(locale);
+const project = content.projects.find((p) => p.id === Astro.props.id)!;
+const seo = caseSeo(project, content, locale);
+---
+<Base {...seo}>
+  <SiteNav />
+  <main id="conteudo" class="case-page">
+    <div class="case-page__inner" data-case-page={project.id}>
+      {/* Someone who opens a case from a link lands here: a visible way to the home page, above the breadcrumb. */}
+      <a class="case-home" href={localePath('/', locale)}><Fragment set:html={icon('prev')} /><span>{t('case.home')}</span></a>
+      <nav class="case-crumbs" aria-label={t('case.breadcrumbLabel')}>
+        <ol>
+          <li><a href={localePath('/', locale)}>{t('case.breadcrumbHome')}</a></li>
+          <li><a href={localePath('/#cases', locale)}>{t('case.crumbsSection')}</a></li>
+          <li><span aria-current="page" translate="no">{project.title}</span></li>
+        </ol>
+      </nav>
+      <CaseView content={content} project={project} headingLevel={1} />
+    </div>
+  </main>
+  <SiteFooter content={content} />
+</Base>
+
+<script>
+  import { initCasePage } from '../../scripts/case-dialog';
+  initCasePage();
+</script>

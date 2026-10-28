@@ -1,0 +1,110 @@
+/* Site layer over the approved design CSS (src/styles/design, copied from the prototype).
+   Rules here only connect the design to the real site: self-hosted fonts, smooth scrolling,
+   copy protection (harness rule 53) and the scroll lock of covering panels (harness rule 55). */
+
+/* Body fonts are self-hosted by Astro (astro.config.mjs). Titles use Widescreen Mixed from the Adobe Fonts kit
+   linked in Base.astro; Syncopate (self-hosted) is only the fallback when the kit does not load. */
+:root {
+  --font-body: var(--font-poppins), system-ui, sans-serif;
+  --font-title: "widescreen-mixed", var(--font-syncopate), sans-serif;
+}
+.psi__score { font-family: var(--font-roboto-mono), Menlo, Consolas, monospace; }
+
+/* Clicks on in-page links scroll smoothly; scroll-padding-top (design CSS) keeps the target clear of the nav.
+   Moving between pages (home, case pages) cross-fades instead of flashing white. */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+  @view-transition { navigation: auto; }
+}
+
+/* The card CTA's ::after covers the whole card so the image is clickable. The design system moves buttons on
+   :hover and :active with a transform, and a transform makes the CTA the containing block of that ::after:
+   the hit area shrank to the button mid-click and the click landed on the card instead of the link.
+   The card keeps its own hover (shots and CTA color), so the CTA itself stays still. */
+.product-card__cta:hover, .product-card__cta:active { transform: none; }
+
+/* Widescreen Mixed is wider than the Syncopate the prototype was measured with: below 360px "PROJETO" plus the
+   arrow of the footer CTA passed the content edge by 16px at the design's 40px minimum. */
+@media (max-width: 359px) {
+  .footer-cta { font-size: 34px; }
+}
+/* The hero name is the brand name mark (SVG, src/assets/brand/logo-name.svg) sized by the font-size the design
+   gives .hero-name (76, 56, 40px): 7.5em is the width the name had as text. It never depends on a web font,
+   so it cannot shift when the fonts load. */
+.hero-name__mark { display: block; width: 7.5em; max-width: 100%; height: auto; }
+/* The social links took the place of "Falar sobre um projeto" (Lorenzo, 27/10): beside "Ver cases em produção" on
+   desktop, on their own line under it on mobile. */
+@media (max-width: 767px) {
+  .hero .actions .social { flex-basis: 100%; }
+}
+/* The decorative marquee behind the hero is rendered only once the title font is ready (Base.astro sets the class):
+   laid out with the fallback, its words changed width on the swap and pushed each other (CLS 0.14). */
+.title-font-pending .ghost { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .ghost { animation: fade-in 600ms ease-out both; }
+}
+
+/* Sobre mim title (Lorenzo, 27/10): line-height 1 and both lines always at full opacity. The design faded the
+   second line in later than the first, so "MIM" looked lighter mid-screen; the two lines now rise together, without
+   the fade. Bigger on mobile: 56px instead of the design's 40px minimum, about the same share of the band as on
+   desktop; up to 932px the design's 6vw would be smaller than that, so the minimum holds there too. */
+.about-title .lz-section-title { font-size: clamp(56px, 6vw, 80px); line-height: 1; }
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .about-title.reveal-title .lz-section-title span { animation-name: title-rise; animation-range: entry 10% cover 35%; }
+  }
+}
+@keyframes title-rise { from { transform: translateY(70%); } to { transform: none; } }
+/* Sobre mim band on mobile (Lorenzo, 27/10): 176px instead of 270, the 112px title with 32px above and below.
+   The band no longer zooms in on scroll (the design's .settle wrapper is gone from About.astro). */
+@media (max-width: 767px) {
+  #sobre .lz-band { --band-height: 176px; }
+}
+
+/* Selects ("Ordenar" and the contact form, Lorenzo, 27/10): Chrome draws the native arrow against the right edge,
+   whatever the padding. The select draws no arrow of its own; a chevron sits 16px from the edge. */
+.select { position: relative; display: inline-flex; align-items: center; }
+.field .select { display: flex; }
+.select select { -webkit-appearance: none; appearance: none; padding-right: 44px; }
+.select__chevron { position: absolute; right: 16px; width: 16px; height: 16px; rotate: 90deg; pointer-events: none; }
+
+/* The portrait now declares its size (no layout shift): its height follows the width, as before. */
+.lz-photo-blob { height: auto; }
+
+/* Harness rule 53: the page is not copyable as a whole, only the parts someone has a reason to copy.
+   Visual deterrent only: the text stays in the HTML and screen readers read everything. */
+body { -webkit-user-select: none; user-select: none; }
+input, textarea, select, [contenteditable], .selectable { -webkit-user-select: text; user-select: text; }
+
+/* Harness rule 55: a panel that covers the page locks the scroll behind it while it is open.
+   The lock follows the [open] state, so every way of closing it also unlocks the page. */
+html:has(dialog[scroll-lock][open]) { overflow: hidden; scrollbar-gutter: stable; }
+
+/* Language switcher of the glass navigation (SiteNav.astro): flags in the bar (the language name is the link's
+   label and tooltip), flag over name in three columns at the bottom of the mobile panel. The current one is marked with
+   aria-current; the others are a little dimmed and light up on hover. */
+.lang-switch { display: flex; align-items: center; gap: 2px; }
+.lang-switch a { display: inline-grid; place-items: center; min-width: 36px; min-height: 32px; padding: 0 var(--space-2); border-radius: var(--radius-pill); color: var(--color-text-inverse); font-family: var(--font-body); text-decoration: none; opacity: .6; }
+.lang-switch a:hover { opacity: 1; }
+.lang-switch a[aria-current="true"] { opacity: 1; background: rgba(255, 255, 255, .16); }
+.lang-switch__flag { display: block; width: 21px; height: 14px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255, 255, 255, .25); }
+.lz-glass-nav__panel .lang-switch { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-1); padding-top: var(--space-4); border-top: 1px solid rgba(255, 255, 255, .2); }
+.lz-glass-nav__panel .lang-switch a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; min-height: 56px; padding: var(--space-2) var(--space-1); border-radius: var(--radius-button); font-size: 13px; font-weight: 400; }
+.lz-glass-nav__panel .lang-switch a[aria-current="true"] { font-weight: 700; }
+
+/* Header hover (Lorenzo, 28/10): the design colors every link #333 on hover, made for light backgrounds; on the dark
+   glass of the navigation that made the text disappear. Links and the mobile panel turn the light orange the design
+   uses on dark backgrounds, with the underline fading in; the contact button keeps its white text and darkens a little. */
+.lz-glass-nav__links a, .lz-glass-nav__panel nav a { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 6px; }
+.lz-glass-nav__links a:hover, .lz-glass-nav__panel nav a:hover, .lang-switch a:hover { color: var(--color-accent-light); text-decoration-color: currentColor; }
+.lz-glass-nav .lz-button--primary:hover { color: var(--button-primary-text); background: color-mix(in srgb, var(--button-primary-bg) 86%, #000); }
+
+/* Softer hovers (Lorenzo, 28/10): colors, backgrounds, borders, underlines and the small lift of buttons ease in over
+   300ms on the design's curve instead of switching at once (the design gave buttons 150ms on the lift only). */
+@media (prefers-reduced-motion: no-preference) {
+  a, button, select, .lz-button, .lz-icon-button, .filter {
+    transition-property: color, background-color, border-color, text-decoration-color, opacity, box-shadow, transform, translate;
+    transition-duration: 300ms;
+    transition-timing-function: var(--ease);
+  }
+}

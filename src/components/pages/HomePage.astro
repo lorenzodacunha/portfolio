@@ -1,0 +1,46 @@
+---
+// The home page, the same in every locale: / (pt-BR) renders it from src/pages/index.astro, /en/ and /es/ from
+// src/pages/[locale]/index.astro. Texts and content follow the locale of the URL (Astro.currentLocale).
+import Base from '../../layouts/Base.astro';
+import LegacyRedirect from '../../components/seo/LegacyRedirect.astro';
+import SiteNav from '../../components/sections/SiteNav.astro';
+import Hero from '../../components/sections/Hero.astro';
+import About from '../../components/sections/About.astro';
+import Trust from '../../components/sections/Trust.astro';
+import Cases from '../../components/sections/Cases.astro';
+import Services from '../../components/sections/Services.astro';
+import Catalog from '../../components/sections/Catalog.astro';
+import Reviews from '../../components/sections/Reviews.astro';
+import Path from '../../components/sections/Path.astro';
+import Contact from '../../components/sections/Contact.astro';
+import SiteFooter from '../../components/sections/SiteFooter.astro';
+import QuoteDialog from '../../components/sections/QuoteDialog.astro';
+import CaseDialog from '../../components/case/CaseDialog.astro';
+import { getContent } from '../../lib/content';
+import { homeSeo } from '../../lib/seo';
+
+const locale = Astro.currentLocale;
+const content = await getContent(locale);
+const seo = homeSeo(content, locale);
+---
+<Base {...seo}>
+  <LegacyRedirect slot="head" />
+  <link slot="head" rel="preload" as="image" href="/assets/brand/recorte.webp" imagesrcset="/assets/brand/recorte-480.webp 480w, /assets/brand/recorte.webp 910w" imagesizes="(max-width: 767px) 64vw, 480px" type="image/webp" fetchpriority="high" />
+  <SiteNav />
+  <main id="conteudo">
+    <Hero content={content} />
+    <div class="over">
+      <About content={content} />
+      <Trust content={content} />
+      <Cases content={content} />
+      <Services content={content} />
+      <Catalog content={content} />
+      <Reviews content={content} />
+      <Path content={content} />
+      <Contact content={content} />
+    </div>
+  </main>
+  <SiteFooter content={content} />
+  <CaseDialog content={content} />
+  <QuoteDialog content={content} />
+</Base>

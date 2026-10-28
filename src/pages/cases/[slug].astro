@@ -1,0 +1,11 @@
+---
+// Case pages in pt-BR (/cases/<id>/). /en/ and /es/ render the same component from src/pages/[locale]/cases/[slug].astro.
+import CasePage from '../../components/pages/CasePage.astro';
+import { getContent, orderedProjects } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const content = await getContent();
+  return orderedProjects(content).map((project) => ({ params: { slug: project.id } }));
+}
+---
+<CasePage id={Astro.params.slug} />

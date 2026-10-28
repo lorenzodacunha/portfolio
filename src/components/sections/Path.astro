@@ -1,0 +1,49 @@
+---
+// "Trajetória e formação": the spec sheet with jobs (content.experience) and studies (content.certificates),
+// prototype section#trajetoria.
+import { brandSafe } from '../../lib/text';
+import { useT } from '../../i18n';
+import type { SiteContent } from '../../lib/types';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+---
+<section id="trajetoria" class="block" aria-labelledby="trajetoria-title">
+  <div class="wrap">
+    <div class="path-head reveal">
+      <p class="eyebrow">{t('bottom.path.eyebrow')}</p>
+      <h2 id="trajetoria-title" class="path-lede" set:html={t('bottom.path.lede')} />
+      <p class="path-note">{t('bottom.path.note')}</p>
+    </div>
+    <div class="specs">
+      <div class="spec reveal">
+        <h3 class="spec__title">{t('bottom.path.jobs')}</h3>
+        <ol class="spec__list">
+          {content.experience.map((job) => (
+            <li class="spec__row spec__row--job">
+              <span class={`spec__logo spec__logo--${job.logo}`}><img src={job.src} alt="" width={job.width} height={job.height} loading="lazy" /></span>
+              <div class="spec__body"><p class="spec__name">{job.role}</p><p class="spec__where" set:html={brandSafe(job.where)} /></div>
+              <p class="spec__when"><time>{job.when}</time>{job.current && <span class="tag tag--live">{t('bottom.path.current')}</span>}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
+      <div class="spec reveal">
+        <h3 class="spec__title">{t('bottom.path.studies')}</h3>
+        <ul class="spec__list">
+          {content.certificates.map((study) => (
+            <li class="spec__row spec__row--study">
+              <div class="spec__body"><p class="spec__name" set:html={brandSafe(study.title)} /><p class="spec__where">{study.where}</p></div>
+              <p class="spec__when">{study.live ? <span class="tag tag--live">{study.status}</span> : study.status}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

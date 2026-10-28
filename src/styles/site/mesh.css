@@ -1,0 +1,17 @@
+/* Water ripple over the grids (src/scripts/mesh.ts). The script puts a canvas in a [data-mesh] host
+   while it is on screen and marks the host with .is-mesh-live; while it is live, the static grid
+   underneath hides, so there is never a double grid. Without the script none of this applies.
+   Opacity and z-index of the canvas are copied inline from the static grid it replaces. */
+.mesh-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+[data-mesh="wave"].is-mesh-live svg[class$="mesh"],
+[data-mesh="grid"].is-mesh-live::before {
+  visibility: hidden;
+}

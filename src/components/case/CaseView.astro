@@ -1,0 +1,109 @@
+---
+// The case body, one markup for both places it lives (same classes as the approved prototype, so the same CSS
+// applies): the modal on the home page (no project: the empty template src/scripts/case-dialog.ts fills per
+// case through the data-f hooks) and the static page of each case (one project, rendered on the server, readable
+// without JavaScript, with prev/next as real links to the neighbours' pages).
+// Order: studio with the shots and the buy column, the story band (the case write-up), the performance panel,
+// prev/next. In the modal the write-up comes from the case page itself when the case opens (src/scripts/case-dialog.ts).
+import type { Project, SiteContent } from '../../lib/types';
+import { icon } from '../../lib/icons';
+import { meshSvg } from '../../lib/mesh-svg';
+import { orderedProjects, looks } from '../../lib/content';
+import { useT, localePath } from '../../i18n';
+import PerformancePanel from './PerformancePanel.astro';
+import '../../styles/site/case.css';
+
+const t = useT(Astro.currentLocale);
+const locale = Astro.currentLocale;
+
+interface Props {
+  content: SiteContent;
+  /** The case to render; absent renders the empty template of the modal. */
+  project?: Project;
+  /** Level of the case title: 1 on the case page, 2 in the modal. Section headings sit one level below. */
+  headingLevel?: 1 | 2;
+}
+
+const { content, project: p, headingLevel = 2 } = Astro.props;
+const Title = `h${headingLevel}`;
+const template = !p;
+
+// Data paths in profile.json are relative to the site root ("assets/companies/aloft.webp").
+const asset = (path: string) => (/^(https?:)?\//.test(path) ? path : '/' + path);
+const all = orderedProjects(content);
+const look = looks(content);
+const index = p ? all.findIndex((x) => x.id === p.id) : -1;
+const prev = p ? all[(index - 1 + all.length) % all.length] : undefined;
+const next = p ? all[(index + 1) % all.length] : undefined;
+const partner = p?.partner ? content.profile.partners[p.partner] : undefined;
+const studioLook = p ? look[p.id] : undefined;
+// The write-up keeps its sections as h2 (src/data/projects.json); under the modal's h2 title they become h3.
+const description = p ? (headingLevel === 1 ? p.description : p.description.replace(/<(\/?)h2>/g, '<$1h3>')) : '';
+---
+<div class="pdp__main">
+  <div class="pdp__studio" data-f="studio" data-mesh="grid" data-tone={studioLook?.tone} data-adult={p?.adult ? '' : undefined}>
+    <img class="pdp__studio-shape" data-f="shape" src={studioLook ? `/assets/shapes/${studioLook.shape}.svg` : ''} alt="" width="96" height="96" />
+    <ul class="pdp__shots" data-f="shots" tabindex="0" aria-label={t('case.shotsLabel')}>
+      {p?.images.map((im, k) => (
+        <li class="pdp__shot"><span class="pdp__shot-frame"><img src={im.src} alt={im.alt} width={im.width || 1280} height={im.height || 720} loading={k > 0 ? 'lazy' : undefined} fetchpriority={k === 0 ? 'high' : undefined} /></span></li>
+      ))}
+    </ul>
+    <div class="pdp__shots-progress" aria-hidden="true"><span class="pdp__shots-thumb"></span></div>
+    {/* Adult projects (+18): the shots stay blurred behind this notice until the visitor confirms, as on the previous site. */}
+    {(template || p?.adult) && (
+      <div class="pdp__adult" data-f="adult-gate" role="group" aria-labelledby="pdp-adult-title" hidden={template || undefined}>
+        <p class="pdp__adult-title" id="pdp-adult-title">{t('case.adultTitle')}</p>
+        <p>{t('case.adultText')}</p>
+        <button type="button" class="button type-button lz-button lz-button--primary" data-adult-ok>{t('case.adultConfirm')}</button>
+      </div>
+    )}
+  </div>
+  <div class="pdp__buy">
+    {(template || p?.badge) && <span class="product-card__badge pdp__badge" data-f="badge">{p?.badge}</span>}
+    {/* Only the two logos show; screen readers get the pair as text ("Lorenzo × Aloft") instead of the images. */}
+    {(template || partner) && (
+      <p class="pdp__partner" data-f="partner-box"><span class="pdp__partner-logos"><img src="/assets/brand/logo-icone.svg" alt="" width="80" height="32" /><span aria-hidden="true">×</span><img data-f="partner-logo" src={partner ? asset(partner.logo) : ''} alt="" width={partner?.w} height={partner?.h} /></span><span class="sr" data-f="partner-name" translate="no">{partner ? t('case.partner').replace('{name}', partner.name) : ''}</span></p>
+    )}
+    <Title id="pdp-title" class="pdp__title" data-f="title" translate="no">{p?.title}</Title>
+    <p class="pdp__summary" data-f="summary">{p?.summary}</p>
+    <dl class="pdp__facts">
+      {(template || p?.role) && <div class="pdp__fact pdp__fact--role" data-f="role-box"><dt>{t('case.role')}</dt><dd data-f="role">{p?.role}</dd></div>}
+      <div class="pdp__fact"><dt>{t('case.platform')}</dt><dd data-f="platform" translate="no">{p?.platform}</dd></div>
+      <div class="pdp__fact"><dt>{t('case.period')}</dt><dd data-f="period">{p?.period}</dd></div>
+      <div class="pdp__fact pdp__fact--wide"><dt>{t('case.stack')}</dt><dd><ul class="chips" data-f="stack">{p?.stack.map((s) => <li translate="no">{s}</li>)}</ul></dd></div>
+    </dl>
+    <div class="pdp__actions">
+      {(template || (p?.url && !p.offline)) && <a class="button type-button lz-button lz-button--primary link-out pdp__live" data-f="url" href={p?.url || '#'} target="_blank" rel="noopener">{t('case.live')}<Fragment set:html={icon('out')} /></a>}
+      {/* A store that is no longer online (projects.json, offline): no link, the same button blocked, and a tooltip on
+          hover, focus or tap that says why. It stays focusable (aria-disabled, not disabled) so the tooltip can be read. */}
+      {(template || (p?.url && p.offline)) && (
+        <span class="pdp__live-off" data-f="url-off" hidden={template || undefined}>
+          <button type="button" class="button type-button lz-button lz-button--primary pdp__live pdp__live--off" aria-disabled="true" aria-describedby="pdp-live-tip">{t('case.live')}</button>
+          <span class="pdp__tip" id="pdp-live-tip" role="tooltip">{t('case.liveOff')}</span>
+        </span>
+      )}
+      {template
+        ? <a class="lz-button lz-button--text type-button" href={localePath('/#contato', locale)} data-close>{t('case.similar')}</a>
+        : <a class="lz-button lz-button--text type-button" href={localePath('/#contato', locale)}>{t('case.similar')}</a>}
+    </div>
+  </div>
+</div>
+<section class="pdp__story" data-mesh="wave" data-f="story" aria-label={t('case.storyLabel')} hidden={(template || !description) || undefined}>
+  <Fragment set:html={meshSvg('pdp__story-mesh')} />
+  <div class="pdp__description" data-f="description" set:html={description}></div>
+</section>
+{/* The Lighthouse panel shows only on cases marked for it (projects.json, performance) with a store online. */}
+{(template || (p?.performance && !p.offline)) && <PerformancePanel template={template} id={p?.id} url={p?.url} perf={p ? content.performance[p.id] : undefined} headingLevel={headingLevel === 1 ? 2 : 3} />}
+<nav class="pdp__nav" aria-label={t('case.navLabel')}>
+  {p && prev && next ? (
+    <>
+      <a class="btn-reset pdp__prev" href={localePath(`/cases/${prev.id}/`, locale)}><Fragment set:html={icon('prev')} /><span class="pdp__nav-text"><small>{t('case.prev')}</small><strong translate="no">{prev.title}</strong></span></a>
+      <a class="btn-reset pdp__next" href={localePath(`/cases/${next.id}/`, locale)}><span class="pdp__next-media" data-tone={look[next.id]?.tone} data-adult={next.adult ? '' : undefined}><img src={next.images[0]?.src} alt="" width="1280" height="720" loading="lazy" /></span><span class="pdp__nav-text"><small>{t('case.next')}</small><strong translate="no">{next.title}</strong></span><Fragment set:html={icon('arrow', 'icon pdp__next-arrow')} /></a>
+    </>
+  ) : (
+    <>
+      <button type="button" class="btn-reset pdp__prev" data-step="-1"><Fragment set:html={icon('prev')} /><span class="pdp__nav-text"><small>{t('case.prev')}</small><strong data-f="prev" translate="no"></strong></span></button>
+      <button type="button" class="btn-reset pdp__next" data-step="1"><span class="pdp__next-media" data-f="next-media"><img data-f="next-img" src="" alt="" width="1280" height="720" loading="lazy" /></span><span class="pdp__nav-text"><small>{t('case.next')}</small><strong data-f="next" translate="no"></strong></span><Fragment set:html={icon('arrow', 'icon pdp__next-arrow')} /></button>
+    </>
+  )}
+</nav>

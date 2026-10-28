@@ -1,0 +1,89 @@
+---
+// Search and share tags of every page: title, description, robots, canonical, hreflang, Open Graph,
+// Twitter card and one JSON-LD @graph. Base.astro passes the page's PageSeo (src/lib/seo.ts) here.
+import { i18n } from 'astro:config/server';
+import { DEFAULT_OG } from '../../lib/seo';
+import { useT, toLocale, OG_LOCALE, LOCALES } from '../../i18n';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  imageAlt?: string;
+  /** Real size of `image`; without them the default share image size is assumed only for the default image. */
+  imageWidth?: number;
+  imageHeight?: number;
+  type?: 'website' | 'article' | 'profile';
+  jsonLd?: object[];
+  noindex?: boolean;
+}
+
+const { title, description, image, imageAlt, imageWidth, imageHeight, type = 'website', jsonLd = [], noindex = false } = Astro.props;
+const site = Astro.site!;
+const abs = (path: string) => new URL(path, site).href;
+
+// Canonical: absolute, with the trailing slash the site uses everywhere (trailingSlash: 'always').
+const path = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonical = abs(path);
+
+// hreflang from the i18n config: one alternate per locale, plus x-default on the default locale.
+// The default locale lives at the root; the others under /<locale>/ (routing.prefixDefaultLocale: false).
+const bcp47 = (code: string) => code.replace(/-([a-z]+)$/i, (_, region: string) => `-${region.toUpperCase()}`);
+const locales = (i18n?.locales ?? []).map((l) => (typeof l === 'string' ? { path: l, code: l } : { path: l.path, code: l.codes[0] }));
+const defaultLocale = i18n?.defaultLocale ?? 'pt-br';
+const current = locales.find((l) => l.path !== defaultLocale && path.startsWith(`/${l.path}/`));
+const rest = current ? path.slice(current.path.length + 1) : path;
+const localeUrl = (localePath: string) => abs(localePath === defaultLocale ? rest : `/${localePath}${rest}`);
+const alternates = locales.map((l) => ({ hreflang: bcp47(l.code), href: localeUrl(l.path) }));
+// og:locale wants language_TERRITORY (pt_BR, en_US, es_ES); the other locales are its alternates.
+const ogLocale = OG_LOCALE[toLocale(Astro.currentLocale)];
+const ogAlternates = LOCALES.filter((l) => l !== toLocale(Astro.currentLocale)).map((l) => OG_LOCALE[l]);
+
+// Share image: the page's own, or the default one (1200 by 630).
+const ogImage = image ? abs(image) : abs(DEFAULT_OG.src);
+const ogAlt = image ? imageAlt ?? title : t('seo.home.imageAlt');
+const ogWidth = image ? imageWidth : DEFAULT_OG.width;
+const ogHeight = image ? imageHeight : DEFAULT_OG.height;
+const ext = ogImage.split('?')[0].split('.').pop()?.toLowerCase();
+const ogMime = ({ jpg: 'image/jpeg', jpeg: 'image/jpeg', png: 'image/png', webp: 'image/webp' } as Record<string, string>)[ext ?? ''];
+
+const robots = noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+
+// One @graph per page. "<" is escaped so no string in the data can close the script tag.
+const ld = jsonLd.length
+  ? JSON.stringify({ '@context': 'https://schema.org', '@graph': jsonLd })
+      .replace(/</g, '\\u003c')
+      .replace(/\u2028/g, '\\u2028')
+      .replace(/\u2029/g, '\\u2029')
+  : '';
+---
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="robots" content={robots} />
+{!noindex && <link rel="canonical" href={canonical} />}
+{!noindex && alternates.map((alt) => <link rel="alternate" hreflang={alt.hreflang} href={alt.href} />)}
+{!noindex && <link rel="alternate" hreflang="x-default" href={localeUrl(defaultLocale)} />}
+<link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+
+<meta property="og:site_name" content={t('seo.siteName')} />
+<meta property="og:locale" content={ogLocale} />
+{!noindex && ogAlternates.map((alt) => <meta property="og:locale:alternate" content={alt} />)}
+<meta property="og:type" content={type} />
+{!noindex && <meta property="og:url" content={canonical} />}
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImage} />
+{ogMime && <meta property="og:image:type" content={ogMime} />}
+{ogWidth && <meta property="og:image:width" content={String(ogWidth)} />}
+{ogHeight && <meta property="og:image:height" content={String(ogHeight)} />}
+<meta property="og:image:alt" content={ogAlt} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+<meta name="twitter:image:alt" content={ogAlt} />
+
+{ld && <script type="application/ld+json" is:inline set:html={ld} />}

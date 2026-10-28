@@ -1,0 +1,33 @@
+---
+// Redirects of the old site's links (spec 3.5). The old portfolio opened projects on the home with
+// ?id=<legacyId> or ?projeto=<legacy slug>. A tiny script in the home head sends them to /cases/<id>/ before the
+// page renders, so the map follows the projects without a redirect list in the host's config (vercel.json).
+// Unknown projects go to the catalog (/#projetos). The map is built here, at build time, from the projects.
+// Only the pt-BR home has it: the old links never pointed at /en/ or /es/.
+import { getContent } from '../../lib/content';
+import { caseUrl, legacySlug } from '../../lib/seo';
+import { toLocale, DEFAULT_LOCALE } from '../../i18n';
+
+const enabled = toLocale(Astro.currentLocale) === DEFAULT_LOCALE;
+
+const { projects } = await getContent();
+const byId: Record<string, string> = {};
+const bySlug: Record<string, string> = {};
+for (const p of projects) {
+  if (p.legacyId) byId[p.legacyId] = caseUrl(p.id);
+  bySlug[legacySlug(p.title)] = caseUrl(p.id);
+}
+const map = JSON.stringify({ i: byId, s: bySlug }).replace(/</g, '\\u003c');
+const code = `
+(function () {
+  var query = new URLSearchParams(location.search);
+  var id = query.get('id');
+  var slug = query.get('projeto');
+  if (!id && !slug) return;
+  var map = ${map};
+  var own = function (table, key) { return key && Object.prototype.hasOwnProperty.call(table, key) ? table[key] : ''; };
+  location.replace(own(map.i, id) || own(map.s, slug && slug.toLowerCase()) || '/#projetos');
+})();
+`;
+---
+{enabled && <script is:inline set:html={code} />}

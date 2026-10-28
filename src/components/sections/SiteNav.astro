@@ -1,0 +1,93 @@
+---
+// Skip link and the glass navigation bar (LZ.GlassNav), shared by the home and the case pages.
+// Links point at the home sections (/#sobre, /en/#sobre) so they also work from /cases/<id>/.
+// The language switcher (flags) links to this same page in each locale; on the home it follows the case open in the
+// modal (the case script announces address changes with the "lz:url" event). A click saves the choice, which the
+// automatic redirect of Base.astro respects from then on.
+import { icon } from '../../lib/icons';
+import { useT, localePath, alternatePaths, toLocale, LOCALES, LANG_TAG, FLAG, LANG_KEY } from '../../i18n';
+
+const t = useT(Astro.currentLocale);
+const locale = toLocale(Astro.currentLocale);
+
+const links: [string, string][] = [
+  [t('nav.about'), localePath('/#sobre', locale)],
+  [t('nav.cases'), localePath('/#cases', locale)],
+  [t('nav.services'), localePath('/#servicos', locale)],
+];
+const contact = localePath('/#contato', locale);
+// The 404 exists only once (Vercel serves one 404.html): there the switcher goes to each language's home.
+const notFound = /^\/404\/?$/.test(Astro.url.pathname);
+const alternates = notFound ? Object.fromEntries(LOCALES.map((loc) => [loc, localePath('/', loc)])) as Record<(typeof LOCALES)[number], string> : alternatePaths(Astro.url.pathname);
+const languages = LOCALES.map((loc) => ({ loc, href: alternates[loc], flag: `/assets/flags/${FLAG[loc]}.svg`, name: t(`lang.${loc}`), tag: LANG_TAG[loc] }));
+---
+<a class="skip" href="#conteudo">{t('nav.skip')}</a>
+<header class="lz-glass-nav" data-lang-key={LANG_KEY}>
+  <div class="lz-glass-nav__bar">
+    <nav class="lz-glass-nav__links" aria-label={t('nav.mainLabel')}>{links.map(([label, href]) => <a href={href}>{label}</a>)}</nav>
+    <nav class="lang-switch" aria-label={t('lang.label')}>
+      {languages.map((l) => <a href={l.href} hreflang={l.tag} lang={l.tag} aria-label={l.name} title={l.name} aria-current={l.loc === locale ? 'true' : undefined} data-locale={l.loc}><img class="lang-switch__flag" src={l.flag} alt="" width="21" height="14" /></a>)}
+    </nav>
+    <a href={contact} class="button type-button lz-button lz-button--primary lz-glass-nav__cta">{t('nav.cta')}</a>
+  </div>
+  <button type="button" class="lz-glass-nav__toggle" aria-expanded="false" aria-controls="lz-glass-menu" aria-label={t('nav.open')} data-label-open={t('nav.open')} data-label-close={t('nav.close')}><Fragment set:html={icon('menu', 'nav-icon')} /></button>
+  <div id="lz-glass-menu" class="lz-glass-nav__panel" hidden>
+    <nav aria-label={t('nav.menuLabel')}>{links.map(([label, href]) => <a href={href}>{label}</a>)}</nav>
+    <nav class="lang-switch lang-switch--panel" aria-label={t('lang.label')}>
+      {languages.map((l) => <a href={l.href} hreflang={l.tag} lang={l.tag} aria-current={l.loc === locale ? 'true' : undefined} data-locale={l.loc} translate="no"><img class="lang-switch__flag" src={l.flag} alt="" width="21" height="14" />{l.name}</a>)}
+    </nav>
+    <a href={contact} class="button type-button lz-button lz-button--primary">{t('nav.cta')}</a>
+  </div>
+</header>
+
+<script>
+  // Mobile menu (LZ.GlassNav): the toggle opens and closes the panel; a link in it or Escape closes it.
+  // The icon swaps between the menu and close paths of src/lib/icons.ts (ICON.menu, ICON.close).
+  const MENU_PATH = 'M4 7h16M4 12h16M4 17h16';
+  const CLOSE_PATH = 'M6 6l12 12M18 6 6 18';
+
+  const nav = document.querySelector<HTMLElement>('.lz-glass-nav');
+  const toggle = nav?.querySelector<HTMLButtonElement>('.lz-glass-nav__toggle');
+  const panel = document.getElementById('lz-glass-menu');
+
+  if (nav && toggle && panel) {
+    const setMenu = (open: boolean) => {
+      nav.classList.toggle('lz-glass-nav--open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', (open ? toggle.dataset.labelClose : toggle.dataset.labelOpen) ?? '');
+      toggle.querySelector('path')?.setAttribute('d', open ? CLOSE_PATH : MENU_PATH);
+      panel.hidden = !open;
+    };
+    toggle.addEventListener('click', () => setMenu(panel.hidden));
+    panel.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+    nav.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !panel.hidden) {
+        setMenu(false);
+        toggle.focus();
+      }
+    });
+  }
+
+  // Language links follow the address: the same page (or the case open in the modal) in each locale.
+  const syncLanguages = () => {
+    const base = location.pathname.replace(/^\/(en|es)(?=\/|$)/, '') || '/';
+    document.querySelectorAll<HTMLAnchorElement>('.lang-switch a[data-locale]').forEach((a) => {
+      const loc = a.dataset.locale;
+      a.href = loc === 'pt-br' ? base : `/${loc}${base}`;
+    });
+  };
+  window.addEventListener('lz:url', syncLanguages);
+  window.addEventListener('popstate', syncLanguages);
+
+  // A language picked here is kept: the automatic redirect (Base.astro) follows it instead of the browser's language.
+  const langKey = nav?.dataset.langKey || 'lz-lang';
+  document.querySelectorAll<HTMLAnchorElement>('.lang-switch a[data-locale]').forEach((a) =>
+    a.addEventListener('click', () => {
+      try {
+        localStorage.setItem(langKey, a.dataset.locale || '');
+      } catch {
+        /* storage blocked: the choice lasts for this visit only */
+      }
+    }),
+  );
+</script>

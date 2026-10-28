@@ -1,0 +1,165 @@
+---
+// "Falar sobre um projeto": channels, socials, the waving mascot and the contact form (prototype section#contato).
+// The form validates in the browser and opens Lorenzo's WhatsApp with the message written from the fields;
+// nothing is sent to a server.
+import Socials from '../Socials.astro';
+import { icon } from '../../lib/icons';
+import { meshSvg } from '../../lib/mesh-svg';
+import { useT } from '../../i18n';
+import type { SiteContent } from '../../lib/types';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+const { email, phone, phoneHref, whatsapp } = content.profile.contact;
+const required = t('bottom.contact.required');
+---
+<section id="contato" class="contact" aria-labelledby="contato-title" data-mesh="wave">
+  <Fragment set:html={meshSvg('contact__mesh')} />
+  <div class="wrap contact__grid">
+    <div class="contact__intro reveal">
+      <h2 id="contato-title"><span class="display type-display lz-section-title lz-section-title--on-brand section-head__title"><span class="lz-section-title__one">{t('bottom.contact.titleOne')}</span><span class="lz-section-title__two">{t('bottom.contact.titleTwo')}</span></span></h2>
+      <p class="contact__lede">{t('bottom.contact.lede')}</p>
+      <ul class="contact__channels">
+        <li><a class="contact__channel selectable" href={`mailto:${email}`}><Fragment set:html={icon('mail')} /><span>{email}</span></a></li>
+        <li><a class="contact__channel selectable" href={phoneHref}><Fragment set:html={icon('phone')} /><span class="tnum">{phone}</span></a></li>
+      </ul>
+      <div class="contact__social"><Socials links={content.profile.links} /></div>
+      <span class="mascot contact__photo" role="img" aria-label={t('bottom.contact.mascot')}></span>
+    </div>
+    <form class="form lz-card reveal" action="#contato" method="post" aria-label={t('bottom.contact.formLabel')} novalidate data-whatsapp={whatsapp} data-greeting={t('bottom.contact.greeting')} data-opened={t('bottom.contact.opened')} data-open-link={t('bottom.contact.openLink')}>
+      <div class="field">
+        <label for="f-nome">{t('bottom.contact.name')} <span class="req">{required}</span></label>
+        <input id="f-nome" name="nome" type="text" autocomplete="name" required aria-describedby="f-nome-erro" />
+        <p class="field__error" id="f-nome-erro" hidden>{t('bottom.contact.nameError')}</p>
+      </div>
+      <div class="field">
+        <label for="f-email">{t('bottom.contact.email')} <span class="req">{required}</span></label>
+        <input id="f-email" name="email" type="email" autocomplete="email" spellcheck="false" required placeholder={t('bottom.contact.emailPlaceholder')} aria-describedby="f-email-erro" />
+        <p class="field__error" id="f-email-erro" hidden>{t('bottom.contact.emailError')}</p>
+      </div>
+      <div class="field">
+        <label for="f-empresa">{t('bottom.contact.company')}</label>
+        <input id="f-empresa" name="empresa" type="text" autocomplete="organization" />
+      </div>
+      <div class="field">
+        <label for="f-url">{t('bottom.contact.url')}</label>
+        <input id="f-url" name="url" type="url" inputmode="url" spellcheck="false" autocomplete="url" placeholder={t('bottom.contact.urlPlaceholder')} />
+      </div>
+      <div class="field">
+        <label for="f-tipo">{t('bottom.contact.need')}</label>
+        <span class="select">
+          <select id="f-tipo" name="tipo">
+            <option>{t('bottom.contact.needDesign')}</option>
+            <option>{t('bottom.contact.needTheme')}</option>
+            <option>{t('bottom.contact.needApps')}</option>
+            <option>{t('bottom.contact.needPerformance')}</option>
+            <option>{t('bottom.contact.needMigration')}</option>
+            <option>{t('bottom.contact.needOther')}</option>
+          </select>
+          <Fragment set:html={icon('next', 'icon select__chevron')} />
+        </span>
+      </div>
+      <div class="field">
+        <label for="f-prazo">{t('bottom.contact.deadline')}</label>
+        <span class="select">
+          <select id="f-prazo" name="prazo">
+            <option>{t('bottom.contact.deadlineMonth')}</option>
+            <option>{t('bottom.contact.deadlineQuarter')}</option>
+            <option>{t('bottom.contact.deadlineLonger')}</option>
+            <option>{t('bottom.contact.deadlineUnknown')}</option>
+          </select>
+          <Fragment set:html={icon('next', 'icon select__chevron')} />
+        </span>
+      </div>
+      <div class="field field--wide">
+        <label for="f-objetivo">{t('bottom.contact.goal')}</label>
+        <textarea id="f-objetivo" name="objetivo" aria-describedby="f-objetivo-ajuda"></textarea>
+        <small id="f-objetivo-ajuda">{t('bottom.contact.goalHelp')}</small>
+      </div>
+      <div class="field--wide form__actions">
+        <button type="submit" class="button type-button lz-button lz-button--primary">{t('bottom.contact.submit')}</button>
+        <p class="form__status selectable" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const section = document.getElementById('contato');
+
+  // Contact mascot: starts waving when the section comes into view and keeps looping.
+  const mascot = section?.querySelector<HTMLElement>('.mascot');
+  if (section && mascot && !reduced && 'IntersectionObserver' in window) {
+    const seen = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) { mascot.classList.add('is-waving'); seen.disconnect(); }
+    }, { threshold: 0.35 });
+    seen.observe(section);
+  }
+
+  // Form: error as text next to the field and focus on the first error. A valid form opens WhatsApp with the
+  // message; the data stays in the fields, in case WhatsApp did not open.
+  const form = section?.querySelector<HTMLFormElement>('.form');
+  if (form) {
+    const status = form.querySelector<HTMLElement>('.form__status')!;
+    const required = Array.from(form.querySelectorAll<HTMLInputElement>('input[required]'));
+
+    const check = (input: HTMLInputElement) => {
+      const ok = input.checkValidity();
+      const err = document.getElementById(input.id + '-erro');
+      input.setAttribute('aria-invalid', String(!ok));
+      if (err) err.hidden = ok;
+      return ok;
+    };
+    // A field left by a click is checked after that click: its error appearing on mousedown pushes the send button
+    // down and the click would land outside it.
+    let pressing = false;
+    const pending = new Set<HTMLInputElement>();
+    form.addEventListener('pointerdown', () => { pressing = true; });
+    window.addEventListener('pointerup', () => {
+      pressing = false;
+      window.setTimeout(() => { pending.forEach((input) => { if (input.value) check(input); }); pending.clear(); });
+    });
+    required.forEach((input) => input.addEventListener('blur', () => {
+      if (!input.value) return;
+      if (pressing) pending.add(input);
+      else check(input);
+    }));
+
+    // The message: the greeting, then "*Label:* value" for each filled field, in the order of the form, with the
+    // labels the visitor saw (without "(obrigatório)"). The goal, the long one, comes last in its own paragraph.
+    const message = () => {
+      const lines: string[] = [];
+      let goal = '';
+      form.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>('input, select, textarea').forEach((control) => {
+        const value = control.value.trim();
+        if (!value) return;
+        const label = control.labels?.[0]?.firstChild?.textContent?.trim() || control.name;
+        if (control instanceof HTMLTextAreaElement) goal = `*${label}:*\n${value}`;
+        else lines.push(`*${label}:* ${value}`);
+      });
+      return [form.dataset.greeting, lines.join('\n'), goal].filter(Boolean).join('\n\n');
+    };
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const bad = required.filter((input) => !check(input));
+      if (bad.length) { status.textContent = ''; bad[0].focus(); return; }
+      const url = `https://wa.me/${form.dataset.whatsapp}?text=${encodeURIComponent(message())}`;
+      // Opened right in the submit (a user gesture), so the browser does not block the new tab. The status keeps a
+      // link to the same conversation for when it did not open.
+      window.open(url, '_blank', 'noopener');
+      const link = document.createElement('a');
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener';
+      link.textContent = form.dataset.openLink || '';
+      status.replaceChildren(`${form.dataset.opened} `, link);
+    });
+  }
+</script>

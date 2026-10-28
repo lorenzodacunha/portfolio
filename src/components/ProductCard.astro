@@ -1,0 +1,51 @@
+---
+// The project card (the "product card"): one markup for the featured rail and the catalog grid.
+// The CTA is a real link to the case page; on the home the case view intercepts it (data-case) and
+// opens the modal. Its ::after (design CSS) stretches over the whole card, so the card is the click target.
+import type { Project, Tone } from '../lib/types';
+import { getContent } from '../lib/content';
+import { shortPlatform } from '../lib/text';
+import { useT, localePath } from '../i18n';
+import '../styles/site/cards.css';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  project: Project;
+  tone: Tone;
+  shape: string;
+  catalog?: boolean;
+}
+
+const { project, tone, shape, catalog = false } = Astro.props;
+const { profile } = await getContent(Astro.currentLocale);
+const partner = project.partner ? profile.partners[project.partner] : undefined;
+const [front, back] = project.images;
+// Local project images have a 640px variant for the card (public/assets/projects/*-640.webp); remote ones do not.
+const small = (src: string) => (src.startsWith('/assets/projects/') ? src.replace(/\.webp$/, '-640.webp') : src);
+const visible = project.stack.slice(0, 3);
+const rest = project.stack.length - visible.length;
+---
+<li class="product-card" data-tone={tone} data-type={catalog ? project.type : undefined} data-sort={catalog ? project.sort : undefined} data-example={project.example ? '' : undefined} data-adult={project.adult ? '' : undefined}>
+  <div class="product-card__media" data-mesh="grid">
+    {project.badge && <span class="product-card__badge">{project.badge}</span>}
+    {/* Adult projects (+18): the shots stay blurred until the visitor confirms in the case (src/scripts/case-dialog.ts). */}
+    {project.adult && <span class="product-card__badge product-card__badge--adult">{t('case.adultBadge')}</span>}
+    {partner && <span class="product-card__badge product-card__badge--partner" translate="no">{t('card.partner').replace('{name}', partner.name)}</span>}
+    <img class="product-card__shape" src={`/assets/shapes/${shape}.svg`} alt="" width="96" height="96" loading="lazy">
+    {back && <span class="shot shot--back"><img src={small(back.src)} alt="" width={back.width} height={back.height} loading="lazy"></span>}
+    {front && <span class="shot shot--front" data-case-shot><img src={front.src} srcset={`${small(front.src)} 640w, ${front.src} 1280w`} sizes="(max-width: 767px) 80vw, 340px" alt={front.alt} width={front.width} height={front.height} loading="lazy"></span>}
+  </div>
+  <div class="product-card__info">
+    <h3 class="product-card__title" translate="no">{project.title}</h3>
+    <p class="product-card__price"><span translate="no">{shortPlatform(project.platform)}</span></p>
+    <p class="product-card__summary">{project.summary}</p>
+    <ul class="product-card__swatches" aria-label={t('card.stackLabel')}>{visible.map((s) => <li translate="no">{s}</li>)}{rest > 0 && <li class="more" aria-label={t('card.more').replace('{n}', String(rest))}>+{rest}</li>}</ul>
+  </div>
+  <a class="button type-button lz-button lz-button--outline product-card__cta" href={localePath(`/cases/${project.id}/`, Astro.currentLocale)} data-case={project.id}>{t('card.cta')}<span class="sr"> {project.title}</span></a>
+</li>
+
+<script>
+  // Bundled once per page however many cards render.
+  import '../scripts/card-cascade';
+</script>

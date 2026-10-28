@@ -1,0 +1,54 @@
+---
+// Site footer (prototype footer.site-footer), shared by the home and the case pages: in-page links point at
+// the home (/#sobre) so they work from /cases/<id>/. No Aloft seal: Gabriel's decision for this personal site (Q3).
+import Socials from '../Socials.astro';
+import { icon } from '../../lib/icons';
+import { brandSafe } from '../../lib/text';
+import { useT, localePath } from '../../i18n';
+import type { SiteContent } from '../../lib/types';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+const year = String(new Date().getFullYear());
+const nav = [
+  ['about', '/#sobre'],
+  ['cases', '/#cases'],
+  ['services', '/#servicos'],
+  ['projects', '/#projetos'],
+  ['reviews', '/#depoimentos'],
+  ['contact', '/#contato'],
+] as const;
+---
+<footer class="site-footer on-dark">
+  <div class="wrap footer-inner">
+    <div class="footer-top">
+      <p class="footer-kicker" set:html={brandSafe(t('bottom.footer.kicker'))} />
+      <a class="footer-cta" href={localePath('/#contato', Astro.currentLocale)}>{t('bottom.footer.ctaOne')}<br />{t('bottom.footer.ctaTwo')}<Fragment set:html={icon('arrow', 'footer-cta__icon')} /></a>
+    </div>
+    <div class="footer-grid">
+      <nav class="footer-col" aria-label={t('bottom.footer.navLabel')}>
+        <p class="footer-label">{t('bottom.footer.nav')}</p>
+        {nav.map(([key, href]) => <a href={localePath(href, Astro.currentLocale)}>{t(`bottom.footer.${key}`)}</a>)}
+      </nav>
+      <div class="footer-col">
+        <p class="footer-label">{t('bottom.footer.socials')}</p>
+        <div class="footer-social"><Socials links={content.profile.links} /></div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label">{t('bottom.footer.company')}</p>
+        <p class="selectable" translate="no">{t('bottom.footer.legalName')}</p>
+        <p class="selectable">{t('bottom.footer.cnpjLabel')} <span class="tnum">{t('bottom.footer.cnpj')}</span></p>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p set:html={brandSafe(t('bottom.footer.copyright').replace('{year}', year))} />
+      <a class="footer__top" href="#top">{t('bottom.footer.top')}</a>
+    </div>
+  </div>
+  <svg class="footer-mark" viewBox="0 0 292.01 118.56" aria-hidden="true" focusable="false"><polygon points="154.16 97.47 291.99 16.27 291.99 0 101.69 0 101.69 21.09 237.69 21.09 111.19 97.47 27.73 97.47 27.73 0 0 0 0 118.56 99.7 118.56 151.6 118.56 292.01 118.56 292.01 97.47 154.16 97.47"></polygon></svg>
+</footer>

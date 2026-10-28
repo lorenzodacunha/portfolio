@@ -1,0 +1,43 @@
+---
+// Numbers band below Sobre mim. Each number is a CSS counter driven by --to (design CSS, .count);
+// the script arms the count-up and starts it when the band comes into view.
+import type { SiteContent } from '../../lib/types';
+import { brandSafe } from '../../lib/text';
+import { useT } from '../../i18n';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+---
+<section id="numeros" class="trust" aria-label={t('trust.label')}>
+  <div class="wrap">
+    <ul class="trust__list" id="numeros-grade">
+      {content.home.trust.map((item) => (
+        <li class="trust__item"><strong class="trust__number count" style={`--to: ${item.value}`}><span class="sr">{item.value}</span></strong><span class="trust__label" set:html={brandSafe(item.label)}></span></li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<script>
+  // Numbers count up when the band comes into view. Without the script (or with reduced motion) they show the final value.
+  const trust = document.querySelector<HTMLElement>('.trust');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (trust && !reduced && 'IntersectionObserver' in window) {
+    trust.classList.add('is-armed');
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          trust.classList.add('is-counting');
+          io.disconnect();
+        }
+      },
+      { threshold: 0.4 },
+    );
+    io.observe(trust);
+  }
+</script>

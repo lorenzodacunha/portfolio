@@ -1,0 +1,50 @@
+---
+// Hero: ghost marquee behind, brand shapes that drift up on scroll, the cutout photo (LCP image)
+// and the copy with the cases call to action and the social links beside it.
+import type { SiteContent } from '../../lib/types';
+import Socials from '../Socials.astro';
+import NameMark from '../../assets/brand/logo-name.svg';
+import { brandSafe } from '../../lib/text';
+import { useT } from '../../i18n';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+// "Desenvolvedor {mark}" / "{mark} Developer": the highlighted word sits where the language puts it.
+const [kickerBefore, kickerAfter = ''] = t('hero.kicker').split('{mark}');
+
+// The ghost pairs repeated over 14 full rows, enough to cover the whole hero on a phone (about 1100 px tall).
+const pairs = content.home.ghostPairs;
+const ghostRows = pairs.length ? Array.from({ length: 14 }, (_, i) => pairs[i % pairs.length]) : [];
+---
+<section id="inicio" class="screen hero" aria-labelledby="hero-title">
+  <div class="ghost" aria-hidden="true" translate="no">
+    {ghostRows.map(([a, b]) => (
+      <div class="ghost-row"><div class="ghost-track"><span>{a}</span><span>{b}</span><span>{a}</span><span>{b}</span></div></div>
+    ))}
+  </div>
+  <img class="shape" src="/assets/shapes/globo.svg" alt="" width="150" height="150" style="left: 3%; bottom: 7%; width: 150px; --travel: -320px; --turn: 40deg;">
+  <img class="shape" src="/assets/shapes/zigue-zague.svg" alt="" width="28" height="80" style="left: 1%; bottom: 12%; width: 28px; --travel: -180px;">
+  <img class="shape" src="/assets/shapes/triangulos.svg" alt="" width="22" height="57" style="right: 2.5%; top: 44%; width: 22px; --travel: -420px;">
+  <img class="shape" src="/assets/shapes/anel.svg" alt="" width="26" height="26" style="right: 2%; top: 37%; width: 26px; --travel: -520px;">
+  <img class="shape" src="/assets/shapes/explosao.svg" alt="" width="64" height="64" style="left: 46%; top: 22%; width: 64px; --travel: -380px; --turn: 90deg;">
+  <div class="hero-figure">
+    <img src="/assets/brand/recorte.webp" srcset="/assets/brand/recorte-480.webp 480w, /assets/brand/recorte.webp 910w" sizes="(max-width: 767px) 64vw, 480px" alt={t('hero.photoAlt')} width="910" height="1720" loading="eager" fetchpriority="high">
+  </div>
+  <div class="wrap" style="position: relative; z-index: 3; display: flex; flex-direction: column; justify-content: center; flex: 1;">
+    <div class="hero-copy">
+      <p class="type-label" style="margin: 0;">{kickerBefore}<span class="mark" translate="no">{t('hero.kickerMark')}</span>{kickerAfter}</p>
+      {/* The name is the brand's name mark (logo-name.svg), not set in the title font; the h1 keeps it as text. */}
+      <h1 id="hero-title" class="hero-name" translate="no"><span class="sr">{t('hero.nameFirst')} {t('hero.nameLast')}</span><NameMark class="hero-name__mark" aria-hidden="true" focusable="false" /></h1>
+      <p class="type-body" style="margin: 0; max-width: 34ch; font-size: 20px;" set:html={brandSafe(t('hero.lede'))}></p>
+      <div class="actions">
+        <a class="button type-button lz-button lz-button--primary" href="#cases">{t('hero.ctaCases')}</a>
+        <div class="social"><Socials links={content.profile.links} /></div>
+      </div>
+    </div>
+  </div>
+</section>

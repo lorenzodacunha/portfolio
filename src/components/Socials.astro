@@ -1,0 +1,20 @@
+---
+// Social links of the hero, the contact section and the footer: LinkedIn and GitHub as round icon
+// buttons, Workana and Fiverr as outline buttons with the official one-colour logo (masked in CSS).
+// Renders the links only; the caller wraps them (.social, .contact__social, .footer-social).
+import type { Profile } from '../lib/types';
+import { brandIcon } from '../lib/icons';
+import { useT } from '../i18n';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  links: Profile['links'];
+}
+
+const { links } = Astro.props;
+---
+<a href={links.linkedin} class="lz-icon-button" aria-label={t('social.linkedin')}><Fragment set:html={brandIcon('linkedin')} /></a>
+<a href={links.github} class="lz-icon-button" aria-label={t('social.github')}><Fragment set:html={brandIcon('github')} /></a>
+<a class="lz-button lz-button--outline social__logo-link" href={links.workana} target="_blank" rel="noopener" aria-label={t('social.workana')}><span class="social__logo social__logo--workana"></span></a>
+<a class="lz-button lz-button--outline social__logo-link" href={links.fiverr} target="_blank" rel="noopener" aria-label={t('social.fiverr')}><span class="social__logo social__logo--fiverr"></span></a>

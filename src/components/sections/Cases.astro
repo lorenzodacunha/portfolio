@@ -1,0 +1,42 @@
+---
+// Cases em produção: the featured projects as a native scroll rail with a progress bar
+// (a 4-column grid from 1024 px, design CSS).
+import type { SiteContent } from '../../lib/types';
+import ProductCard from '../ProductCard.astro';
+import { featuredProjects, looks } from '../../lib/content';
+import { useT } from '../../i18n';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+const featured = featuredProjects(content);
+const look = looks(content);
+---
+<section id="cases" class="block" aria-labelledby="cases-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-head__text">
+        <p class="eyebrow">{t('cases.eyebrow').replace('{n}', String(featured.length))}</p>
+        <h2 id="cases-title"><span class="display type-display lz-section-title lz-section-title--on-light section-head__title"><span class="lz-section-title__one">{t('cases.titleOne')}</span><span class="lz-section-title__two">{t('cases.titleTwo')}</span></span></h2>
+      </div>
+      <a class="section-head__link lz-button lz-button--text type-button" href="#projetos">{t('cases.all')}</a>
+    </div>
+    <div class="rail-wrap">
+      <ul class="product-grid product-grid--featured rail" id="cases-rail" aria-label={t('cases.railLabel')}>
+        {featured.map((p) => <ProductCard project={p} tone={look[p.id].tone} shape={look[p.id].shape} />)}
+      </ul>
+      <div class="rail-progress" aria-hidden="true"><span class="rail-progress__thumb"></span></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { bindRail } from '../../scripts/rail';
+
+  const rail = document.getElementById('cases-rail');
+  if (rail) bindRail(rail);
+</script>

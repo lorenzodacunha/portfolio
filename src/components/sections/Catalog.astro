@@ -1,0 +1,112 @@
+---
+// "Mais projetos": the archive grid with type filters, sorting and "Mostrar mais" (prototype section#projetos).
+// Every card is in the HTML; the script below shows the first page and re-appends the cards in place to sort them.
+import ProductCard from '../ProductCard.astro';
+import { catalogProjects, looks } from '../../lib/content';
+import { esc } from '../../lib/text';
+import { icon } from '../../lib/icons';
+import { useT } from '../../i18n';
+import type { SiteContent } from '../../lib/types';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+const catalog = catalogProjects(content);
+const look = looks(content);
+const countBy = (type: string) => catalog.filter((p) => p.type === type).length;
+const FIRST_PAGE = 8;
+const firstShown = Math.min(FIRST_PAGE, catalog.length);
+const status = esc(t('bottom.catalog.status'))
+  .replace('{shown}', `<span data-shown>${firstShown}</span>`)
+  .replace('{total}', `<span data-total>${catalog.length}</span>`);
+const fill = (catalog.length ? firstShown / catalog.length : 1).toFixed(3);
+---
+<section id="projetos" class="block" aria-labelledby="projetos-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-head__text">
+        <p class="eyebrow">{t('bottom.catalog.eyebrow')}</p>
+        <h2 id="projetos-title"><span class="display type-display lz-section-title lz-section-title--on-light section-head__title"><span class="lz-section-title__one">{t('bottom.catalog.titleOne')}</span><span class="lz-section-title__two">{t('bottom.catalog.titleTwo')}</span></span></h2>
+      </div>
+      <p class="section-head__aside">{t('bottom.catalog.aside').replace('{count}', String(catalog.length))}</p>
+    </div>
+    <div class="toolbar">
+      <div class="filters" role="group" aria-label={t('bottom.catalog.filtersLabel')}>
+        <button type="button" class="filter" data-filter="todos" aria-pressed="true">{t('bottom.catalog.filterAll')} <span class="filter__count">{catalog.length}</span></button>
+        <button type="button" class="filter" data-filter="loja" aria-pressed="false">{t('bottom.catalog.filterStores')} <span class="filter__count">{countBy('loja')}</span></button>
+        <button type="button" class="filter" data-filter="landing" aria-pressed="false">{t('bottom.catalog.filterLandings')} <span class="filter__count">{countBy('landing')}</span></button>
+      </div>
+      <div class="sort">
+        <label for="ordem">{t('bottom.catalog.sortLabel')}</label>
+        <span class="select">
+          <select id="ordem" name="ordem">
+            <option value="recentes">{t('bottom.catalog.sortNewest')}</option>
+            <option value="antigos">{t('bottom.catalog.sortOldest')}</option>
+          </select>
+          <Fragment set:html={icon('next', 'icon select__chevron')} />
+        </span>
+      </div>
+    </div>
+    <ul class="product-grid product-grid--catalog" id="catalogo" aria-label={t('bottom.catalog.gridLabel')}>
+      {catalog.map((project) => <ProductCard project={project} tone={look[project.id].tone} shape={look[project.id].shape} catalog />)}
+    </ul>
+    <div class="load-more">
+      <p class="load-more__status" id="catalogo-status" aria-live="polite" set:html={status} />
+      <span class="load-more__bar" aria-hidden="true"><span class="load-more__fill" style={`--p: ${fill}`}></span></span>
+      <button type="button" class="button type-button lz-button lz-button--outline load-more__button" aria-controls="catalogo" data-label={t('bottom.catalog.moreCount')}>{t('bottom.catalog.more')}</button>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Catalog: type filter, sorting and "mostrar mais" (prototype portfolio.js).
+  const grid = document.getElementById('catalogo');
+  if (grid) {
+    const PAGE = 8;
+    const section = grid.closest('section') as HTMLElement;
+    const items = Array.from(grid.querySelectorAll<HTMLElement>('.product-card'));
+    const filters = Array.from(section.querySelectorAll<HTMLButtonElement>('.filter'));
+    const sort = section.querySelector<HTMLSelectElement>('#ordem')!;
+    const more = section.querySelector<HTMLButtonElement>('.load-more__button')!;
+    const shownEl = section.querySelector<HTMLElement>('[data-shown]')!;
+    const totalEl = section.querySelector<HTMLElement>('[data-total]')!;
+    const fill = section.querySelector<HTMLElement>('.load-more__fill')!;
+    const moreLabel = more.dataset.label || '{count}';
+    let filter = 'todos';
+    let limit = PAGE;
+    const matches = (li: HTMLElement) => filter === 'todos' || li.dataset.type === filter;
+    const render = () => {
+      const order = sort.value === 'antigos' ? 1 : -1;
+      const list = items.slice().sort((a, b) => order * (Number(a.dataset.sort) - Number(b.dataset.sort)));
+      list.forEach((li) => grid.appendChild(li));
+      const match = list.filter(matches);
+      list.forEach((li) => { li.hidden = true; });
+      match.slice(0, limit).forEach((li) => { li.hidden = false; });
+      const shown = Math.min(limit, match.length);
+      shownEl.textContent = String(shown);
+      totalEl.textContent = String(match.length);
+      fill.style.setProperty('--p', String(match.length ? shown / match.length : 1));
+      more.hidden = shown >= match.length;
+      more.textContent = moreLabel.replace('{count}', String(Math.min(PAGE, match.length - shown)));
+    };
+    filters.forEach((btn) => btn.addEventListener('click', () => {
+      filter = btn.dataset.filter || 'todos';
+      limit = PAGE;
+      filters.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      render();
+    }));
+    sort.addEventListener('change', () => { limit = PAGE; render(); });
+    more.addEventListener('click', () => {
+      const firstNew = items.filter((li) => li.hidden && matches(li))[0];
+      limit += PAGE;
+      render();
+      const cta = firstNew && firstNew.querySelector<HTMLElement>('.product-card__cta');
+      if (cta) cta.focus({ preventScroll: true });
+    });
+    render();
+  }
+</script>

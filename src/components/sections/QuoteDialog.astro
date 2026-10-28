@@ -1,0 +1,73 @@
+---
+// Full testimonial panel (prototype dialog#quote-dialog), opened by any [data-quote] button (the "Ver mais"
+// of the review cards). The quotes travel as JSON; the panel is filled on open.
+// Harness rule 55: scroll-lock keeps the page still while it is open (CSS in global.css).
+import { icon } from '../../lib/icons';
+import { useT } from '../../i18n';
+import type { SiteContent } from '../../lib/types';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+const quoteData = content.reviews.map((q) => ({
+  id: q.id, name: q.name, role: q.role, source: q.source, when: q.when, paragraphs: q.text.split('\n'),
+}));
+const json = JSON.stringify(quoteData).replace(/</g, '\\u003c');
+---
+<dialog id="quote-dialog" class="pdp pdp--quote" aria-labelledby="quote-title" scroll-lock>
+  <div class="pdp__scroll">
+    <div class="pdp__bar pdp__bar--dark">
+      <div><p class="pdp__crumbs" data-q="meta"></p><h2 id="quote-title" class="pdp__title" data-q="name"></h2></div>
+      <button type="button" class="btn-reset pdp__close" data-close aria-label={t('bottom.quote.close')}><Fragment set:html={icon('close')} /></button>
+    </div>
+    <div class="quote-full" data-q="text"></div>
+  </div>
+  <div class="pdp__rail" aria-hidden="true"><span class="pdp__rail-thumb"></span></div>
+</dialog>
+<script type="application/json" id="quote-data" is:inline set:html={json}></script>
+
+<script>
+  import { bindScrollbar } from '../../scripts/panel-scrollbar';
+
+  interface Quote { id: string; name: string; role: string; source: string; when: string; paragraphs: string[] }
+
+  const dialog = document.getElementById('quote-dialog') as HTMLDialogElement | null;
+  const data = document.getElementById('quote-data');
+  if (dialog && data) {
+    const quotes: Quote[] = JSON.parse(data.textContent || '[]');
+    const field = (name: string) => dialog.querySelector<HTMLElement>(`[data-q="${name}"]`)!;
+    const scroller = dialog.querySelector<HTMLElement>('.pdp__scroll')!;
+    let refreshBar: (() => void) | null = null;
+    let lastTrigger: HTMLElement | null = null;
+
+    document.addEventListener('click', (e) => {
+      const trigger = (e.target as Element).closest<HTMLElement>('[data-quote]');
+      if (!trigger) return;
+      const q = quotes.find((x) => x.id === trigger.dataset.quote);
+      if (!q) return;
+      field('meta').textContent = q.role + '. ' + q.source;
+      field('name').textContent = q.name;
+      const box = field('text');
+      box.textContent = '';
+      q.paragraphs.forEach((para) => { const p = document.createElement('p'); p.textContent = para; box.appendChild(p); });
+      if (q.when) { const p = document.createElement('p'); p.className = 'meta'; p.textContent = q.when; box.appendChild(p); }
+      lastTrigger = trigger;
+      if (!dialog.open) dialog.showModal();
+      scroller.scrollTop = 0;
+      // Custom scrollbar: bound on the first open, refreshed on every open (the text height changes).
+      refreshBar ??= bindScrollbar(dialog);
+      refreshBar();
+    });
+
+    dialog.addEventListener('close', () => {
+      if (lastTrigger && document.contains(lastTrigger)) lastTrigger.focus();
+    });
+    // Close: the button and a click outside the panel (on the backdrop).
+    dialog.querySelectorAll('[data-close]').forEach((b) => b.addEventListener('click', () => dialog.close()));
+    dialog.addEventListener('click', (e) => { if (e.target === dialog) dialog.close(); });
+  }
+</script>

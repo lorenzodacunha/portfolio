@@ -1,0 +1,82 @@
+---
+// "Quem já trabalhou comigo": rating panel and the rail of testimonial cards (prototype section#depoimentos).
+// The whole quote goes in each card and the CSS clamps it to 3 lines; "Ver mais" is always in the markup
+// and the script hides it when the quote fits. It opens the full testimonial (QuoteDialog).
+import { brandSafe } from '../../lib/text';
+import { icon, brandIcon, stars } from '../../lib/icons';
+import { useT } from '../../i18n';
+import type { SiteContent } from '../../lib/types';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+const reviews = content.reviews;
+// Workana reviews carry a rating; LinkedIn recommendations have rating 0.
+const workana = reviews.filter((q) => q.rating);
+const avg = workana.length ? (workana.reduce((s, q) => s + q.rating, 0) / workana.length).toFixed(1).replace('.', ',') : '';
+const linkedinCount = reviews.filter((q) => !q.rating).length;
+---
+<section id="depoimentos" class="block block--tint" aria-labelledby="depoimentos-title">
+  <div class="wrap reviews">
+    <div class="reviews__head reveal">
+      <h2 id="depoimentos-title"><span class="display type-display lz-section-title lz-section-title--on-light section-head__title"><span class="lz-section-title__one">{t('bottom.reviews.titleOne')}</span><span class="lz-section-title__two">{t('bottom.reviews.titleTwo')}</span></span></h2>
+      <div class="rail-controls">
+        <button type="button" class="round-button" data-rail="reviews-rail" data-dir="-1" aria-label={t('bottom.reviews.prev')} disabled><Fragment set:html={icon('prev')} /></button>
+        <button type="button" class="round-button" data-rail="reviews-rail" data-dir="1" aria-label={t('bottom.reviews.next')}><Fragment set:html={icon('next')} /></button>
+      </div>
+    </div>
+    <div class="rating reveal">
+      {workana.length > 0 && (
+        <Fragment>
+          <p class="rating__score"><span class="rating__value">{avg}</span><Fragment set:html={stars(5)} /></p>
+          <p class="rating__caption" set:html={brandSafe(t('bottom.reviews.caption').replace('{count}', String(workana.length)))} />
+        </Fragment>
+      )}
+      <p class="rating__extra"><Fragment set:html={brandIcon('linkedin')} /><span set:html={brandSafe(t('bottom.reviews.linkedin').replace('{count}', String(linkedinCount)))} /></p>
+      <a class="lz-button lz-button--text type-button rating__link" href={content.profile.links.workana} target="_blank" rel="noopener"><span set:html={brandSafe(t('bottom.reviews.profile'))} /></a>
+    </div>
+    <div class="reviews__rail">
+      <ul class="rail review-list" id="reviews-rail" aria-label={t('bottom.reviews.railLabel')}>
+        {reviews.map((q) => (
+          <li class="review">
+            <figure class="review__inner">
+              <div class="review__top">
+                {q.rating ? <Fragment set:html={stars(q.rating)} /> : <span class="review__tag"><Fragment set:html={brandIcon('linkedin')} />{t('bottom.reviews.tag')}</span>}
+              </div>
+              <blockquote class="review__quote">“{q.text.replace(/\n/g, ' ')}”</blockquote>
+              <button type="button" class="btn-reset lz-button lz-button--text type-button review__more" data-quote={q.id} aria-haspopup="dialog">{t('bottom.reviews.more')}<span class="sr"> {t('bottom.reviews.moreOf').replace('{name}', q.name)}</span></button>
+              <figcaption class="review__by"><strong>{q.name}</strong><span>{q.role}</span><a class="review__source" href={q.sourceUrl} target="_blank" rel="noopener">{q.source}<Fragment set:html={icon('out')} /></a></figcaption>
+            </figure>
+          </li>
+        ))}
+      </ul>
+      <div class="rail-progress" aria-hidden="true"><span class="rail-progress__thumb"></span></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { bindRail } from '../../scripts/rail';
+
+  const section = document.getElementById('depoimentos');
+  const rail = document.getElementById('reviews-rail');
+  if (rail) bindRail(rail);
+
+  // Each card shows up to 3 lines; "Ver mais" only appears when the quote was cut.
+  if (section) {
+    const trimQuotes = () => section.querySelectorAll<HTMLElement>('.review').forEach((card) => {
+      const quote = card.querySelector<HTMLElement>('.review__quote');
+      const more = card.querySelector<HTMLElement>('.review__more');
+      if (!quote || !more) return;
+      if (quote.scrollHeight > quote.clientHeight + 2) more.removeAttribute('data-idle');
+      else more.setAttribute('data-idle', '');
+    });
+    trimQuotes();
+    window.addEventListener('resize', trimQuotes);
+    if (document.fonts) document.fonts.ready.then(trimQuotes);
+  }
+</script>

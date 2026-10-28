@@ -1,0 +1,115 @@
+/* Site layer of the case view (modal on the home page and /cases/<id>/ pages). The case itself is styled by the
+   design CSS (portfolio.css, "Detalhe do case"); these rules only connect it to the real site: the hidden
+   state of the optional fields, the static page around the case body, and the card-to-modal morph. */
+
+/* Optional fields (badge, partnership, role, challenge, live store, performance) are hidden with [hidden];
+   some of them set their own display, so the attribute needs the upper hand. */
+:is(.pdp, .case-page) [hidden] { display: none !important; }
+
+/* Case page: the body sits below the fixed navigation, as wide as the modal on desktop. */
+.case-page { padding-top: calc(var(--nav) + var(--space-4)); background: var(--color-surface-page); }
+.case-page__inner { box-sizing: border-box; width: min(1180px, 100%); margin: 0 auto; }
+.case-crumbs ol { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: 0; padding: 0 var(--space-4) var(--space-4); list-style: none; font-size: 13px; font-weight: 400; }
+.case-crumbs li { display: inline-flex; gap: var(--space-2); }
+.case-crumbs li + li::before { content: "/"; content: "/" / ""; }
+.case-crumbs a { color: inherit; text-decoration: none; }
+.case-crumbs a:hover { text-decoration: underline; text-decoration-color: var(--color-accent); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.case-crumbs [aria-current] { font-weight: 700; }
+/* On the page the section headings are one level up (h2 under the h1 title): same look as the modal's h3. */
+.case-page .pdp__story h2 { margin: 0 0 var(--space-3); color: var(--color-accent-light); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+/* Prev/next are links on the page (buttons in the modal). */
+.pdp__nav a { text-decoration: none; }
+
+@media (min-width: 768px) {
+  .case-crumbs ol { padding-inline: var(--space-6); }
+}
+@media (min-width: 1024px) {
+  .case-crumbs ol { padding-inline: var(--space-7); padding-bottom: 0; }
+}
+
+/* Card-to-modal morph. While the card's front shot flies into the studio, the dialog shows up through the
+   page cross-fade instead of its own entrance (which would move the landing spot). */
+dialog.pdp[data-morph][open] { animation: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  /* View transition: one image travels (the live one at the large size, so it stays sharp), the page around
+     it cross-fades. Opening shows the modal's shot, closing the modal's shot until it lands on the card. */
+  html[data-case-morph]::view-transition-group(case-shot) { animation-duration: 520ms; animation-timing-function: cubic-bezier(.16, 1, .3, 1); border-radius: 0 0 10px 10px; overflow: clip; }
+  html[data-case-morph="open"]::view-transition-old(case-shot),
+  html[data-case-morph="close"]::view-transition-new(case-shot) { animation: none; opacity: 0; }
+  html[data-case-morph]::view-transition-new(case-shot),
+  html[data-case-morph]::view-transition-old(case-shot) { animation: none; mix-blend-mode: normal; }
+  html[data-case-morph="open"]::view-transition-old(root),
+  html[data-case-morph="open"]::view-transition-new(root) { animation-duration: 320ms; }
+  html[data-case-morph="close"]::view-transition-old(root),
+  html[data-case-morph="close"]::view-transition-new(root) { animation-duration: 260ms; }
+}
+
+/* FLIP fallback (browsers without view transitions): the temporary clone of the card image. */
+.case-morph { position: fixed; z-index: 10; box-sizing: border-box; max-width: none; margin: 0; object-fit: cover; object-position: top center; border-radius: 0 0 10px 10px; pointer-events: none; }
+
+/* The case write-up in the dark story band (CaseView.astro): the previous site's text with its sections, in the
+   band's own vocabulary (orange section labels, light body text, orange list markers). On wide screens each
+   section heading sits in the left column of the band and its text in the right one. The heading rules start at
+   .pdp__story so they win over the case page's own label rule (.case-page .pdp__story h2, above). */
+.pdp__story { align-items: start; }
+.pdp__description { grid-column: 1 / -1; min-width: 0; }
+.pdp__description > * { max-width: 64ch; }
+.pdp__story .pdp__description :is(h2, h3) { margin: var(--space-6) 0 var(--space-3); color: var(--color-accent-light); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.pdp__story .pdp__description > :first-child { margin-top: 0; }
+.pdp__description p { margin: 0 0 var(--space-4); font-size: 16px; font-weight: 300; line-height: 1.65; text-wrap: pretty; }
+.pdp__description strong { font-weight: 700; }
+.pdp__description :is(ul, ol) { display: grid; gap: var(--space-2); margin: 0 0 var(--space-4); padding: 0; list-style: none; counter-reset: step; }
+.pdp__description li { position: relative; padding-left: var(--space-5); font-size: 16px; font-weight: 300; line-height: 1.55; }
+.pdp__description ul > li::before { content: ""; position: absolute; left: 2px; top: .6em; width: 8px; height: 8px; border-radius: 50%; background: var(--color-accent); }
+.pdp__description ol > li { counter-increment: step; }
+.pdp__description ol > li::before { content: counter(step) "."; position: absolute; left: 0; color: var(--color-accent-light); font-weight: 700; }
+@media (min-width: 1024px) {
+  .pdp__description:has(> :is(h2, h3)) { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: var(--space-8); }
+  .pdp__description:has(> :is(h2, h3)) > * { grid-column: 2; }
+  .pdp__story .pdp__description:has(> :is(h2, h3)) > :is(h2, h3) { grid-column: 1; margin-top: var(--space-7); padding-top: 4px; font-size: 13px; }
+  .pdp__story .pdp__description:has(> :is(h2, h3)) > :is(h2, h3) + * { margin-top: var(--space-7); }
+  .pdp__story .pdp__description:has(> :is(h2, h3)) > :is(h2, h3):first-child,
+  .pdp__story .pdp__description:has(> :is(h2, h3)) > :is(h2, h3):first-child + * { margin-top: 0; }
+}
+
+/* +18 (adult projects): the shots stay blurred behind a notice until the visitor confirms; the answer
+   (html[data-adult-ok]) lasts for the browser session and also clears the cards (src/scripts/case-dialog.ts). */
+html:not([data-adult-ok]) :is(.pdp__studio[data-adult] .pdp__shot img, .pdp__next-media[data-adult] img) { filter: blur(24px); }
+.pdp__adult { position: absolute; z-index: 4; inset: 0; display: grid; align-content: start; justify-items: center; gap: var(--space-3); padding: var(--space-8) var(--space-5); text-align: center; color: var(--color-text-inverse); background: color-mix(in srgb, var(--color-surface-inverse) 55%, transparent); }
+.pdp__adult p { margin: 0; max-width: 40ch; font-size: 15px; font-weight: 300; line-height: 1.5; }
+.pdp__adult .pdp__adult-title { font-family: var(--font-title); font-size: 18px; font-weight: 700; text-transform: uppercase; }
+.pdp__adult .lz-button { margin-top: var(--space-2); }
+
+/* Subtitles inside a section ("Otimização de imagens:", docs/desenvolvimento.md, "Padrão das descrições") open a new group: a little more
+   room above them when they follow a paragraph or a list (the first one after a section heading keeps its alignment). */
+.pdp__story .pdp__description :is(p, ul, ol) + p:has(> strong:only-child) { margin-top: var(--space-6); }
+
+/* "Início" (Q11): a visible way back to the home page, on the case page above the breadcrumb and in the modal bar next
+   to the crumbs (the modal changes the address to /cases/<id>/, so it reads as another page). */
+.case-home { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 var(--space-4) 0 var(--space-3); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-pill); background: var(--color-surface-page); color: var(--color-text-primary); font-family: var(--font-body); font-size: 14px; font-weight: 700; text-decoration: none; cursor: pointer; }
+.case-home .icon { width: 16px; height: 16px; }
+.case-home:hover { border-color: var(--color-text-primary); color: var(--color-text-primary); }
+.pdp__bar-start { display: flex; align-items: center; gap: var(--space-4); min-width: 0; }
+.case-page .case-home { margin: 0 var(--space-4) var(--space-3); }
+@media (max-width: 479px) {
+  .pdp__crumbs span:not(:last-child) { display: none; }
+}
+@media (min-width: 768px) {
+  .case-page .case-home { margin-inline: var(--space-6); }
+}
+@media (min-width: 1024px) {
+  .case-page .case-home { margin-inline: var(--space-7); margin-bottom: var(--space-4); }
+}
+
+/* Offline store (Q9): the "live store" button stays in place, blocked, and a tooltip says the store is no longer
+   available, on hover, keyboard focus or tap. */
+.pdp__live-off { position: relative; display: block; width: 100%; }
+.pdp__live--off { width: 100%; cursor: not-allowed; background: var(--color-border-subtle); color: var(--color-text-primary); opacity: .7; }
+.pdp__live--off:hover, .pdp__live--off:active { transform: none; background: var(--color-border-subtle); color: var(--color-text-primary); }
+.pdp__tip { position: absolute; z-index: 5; bottom: calc(100% + 10px); left: 50%; width: max-content; max-width: min(280px, 90vw); padding: var(--space-2) var(--space-3); border-radius: var(--radius-button); background: var(--color-surface-inverse); color: var(--color-text-inverse); font-size: 13px; font-weight: 400; line-height: 1.4; text-align: center; opacity: 0; visibility: hidden; translate: -50% 4px; pointer-events: none; }
+.pdp__tip::after { content: ""; position: absolute; top: 100%; left: 50%; translate: -50% 0; border: 6px solid transparent; border-top-color: var(--color-surface-inverse); }
+.pdp__live-off:hover .pdp__tip, .pdp__live--off:focus + .pdp__tip { opacity: 1; visibility: visible; translate: -50% 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .pdp__tip { transition: opacity 300ms var(--ease), translate 300ms var(--ease), visibility 300ms; }
+}

@@ -1,0 +1,7 @@
+/* Base reset the approved prototype ran on (its preview skeleton), loaded before the design CSS as it was there: safe areas, images never wider than
+   their box, and [hidden] always wins over component display rules (catalog pages, field errors, form status). */
+:root { color-scheme: light; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; font: 14px system-ui, sans-serif; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+

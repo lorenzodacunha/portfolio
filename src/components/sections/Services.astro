@@ -1,0 +1,38 @@
+---
+// O que eu resolvo: full-bleed panel over a tilted mosaic of live stores, with the service cards.
+import type { SiteContent } from '../../lib/types';
+import { brandSafe } from '../../lib/text';
+import { icon } from '../../lib/icons';
+import { useT } from '../../i18n';
+
+const t = useT(Astro.currentLocale);
+
+interface Props {
+  content: SiteContent;
+}
+
+const { content } = Astro.props;
+---
+<section id="servicos" class="panel" aria-labelledby="servicos-title">
+  <div class="panel__mosaic" aria-hidden="true">
+    {content.home.mosaic.map((col, c) => (
+      <div class={`panel__col panel__col--${c % 2 ? 'down' : 'up'}`}>{col.map((file) => <img src={`/assets/projects/${file}-640.webp`} alt="" width="640" height="360" loading="lazy">)}</div>
+    ))}
+  </div>
+  <div class="wrap panel__inner">
+    <div class="panel__head reveal">
+      <h2 id="servicos-title"><span class="display type-display lz-section-title lz-section-title--on-brand panel__title"><span class="lz-section-title__one">{t('services.titleOne')}</span><span class="lz-section-title__two">{t('services.titleTwo')}</span></span></h2>
+      <p class="panel__lede">{t('services.lede')}</p>
+    </div>
+    <ul class="reasons">
+      {content.services.map((service) => (
+        <li class="reason lz-card lz-card--glass reveal">
+          <span class="reason__icon"><Fragment set:html={icon(service.icon)} /></span>
+          <h3 class="reason__title">{service.title}</h3>
+          <p class="reason__text" set:html={brandSafe(service.text)}></p>
+        </li>
+      ))}
+    </ul>
+    <div class="panel__actions"><a class="button type-button lz-button lz-button--primary" href="#contato">{t('services.cta')}</a></div>
+  </div>
+</section>

@@ -1,0 +1,86 @@
+---
+// Not found page (Vercel serves dist/404.html for any unknown path). Same navigation, hero anatomy
+// and footer as the home, with ways back to the home and to the cases. Not indexed (noindex in Head).
+import Base from '../layouts/Base.astro';
+import SiteNav from '../components/sections/SiteNav.astro';
+import SiteFooter from '../components/sections/SiteFooter.astro';
+import { getContent } from '../lib/content';
+import { notFoundSeo } from '../lib/seo';
+import { useT } from '../i18n';
+
+const t = useT(Astro.currentLocale);
+
+const content = await getContent();
+const seo = notFoundSeo();
+---
+<Base {...seo}>
+  <SiteNav />
+  <main id="conteudo">
+    <section class="hero screen not-found" aria-labelledby="not-found-title">
+      <span class="not-found__code" aria-hidden="true">404</span>
+      <img class="shape" src="/assets/shapes/globo.svg" alt="" width="150" height="150" style="left: 3%; bottom: 7%; width: 150px;" />
+      <img class="shape" src="/assets/shapes/zigue-zague.svg" alt="" width="28" height="80" style="left: 1%; bottom: 12%; width: 28px;" />
+      <img class="shape" src="/assets/shapes/explosao.svg" alt="" width="64" height="64" style="left: 46%; top: 22%; width: 64px;" />
+      <img class="shape" src="/assets/shapes/anel.svg" alt="" width="26" height="26" style="right: 4%; top: 30%; width: 26px;" />
+      <div class="wrap not-found__wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">{t('seo.notFound.eyebrow')}</p>
+          <h1 id="not-found-title" class="display type-display lz-section-title lz-section-title--on-light not-found__title">
+            <span class="lz-section-title__one">{t('seo.notFound.titleOne')}</span>
+            <span class="lz-section-title__two">{t('seo.notFound.titleTwo')}</span>
+          </h1>
+          <p class="type-body not-found__text">{t('seo.notFound.text')}</p>
+          <div class="actions">
+            <a class="button type-button lz-button lz-button--primary" href="/#cases">{t('seo.notFound.toCases')}</a>
+            <a class="button type-button lz-button lz-button--outline" href="/">{t('seo.notFound.toHome')}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter content={content} />
+</Base>
+
+<style>
+  /* The page number in the display face, as the hero's background lettering: decoration only. */
+  .not-found__code {
+    position: absolute;
+    right: 6%;
+    bottom: -0.12em;
+    z-index: 1;
+    font-family: var(--font-title);
+    font-size: clamp(160px, 26vw, 420px);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-accent);
+    opacity: 0.22;
+    pointer-events: none;
+    user-select: none;
+  }
+  .not-found__wrap {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  .not-found__text {
+    margin: 0;
+    max-width: 40ch;
+  }
+  @media (max-width: 767px) {
+    .not-found {
+      min-height: 100svh;
+      padding-bottom: var(--space-9);
+    }
+    .not-found__code {
+      right: auto;
+      left: var(--space-4);
+    }
+    /* "ENCONTRADA" is the longest word: it has to fit 390px minus the gutters. */
+    .not-found__title {
+      font-size: clamp(28px, 9vw, 40px);
+    }
+  }
+</style>

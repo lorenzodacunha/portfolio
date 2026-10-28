@@ -1,0 +1,16 @@
+/* Cascade of the project cards on the first scroll (src/scripts/card-cascade.ts): armed cards wait hidden, then
+   the ones entering together rise 90ms after each other. The classes are removed when it ends, back to the design's
+   styles. */
+@media (prefers-reduced-motion: no-preference) {
+  .product-card.is-cascade-armed { opacity: 0; transform: translateY(24px); }
+  .product-card.is-cascade-armed.is-cascading { animation: card-cascade 700ms var(--ease) both; animation-delay: calc(var(--cascade, 0) * 90ms); }
+  @keyframes card-cascade {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: none; }
+  }
+}
+
+/* +18 (adult projects): blurred shots and a "+18" label until the visitor confirms in the case
+   (html[data-adult-ok], src/scripts/case-dialog.ts). The label sits top right, clear of the other badges. */
+html:not([data-adult-ok]) .product-card[data-adult] .shot img { filter: blur(18px); }
+.product-card__badge--adult { left: auto; right: var(--space-3); background: var(--color-surface-inverse); color: var(--color-text-inverse); }
