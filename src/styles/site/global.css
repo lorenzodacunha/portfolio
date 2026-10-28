@@ -108,3 +108,11 @@ html:has(dialog[scroll-lock][open]) { overflow: hidden; scrollbar-gutter: stable
     transition-timing-function: var(--ease);
   }
 }
+
+/* Footer mark on phones (Lorenzo, 28/10): not a background behind the links but the logo at the top of the footer,
+   taking its own space; the content below starts after it. */
+@media (max-width: 767px) {
+  .site-footer { display: flex; flex-direction: column; }
+  .footer-mark { position: relative; order: -1; left: auto; top: auto; translate: none; width: calc(100% - 2 * var(--space-4)); margin: var(--space-8) auto 0; }
+  .site-footer .footer-inner { padding-top: var(--space-7); }
+}
