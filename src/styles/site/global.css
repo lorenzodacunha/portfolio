@@ -116,3 +116,10 @@ html:has(dialog[scroll-lock][open]) { overflow: hidden; scrollbar-gutter: stable
   .footer-mark { position: relative; order: -1; left: auto; top: auto; translate: none; width: calc(100% - 2 * var(--space-4)); margin: var(--space-8) auto 0; }
   .site-footer .footer-inner { padding-top: var(--space-7); }
 }
+
+/* The hero's scroll-linked motion (photo sinking, copy rising, shapes) is made for the sticky hero of desktop. On
+   phones the hero scrolls away with the page and the photo moved against the scroll, so it shook up and down while the
+   toolbar collapsed (Lorenzo, 28/10): below 1024px the photo scrolls with the page and keeps only its entrance. */
+@media (max-width: 1023px) {
+  .hero-figure img, .hero-copy, .hero .shape { animation-timeline: auto; animation-name: none; }
+}
