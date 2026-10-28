@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="721 322 282 274"><defs>
+<clipPath id="clippath">
+      <rect x="127.55" y="99.03" width="750" height="500" style="fill: none" />
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect x="705.53" y="366.5" width="248.4" height="184.11" style="fill: none" />
+    </clipPath>
+    <clipPath id="clippath-2">
+      <circle cx="586.12" cy="310.52" r="136.83" transform="translate(-47.9 505.4) rotate(-45)" style="fill: none" />
+    </clipPath>
+    <clipPath id="clippath-3">
+      <circle cx="316.33" cy="418.73" r="136.83" style="fill: none" />
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="694.96" cy="259.24" fx="694.96" fy="259.24" r="122.38" gradientTransform="translate(386.86 -415.48) rotate(45)" gradientUnits="userSpaceOnUse">
+      <stop offset=".26" stop-color="#282a2f" />
+      <stop offset=".49" stop-color="#595a5e" stop-opacity=".77" />
+      <stop offset=".91" stop-color="#dcdddd" stop-opacity=".16" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="227.3" cy="403.78" fx="227.3" fy="403.78" r="169.75" gradientTransform="matrix(1,0,0,1,0,0)" xlink:href="#radial-gradient" />
+  </defs>
+  <g style="isolation: isolate"><g><g><g>
+          <g>
+            <polyline points="866.62 591.39 724.56 458.56 866.62 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="875.4 591.39 733.34 458.56 875.4 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="884.18 591.39 742.12 458.56 884.18 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="892.95 591.39 750.9 458.56 892.95 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="901.73 591.39 759.67 458.56 901.73 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="910.51 591.39 768.45 458.56 910.51 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="919.29 591.39 777.23 458.56 919.29 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="928.07 591.39 786.01 458.56 928.07 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="936.85 591.39 794.79 458.56 936.85 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="945.62 591.39 803.56 458.56 945.62 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="954.4 591.39 812.34 458.56 954.4 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="963.18 591.39 821.12 458.56 963.18 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="971.96 591.39 829.9 458.56 971.96 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="980.74 591.39 838.68 458.56 980.74 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="989.52 591.39 847.46 458.56 989.52 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+            <polyline points="998.29 591.39 856.23 458.56 998.29 325.72" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: .37px" />
+          </g>
+        </g>
+        </g></g></g></svg>

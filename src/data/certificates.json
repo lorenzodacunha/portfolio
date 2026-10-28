@@ -1,0 +1,75 @@
+[
+  {
+    "id": "unicesumar-engenharia-de-software",
+    "status": "Cursando",
+    "status_en": "In progress",
+    "status_es": "En curso",
+    "live": true,
+    "title": "Engenharia de Software",
+    "title_en": "Software Engineering",
+    "title_es": "Ingeniería de Software",
+    "where": "UniCesumar",
+    "where_en": "UniCesumar",
+    "where_es": "UniCesumar"
+  },
+  {
+    "id": "senai-ia-generativa-antigravity",
+    "status": "Certificado em ago. de 2026",
+    "status_en": "Certified in Aug 2026",
+    "status_es": "Certificado en ago. de 2026",
+    "title": "Desenvolvimento de Aplicações com IA Generativa utilizando Google Antigravity",
+    "title_en": "Application Development with Generative AI using Google Antigravity",
+    "title_es": "Desarrollo de Aplicaciones con IA Generativa utilizando Google Antigravity",
+    "where": "SENAI Americana",
+    "where_en": "SENAI Americana",
+    "where_es": "SENAI Americana"
+  },
+  {
+    "id": "gdg-build-with-ai-go",
+    "status": "Workshop, jul. de 2026",
+    "status_en": "Workshop, Jul 2026",
+    "status_es": "Taller, jul. de 2026",
+    "title": "Workshop Build with AI (Go)",
+    "title_en": "Build with AI Workshop (Go)",
+    "title_es": "Workshop Build with AI (Go)",
+    "where": "Google Developer Groups (GDG Americana)",
+    "where_en": "Google Developer Groups (GDG Americana)",
+    "where_es": "Google Developer Groups (GDG Americana)"
+  },
+  {
+    "id": "senai-web-3",
+    "status": "Certificado em mar. de 2024",
+    "status_en": "Certified in Mar 2024",
+    "status_es": "Certificado en mar. de 2024",
+    "title": "Web 3.0",
+    "title_en": "Web 3.0",
+    "title_es": "Web 3.0",
+    "where": "SENAI Americana",
+    "where_en": "SENAI Americana",
+    "where_es": "SENAI Americana"
+  },
+  {
+    "id": "ibm-introduction-to-ux-design",
+    "status": "Certificado em fev. de 2024",
+    "status_en": "Certified in Feb 2024",
+    "status_es": "Certificado en feb. de 2024",
+    "title": "Introduction to UX Design",
+    "title_en": "Introduction to UX Design",
+    "title_es": "Introducción al Diseño UX",
+    "where": "IBM",
+    "where_en": "IBM",
+    "where_es": "IBM"
+  },
+  {
+    "id": "senai-lgpd",
+    "status": "Certificado em set. de 2023",
+    "status_en": "Certified in Sep 2023",
+    "status_es": "Certificado en sept. de 2023",
+    "title": "Privacidade e Proteção de Dados (LGPD)",
+    "title_en": "Privacy and Data Protection (LGPD)",
+    "title_es": "Privacidad y Protección de Datos (LGPD)",
+    "where": "SENAI Americana",
+    "where_en": "SENAI Americana",
+    "where_es": "SENAI Americana"
+  }
+]

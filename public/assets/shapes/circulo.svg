@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="455 271 156 156"><defs>
+<clipPath id="clippath">
+      <rect x="127.55" y="99.03" width="750" height="500" style="fill: none" />
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect x="705.53" y="366.5" width="248.4" height="184.11" style="fill: none" />
+    </clipPath>
+    <clipPath id="clippath-2">
+      <circle cx="586.12" cy="310.52" r="136.83" transform="translate(-47.9 505.4) rotate(-45)" style="fill: none" />
+    </clipPath>
+    <clipPath id="clippath-3">
+      <circle cx="316.33" cy="418.73" r="136.83" style="fill: none" />
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="694.96" cy="259.24" fx="694.96" fy="259.24" r="122.38" gradientTransform="translate(386.86 -415.48) rotate(45)" gradientUnits="userSpaceOnUse">
+      <stop offset=".26" stop-color="#282a2f" />
+      <stop offset=".49" stop-color="#595a5e" stop-opacity=".77" />
+      <stop offset=".91" stop-color="#dcdddd" stop-opacity=".16" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="227.3" cy="403.78" fx="227.3" fy="403.78" r="169.75" gradientTransform="matrix(1,0,0,1,0,0)" xlink:href="#radial-gradient" />
+  </defs>
+  <g style="isolation: isolate"><g><g><circle cx="532.33" cy="349.03" r="73.78" style="fill: #333; opacity: .2" />
+        </g></g></g></svg>

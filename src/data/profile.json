@@ -1,0 +1,22 @@
+{
+  "links": {
+    "workana": "https://www.workana.com/freelancer/16c0158b6a790fe3cc607933882390bf",
+    "fiverr": "https://www.fiverr.com/cunhalorenzo",
+    "linkedin": "https://www.linkedin.com/in/lorenzodacunha/",
+    "github": "https://github.com/lorenzodacunha"
+  },
+  "contact": {
+    "email": "contato@lorenzodacunha.com.br",
+    "phone": "(19) 98174-8197",
+    "phoneHref": "tel:+5519981748197",
+    "whatsapp": "5519981748197"
+  },
+  "partners": {
+    "aloft": {
+      "name": "Aloft",
+      "logo": "assets/companies/aloft.webp",
+      "w": 120,
+      "h": 40
+    }
+  }
+}

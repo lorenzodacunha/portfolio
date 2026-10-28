@@ -1,0 +1,20 @@
+{
+  "facts": ["Americana, SP", "Shopify desde 2023", "Engenharia de Software"],
+  "facts_en": ["Americana, SP", "Shopify since 2023", "Software Engineering"],
+  "facts_es": ["Americana, SP", "Shopify desde 2023", "Ingeniería de Software"],
+  "trust": [
+    { "value": 43, "label": "projetos publicados no meu portfolio, entre lojas e landing pages", "label_en": "projects published in my portfolio, including stores and landing pages", "label_es": "proyectos publicados en mi portafolio, entre tiendas y landing pages" },
+    { "value": 2023, "label": "o ano em que comecei a desenvolver na Shopify", "label_en": "the year I started developing on Shopify", "label_es": "el año en que empecé a desarrollar en Shopify" },
+    { "value": 5, "label": "plataformas de e-commerce: Shopify, Yampi, Nuvemshop, Tray e WBuy", "label_en": "e-commerce platforms: Shopify, Yampi, Nuvemshop, Tray and WBuy", "label_es": "plataformas de e-commerce: Shopify, Yampi, Nuvemshop, Tray y WBuy" },
+    { "value": 2, "label": "migrações completas da VTEX para a Shopify: Wee Magazine e CervejaBox", "label_en": "complete migrations from VTEX to Shopify: Wee Magazine and CervejaBox", "label_es": "migraciones completas de VTEX a Shopify: Wee Magazine y CervejaBox" }
+  ],
+  "ghostPairs": [["Shopify", "Performance"], ["Liquid", "Design"], ["Performance", "Conversão"], ["Design", "Shopify"]],
+  "ghostPairs_en": [["Shopify", "Performance"], ["Liquid", "Design"], ["Performance", "Conversion"], ["Design", "Shopify"]],
+  "ghostPairs_es": [["Shopify", "Rendimiento"], ["Liquid", "Diseño"], ["Rendimiento", "Conversión"], ["Diseño", "Shopify"]],
+  "mosaic": [
+    ["aurora-tecidos-2", "torelly-joias-1", "apolodog-1", "base-forte-1", "loja-da-ro-1"],
+    ["wee-magazine-1", "la-vienne-1", "segredos-de-marie-1", "alterego-infinity-1", "aurora-tecidos-3"],
+    ["adega-paradiso-1", "solore-beachwear-1", "mundo-catnip-1", "cervejabox-1", "wee-magazine-2"],
+    ["snugfly-1", "onli-street-1", "screw-company-1", "adega-paradiso-3", "torelly-joias-2"]
+  ]
+}

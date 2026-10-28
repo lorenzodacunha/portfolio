@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="179 162 650 405"><defs>
+<clipPath id="clippath">
+      <rect x="127.55" y="99.03" width="750" height="500" style="fill: none" />
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect x="705.53" y="366.5" width="248.4" height="184.11" style="fill: none" />
+    </clipPath>
+    <clipPath id="clippath-2">
+      <circle cx="586.12" cy="310.52" r="136.83" transform="translate(-47.9 505.4) rotate(-45)" style="fill: none" />
+    </clipPath>
+    <clipPath id="clippath-3">
+      <circle cx="316.33" cy="418.73" r="136.83" style="fill: none" />
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="694.96" cy="259.24" fx="694.96" fy="259.24" r="122.38" gradientTransform="translate(386.86 -415.48) rotate(45)" gradientUnits="userSpaceOnUse">
+      <stop offset=".26" stop-color="#282a2f" />
+      <stop offset=".49" stop-color="#595a5e" stop-opacity=".77" />
+      <stop offset=".91" stop-color="#dcdddd" stop-opacity=".16" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="227.3" cy="403.78" fx="227.3" fy="403.78" r="169.75" gradientTransform="matrix(1,0,0,1,0,0)" xlink:href="#radial-gradient" />
+  </defs>
+  <g style="isolation: isolate"><g><g><g style="opacity: .6">
+          <g style="opacity: .58">
+            <line x1="399.36" y1="313.13" x2="388.15" y2="301.93" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: 2.83px" />
+            <line x1="399.36" y1="301.93" x2="388.15" y2="313.13" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: 2.83px" />
+          </g>
+          <g>
+            <line x1="608.58" y1="456.84" x2="597.38" y2="445.63" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: 2.83px" />
+            <line x1="608.58" y1="445.63" x2="597.38" y2="456.84" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: 2.83px" />
+          </g>
+          <g>
+            <line x1="189.12" y1="563.29" x2="182.79" y2="556.96" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: 1.42px" />
+            <line x1="189.12" y1="556.96" x2="182.79" y2="563.29" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: 1.42px" />
+          </g>
+          <g style="opacity: .57">
+            <line x1="214.07" y1="213.78" x2="205.45" y2="205.17" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: 2.13px" />
+            <line x1="214.07" y1="205.17" x2="205.45" y2="213.78" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: 2.13px" />
+          </g>
+          <g>
+            <line x1="824.46" y1="174.33" x2="816.39" y2="166.27" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: 1.42px" />
+            <line x1="824.46" y1="166.27" x2="816.39" y2="174.33" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: 1.42px" />
+          </g>
+          <g>
+            <line x1="799" y1="338.73" x2="793.13" y2="332.86" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: 1.42px" />
+            <line x1="799" y1="332.86" x2="793.13" y2="338.73" style="fill: none; stroke-miterlimit: 10; stroke: #333; stroke-width: 1.42px" />
+          </g>
+        </g>
+        </g></g></g></svg>

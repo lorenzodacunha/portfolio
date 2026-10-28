@@ -1,0 +1,5 @@
+# Lorenzo da Cunha, portfolio. Everything public is indexable; the sitemap lists the pages.
+User-agent: *
+Allow: /
+
+Sitemap: https://lorenzodacunha.com.br/sitemap-index.xml
