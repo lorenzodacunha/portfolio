@@ -1,0 +1,14 @@
+# Secret scanning (spec 3.2): gitleaks runs before each commit (see README) and in the checks workflow.
+# The default gitleaks rules stay on: they catch Google API keys (AIza...), private keys, tokens.
+# Keys and the birth date belong in .env and in the Vercel environment variables, never in a tracked file.
+title = "lorenzodacunha portfolio"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Templates without values and generated lockfiles"
+paths = [
+  '''(^|/)\.env\.example$''',
+  '''(^|/)package-lock\.json$''',
+]
