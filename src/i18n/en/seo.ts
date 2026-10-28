@@ -10,7 +10,7 @@ export default {
       title: 'Lorenzo da Cunha | Shopify Developer: stores and Liquid themes',
       description:
         'I build Shopify stores focused on design, performance, and conversion: custom Liquid themes, apps, and integrations. Shopify since 2023, in Americana, SP.',
-      imageAlt: 'Lorenzo da Cunha in a black sweater, next to his name and the title Shopify Developer, on an orange background',
+      imageAlt: 'Lorenzo da Cunha in a black sweater, next to his name and the title Shopify Developer, on a white background',
       personDescription:
         'Shopify developer in Americana, SP: store design, Liquid themes and OS 2.0, apps and integrations, performance and conversion.',
       featured: 'Cases in production',

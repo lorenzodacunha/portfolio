@@ -10,7 +10,7 @@ export default {
       title: 'Lorenzo da Cunha | Desenvolvedor Shopify: lojas e temas Liquid',
       description:
         'Desenvolvo lojas Shopify com foco em design, performance e conversão: temas Liquid sob medida, apps e integrações. Shopify desde 2023, em Americana, SP.',
-      imageAlt: 'Lorenzo da Cunha, de blusa preta, ao lado do nome e do título Desenvolvedor Shopify, sobre fundo laranja',
+      imageAlt: 'Lorenzo da Cunha, de blusa preta, ao lado do nome e do título Desenvolvedor Shopify, sobre fundo branco',
       personDescription:
         'Desenvolvedor Shopify em Americana, SP: design de loja, temas Liquid e OS 2.0, apps e integrações, performance e conversão.',
       featured: 'Cases em produção',

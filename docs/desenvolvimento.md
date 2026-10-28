@@ -247,8 +247,10 @@ O que o site já entrega (`src/lib/seo.ts`, `src/components/seo/Head.astro`, tex
   superlativo que não esteja no site);
 - canonical absoluto com barra no fim, `robots` com `max-image-preview:large` (a 404 é `noindex`),
   `hreflang` `pt-BR` e `x-default`;
-- Open Graph e Twitter card: a home usa `public/og/home.jpg` (1200 x 630, gerada por
-  `node scripts/og-image.mjs`); cada case usa a primeira imagem dele;
+- Open Graph e Twitter card: cada idioma da home tem a sua imagem, no visual do hero (`public/og/home.jpg`,
+  `home-en.jpg` e `home-es.jpg`, 1200 x 630, geradas por `node scripts/og-image.mjs` com os textos do hero de cada
+  idioma); cada case usa a primeira imagem dele. Ao trocar as imagens, suba o `?v=` de `HOME_OG` em `src/lib/seo.ts`,
+  porque as prévias do WhatsApp, do Discord e do LinkedIn guardam a imagem pelo endereço;
 - dados estruturados, um `@graph` por página: na home, `WebSite`, `ProfilePage` com a `Person`, a
   `Organization` (Lorenzo da Cunha LTDA, CNPJ do rodapé) e a `ItemList` dos cases em destaque; em cada case,
   `WebPage`, `CreativeWork` e `BreadcrumbList` (Início > Cases > case);
