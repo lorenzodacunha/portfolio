@@ -160,8 +160,8 @@
   {
     "id": "adega-paradiso",
     "legacyId": "prj_e20835bec8cf4e4a99f00381b6f5860e",
-    "featured": true,
-    "order": 2,
+    "featured": false,
+    "order": null,
     "title": "Adega Paradiso",
     "platform": "Shopify",
     "period": "jan. a fev. de 2025",
@@ -2150,8 +2150,8 @@
   {
     "id": "agomide",
     "legacyId": "prj_19c83d58d15577082c5",
-    "featured": false,
-    "order": null,
+    "featured": true,
+    "order": 2,
     "title": "Agomide",
     "platform": "Shopify",
     "period": "out. de 2025",
@@ -2249,8 +2249,8 @@
   {
     "id": "pratesia",
     "legacyId": "prj_19c83c3dd09f0b6cdc2",
-    "featured": false,
-    "order": null,
+    "featured": true,
+    "order": 3,
     "title": "Pratesia",
     "platform": "Shopify",
     "period": "out. de 2025",
@@ -3227,8 +3227,8 @@
   {
     "id": "loja-da-ro",
     "legacyId": "prj_9f78051128e14b888a04adda88aa7d26",
-    "featured": true,
-    "order": 3,
+    "featured": false,
+    "order": null,
     "title": "Loja da RO",
     "platform": "Shopify",
     "period": "set. a dez. de 2023",
